@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>二、电脑硬件及操作系统 on 信息与网络安全手册</title>
+    <link>http://localhost:1313/docs/02-computer/</link>
+    <description>Recent content in 二、电脑硬件及操作系统 on 信息与网络安全手册</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Fri, 05 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/docs/02-computer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>运行 Windows 系统的 PC 机</title>
+      <link>http://localhost:1313/docs/02-computer/windows/</link>
+      <pubDate>Fri, 05 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/02-computer/windows/</guid>
+      <description>运行 Windows 系统的 PC 机 # 一、决定购买或使用之前 # 运行 Windows 系统的 PC 机是最常见的个人电脑。电脑硬件由不同的厂商生产，但操作系统大都是 Windows。&#xA;如果你可以选择，建议你不要购买和使用中国公司生产的 PC 机，包括华为、小米、联想、神舟、荣耀、清华同方等等。相对而言，我们更推荐使用国外品牌，比如惠普、戴尔、三星、华硕等。但是如果你已经在使用中国公司生产的电脑，也不用过于担心，我们可以通过许多安全设置尽量避免一些问题。&#xA;如果是从正规渠道购买的 PC 机，大多数电脑已经预装了操作系统，大部分情况下就是最新版的 Windows 系统，这是由电脑生产厂商定制的正版系统。&#xA;如果你可以选择，建议购买内存（RAM）至少 16GB 的 PC 机，这样可以使电脑与软件运行更加顺畅。如果你现在使用的 PC 机内存不足 16GB, 可以咨询专业人士，确认是否能够增加内存。PC 机比苹果电脑方便的是，你可以更换配件来给电脑硬件升级，而不需要换掉整台机器。&#xA;在 Windows 系统任务栏的搜索框中键入“信息”，点击选择“系统信息”，即可查看详细的硬件信息，包括 RAM 信息。&#xA;二、盗版系统问题 # 许多中国用户使用盗版的 Windows 系统，这样做存在安全隐患。常见的盗版系统可分为两种：&#xA;安装系统所用的文件来自微软官方，这种称作“原版系统”。系统本身没有问题，但在安装使用的时候，通过非正规渠道（比如从淘宝购买，或者使用破解软件）获得的激活码来取得正版授权。这种盗版虽然不道德，但是只有比较小的风险，风险来自破解软件可能携带恶意程序。&#xA;安装系统所用的文件本身就有问题，常见的是一些电脑维修人员自己制作的 GHOST 文件，而不是来自微软官方的系统安装文件。这种 GHOST 文件可能是原版系统（参见上一条）的镜像，也可能是由维修人员加入其他软件和工具的修改版。事实上，对于不熟悉电脑的人来说，也很难弄清楚使用 GHOST 文件安装的系统里都会包含什么。通过这种方式安装的 Windows 系统，存在很大的安全风险。因此我们强烈建议大家不要用这种方式安装系统，也要拒绝别人使用这种方式给你安装系统。&#xA;三、开启 Windows 系统自动更新 # 请按照这里的指南，开启 Windows 系统的自动更新：&#xA;https://support.microsoft.com/zh-cn/windows/%E5%90%AF%E7%94%A8%E8%87%AA%E5%8A%A8%E5%BA%94%E7%94%A8%E6%9B%B4%E6%96%B0-70634d32-4657-dc76-632b-66048978e51b&#xA;四、给 Windows 系统安装杀毒软件 # 针对 Windows 系统的杀毒软件，推荐使用以下几种：&#xA;Windows 系统自带的 Microsoft Defender https://learn.</description>
+    </item>
+    <item>
+      <title>运行 macOS 的苹果电脑</title>
+      <link>http://localhost:1313/docs/02-computer/macos/</link>
+      <pubDate>Fri, 05 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/02-computer/macos/</guid>
+      <description>运行 macOS 的苹果电脑 # 一、决定购买和使用之前 # 苹果电脑由美国 Apple 公司生产，它的电脑硬件与操作系统之间有着强绑定关系。也就是说，当你购买苹果电脑的时候，意味着你选择使用 macOS 系统；当你想要使用 macOS 系统的时候，你就会购买苹果电脑。&#xA;这种强绑定关系的好处是，硬件与系统之间极其优良的配合，因为它的系统就是为它的硬件准备的。有些人会在苹果电脑上面安装 Windows 系统，或者在 PC 机上面安装 macOS 系统，虽然这样也能运行，但肯定无法像苹果电脑搭载 macOS 系统那样舒服和流畅。&#xA;但是这种强绑定关系同时也带来一些问题，这是你在决定购买和使用苹果电脑之前要知道的。你有可能会遭遇这种情况：&#xA;电脑硬件完好无损，无论是电池还是硬盘都能正常工作。但是，由于苹果公司不断发布新的 macOS 系统，而新版系统对于电脑硬件配置要求较高，使得你的电脑无法升级到最新版本的系统，或者即使能够升级，也不能流畅地使用。你无法仅仅通过升级主板、内存或者显卡使其满足最新版 macOS 系统的要求。很多人在这个时候会被迫买一台新的电脑，也就是硬件配置更高、操作系统更新的苹果电脑。&#xA;点击以下链接，检查你的苹果电脑硬件能够支持的最新版本系统是多少。&#xA;MacBook Air https://en.wikipedia.org/wiki/MacBook_Air#macOS&#xA;MacBook Pro https://en.wikipedia.org/wiki/MacBook_Pro#macOS&#xA;iMac https://en.wikipedia.org/wiki/IMac#Supported_Apple_operating_system_releases&#xA;根据上面的链接内容所示：&#xA;如果你使用 MacBook Air 电脑，想要升级到最新的 macOS 14 版本系统，那么你的 MacBook Air 机器至少需要是 2018 年版本。早于 2018 年的机器已经无法升级到 macOS 14 版本的系统。&#xA;如果你使用 MacBook Pro 电脑，想要升级到最新的 macOS 14 版本系统，那么你的 MacBook Pro 机器至少需要是 2018 年版本，早于 2018 年的机器已经无法升级到 macOS 14 版本的系统。</description>
+    </item>
+    <item>
+      <title>运行 GNU/Linux 系统的 PC 机</title>
+      <link>http://localhost:1313/docs/02-computer/linux/</link>
+      <pubDate>Fri, 05 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/02-computer/linux/</guid>
+      <description>运行 GNU/Linux 系统的 PC 机 # Linux 平台的病毒、木马数量远远少于 Windows, 但这绝不意味着 Linux 系统百分之百安全，因此你也要为 Linux 系统做好相应的安全防护。&#xA;这个世界上存在几百种不同的 GNU/Linux 发行版，我们很难列出每一种的安全设置方案。但是，无论哪种都有一些基础的、通用的注意事项。请参考这个说明：&#xA;https://securityinabox.org/zh/phones-and-computers/linux/&#xA;此外，建议仔细阅读所用 Linux 发行版的官方文档、官方 Wiki, 那里一般会有针对特定发行版的详细说明。</description>
+    </item>
+    <item>
+      <title>使用 Live USB 系统</title>
+      <link>http://localhost:1313/docs/02-computer/liveos/</link>
+      <pubDate>Fri, 05 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/02-computer/liveos/</guid>
+      <description>使用 Live USB 系统 # 从事敏感和危险工作的行动者一般分为两类，一种公开身份活动，一种完全匿名活动。前者并不需要隐藏真实身份，但可能希望保护信息、数据与通信安全，也就是有“加密”的需求。后者则不光要保护信息、数据与通信安全，还要保持匿名，不被别人识破身份，也就是同时需要“匿名”且“加密”。&#xA;这两类人的需求并不完全相同，但在很多场景之下需要类似的工具。&#xA;我们推荐从事敏感和危险工作的行动者学习制作和使用 Live USB 系统，也就是将操作系统（无论 Windows 还是 Linux）安装在一个小小的 U 盘上面，每次使用的时候，将 U 盘插在电脑上，选择从 U 盘启动并运行系统。使用结束之后，关闭系统和电脑，收起 U 盘。&#xA;这样做的好处是，你在公开使用的电脑和系统当中不会留下任何“敏感信息”和“敏感活动”，而且 Live USB 系统在关机之后可以清除所有使用记录，只留下一个干净的系统。这使得监控甚至抓捕你的人无法得到任何敏感信息和数据。&#xA;这些操作系统都可以安装在 USB 当中：Windows 10, Ubuntu Linux, Tails Linux, Whonix.&#xA;它们大都是 GNU/Linux 系统，各有特色，适合不同需求的人，比如 Tails 和 Whonix 系统默认将所有网络请求和流量通过 Tor 网络转发，保证用户完全匿名。Windows 则适合大多数不熟悉 Linux 的用户。&#xA;可以用 Rufus 或 UNetbootin 来制作 Live USB。详细方法请见各自的官方网站。</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="密码管理器 # 无论在哪个操作系统上面，都推荐使用 KeePass 及其衍生软件。
+https://keepass.info/download.html
+你可以在这里找到 KeePass 以及适用于每种操作系统的 KeePass 衍生版本。
+这篇文章详细介绍 KeePass 的用法： https://sspai.com/post/44126
+1. 什么是安全的密码？ # 一个安全强大的密码应该包括：至少16位字符，包含大小写字母、阿拉伯数字和特殊符号，而且不能使用常见单词、常见词组。
+像这样的就不是一个好密码和强密码：
+iloveyou123
+像这样的才是好密码和强密码：
+t~RWJiYk5}%Y^a44
+2. 为什么要使用密码管理器？ # 不用密码管理器的人，会怎样管理密码呢？
+大多数人会设置比较简单的密码，方便记忆。
+还会在不同网站使用相同的密码，或者类似的密码。
+还会把密码保存在浏览器里，方便下次直接登录。
+还有些人会把密码用明文形式存储在电脑或者手机的记事本里，而且这个记事本也不加密。
+如果你也这样操作，那可真的太危险啦！
+密码管理器有两个作用：
+生成唯一的、随机的、复杂的密码。唯一，意味着不同网站使用不同密码。即使 A 网站的密码库泄漏，黑客也无法得知你在 B 网站、C 网站的密码。随机和复杂，意味着它不是常见单词、常见数字，而是随机字符。像上面举例的那个 t~RWJiYk5}%Y^a44 就是唯一、随机的密码。
+保存所有密码。既然你给每个网站生成唯一的、随机的、复杂的密码，那么你的脑袋肯定记不住它们，因此就需要密码管理器帮你保存这些密码。
+这时，你唯一需要记住的，就是密码管理器本身的密码。密码管理器相当于一个“保险箱”，你只需要记住保险箱的密码，而不用去记里面几十、上百个随机密码。
+【请注意】使用密码管理器的时候，一定一定要做到：保存好你的密码数据库文件，并且记住你的密码管理器密码。
+3. 不建议的操作 # 不建议在手机上面使用密码管理器；
+不建议使用在线密码管理器；
+更不建议直接将密码保存在浏览器里。">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="密码管理器" />
+<meta property="og:description" content="密码管理器 # 无论在哪个操作系统上面，都推荐使用 KeePass 及其衍生软件。
+https://keepass.info/download.html
+你可以在这里找到 KeePass 以及适用于每种操作系统的 KeePass 衍生版本。
+这篇文章详细介绍 KeePass 的用法： https://sspai.com/post/44126
+1. 什么是安全的密码？ # 一个安全强大的密码应该包括：至少16位字符，包含大小写字母、阿拉伯数字和特殊符号，而且不能使用常见单词、常见词组。
+像这样的就不是一个好密码和强密码：
+iloveyou123
+像这样的才是好密码和强密码：
+t~RWJiYk5}%Y^a44
+2. 为什么要使用密码管理器？ # 不用密码管理器的人，会怎样管理密码呢？
+大多数人会设置比较简单的密码，方便记忆。
+还会在不同网站使用相同的密码，或者类似的密码。
+还会把密码保存在浏览器里，方便下次直接登录。
+还有些人会把密码用明文形式存储在电脑或者手机的记事本里，而且这个记事本也不加密。
+如果你也这样操作，那可真的太危险啦！
+密码管理器有两个作用：
+生成唯一的、随机的、复杂的密码。唯一，意味着不同网站使用不同密码。即使 A 网站的密码库泄漏，黑客也无法得知你在 B 网站、C 网站的密码。随机和复杂，意味着它不是常见单词、常见数字，而是随机字符。像上面举例的那个 t~RWJiYk5}%Y^a44 就是唯一、随机的密码。
+保存所有密码。既然你给每个网站生成唯一的、随机的、复杂的密码，那么你的脑袋肯定记不住它们，因此就需要密码管理器帮你保存这些密码。
+这时，你唯一需要记住的，就是密码管理器本身的密码。密码管理器相当于一个“保险箱”，你只需要记住保险箱的密码，而不用去记里面几十、上百个随机密码。
+【请注意】使用密码管理器的时候，一定一定要做到：保存好你的密码数据库文件，并且记住你的密码管理器密码。
+3. 不建议的操作 # 不建议在手机上面使用密码管理器；
+不建议使用在线密码管理器；
+更不建议直接将密码保存在浏览器里。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/docs/04-software/password/" /><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2024-04-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-04-10T00:00:00+00:00" />
+<title>密码管理器 | 信息与网络安全手册</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="canonical" href="http://localhost:1313/docs/04-software/password/">
+<link rel="stylesheet" href="/book.min.309b7ed028807cdb68d8d61e26d609f48369c098dbf5e4d8c0dcf4cdf49feafc.css" integrity="sha256-MJt&#43;0CiAfNto2NYeJtYJ9INpwJjb9eTYwNz0zfSf6vw=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/zh.search.min.06be65d352fea4a2dac450ade5e630cb82ea1c779f322485417b8dbdeabe1d43.js" integrity="sha256-Br5l01L&#43;pKLaxFCt5eYwy4LqHHefMiSFQXuNveq&#43;HUM=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>信息与网络安全手册</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="搜索" aria-label="搜索" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/" class="">写在前面</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/01-start/" class="">一、确认自己的身份和处境</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/" class="">二、电脑硬件及操作系统</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/windows/" class="">运行 Windows 系统的 PC 机</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/macos/" class="">运行 macOS 的苹果电脑</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/linux/" class="">运行 GNU/Linux 系统的 PC 机</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/liveos/" class="">使用 Live USB 系统</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/" class="">三、手机设备及操作系统</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/ios/" class="">iPhone 手机（附 iPad）</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/android/" class="">Android 手机（安卓手机）</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/tablet/" class="">平板电脑</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/security/" class="">智能手机安全设置</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/" class="">四、常用软件推荐</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/ime/" class="">中文输入法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/browser/" class="">网页浏览器</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/extension/" class="">浏览器扩展</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/im/" class="">即时通讯软件</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/video/" class="">视频通话及会议</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/office/" class="">办公和线上协作</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/cloud-storage/" class="">云存储和文件分享</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/password/" class="active">密码管理器</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/others/" class="">其它软件</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/signal/" class="">Signal 专门页面</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/" class="">五、上网安全</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/vpn/" class="">使用 VPN 的场景</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/tor/" class="">使用 Tor 浏览器保持匿名</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/links/" class="">当心包含恶意代码的链接</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/identities/" class="">使用不同的在线身份</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/2fa/" class="">为你的账号开启两步验证</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/" class="">六、通讯安全</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/im/" class="">即时通讯和视频通话</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/mail/" class="">电子邮件安全</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/mailvelope/" class="">借助 Mailvelope 使用 PGP 加密邮件</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/" class="">七、数据安全</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/level/" class="">给你的数据重要性分级</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/metadata/" class="">分享之前，删除元数据</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/veracrypt/" class="">使用 Veracrypt 加密文件和磁盘</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/backup/" class="">定期备份你的重要数据</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/destroy/" class="">使用 BleachBit 销毁文件</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/08-police/" class="">八、面对警察查手机</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/08-police/digital/" class="">数字安全层面</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/08-police/legal/" class="">法律层面</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/" class="">九、海外人士回国，遭遇电子产品检查或警察盘问</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/preparation/" class="">准备事项</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/before-teatime/" class="">喝茶之前</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/teatime/" class="">喝茶的时候</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>密码管理器</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#密码管理器">密码管理器</a>
+      <ul>
+        <li><a href="#1-什么是安全的密码">1. 什么是安全的密码？</a></li>
+        <li><a href="#2-为什么要使用密码管理器">2. 为什么要使用密码管理器？</a></li>
+        <li><a href="#3-不建议的操作">3. 不建议的操作</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="密码管理器">
+  密码管理器
+  <a class="anchor" href="#%e5%af%86%e7%a0%81%e7%ae%a1%e7%90%86%e5%99%a8">#</a>
+</h1>
+<p>无论在哪个操作系统上面，都推荐使用 KeePass 及其衍生软件。</p>
+<p><a href="https://keepass.info/download.html">https://keepass.info/download.html</a></p>
+<p>你可以在这里找到 KeePass 以及适用于每种操作系统的 KeePass 衍生版本。</p>
+<p>这篇文章详细介绍 KeePass 的用法： <a href="https://sspai.com/post/44126">https://sspai.com/post/44126</a></p>
+<h2 id="1-什么是安全的密码">
+  1. 什么是安全的密码？
+  <a class="anchor" href="#1-%e4%bb%80%e4%b9%88%e6%98%af%e5%ae%89%e5%85%a8%e7%9a%84%e5%af%86%e7%a0%81">#</a>
+</h2>
+<p>一个安全强大的密码应该包括：至少16位字符，包含大小写字母、阿拉伯数字和特殊符号，而且不能使用常见单词、常见词组。</p>
+<p>像这样的就不是一个好密码和强密码：</p>
+<blockquote>
+<p>iloveyou123</p>
+</blockquote>
+<p>像这样的才是好密码和强密码：</p>
+<blockquote>
+<p>t~RWJiYk5}%Y^a44</p>
+</blockquote>
+<h2 id="2-为什么要使用密码管理器">
+  2. 为什么要使用密码管理器？
+  <a class="anchor" href="#2-%e4%b8%ba%e4%bb%80%e4%b9%88%e8%a6%81%e4%bd%bf%e7%94%a8%e5%af%86%e7%a0%81%e7%ae%a1%e7%90%86%e5%99%a8">#</a>
+</h2>
+<p>不用密码管理器的人，会怎样管理密码呢？</p>
+<ul>
+<li>
+<p>大多数人会设置比较简单的密码，方便记忆。</p>
+</li>
+<li>
+<p>还会在不同网站使用相同的密码，或者类似的密码。</p>
+</li>
+<li>
+<p>还会把密码保存在浏览器里，方便下次直接登录。</p>
+</li>
+<li>
+<p>还有些人会把密码用<strong>明文</strong>形式存储在电脑或者手机的记事本里，而且这个记事本也不加密。</p>
+</li>
+</ul>
+<p>如果你也这样操作，那可真的太危险啦！</p>
+<p>密码管理器有两个作用：</p>
+<ul>
+<li>
+<p>生成唯一的、随机的、复杂的密码。唯一，意味着不同网站使用不同密码。即使 A 网站的密码库泄漏，黑客也无法得知你在 B 网站、C 网站的密码。随机和复杂，意味着它不是常见单词、常见数字，而是随机字符。像上面举例的那个 <code>t~RWJiYk5}%Y^a44</code> 就是唯一、随机的密码。</p>
+</li>
+<li>
+<p>保存所有密码。既然你给每个网站生成唯一的、随机的、复杂的密码，那么你的脑袋肯定记不住它们，因此就需要密码管理器帮你保存这些密码。</p>
+</li>
+</ul>
+<p>这时，你唯一需要记住的，就是密码管理器本身的密码。密码管理器相当于一个“保险箱”，你只需要记住保险箱的密码，而不用去记里面几十、上百个随机密码。</p>
+<p>【请注意】<u><strong>使用密码管理器的时候，一定一定要做到：保存好你的密码数据库文件，并且记住你的密码管理器密码</strong></u>。</p>
+<h2 id="3-不建议的操作">
+  3. 不建议的操作
+  <a class="anchor" href="#3-%e4%b8%8d%e5%bb%ba%e8%ae%ae%e7%9a%84%e6%93%8d%e4%bd%9c">#</a>
+</h2>
+<ul>
+<li>
+<p>不建议在手机上面使用密码管理器；</p>
+</li>
+<li>
+<p>不建议使用在线密码管理器；</p>
+</li>
+<li>
+<p>更不建议直接将密码保存在浏览器里。</p>
+</li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#密码管理器">密码管理器</a>
+      <ul>
+        <li><a href="#1-什么是安全的密码">1. 什么是安全的密码？</a></li>
+        <li><a href="#2-为什么要使用密码管理器">2. 为什么要使用密码管理器？</a></li>
+        <li><a href="#3-不建议的操作">3. 不建议的操作</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

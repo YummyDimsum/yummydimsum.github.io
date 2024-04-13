@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>写在前面 on 信息与网络安全手册</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in 写在前面 on 信息与网络安全手册</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Thu, 11 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>运行 Windows 系统的 PC 机</title>
+      <link>http://localhost:1313/docs/02-computer/windows/</link>
+      <pubDate>Fri, 05 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/02-computer/windows/</guid>
+      <description>运行 Windows 系统的 PC 机 # 一、决定购买或使用之前 # 运行 Windows 系统的 PC 机是最常见的个人电脑。电脑硬件由不同的厂商生产，但操作系统大都是 Windows。&#xA;如果你可以选择，建议你不要购买和使用中国公司生产的 PC 机，包括华为、小米、联想、神舟、荣耀、清华同方等等。相对而言，我们更推荐使用国外品牌，比如惠普、戴尔、三星、华硕等。但是如果你已经在使用中国公司生产的电脑，也不用过于担心，我们可以通过许多安全设置尽量避免一些问题。&#xA;如果是从正规渠道购买的 PC 机，大多数电脑已经预装了操作系统，大部分情况下就是最新版的 Windows 系统，这是由电脑生产厂商定制的正版系统。&#xA;如果你可以选择，建议购买内存（RAM）至少 16GB 的 PC 机，这样可以使电脑与软件运行更加顺畅。如果你现在使用的 PC 机内存不足 16GB, 可以咨询专业人士，确认是否能够增加内存。PC 机比苹果电脑方便的是，你可以更换配件来给电脑硬件升级，而不需要换掉整台机器。&#xA;在 Windows 系统任务栏的搜索框中键入“信息”，点击选择“系统信息”，即可查看详细的硬件信息，包括 RAM 信息。&#xA;二、盗版系统问题 # 许多中国用户使用盗版的 Windows 系统，这样做存在安全隐患。常见的盗版系统可分为两种：&#xA;安装系统所用的文件来自微软官方，这种称作“原版系统”。系统本身没有问题，但在安装使用的时候，通过非正规渠道（比如从淘宝购买，或者使用破解软件）获得的激活码来取得正版授权。这种盗版虽然不道德，但是只有比较小的风险，风险来自破解软件可能携带恶意程序。&#xA;安装系统所用的文件本身就有问题，常见的是一些电脑维修人员自己制作的 GHOST 文件，而不是来自微软官方的系统安装文件。这种 GHOST 文件可能是原版系统（参见上一条）的镜像，也可能是由维修人员加入其他软件和工具的修改版。事实上，对于不熟悉电脑的人来说，也很难弄清楚使用 GHOST 文件安装的系统里都会包含什么。通过这种方式安装的 Windows 系统，存在很大的安全风险。因此我们强烈建议大家不要用这种方式安装系统，也要拒绝别人使用这种方式给你安装系统。&#xA;三、开启 Windows 系统自动更新 # 请按照这里的指南，开启 Windows 系统的自动更新：&#xA;https://support.microsoft.com/zh-cn/windows/%E5%90%AF%E7%94%A8%E8%87%AA%E5%8A%A8%E5%BA%94%E7%94%A8%E6%9B%B4%E6%96%B0-70634d32-4657-dc76-632b-66048978e51b&#xA;四、给 Windows 系统安装杀毒软件 # 针对 Windows 系统的杀毒软件，推荐使用以下几种：&#xA;Windows 系统自带的 Microsoft Defender https://learn.</description>
+    </item>
+    <item>
+      <title>运行 macOS 的苹果电脑</title>
+      <link>http://localhost:1313/docs/02-computer/macos/</link>
+      <pubDate>Fri, 05 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/02-computer/macos/</guid>
+      <description>运行 macOS 的苹果电脑 # 一、决定购买和使用之前 # 苹果电脑由美国 Apple 公司生产，它的电脑硬件与操作系统之间有着强绑定关系。也就是说，当你购买苹果电脑的时候，意味着你选择使用 macOS 系统；当你想要使用 macOS 系统的时候，你就会购买苹果电脑。&#xA;这种强绑定关系的好处是，硬件与系统之间极其优良的配合，因为它的系统就是为它的硬件准备的。有些人会在苹果电脑上面安装 Windows 系统，或者在 PC 机上面安装 macOS 系统，虽然这样也能运行，但肯定无法像苹果电脑搭载 macOS 系统那样舒服和流畅。&#xA;但是这种强绑定关系同时也带来一些问题，这是你在决定购买和使用苹果电脑之前要知道的。你有可能会遭遇这种情况：&#xA;电脑硬件完好无损，无论是电池还是硬盘都能正常工作。但是，由于苹果公司不断发布新的 macOS 系统，而新版系统对于电脑硬件配置要求较高，使得你的电脑无法升级到最新版本的系统，或者即使能够升级，也不能流畅地使用。你无法仅仅通过升级主板、内存或者显卡使其满足最新版 macOS 系统的要求。很多人在这个时候会被迫买一台新的电脑，也就是硬件配置更高、操作系统更新的苹果电脑。&#xA;点击以下链接，检查你的苹果电脑硬件能够支持的最新版本系统是多少。&#xA;MacBook Air https://en.wikipedia.org/wiki/MacBook_Air#macOS&#xA;MacBook Pro https://en.wikipedia.org/wiki/MacBook_Pro#macOS&#xA;iMac https://en.wikipedia.org/wiki/IMac#Supported_Apple_operating_system_releases&#xA;根据上面的链接内容所示：&#xA;如果你使用 MacBook Air 电脑，想要升级到最新的 macOS 14 版本系统，那么你的 MacBook Air 机器至少需要是 2018 年版本。早于 2018 年的机器已经无法升级到 macOS 14 版本的系统。&#xA;如果你使用 MacBook Pro 电脑，想要升级到最新的 macOS 14 版本系统，那么你的 MacBook Pro 机器至少需要是 2018 年版本，早于 2018 年的机器已经无法升级到 macOS 14 版本的系统。</description>
+    </item>
+    <item>
+      <title>运行 GNU/Linux 系统的 PC 机</title>
+      <link>http://localhost:1313/docs/02-computer/linux/</link>
+      <pubDate>Fri, 05 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/02-computer/linux/</guid>
+      <description>运行 GNU/Linux 系统的 PC 机 # Linux 平台的病毒、木马数量远远少于 Windows, 但这绝不意味着 Linux 系统百分之百安全，因此你也要为 Linux 系统做好相应的安全防护。&#xA;这个世界上存在几百种不同的 GNU/Linux 发行版，我们很难列出每一种的安全设置方案。但是，无论哪种都有一些基础的、通用的注意事项。请参考这个说明：&#xA;https://securityinabox.org/zh/phones-and-computers/linux/&#xA;此外，建议仔细阅读所用 Linux 发行版的官方文档、官方 Wiki, 那里一般会有针对特定发行版的详细说明。</description>
+    </item>
+    <item>
+      <title>使用 Live USB 系统</title>
+      <link>http://localhost:1313/docs/02-computer/liveos/</link>
+      <pubDate>Fri, 05 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/02-computer/liveos/</guid>
+      <description>使用 Live USB 系统 # 从事敏感和危险工作的行动者一般分为两类，一种公开身份活动，一种完全匿名活动。前者并不需要隐藏真实身份，但可能希望保护信息、数据与通信安全，也就是有“加密”的需求。后者则不光要保护信息、数据与通信安全，还要保持匿名，不被别人识破身份，也就是同时需要“匿名”且“加密”。&#xA;这两类人的需求并不完全相同，但在很多场景之下需要类似的工具。&#xA;我们推荐从事敏感和危险工作的行动者学习制作和使用 Live USB 系统，也就是将操作系统（无论 Windows 还是 Linux）安装在一个小小的 U 盘上面，每次使用的时候，将 U 盘插在电脑上，选择从 U 盘启动并运行系统。使用结束之后，关闭系统和电脑，收起 U 盘。&#xA;这样做的好处是，你在公开使用的电脑和系统当中不会留下任何“敏感信息”和“敏感活动”，而且 Live USB 系统在关机之后可以清除所有使用记录，只留下一个干净的系统。这使得监控甚至抓捕你的人无法得到任何敏感信息和数据。&#xA;这些操作系统都可以安装在 USB 当中：Windows 10, Ubuntu Linux, Tails Linux, Whonix.&#xA;它们大都是 GNU/Linux 系统，各有特色，适合不同需求的人，比如 Tails 和 Whonix 系统默认将所有网络请求和流量通过 Tor 网络转发，保证用户完全匿名。Windows 则适合大多数不熟悉 Linux 的用户。&#xA;可以用 Rufus 或 UNetbootin 来制作 Live USB。详细方法请见各自的官方网站。</description>
+    </item>
+    <item>
+      <title>iPhone 手机（附 iPad）</title>
+      <link>http://localhost:1313/docs/03-mobile/ios/</link>
+      <pubDate>Fri, 05 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/03-mobile/ios/</guid>
+      <description>iPhone 手机 # 与其他国家（比如美国）销售的 iPhone 相比，中国国行的 iPhone 手机有一些功能受限。这些限制，有些属于硬件层面，有些属于系统层面，有些属于内容层面。&#xA;硬件层面：中国国行 iPhone 没有 eSIM 功能，也就是它只能使用实体 SIM 卡。&#xA;系统层面：中国国行 iPhone 不能使用 FaceTime 音频通话而只能视频通话，没有 CallKit, Walkie-Talkie, 5G 毫米波、卫星紧急救援等功能，同时 Apple Pay 功能受限。&#xA;内容层面：书籍、音乐、电影、应用程序等许多方面遭到审查，详见下文。&#xA;作为普通用户，你很难自行解决硬件层面和系统层面的限制问题，但可以一定程度解决内容限制问题。&#xA;一、中国区 Apple ID 的限制 # iPhone 用户下载安装 App 的正规渠道（也是相对安全的渠道）就是苹果公司自家运营的 App Store。想要使用 App Store, 需要注册一个 Apple ID。事实上，不光是 App Store，iPhone 上面的许多 Apple 服务都需要 Apple ID 登录。&#xA;如果你直接在中国境内注册 Apple ID（即没有使用任何其它辅助措施），那么你的 Apple ID 会被归类为“中国区 Apple ID”。中国区 ID 与其他 ID 有三大不同：&#xA;使用中国区 Apple ID 登录 App Store, 只能搜索到有限的应用。据媒体报道，在中国区的 App Store，上万个应用遭到下架，包括外国新闻机构、翻墙、政治、宗教等，甚至包含教育、游戏类应用。使用中国区 Apple ID 在 App Store 搜索，找不到这些应用。从某种程度上说，这意味着你的 iPhone 手机无法连接到国际互联网。</description>
+    </item>
+    <item>
+      <title>Android 手机（安卓手机）</title>
+      <link>http://localhost:1313/docs/03-mobile/android/</link>
+      <pubDate>Fri, 05 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/03-mobile/android/</guid>
+      <description>Android 手机（安卓手机） # 另一种使用人数更多的智能手机是 Android 手机（中文又称“安卓手机”）。安卓手机由 Google 公司（安卓系统的母公司）授权、由其他许多不同厂商生产和销售，这些厂商包括大家耳熟能详的小米、三星、一加、OPPO 等。&#xA;一、国产安卓手机的问题与风险 # 绝大多数国产安卓手机都没有 Google Play Store, 甚至没有 Google Account（谷歌账号）这个功能模块。这意味着，你无法通过 Google Play Store 下载和安装应用，而只能使用国产安卓手机自带的应用商店。因此你将很难下载国外互联网的应用, 尤其是无法下载那些能够帮你翻墙或加密通讯的应用。 解决方案是使用第三方的应用商店，比如 APKPure, F-droid 等。详见第四部分《常用软件推荐》。&#xA;由于无法使用 Google Play Store, 中国的一些网站会直接提供 APK 安装文件，以便安卓手机用户安装应用。这些 APK 安装文件未经第三方安全审查，因此它们可能存在风险，可能会损害用户的手机。&#xA;最严重的问题是，有些国产安卓手机被曝可能存在监控后门，或者接入了“国家反诈中心”软件。虽然目前还没有证据显示硬件层面存在问题，但已经有证据表明手机系统或预装软件存在问题，可能会监控和监听用户。&#xA;由于以上几种限制与风险，在你有选择的情况下，绝对不要使用中国国产安卓手机。&#xA;二、安全与隐私设置 # 以下这个网页包含非常详细的 Android 手机安全设置，请仔细阅读并按照其中指示操作。&#xA;https://securityinabox.org/zh/phones-and-computers/android/</description>
+    </item>
+    <item>
+      <title>平板电脑</title>
+      <link>http://localhost:1313/docs/03-mobile/tablet/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/03-mobile/tablet/</guid>
+      <description>平板电脑 # 目前主流的平板电脑分为两大类：&#xA;由苹果公司生产、运行 iPadOS 系统的 iPad;&#xA;由其他许多公司生产、运行 Android 系统的各类平板。&#xA;虽然我们叫它“平板电脑”，但它从各方面来看都更像是一台大屏幕的手机，而不像传统的电脑。&#xA;因此，购买使用平板电脑的注意事项和购买使用智能手机的注意事项差不多。也就是：&#xA;iPad 的优势与局限，请参考 iPhone 的优势与局限。&#xA;Android 平板的优势与局限，请参考 Android 手机的优势与局限。</description>
+    </item>
+    <item>
+      <title>智能手机安全设置</title>
+      <link>http://localhost:1313/docs/03-mobile/security/</link>
+      <pubDate>Fri, 05 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/03-mobile/security/</guid>
+      <description>智能手机安全设置 # 一、应该选择 iPhone 还是 Android？ # 决定购买和使用哪种手机，这由许多因素决定。我们这里只从“安全性”方面给出建议。&#xA;iPhone 和 Android 到底谁更安全？这是一个很难准确回答的问题，因为它不光和设备、系统本身有关，也和你的使用环境、使用习惯有关。&#xA;如果你身在中国大陆，并且不太擅长技术，条件允许的话（主要是指预算充足），建议你选择 iPhone。 并且按照上文给出的建议，注册美国区 Apple ID, 并做好各项安全设置。&#xA;如果你只能使用安卓手机，请你尽量避免使用中国公司生产的安卓手机，比如小米、华为、荣耀、VIVO、OPPO 等。选购外国公司生产的手机，比如三星。&#xA;如果只能使用中国公司生产的安卓手机，请你咨询可以信任的专业人士，确认你的手机是否允许刷机，可以通过刷机彻底删除手机自带的系统和软件。这里推荐第三方开源的 Android 系统 LineageOS, 你可以在它的网站查看它支持哪些设备。 https://wiki.lineageos.org/devices/ 刷机需要一定的专业知识，如果你不具备这方面的知识技能，请不要随便动手，以免手机报废。&#xA;如果你真的只能使用国产安卓手机，那至少做到将不同用途的手机物理隔离。详见下一小节。&#xA;二、至少拥有两台完全独立的手机 # 相对而言，智能手机无法像电脑（无论 PC 还是苹果电脑）那样进行信息隔离，它实际上只能运行一个系统。因此，为了信息安全与隐私，强烈建议你至少使用两台手机。&#xA;一台称作“普通手机”，只用来安装和运行中国的应用, 比如微信、支付宝、淘宝等。&#xA;另一台称作“安全手机”或“干净手机”，只用来安装和运行涉及敏感信息的应用, 比如翻墙软件、加密聊天软件。&#xA;这两台手机彼此之间应该严格隔离。不要互相使用 SIM 卡，绝对不要在安全手机上面安装任何中国国产软件，甚至不要让两台手机之间互相通信。&#xA;而且，你应该选择相对安全的那个手机作为安全手机。比如 iPhone 比国产安卓手机更安全，非国产安卓手机也比国产安卓手机更安全。能够刷机的国产安卓手机比不能刷机的更安全。&#xA;三、Android 手机的应用权限控制和隔离 # 如果你只能使用 Android 手机，而且只有一台手机，请安装 Exodus, Insular, Shelter 这几个应用来控制其它应用的操作权限或将其隔离。&#xA;使用手机浏览器打开 F-droid 的网站， https://f-droid.org 点击 Download, 下载并安装 F-droid 的客户端。&#xA;在 F-droid 的客户端里，搜索并下载、安装 Exodus, Insular, Shelter 这几个应用。</description>
+    </item>
+    <item>
+      <title>中文输入法</title>
+      <link>http://localhost:1313/docs/04-software/ime/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/04-software/ime/</guid>
+      <description>中文输入法 # 许多人使用中国大公司开发的免费输入法，比如搜狗输入法、百度输入法、讯飞输入法等。&#xA;然而有研究表明，这些输入法普遍存在安全隐患，甚至可能主动收集用户的使用数据并偷偷上传到服务器。因此，强烈建议你不要使用来自中国大公司的输入法。&#xA;好消息是，除了这些大公司的输入法，我们还有选择。&#xA;RIME 输入法平台是开源应用，它的所有源代码公开，由一群志愿者维护，不属于任何大公司，不会收集和上传你的个人数据。它确实不如商业输入法一样“智能”，但是它更安全。&#xA;在不同的操作系统上，RIME 输入法有不同的名字。&#xA;一、Windows 系统 # Windows 系统自带的微软拼音可以使用，但如果想要换成更好用的，则推荐 RIME 输入法的 Windows 版本：小狼毫输入法。&#xA;https://rime.im/download/&#xA;二、macOS 系统 # macOS 自带的输入法可以使用，但并不好用，推荐使用 RIME 输入法的 macOS 版本：鼠须管输入法。&#xA;https://rime.im/download/&#xA;三、iOS 系统 # iOS 系统自带的中文输入法可以使用，同时推荐另外两种：Gboard 和基于 RIME 的“仓输入法”。&#xA;Gboard 是 Google 出品的多语言键盘，支持超过 150 种语言的输入。&#xA;四、Android 系统 # 不推荐使用 Android 系统自带的输入法，尤其不建议使用国产安卓手机的输入法。而是推荐另外两种：Gboard, 和基于 RIME 的“同文输入法”。&#xA;Gboard 需要从 Google Play Store 或者 APKPure 下载，同文输入法可以从 Google Play Store 或者 F-droid 下载。&#xA;需要注意的是，同文输入法没有九宫格键盘，在小屏幕手机上面使用可能不太方便。</description>
+    </item>
+    <item>
+      <title>网页浏览器</title>
+      <link>http://localhost:1313/docs/04-software/browser/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/04-software/browser/</guid>
+      <description>网页浏览器 # 首先，无论电脑还是手机，都不要使用中国公司的浏览器。&#xA;中国公司的浏览器种类繁多，无法在此一一列举，这里只能给出我们推荐使用的浏览器并解释原因。&#xA;一、Windows 系统和 macOS 系统 # 推荐使用 Firefox, LibreWolf, Brave, Mullvad 这几种浏览器。&#xA;1. Firefox 浏览器 # https://www.mozilla.org/en-US/firefox/all/#product-desktop-release&#xA;【请注意】一定不要使用中国版的 Firefox&#xA;怎样区分中国版和国际版？中国版的网站是 www.firefox.com.cn, 国际版的网站是 www.mozilla.org&#xA;在中国大陆地区直接访问 www.mozilla.org 有可能会被自动跳转到 www.firefox.com.cn , 所以你也可以直接点击这个链接，进入国际版 Firefox 的下载页面。 https://www.mozilla.org/zh-CN/firefox/new/&#xA;2. LibreWolf 浏览器 # https://librewolf.net/&#xA;LibreWolf 基于最新版 Firefox 浏览器改进而来，它在 Firefox 的基础上增加了一些安全设置，比如默认开启“增强跟踪保护”功能的“严格”模式，从而主动阻止网站上的跟踪器。不过这可能会导致个别网页无法正常打开，好在它大多数时候都能正常使用。&#xA;更多关于它的特性，可以查看这里： https://librewolf.net/docs/features/&#xA;3. Brave 浏览器 # https://brave.com/&#xA;Brave 浏览器默认有许多安全设置，比如拦截广告和追踪器，以及浏览器自带的一个 VPN 服务。浏览器本身免费，但 VPN 服务收费。&#xA;4. Mullvad 浏览器 # https://mullvad.net/en/browser&#xA;Mullvad 浏览器由 Mullvad VPN 团队和 Tor 浏览器团队（后面的章节就会提到这两种工具）合作开发。它默认就有许多安全设置，比如开启隐私浏览模式，安装两款最知名的安全防护扩展：uBlock Origin 和 NoScript，而且将浏览器时区设置成 UTC 时区，从而不暴露你的真实时区等等。</description>
+    </item>
+    <item>
+      <title>浏览器扩展</title>
+      <link>http://localhost:1313/docs/04-software/extension/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/04-software/extension/</guid>
+      <description>浏览器扩展 # 以上推荐的几个浏览器都支持安装扩展，加强浏览器某些方面的功能。&#xA;扩展可以使浏览器变得更强大更好用，但扩展本身也是一种软件，它可能也存在漏洞和风险，而且安装太多扩展可能拖慢浏览器的启动和运行速度。&#xA;因此建议只安装最必需的扩展，比如以下这些与安全隐私有关的：&#xA;一、适用于 Firefox, LibreWolf 和 Mullvad 浏览器 # 1. uBlock Origin # LibreWolf 和 Mullvad 默认已包含。&#xA;https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/&#xA;2. NoScript # Mullvad 默认已包含。&#xA;这个扩展的默认行为是阻止所有不在白名单中的脚本。这可能使那些依赖于 JavaScript 的网页无法正常显示。需要在使用过程中慢慢调整它的设置。&#xA;https://addons.mozilla.org/en-US/firefox/addon/noscript/&#xA;3. Privacy Badger # https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17/&#xA;4. HTTPS Everywhere # https://www.eff.org/https-everywhere&#xA;5. Decentraleyes # https://addons.mozilla.org/en-US/firefox/addon/decentraleyes/&#xA;6. Cookie Autodelete # https://addons.mozilla.org/en-US/firefox/addon/cookie-autodelete&#xA;7. Disable WebRTC # https://addons.mozilla.org/en-US/firefox/addon/happy-bonobo-disable-webrtc/&#xA;二、适用于 Brave 浏览器 # Brave 浏览器的扩展需要从 Chrome Web Store 下载。以上介绍的几种扩展都可以找到对应版本。&#xA;1. uBlock Origin # https://chromewebstore.google.com/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm</description>
+    </item>
+    <item>
+      <title>即时通讯软件</title>
+      <link>http://localhost:1313/docs/04-software/im/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/04-software/im/</guid>
+      <description>即时通讯软件 # 我们这里只推荐“端对端加密”的即时通讯软件。&#xA;所谓“端对端加密”的意思是，发送者发出的信息会被加密，直到接收者收到信息才会被解密。信息在传输过程中不会被第三方读取，因为第三方没有解密的“密钥”。&#xA;Signal # https://signal.org/&#xA;端对端加密聊天软件，支持所有操作系统，可以设置聊天记录自动删除时间。&#xA;需要使用手机号码注册，但在注册完成之后，可以设置隐藏手机号码，采用唯一的用户名作为身份标识。&#xA;这是目前使用人数较多的安全通讯软件之一，我们专门撰写了一个页面介绍怎样使用和设置它，点击这里阅读。&#xA;Matrix # https://matrix.org/&#xA;端对端、去中心化的匿名聊天软件，不需要手机号码就能注册。有网页版、电脑客户端和手机客户端。&#xA;如果对匿名要求比较高，建议只使用网页版，而且只在 Tor 浏览器里使用。网页版地址： https://app.element.io&#xA;详细使用方法，可以参考这个教程：&#xA;https://matters.town/@thistlf/90530-matrix-%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96-%E5%8C%BF%E5%90%8D-%E5%AE%89%E5%85%A8%E7%9A%84%E5%8D%B3%E6%97%B6%E9%80%9A%E4%BF%A1-bafyreifwvmwayjpdhmtenxilxnccmjsmkoq4lu7v7au37bob6i4oi7o6he&#xA;Element # 这是 Matrix 是一个具体实现。所以同样具备端对端、去中心化、匿名的特点。&#xA;不需要手机号码就能注册。有网页版、电脑客户端和手机客户端。&#xA;如果对匿名要求比较高，建议只使用网页版，而且只在 Tor 浏览器里使用。网页版地址： https://app.element.io&#xA;Matrix 与 Element 的角色分工大致是这样：&#xA;Matrix 提供并维护世界上最大的 Matrix 服务，也就是 matrix.org Element 提供世界上使用最为广泛的 matrix 客户端，也就是 element.io Session # https://getsession.org/&#xA;端对端加密聊天软件，支持所有操作系统。&#xA;基于 Signal 开发，并进一步加强安全与隐私。可以设置聊天记录自动删除时间。注册无需手机号码或邮箱。处于早期开发阶段。&#xA;Delta Chat # https://delta.chat/zh_CN/&#xA;端对端加密聊天，支持所有操作系统。&#xA;基于电子邮箱，可以直接从 Delta Chat 客户端发出信息，对方在自己的邮箱收到信息。&#xA;Briar # https://briarproject.org/&#xA;端到端加密聊天软件，仅支持 Android 系统。&#xA;它的特点是即使没有联网也能通过蓝牙与附近的人通信。&#xA;Gajim # https://gajim.</description>
+    </item>
+    <item>
+      <title>视频通话及会议</title>
+      <link>http://localhost:1313/docs/04-software/video/</link>
+      <pubDate>Thu, 11 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/04-software/video/</guid>
+      <description>视频通话及会议 # Signal # https://signal.org/&#xA;它不仅是即时聊天软件，也可以作为音频通话、视频通话和视频会议软件，支持多人的小组视频会议。&#xA;关于 Signal 的详细介绍，请点击这里阅读。&#xA;Jitsi # https://jitsi.org/&#xA;开源的视频会议软件平台，可以自行搭建，也可以使用 Jitsi 提供的现有服务。 https://meet.jit.si/&#xA;无须单独安装软件，只需要在浏览器里输入会议链接即可加入。&#xA;ZOOM # https://zoom.us/&#xA;商业、非开源的视频会议软件，支持所有操作系统。&#xA;这可能是最流行的视频会议软件，但它曾经传出阻断中国异议人士讨论会的情况，建议谨慎选择。&#xA;ZOOM 免费版本仅限最多 40 分钟通话，且在中国使用很不稳定。&#xA;如果要使用 ZOOM，请从它的官方网站下载。国产安卓手机的应用商店搜索不到最新版本的 ZOOM。&#xA;Webex # https://www.webex.com/&#xA;商业、非开源的视频会议软件，支持所有操作系统，Cisco 公司旗下产品。&#xA;可以作为 ZOOM 的替代，但 Cisco 公司曾经被曝参与中国 GFW 建设，建议谨慎选择。&#xA;Webex 免费版本仅限最多 40 分钟通话，目前在中国使用暂且稳定。</description>
+    </item>
+    <item>
+      <title>办公和线上协作</title>
+      <link>http://localhost:1313/docs/04-software/office/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/04-software/office/</guid>
+      <description>办公和线上协作 # 一般情况下，在线的办公与协作平台已经可以满足需求。&#xA;Cryptpad # https://cryptpad.org/&#xA;开源、端对端加密的协同办公工具。提供文档、表格、幻灯片、Markdown 等多种格式支持。&#xA;可以不注册、不登录就使用。如果想要注册，不用提供邮箱或手机号码，只需填写用户名和密码即可。&#xA;【请注意】一旦忘记密码，就不能再登录。因为它无法帮你重置密码。&#xA;可以自己架设 Cryptpad 服务，也可以使用现有的服务，这些网站都基于 Cryptpad 搭建：&#xA;https://cryptpad.fr/ （近期有些不太稳定） https://cryptpad.malacher.fr/ https://cryptpad.disroot.org/ https://cryptpad.private.coffee/ https://pad.envs.net/ Riseup Pad # https://pad.riseup.net/&#xA;Riseup 旗下服务之一，可以匿名使用，还能为文档设置有效期：一天，三个月或者一年。&#xA;美中不足的是，它支持的富文本格式有限，只能进行简单的文档编辑。&#xA;Google docs（谷歌文档） # https://docs.google.com&#xA;Google 服务之一，需要有 Gmail 账号才能使用。这意味着，你需要使用手机号码来完成注册验证，这一步可能会暴露你的身份。请一定不要使用中国手机号码来注册。&#xA;如果你非常在意隐私和数据安全，那么请谨慎选择 Google 服务。&#xA;LibreOffice # https://www.libreoffice.org/&#xA;如果你一定要在电脑里安装办公软件，推荐使用开源的 LibreOffice.&#xA;微软 Office 套件 # 如果必须使用微软的办公套件，请将其作为最后选项。&#xA;Nextcloud # https://nextcloud.com/&#xA;可以自己搭建服务的开源软件，包含一系列办公套件。&#xA;不要使用 WPS 和其它国产软件 # 一定不要使用 WPS 之类的国产办公软件。&#xA;至于石墨文档、腾讯文档等国产在线办公平台，也不建议使用。原因不言自明：它们全都处于监控之下，你在上面创作的内容可能会给你带来风险，或者会被它们删除、屏蔽、禁止分享。</description>
+    </item>
+    <item>
+      <title>云存储和文件分享</title>
+      <link>http://localhost:1313/docs/04-software/cloud-storage/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/04-software/cloud-storage/</guid>
+      <description>云存储和文件分享 # 很多人习惯使用微信分享文件，或者使用百度网盘分享文件。&#xA;但对于从事敏感活动的人士来说，你需要更安全的平台。这里推荐：&#xA;Proton Drive # https://drive.proton.me/&#xA;Proton 旗下服务，可以匿名注册，免费版有 2GB 空间。上传一次文件之后，可以升至 5GB 空间。若想获得更大空间，3.5 美元每月即可获得 200GB.&#xA;【请注意】虽然 Proton 接受比特币支付，但是线上支付仍然可能会泄露你的真实身份。&#xA;Riseup Share # https://share.riseup.net&#xA;可以匿名上传文件，最大单个文件不超过 50MB, 12 小时之后会自动删除。&#xA;OnionShare # Tor 项目的文件分享服务，支持所有操作系统平台。&#xA;分享文件之后，会生成一串 .onion 链接，对方使用 Tor 浏览器打开这个 .onion 链接，即可接收文件。&#xA;整个传输过程全部通过 Tor 网络，可以做到高度匿名。&#xA;操作方法可以看这个官方指南视频（中文字幕）&#xA;https://www.youtube.com/watch?v=R6O7tWqzEtY&#xA;File.io # https://www.file.io/&#xA;允许非注册用户上传并分享文件，免费版最大可分享 2GB 文件。文件下载一次之后会自动删除。&#xA;WeTransfer # https://wetransfer.com/&#xA;允许非注册用户上传并分享文件，免费版最大可分享 2GB 文件。一周之后自动删除文件。&#xA;Google Drive（谷歌云盘） # https://drive.google.com/&#xA;Google 服务之一，需要有 Gmail 账号才能使用。这意味着，你需要使用手机号码来完成注册验证，这一步可能会暴露你的身份。请一定不要使用中国手机号码来注册。&#xA;免费版本有 15GB 空间。但如果你非常在意隐私和数据安全，那么请谨慎选择 Google 服务。&#xA;Nextcloud # https://nextcloud.</description>
+    </item>
+    <item>
+      <title>密码管理器</title>
+      <link>http://localhost:1313/docs/04-software/password/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/04-software/password/</guid>
+      <description>密码管理器 # 无论在哪个操作系统上面，都推荐使用 KeePass 及其衍生软件。&#xA;https://keepass.info/download.html&#xA;你可以在这里找到 KeePass 以及适用于每种操作系统的 KeePass 衍生版本。&#xA;这篇文章详细介绍 KeePass 的用法： https://sspai.com/post/44126&#xA;1. 什么是安全的密码？ # 一个安全强大的密码应该包括：至少16位字符，包含大小写字母、阿拉伯数字和特殊符号，而且不能使用常见单词、常见词组。&#xA;像这样的就不是一个好密码和强密码：&#xA;iloveyou123&#xA;像这样的才是好密码和强密码：&#xA;t~RWJiYk5}%Y^a44&#xA;2. 为什么要使用密码管理器？ # 不用密码管理器的人，会怎样管理密码呢？&#xA;大多数人会设置比较简单的密码，方便记忆。&#xA;还会在不同网站使用相同的密码，或者类似的密码。&#xA;还会把密码保存在浏览器里，方便下次直接登录。&#xA;还有些人会把密码用明文形式存储在电脑或者手机的记事本里，而且这个记事本也不加密。&#xA;如果你也这样操作，那可真的太危险啦！&#xA;密码管理器有两个作用：&#xA;生成唯一的、随机的、复杂的密码。唯一，意味着不同网站使用不同密码。即使 A 网站的密码库泄漏，黑客也无法得知你在 B 网站、C 网站的密码。随机和复杂，意味着它不是常见单词、常见数字，而是随机字符。像上面举例的那个 t~RWJiYk5}%Y^a44 就是唯一、随机的密码。&#xA;保存所有密码。既然你给每个网站生成唯一的、随机的、复杂的密码，那么你的脑袋肯定记不住它们，因此就需要密码管理器帮你保存这些密码。&#xA;这时，你唯一需要记住的，就是密码管理器本身的密码。密码管理器相当于一个“保险箱”，你只需要记住保险箱的密码，而不用去记里面几十、上百个随机密码。&#xA;【请注意】使用密码管理器的时候，一定一定要做到：保存好你的密码数据库文件，并且记住你的密码管理器密码。&#xA;3. 不建议的操作 # 不建议在手机上面使用密码管理器；&#xA;不建议使用在线密码管理器；&#xA;更不建议直接将密码保存在浏览器里。</description>
+    </item>
+    <item>
+      <title>其它软件</title>
+      <link>http://localhost:1313/docs/04-software/others/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/04-software/others/</guid>
+      <description>其它软件 # 一、音频及视频播放器 # 无论在哪个系统上面，都推荐使用 VLC player.&#xA;https://www.videolan.org/vlc/&#xA;在介绍隐私与安全的时候，冷不丁开始介绍多媒体播放器，是不是多此一举呢？并非如此。正如我们很多次说过的那样，安全与隐私与许多因素相关，其中非常重要的一点就是：不要使用国产软件。&#xA;我们设想，你可能也是个喜欢听音乐、看电影的人，总会用到多媒体播放器。既然要用，就用一个干净、安全的播放器吧，而不是随便下载一个国产软件。&#xA;二、还有很多 # 还有一些软件，我们将它放在下一部分《上网安全》的相关小节来介绍。&#xA;此外，不同人的使用情况差别很大，我们很难在此列举所有类型的软件，而只能罗列一些大家都需要的类型。&#xA;如果你在这里没有找到自己需要的软件，请按照本文开头的几个原则，自己搜索寻找。&#xA;比如，你想寻找开源的视频编辑软件，那就搜索“开源软件+视频编辑”，或者 &amp;ldquo;open source+video editor&amp;rdquo;，很容易就能找到一些软件。</description>
+    </item>
+    <item>
+      <title>Signal 专门页面</title>
+      <link>http://localhost:1313/docs/04-software/signal/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/04-software/signal/</guid>
+      <description>Signal 专门页面 # 越来越多的人使用 Signal 作为主要的加密聊天软件，因此有必要专门为它写一篇文档。&#xA;一、介绍 # Signal 是一款开源的聊天软件，支持端到端加密。也就是说，虽然你的聊天记录会经过 Signal 服务器中转，但只有消息发送者和接收者才能解密和阅读内容，别人看不到消息内容，除非发送者或接收者的电脑、手机本身存在监控软件。&#xA;二、安装 # 出于安全考虑，建议优先选择 Signal 手机端，并且最好将它安装在一台单独的手机上（也就是我们之前说的“安全手机”），不要与其它中国国产软件安装在同一台机器上。&#xA;手机端安装 # iPhone 或 iPad，可以直接在 App Store 里搜索 Signal - Private Messenger。 https://apps.apple.com/us/app/signal-private-messenger/id874139669&#xA;Android 设备，可以在 Google Play Store 搜索 Signal - Private Messenger。 https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms&#xA;如果你的 Android 设备没有 Google Play Store，你也可以从 APKPure 搜索下载安装。 https://apkpure.com/signal-private-messenger/org.thoughtcrime.securesms&#xA;电脑端安装 # 访问 Signal 的官方网站： https://www.signal.org/download/&#xA;选择与你的电脑操作系统对应的版本。&#xA;三、注册账号 # Signal 默认使用手机号码注册。&#xA;前两年，中国的手机号码就已经收不到 Signal 的注册验证码。新注册用户需要使用其他国家的号码，或者网络虚拟号码。&#xA;如果你是以前使用中国手机号码注册的 Signal，强烈建议你删除账号，并使用其它不与真实身份关联的号码重新注册。关于删除账号的方法，请看本文第六部分。&#xA;四、设置用户名，隐藏手机号码 # 虽然 Signal 是一个安全的加密聊天软件，但在安装之后也需要一些简单设置，才能让它更加安全。</description>
+    </item>
+    <item>
+      <title>使用 VPN 的场景</title>
+      <link>http://localhost:1313/docs/05-internet/vpn/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/05-internet/vpn/</guid>
+      <description>使用 VPN 的场景 # 一、为什么使用 VPN # 对于许多中国用户来说，提起使用 VPN, 首先想到的就是“翻墙”。&#xA;的确，VPN 可以帮忙翻墙，但这并不是它唯一的用途，我们在其它很多场景之下都需要使用 VPN.&#xA;1. 在公共的网络环境里 # 比如外出住酒店时，使用酒店的 WiFi， 这时就应该全程开着 VPN, 让自己的网络流量加密传输，以免被同一个局域网里的人（也就是其他连接到酒店 WiFi 的人）窥探。在咖啡馆、机场等处，也是同样的道理。&#xA;2. 隐藏真实的 IP 地址 # 比如你常住在美国，从事一些线上匿名活动，有一些匿名的网络账号，你不希望服务商（比如 Gmail）知道你在美国。这时你就可以选择美国以外的 VPN, 比如欧洲或者东南亚，假装自己来自这些地方。&#xA;3. 帮助你突破网络封锁 # 这也就是所谓的翻墙。这一点大家都已经很熟悉，这里就不过多展开。&#xA;由此可见，无论你是否生活在中国境内，都建议你使用 VPN 上网，它能更好地保护你的安全与隐私。&#xA;下面先一些集成式的 VPN 软件和服务（也就是下载、安装之后能够直接用的），再介绍怎样自己搭建 VPN 服务。&#xA;二、在中国使用 VPN # 由于中国严酷的网络封锁，选择合适的 VPN 变得异常困难。很难说有哪一种 VPN 在中国能够长期稳定且快速地使用。在中国使用 VPN 需要技术，更需要耐心。&#xA;迷雾通 Geph # https://geph.io/zhs&#xA;开放源代码，公司注册在爱沙尼亚，属于欧盟公司。欧盟有全世界最严格的数据隐私保护法。&#xA;迷雾通支持所有操作系统，除了 iOS. 免费版的速度相对较慢，收费版每月 5 欧元，它有一种特殊的机制，保证用户付款过程中不会泄漏真实身份。&#xA;蓝灯 Lantern # https://lantern.io/zh-Hans&#xA;支持所有操作系统。尽管在中国一些地区连接困难，但在有些地区仍然可以使用。</description>
+    </item>
+    <item>
+      <title>使用 Tor 浏览器保持匿名</title>
+      <link>http://localhost:1313/docs/05-internet/tor/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/05-internet/tor/</guid>
+      <description>使用 Tor 浏览器保持匿名 # 当我们说“使用 Tor 浏览器保持在线匿名”的时候，先要区分清楚，你什么时候想保持匿名，什么时候想保证数据加密，这两者不一样。&#xA;当你想在网络上匿名的时候，主要是不想让别人（无论是警察还是网站的管理员）知道是你在使用某个网站或服务。匿名上网时，除了不能透露任何真实的个人信息，最好也不要透露你的电子设备（包括操作系统、浏览器版本、网络连接状态等）信息。&#xA;Tor 浏览器是基于 Firefox 浏览器而开发的、专门保护用户匿名的浏览器。&#xA;一、工作原理 # Tor 网络在全世界范围内有成千上万的节点，用于转发用户的网络请求和流量。当用户使用 Tor 浏览器上网的时候，它会自动为用户选择三个服务器转发流量。&#xA;比如，当你访问 Facebook 的时候，Tor 浏览器可能会帮你连接到加拿大→德国→美国的节点，最终，Facebook 看到的是一位来自美国的用户正在访问。&#xA;当你在同一个浏览器里访问另一个网站的时候（比如 Google），Tor 浏览器又会为这个目标网站选择新的三个转发节点，可能会是加拿大→卢森堡→荷兰，于是 Google 看到的是一位来自荷兰的用户正在访问。&#xA;通过这样的随机分配和流量中转，保证目标网站难以追踪用户的真实来源。比如下面两张图片所示：&#xA;二、注意事项 # 使用 Tor 浏览器要特别留意的是，任何涉及个人真实身份信息和隐私信息的内容，不要直接通过 Tor 浏览器转发，比如不要使用它登录 Amazon 购物，更不要在使用 Tor 浏览器的时候输入信用卡信息，因为这些都会关联到你的真实身份。&#xA;三、中文指南 # 由于 Tor 浏览器的官方网站在中国被封锁，它的所有公开节点（relay）也在中国被封锁，中国用户想要使用 Tor 浏览器和 Tor 网络就比较困难。&#xA;Tor 官方提供一份针对中国用户的指南，可以帮助你下载安装 Tor 浏览器，并且成功连接到 Tor 网络。 https://github.com/torproject/tor4zh&#xA;还有一个中文的长毛象账号，会经常发布 Tor 浏览器的使用方法。 https://mastodon.social/@tor4zh</description>
+    </item>
+    <item>
+      <title>当心包含恶意代码的链接</title>
+      <link>http://localhost:1313/docs/05-internet/links/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/05-internet/links/</guid>
+      <description>当心包含恶意代码的链接 # 一、恶意链接攻击方式及防护 # 如果你是比较知名的活动人士（无论实名还是匿名），就有可能遭遇政府黑客的定点攻击。&#xA;比较常见的一种网络定点攻击方式是钓鱼链接。简单说就是，攻击者发来一个模仿知名网站的链接，骗你点击。点击之后，这个链接就会悄悄执行攻击者早已设置好的恶意代码，获取你的真实 IP 地址等信息。&#xA;目前没有什么技术工具可以百分之百防止这种攻击，只能请你自己养成良好的上网习惯：&#xA;不要点击可疑的链接，这需要你平时就留意网站域名。在移动互联网时代，越来越多的人不看域名和链接，就容易被这种方式攻击。&#xA;如果发现可疑链接，可以使用 Tor 浏览器打开，查看其中内容。Tor 浏览器默认的一些安全设置，以及它特有的信息转发方式，可以隐藏你的浏览器指纹也真实 IP 地址。详见 Tor 浏览器相关小节的内容。&#xA;二、恶意链接攻击案例 # 2024年4月，Twitter 知名博主“李老师不是你老师”收到一个关注者发来的信息，其中包含三个钓鱼链接。&#xA;一个钓鱼链接的域名是 biiliblii.com（不要点击），仿冒中国流行的视频网站 bilibili.com，请仔细看看它们的区别。&#xA;另一个钓鱼链接的域名是 telegra.best，仿冒匿名文章分享平台 telegra.ph 的域名。&#xA;有人写了一篇长文，详细分析和解释这次钓鱼事件，点击以下链接查看：&#xA;https://medium.com/@programalsothink/%E9%92%88%E5%AF%B9%E6%9D%8E%E8%80%81%E5%B8%88%E7%9A%84%E9%92%93%E9%B1%BC%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E7%9A%84-%E6%B7%B1%E5%BA%A6%E6%8A%80%E6%9C%AF%E5%88%86%E6%9E%90-2f663b428f5e</description>
+    </item>
+    <item>
+      <title>使用不同的在线身份</title>
+      <link>http://localhost:1313/docs/05-internet/identities/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/05-internet/identities/</guid>
+      <description>使用不同的在线身份 # 在前面的章节里谈到电子设备的时候，我们建议大家至少拥有两台智能手机，也就是用于安装国产软件的普通手机，和用于安装安全通讯软件的安全手机。但这样做还不够。&#xA;对于从事敏感活动的行动者来说，拥有多个手机设备的同时，还要拥有多个虚拟的在线身份。&#xA;开设和管理多个虚拟在线身份是件很不容易的事，并非因为它需要很多技术工具的辅助，而是因为它需要你很小心而且很有耐心。一个小小的疏忽可能就会暴露你的真实身份，给你带来风险。&#xA;既然是虚拟身份，就不要与你的真实身份有任何关联。不能关联身份证、银行卡，也不能关联手机号码，甚至也不能关联与你的真实身份绑定的邮箱。因此，请尽量选择那些不需要手机号码的网络服务。&#xA;假设你要为虚拟在线身份 A 创建一系列账号，大致是这样一个操作思路：&#xA;在一个单独的电脑操作系统里进行以下操作，不与你个人常用的系统关联。比如我们前文提到的 Live USB 系统。&#xA;如果确实不会在单独的系统里面操作，那至少要在同一台电脑上面创建另一个不同的用户，而不与自己日常使用的用户关联。&#xA;进入系统之后，立即打开 VPN，并全程开启 VPN, 以便隐藏真实 IP 地址。&#xA;使用安全的浏览器，比如 LibreWolf，以便 VPN 真正发生作用。有些浏览器（比如 Chrome）默认打开 WebRTC 功能，即使打开 VPN，也可能会泄漏真实 IP 地址。&#xA;注册一个安全的电子邮箱，比如 Tuta 或者 Proton mail。许多在线服务都需要用邮箱注册。&#xA;用这个安全的电子邮箱去注册其它网络服务，比如 Twitter / Mastodon 等。&#xA;无论注册电子邮箱还是其它网络服务，请一定使用密码管理器为它们各自创建独一无二的密码。千万不要在多个网站上面使用同一个密码。&#xA;以后每次登录这个邮箱以及与它相关的网络账号，都要全程开启 VPN, 而不要用你的真实 IP 地址登录。&#xA;谨慎操作之一：在你使用 VPN 登录虚拟在线身份 A 的时候，千万不要同时去登录其它账号（包括关联你的真实身份的账号，以及另外的虚拟在线身份 B 和 C），以免虚拟在线身份 A 与其他账号之间产生关联。&#xA;谨慎操作之二：不要在任何地方提及你的虚拟在线身份。不要对现实生活中的同事、朋友提起，更不要在你用真实身份注册的社交媒体上提起。甚至如果你想做得更严格一些，还应该尽量将真实身份的网络形象与虚拟身份的网络形象隔离，包括行文风格、语言习惯、活跃时间等等都要有所差异。</description>
+    </item>
+    <item>
+      <title>为你的账号开启两步验证</title>
+      <link>http://localhost:1313/docs/05-internet/2fa/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/05-internet/2fa/</guid>
+      <description>为你的账号开启两步验证 # 一、什么是两步验证 # 中国的互联网服务普遍没有登录的两步验证（2FA, Two-Factor Authentication）功能，但主流的国际互联网服务都有这一选项。&#xA;所谓两步验证，就是在登录的时候，输入用户名和密码之后，还需要输入一串验证码。&#xA;两步验证分为几种方式：&#xA;二、使用手机号码接收验证码 # 这种方式并非最可靠的，但有些网站只提供这种验证方式。&#xA;这里再次提醒，因为你注册的是不同的在线虚拟身份，所以一定不要使用已经实名的中国手机号码。如果你使用国外的手机号码，使用手机号码接收验证码并无不妥。&#xA;三、使用专门的两步验证 App # 有些网站提供一种功能，允许你在手机上安装 App, 绑定这个网站，每次登录的时候，两步验证 App 上面会自动生成六位数字，有效期仅有一分钟。&#xA;Android 用户，推荐使用 Aegis Authenticator；&#xA;iOS 用户，推荐使用 Tofu.&#xA;如果你不介绍使用 Google 家的服务，那么在 Android 和 iOS 上面都有 Google Authentication 可用。&#xA;Android https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&#xA;iOS https://apps.apple.com/us/app/google-authenticator/id388497605</description>
+    </item>
+    <item>
+      <title>即时通讯和视频通话</title>
+      <link>http://localhost:1313/docs/06-communication/im/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/06-communication/im/</guid>
+      <description>即时通讯和视频通话 # 即时通讯和视频通话相关软件介绍，请查看《常用软件推荐》部分。&#xA;即时通讯软件&#xA;视频通话及会议</description>
+    </item>
+    <item>
+      <title>电子邮件安全</title>
+      <link>http://localhost:1313/docs/06-communication/mail/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/06-communication/mail/</guid>
+      <description>电子邮件安全 # 一、注册匿名邮件服务 # 使用匿名方式注册国外的加密邮件服务，它们包括：&#xA;Proton Mail https://proton.me&#xA;Tuta Mail https://tuta.com/&#xA;Riseup Mail（需要专门申请账号） https://riseup.net/&#xA;Proton Mail 和 Tuta Mail 都有“端对端加密”功能，邮件的内容只有发送者和接收者才能够加密和解密，即使邮件服务商也看不到邮件内容。&#xA;【请注意】端对端加密功能只限于同一家邮件服务商内部，也就是只有 Proton → Proton, 或者 Tuta → Tuta 的时候，才能够使用端对端加密。Proton 与其它邮箱之间的通讯并不会端对端加密，Tuta 与其它邮箱之间的通讯也不会端对端加密。&#xA;不过，Proton Mail 内置一个很好用的 PGP 加密功能，便于 Proton Mail 和其它 Email 之间的加密能信。&#xA;详细使用说明请看 Proton Mail 网站： https://proton.me/support/how-to-use-pgp&#xA;二、谨慎下载和打开邮件附件 # 黑客经常向目标对象发送带有恶意附件的电子邮件，活跃的活动人士比普通人更有可能收到这种恶意附件。&#xA;这些恶意附件乍看上去和普通的 Word、PowerPoint 、PDF、图片文件没有区别，但它可能包含恶意代码。只要在本地电脑点击打开，它就会执行恶意代码。结果就是，要么暴露匿名人士的地址和身份，要么导致电脑里的重要信息泄漏。&#xA;这种攻击方式广泛存在，但许多人似乎并不知道、更不在意它。&#xA;如果你经常使用邮件与人沟通，请你每次都记得要用 Dangerzone 打开你所下载的附件。Dangerzone 是一个简单的隔离程序，它帮你清理不信任的文档，过滤掉这些文件中可能携带的任何恶意脚本。&#xA;https://dangerzone.rocks/&#xA;是的，即使是你认识的、信任的人发送的邮件，你也要用 Dangerzone 检测附件。因为熟人、朋友的邮箱可能会被黑客攻陷，从而用来对你展开攻击。这种情况过去就曾发生过，未来也有可能发生。&#xA;这里有一篇关于 Dangerzone 的文章（英文），推荐你阅读了解：&#xA;https://www.wired.com/story/dangerzone-open-email-attachments-safely/&#xA;三、使用 PGP 加密邮件 # PGP 全称 Pretty Good Privacy, 是一种古老且成熟的加密方式，它使用一种“非对称加密”的方式来加密和解密邮件。</description>
+    </item>
+    <item>
+      <title>借助 Mailvelope 使用 PGP 加密邮件</title>
+      <link>http://localhost:1313/docs/06-communication/mailvelope/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/06-communication/mailvelope/</guid>
+      <description>借助 Mailvelope 使用 PGP 加密邮件 # 传统上，使用 PGP 加密、解密邮件是件技术活，很多新手不知应该如何操作。Mailvelope 的出现总算让问题变得简单多了！&#xA;Mailvelope 是一个浏览器扩展，可以安装在 Firefox（包括 LibreWolf）浏览器上。安装成功之后，如下设置和使用。&#xA;1. 第一步：为你的邮箱生成密钥 # 点击顶部菜单的 Key management, 会出现如下界面。&#xA;依次填入：你的名字（你想以什么名字来使用这个邮箱，由你决定）、电子邮箱，最后为你的秘钥设置密码，密码需要输入两次。然后点击右下角的 Generate 完成。&#xA;2. 第二步：查看你的密钥 # 完成第一步之后，Mailvelope 就会为你的邮箱生成一对密钥：私钥和公钥。&#xA;这时，你会在 Key management 列表当中看到你的邮箱和刚刚生成的秘钥。点击你的邮箱地址，就会看到密钥的详情，如下图。&#xA;3. 第三步：导出你的公钥 # 在第二步的界面中，点击右上角的 Export, 就可以导出自己的公钥（Public）和私钥（Private）。公钥要公开分享给全世界（至少要分享给你的通信对象），而私钥却要自己保管好，绝对绝对不能把私钥告诉任何人。&#xA;选择公钥（Public），你会看见一长串的随机字符，如下图。点击右下角的 Save, 就可以将公钥保存成一个 .asc 文件，将它保存在电脑里。&#xA;4. 第四步、将你的公钥分享给别人 # 公钥的作用是：当 A 想要给你发送加密邮箱时，A 要知道与你的邮箱对应的公钥。所以，你应该将公钥分享给别人。一般有这样几种做法：&#xA;将导出的公钥 asc 文件作为邮件附件，直接发送给通信对象。 将公钥的 fingerprint 信息放在邮件的签名里。请回到第二个步骤的图中，找到图中右下角的 fingerprint, 复制它后面那一串包含大写字母和阿拉伯数字的字符。将这一串字符完整地放在邮件签名里。别人通过这一串 fingerprint 就能找到你的 PGP 公钥。 将公钥的 .asc 文件或者 fingerprint 放在你的个人网站、社交媒体的介绍里，同时不要忘了附上邮箱地址，不然别人不知道要写信给谁。 将你的公钥 .</description>
+    </item>
+    <item>
+      <title>给你的数据重要性分级</title>
+      <link>http://localhost:1313/docs/07-data/level/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/07-data/level/</guid>
+      <description>给你的数据重要性分级 # 尽管我们的电脑、手机和硬盘里存储着大量数据，但我们只要稍微思考一下就会发现，这些数据的重要性并不一样。&#xA;有些可能是网络上随便都能下载到有图片、视频，而且内容也并不敏感；有些可能是重要的个人资料，比如身份证、护照、毕业证、保险合同等资料；有些可能是你的公开身份所做工作的资料；还有些可能是你的匿名身份正在参与的一些敏感的事情……&#xA;总之，稍微想几秒钟，你就会发现，这些信息的重要性和危险性都不一样。身份证照片如果被黑客偷走，确实会带来很大麻烦。但匿名参与敏感事件的信息如果被警察掌握，可能不只是麻烦而是风险。&#xA;因此，在我们正式进入数据安全的相关软件工具之前，请先根据自己的实际情况，认真严肃地给你手上的数据做一次重要性和危险性的分级。&#xA;这里我们只谈那些最有可能给你带来危险的数据，也就是你所从事的敏感活动相关的数据，它们可能包括：&#xA;与你的在线虚拟身份有关的所有文件；&#xA;你所从事的公民行动的所有文件；&#xA;你的浏览器使用记录和缓存；&#xA;各类聊天软件的本地记录和缓存等。&#xA;敏感和重要的文件，最好不要保存在电脑硬盘上面，而是改用非常小的 U 盘保存，而且要将整个 U 盘完全加密。关于加密，详见后文关于 Veracrypt 的内容。</description>
+    </item>
+    <item>
+      <title>分享之前，删除元数据</title>
+      <link>http://localhost:1313/docs/07-data/metadata/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/07-data/metadata/</guid>
+      <description>分享之前，删除元数据 # 一、什么是“元数据”泄漏 # “元数据”英文叫 metadata，意思是关于数据的数据。不同文件类型包含的元数据量不同，一张照片可能包括上百项元数据，比如这些：&#xA;拍摄设备型号 拍摄时间（会带有时区信息） 作者姓名/缩写 公司/组织名称 最后修改时间 最后修改设备型号 最后修改软件 拍摄位置 当你把图片、照片和文档发给别人的时候，或者分享到社交媒体的时候，如果没有清除这些元数据，它们就很有可能会泄漏你的很多个人信息。无论你在网上是公开活动还是匿名活动，都应该养成好的习惯，把图片和文档的元数据清除之后再分享出去。&#xA;二、怎样防止“元数据”泄漏 # 有一些软件可以帮你清理元数据，不同操作系统里的软件不一样，但操作都比较简单。&#xA;1. Windows 系统 # ExifCleaner https://exifcleaner.com/&#xA;ExifTool https://exiftool.org/&#xA;2. macOS 系统 # ExifCleaner https://exifcleaner.com/&#xA;ExifTool https://exiftool.org/&#xA;3. GNU/Linux 系统 # ExifCleaner https://exifcleaner.com/&#xA;Metadata Cleaner https://metadatacleaner.romainvigier.fr/&#xA;Exiftool（命令行工具） https://exiftool.org/install.html&#xA;4. iOS 系统 # Exif Metadata https://apps.apple.com/us/app/exif-metadata/id1455197364&#xA;5. Android 系统 # Scrambled Exif https://play.google.com/store/apps/details?id=com.jarsilio.android.scrambledeggsif&#xA;https://f-droid.org/packages/com.jarsilio.android.scrambledeggsif/</description>
+    </item>
+    <item>
+      <title>使用 Veracrypt 加密文件和磁盘</title>
+      <link>http://localhost:1313/docs/07-data/veracrypt/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/07-data/veracrypt/</guid>
+      <description>使用 Veracrypt 加密文件和磁盘 # Veracrypt 是一款开源的加密软件，支持 Windows, macOS 和 Linux 等操作系统。&#xA;使用 Veracrypt, 能够将单个文件、文件夹加密，还可以将整个系统乃至整个移动存储设备加密。&#xA;这是目前最为广泛使用的一款文件和磁盘加密软件，网站只有英文内容，安装之后可以设置为中文界面。&#xA;https://www.veracrypt.fr/en/Downloads.html&#xA;这里有一份详细的使用指南（繁体中文）&#xA;http://wiki.kmu.edu.tw/index.php/%E7%A1%AC%E7%A2%9F%E9%9A%A8%E8%BA%AB%E7%A2%9F%E5%8A%A0%E5%AF%86-VeraCrypt%E8%BB%9F%E9%AB%94%E6%95%99%E5%AD%B8&#xA;【特别提醒】在正式开始操作之前，请一定认真阅读使用指南，并将你的所有重要数据备份。</description>
+    </item>
+    <item>
+      <title>定期备份你的重要数据</title>
+      <link>http://localhost:1313/docs/07-data/backup/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/07-data/backup/</guid>
+      <description>定期备份你的重要数据 # 你应该养成良好的数据备份习惯，尤其是将那些重要的文件定期备份，以免电脑、手机丢失和损坏之后导致重要数据丢失。&#xA;备份的一个原则是，不要让这个文件只有一份，而应该同时在多个（至少两个）设备上面保存，以免其中之一遗失或损坏之后永远失去这些文件。&#xA;前面已经推荐介绍强大的文件和系统加密软件 Veracrypt。 你要备份重要数据的时候，也应该使用 Veracrypt 加密所有的文件。可以按照类型，分成若干个不同的加密文件。比如重要的个人证件合同是一类，生成一个加密文件；个人私密照片是一类，生成另一个加密文件；敏感的线上活动是一类，单独生成一个加密文件……诸如此类。&#xA;Veracrypt 的加密文件可以复制、移动。也就是说，在电脑硬盘上面加密的文件，可以复制到移动硬盘保存。以后需要使用的时候，也可以使用 Veracrypt 从移动硬盘打开。</description>
+    </item>
+    <item>
+      <title>使用 BleachBit 销毁文件</title>
+      <link>http://localhost:1313/docs/07-data/destroy/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/07-data/destroy/</guid>
+      <description>使用 BleachBit 销毁文件 # 有些时候，数据安全还包括销毁文件。一些文件如果落入黑客或者警方手中，可能会给你和你的伙伴带来极大风险。因此，只有加密保存还不够。这时你需要将那些敏感的、但却不再需要的资料彻底销毁。&#xA;一般人的做法是在电脑上面点击“删除”，并清空回收桶（无论使用哪种操作系统，都有这样的功能）。&#xA;但是，仅仅这样做完全不够！警方手中的机器可以在很短时间之内恢复这些数据。你需要更专业更强大的工具来帮你彻底清理和销毁文件。&#xA;在这里我们推荐 BleachBit, 这也是电子前沿基金会（EFF）推荐的软件。&#xA;最详细的指南，还是应该看 BleachBit 的官方文档。 https://docs.bleachbit.org/&#xA;虽然它是全英文的，但有丰富的配图和视频演示。</description>
+    </item>
+    <item>
+      <title>数字安全层面</title>
+      <link>http://localhost:1313/docs/08-police/digital/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/08-police/digital/</guid>
+      <description>面对警察查手机：数字安全层面 # 假设你无法拒绝警察翻查你的手机，他们甚至会带走你的电子设备。最简便的方法是准备一台专门应对警察搜查的备用手机，里面没有任何“敏感内容”或者“敏感软件”。&#xA;你需要做好心理准备，警察（或者街道办工作人员等）还会强制你安装反诈骗 APP 等用于监控的软件。&#xA;由于这部手机上可能安装了能监视数据和记录的软件，平常不使用时候可以不开机，以及放到手机信号屏蔽的法拉第袋（又称“法拉第笼”）中。法拉第袋能够严重削弱甚至屏蔽内部设备的无线电信号，防止手机在你不知情或不适当的场景中发送和接受信号。&#xA;但不要完全依赖法拉第袋，它只能阻止无线电通信，不能阻止其它恶意操作。比如，一些恶意软件会启动手机录音功能，等待手机被取出法拉第袋之后，再偷偷传送录音。&#xA;如果你携带的是一台安装了 VPN、加密聊天软件的手机。为了防止被警方获得重要信息，你应该始终开启加密聊天软件的“自动销毁”功能，并且将销毁时间设置得尽可能短，比如 1 分钟、10 分钟。这样即使警方强力打开你的手机，也无法看到任何聊天记录。但这样的做法并不能保证绝对安全，警方发现你的手机装有VPN和加密聊天软件，可能会对你做进一步调查。&#xA;更为复杂的方法是在一部手机上装载不同系统，或者把敏感内容放入安全沙盒内。但许多自称可以具备这类功能的手机、系统和软件并不一定安全，所以这种方法只适合具备较强技术背景的使用者，在此不做详述。</description>
+    </item>
+    <item>
+      <title>法律层面</title>
+      <link>http://localhost:1313/docs/08-police/legal/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/08-police/legal/</guid>
+      <description> 面对警察查手机：法律层面 # 作为一个公民，我们需要了解法律赋予我们的权利，以及警察在执行公务时，应当遵守哪些法律程序和受到哪些限制，以下是你需要注意的关于警察查手机的相关法律层面内容。&#xA;一、了解查手机行为在法律上的含义 # 1. 公民的通讯权受宪法保护 # 手机里的内容和通讯权是关联的。警察查手机的行为，事关公民基本的通讯自由、通讯秘密，不得随意进行，更不能与宪法相冲突。&#xA;参考法律：《宪法》第四十条&#xA;中华人民共和国公民的通信自由和通信秘密受法律的保护。除因国家安全或者追查刑事犯罪的需要，由公安机关或者检察机关依照法律规定的程序对通信进行检查外，任何组织或者个人不得以任何理由侵犯公民的通信自由和通信秘密。&#xA;2. 在严格限制和法定程序下才可以查 # 必须针对有违法犯罪嫌疑的人； 必须遵守法律程序：二人以上、出示工作证件、检查文书、告知理由。 参考法律一：《人民警察法》第九条&#xA;为维护社会治安秩序，公安机关的人民警察对有违法犯罪嫌疑的人员，经出示相应证件，可以当场盘问、检查；经盘问、检查，有下列情形之一的，可以将其带至公安机关，经该公安机关批准，对其继续盘问：（一）被指控有犯罪行为的；（二）有现场作案嫌疑的；（三）有作案嫌疑身份不明的；（四）携带的物品有可能是赃物的……&#xA;参考法律二：《治安管理处罚法》第八十七条&#xA;公安机关对与违反治安管理行为有关的场所、物品、人身可以进行检查。检查时，人民警察不得少于二人，并应当出示工作证件和县级以上人民政府公安机关开具的检查证明文件。对确有必要立即进行检查的，人民警察经出示工作证件，可以当场检查，但检查公民住所应当出示县级以上人民政府公安机关开具的检查证明文件……&#xA;针对手机内电子数据的检查有更严格的规定 上述检查一般只针对物品，而针对手机内电子数据的检查，通常需要遵守《刑事诉讼法》、《公安机关办理刑事案件程序规定》、《公安机关办理刑事案件电子数据取证规则》等有关搜查、扣押、封存、提取更为复杂严格的规定。&#xA;3. 随意查手机是警权对公民权的侵犯 # 普通人的日常行为并不能和“有违法犯罪嫌疑”直接关联。警察针对不特定个人随意查手机，是将每个人的通讯和隐私置于随意暴露的危险境地，可能极大损害公民通讯权、隐私权。&#xA;二、建议的应对方式 # 礼貌地要求警察出示工作证件。 礼貌地询问他们为什么要检查你的手机，有没有相关法律文件。 评估具体状况，可以采取坚持的方式，但有被带走继续询问的风险。 在某些情况下，也可以考虑交出自己的手机，这是一种谨慎的策略，比如你正在使用应对警察检查的备用手机或其他特殊情况。 对于警察的违法行为，可以投诉控告。 参考法律一： 《人民警察法》第四十二条&#xA;人民警察执行职务，依法接受人民检察院和行政监察机关的监督。&#xA;参考法律二：《人民警察法》第四十三条&#xA;人民警察的上级机关对下级机关的执法活动进行监督，发现其作出的处理或者决定有错误的，应当予以撤销或者变更。&#xA;参考法律三：《人民警察法》第四十四条&#xA;人民警察执行职务，必须自觉地接受社会和公民的监督。人民警察机关作出的与公众利益直接有关的规定，应当向公众公布。&#xA;参考法律四：《公安机关执法细则》（第三版）第一章&#xA;公安机关人民警察执法办案，严禁下列行为：①弄虚作假，隐瞒案情，包庇、纵容违法犯罪活动；②刑讯逼供或者体罚、虐待违法犯罪嫌疑人；③非法剥夺、限制他人人身自由，非法搜查他人的身体、物品、住所或者场所；④玩忽职守，不履行法定义务；⑤其他违法乱纪的行为。 争取他人支持。可以请身边朋友或其他行人（如果你是独自一人）的支持，以更好监督警察依法办事。 </description>
+    </item>
+    <item>
+      <title>准备事项</title>
+      <link>http://localhost:1313/docs/09-returnee/preparation/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/09-returnee/preparation/</guid>
+      <description>准备事项 # 一、日常电子设备使用习惯 # 国产软件跟国外安全社交软件（包括但不限于 Telegram、Signal 等）不要混装在同一个手机上。否则，微信和其它国产软件可能盗取你的文件、图片，悄悄读取你的其它资料，甚至未经同意就打开你的手机麦克风权限等。也就是说，日常使用两部手机，其中一部只安装国产软件，另外一部只安装国外安全社交软件。&#xA;而且建议，安装国外安全社交软件的那部手机最好不要是国产手机，比如华为、荣耀、小米等。如果无法做到使用国外品牌的手机，至少要保证国产软件和国外软件严格隔离。&#xA;关于隔离电子设备，详细请看前文内容。&#xA;最好使用苹果设备——司法实践显示技术苹果设备较难破解。但是根据 2024 年 1 月的新闻，北京司法鉴定中心的合作机构已经可以追踪 AirDrop 文件投递者的真实身份。详细请看前文内容。&#xA;不要用日常手机号收取验证码，不要使用能够关联到真实身份的邮箱注册新的化名身份。&#xA;也就是说，当你需要注册一个化名身份（无论邮箱还是社交网站）的时候，请从第一步就做到与真实身份的分隔，不要让它们之间有任何联系。详细请看前文内容。&#xA;Telegram、WhatsApp、Signal、Twitter、邮箱等，不要使用自己的真实信息和日常联系方式。&#xA;回国后，安全期之后再开始使用 Signal、Gmail 等软件。&#xA;二、使用“空白”设备或清理原有设备 # 不携带原有手机、电脑、iPad 回国。要么与信任的、安全的朋友交换手机；要么买一部“空白”的二手手机回国。&#xA;把敏感资料备份在海外，手机和电脑格式化并重装系统。不要冒数据被恢复的风险，即使恢复的可能性只有 1%。&#xA;Telegram 设置隐藏号码、加密聊天、两步认证。&#xA;见警察的时候尽量不带手机。如果必须带手机， 喝茶的时候只带装有国产 App 的手机。&#xA;三、提前准备律师委托书和其他资料 # 1. 律师委托书 # 把自己直系亲属的联系方式给国内外信任的朋友。因为根据法律，只有直系亲属（父母、兄弟、配偶、子女）才有权利为你委托律师。请注意，没有登记结婚的情侣无法为对方委托律师。&#xA;自己委托：准备好自己签署的空白律师委托书和身份证资料交给国内外信任的朋友。空白律师委托书的模板可以从网上下载。&#xA;律师必须要有你的委托书和身份证资料才能要求会见。&#xA;被抓的 48-72 小时是黄金救援时间。在看守所会被警察密集的讯问和威逼利诱，律师在这期间可以给你很多建议，包括什么文件可以不签，什么问题可以不回答等等。&#xA;2. 向亲友同步日程与行踪 # 跟你最好的亲友报备航班落地时间、具体机场和行踪等。说明如果你在某个时间没有出现，则很有可能已经被警察带走。&#xA;3. 提前录制自述视频 # 自己录制一段视频，交给国内外亲友保管，万一被抓，即可公布视频。这种自述视频非常重要，可以引发媒体关注，对国际声援非常有用。&#xA;比如曹芷馨被捕之前所录视频 https://www.rfa.org/mandarin/yataibaodao/renquanfazhi/ec-01172023041804.html&#xA;四、在海外参加活动注意事项 # 网络公开场合发表言论尽量用化名（包括 Twitter、Telegram 等各种场合）。&#xA;线下现场活动佩戴口罩，以防现场有人（比如海外警察站或大使馆的线人）监控。</description>
+    </item>
+    <item>
+      <title>喝茶之前</title>
+      <link>http://localhost:1313/docs/09-returnee/before-teatime/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/09-returnee/before-teatime/</guid>
+      <description>喝茶之前 # 一、可能会被喝茶的迹象 # 参加过有特定敏感人物出席的活动，而且参加同一活动的伙伴已经被喝茶。比如，他们可能带着安装了国内软件——比如微信的手机到活动现场，导致数据泄露，也可能是其他原因导致信息泄露。&#xA;国内的家人被社区、警察等找问话。&#xA;自己收到当地使馆或警察电话（比如收到“注意言行”的警告；但不包括诈骗电话）。&#xA;如果警察打电话来找，一般危险程度较低。如果是敏感程度高、危险程度高的事，警察会直接上门找。&#xA;二、谁来了？是学校、社区、警察还是国保？ # 在现场被监控系统识别出身份信息，如果情形不太严重，会反馈到主管单位，比如学校、工作单位等。&#xA;如果你是个人或者在私企工作，通常会找你个人或者你所居住的社区。&#xA;现已实现全民监控的环境，非敏感的活动人士也可能会被喝茶。&#xA;三、来干嘛？聊天、约谈、传唤还是拘留？ # 为什么有时候反应比较慢？比如隔了一周才来找。&#xA;海关检查：国安系统； 进入海关之后：国保系统。&#xA;国安和国保系统不一样。</description>
+    </item>
+    <item>
+      <title>喝茶的时候</title>
+      <link>http://localhost:1313/docs/09-returnee/teatime/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/09-returnee/teatime/</guid>
+      <description>喝茶的时候 # 一、恐惧的来源 # 信息不对称，总有一种对方知道得比自己多的感觉。对方可能会在信息有限的情况下试图套你的信息。警察打电话一般不会告诉你是因为什么事情，怕你手机录音。&#xA;作为弱势群体的不安全感，也会感到恐惧。&#xA;对法律知识不熟悉：警察可能说根据《警察法》或者《治安管理处罚法》要求查你手机或者口头传唤等，是否要配合？&#xA;事实和证据：不清楚对方掌握多少信息和证据，比如对方告诉你参加同一个活动的伙伴已经招供、已经拿到你所参加活动的议程等。&#xA;有恐惧很正常，即使被找的次数很多，也不一定就不恐惧。恐惧无法完全消除，但有专业知识打底以及了解监控机制有助于减少恐惧。&#xA;二、喝茶的时间点 # 过海关时（国安系统）：查手机甚至搜身。&#xA;回家后（国保系统）：可以做更多的准备工作，如委托书、技术安全等。&#xA;三、对方找我喝茶的目的 # 对方带有任务。可能是上级任务，也可能是常规管控机制。&#xA;必须见你，而不在电话里说，他们害怕你将录音之后曝光。&#xA;完成报告给上级。可能一人唱白脸，一人唱红脸。&#xA;往往需要不断周旋，对方才说出目的：老练的警察最先只会说想和你“聊聊天”。&#xA;四、我被找的原因 # 网络言论？(包括国外社交网站、聊天软件、微信群等）。&#xA;与敏感人物有接触？（你参加的活动中有高度敏感人物参加，参加活动的所有人都会被找，这些是来自警察上级的监控任务）&#xA;参与活动？（策展？工作坊？项目？）&#xA;敏感日子？根据监控等级名单，如果你在名单上，敏感日子附近会警告你不要参加活动。&#xA;被找示意图（如下图）：事情小可能可以躲过去，基层警察也很忙，一般派出所做监控的人并不多，要你去派出所也是为了减轻他们自己的工作量，如果事情小可能也就算了。但如果事情大，并且是上级要求，坚持要找你，是躲不掉的。如果你不见，他们会找上级审批，对你进行传唤。&#xA;五、约谈地点 # 相约地点最好在公共场所（比如咖啡厅、麦当劳）：在公共场所，对方态度会比较客气。&#xA;一般会要求去派出所的，建议拒绝，如果对方愿意在公共场所见面，这也表示你的情况没有那么严重；如果态度强硬则没有办法，也表明情况可能相对严重。&#xA;从容相对：越恐惧，他们越高兴。经历越多了解越多，越能克服恐惧。例如通过书籍和讲座了解讯问技巧、监控方式等。&#xA;六、传唤的相关法律规定 # 行政拘留：若被拘留最长 15 天，关押在拘留所。这种一般是较小的事情。但是要留意，随着调查进展，是否可能转为刑事拘留。&#xA;刑事拘留：若被拘留少则半年，关押在看守所。&#xA;警察需出示传唤证，需注明依据和理由，要有公章和日期等；注意最后一句话：根据法律规定，被传唤人要自己保留一份。&#xA;有些警察可能也不了解法律细则。&#xA;上门找你需要开传唤证，需要弄好格式，找领导签字盖章，要走一套流程，对于警察来说工作量加大，所以一般不想上门。&#xA;有时警察说他们是口头传唤，但需要符合两个要件：①一个是现场发现违法行为；②二是要出示工作证件。我们这里讨论的情况（曾经参加过什么活动或者发表过什么言论等），大多数不适用口头传唤。&#xA;24 小时是一个节点，司法实践来说，“不得超过八小时”不适用，一定会说情况复杂，但一般遵循不超过二十四小时。&#xA;有传唤证的情况下，不服从的话就会采用暴力手段。&#xA;刑事诉讼法也有口头传唤，但与行政传唤的要件一样（同时符合两个条件），一般也不符合我们讨论的情况拘传不超过 24 小时，要么放人，如果警察认为掌握了一定证据，就可以拘留。&#xA;七、在派出所 # 文书类尽量要求自己也保留一份，并要求对方出示相关证件和文书（比如传唤证）。&#xA;在能保护自己人身安全的情况下，尽量进行博弈，可能会显示出你是懂法的，让对方小心翼翼一些。&#xA;不建议硬碰硬。因为警察审讯各种嫌疑人的经验丰富，你碰不过他。你越是心平气和、镇定自若越好。&#xA;尽量将对方拉回你自己的场域和逻辑，理性沟通；“你们不是依法治国吗？我可以跟你讲道理，但要按照法律来。”&#xA;八、可能要求 # 不出境；不跟某人、某组织联系；写保证书；说明情况（书面或口头）；退出某群；签笔录。&#xA;保证书实际是警察为了完成任务，方便他们向上级汇报。&#xA;万不得已的情况下，保证书也可以写，但内容尽量模糊，比如写“保证遵守宪法法律规定”，“不做违法犯罪的事情”等等。不要牵涉他人，不要指证指认他人（情况说明里也不要）；写了之后大概率会放人，否则可能会拘留。</description>
+    </item>
+  </channel>
+</rss>

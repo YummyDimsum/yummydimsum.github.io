@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="浏览器扩展 # 以上推荐的几个浏览器都支持安装扩展，加强浏览器某些方面的功能。
+扩展可以使浏览器变得更强大更好用，但扩展本身也是一种软件，它可能也存在漏洞和风险，而且安装太多扩展可能拖慢浏览器的启动和运行速度。
+因此建议只安装最必需的扩展，比如以下这些与安全隐私有关的：
+一、适用于 Firefox, LibreWolf 和 Mullvad 浏览器 # 1. uBlock Origin # LibreWolf 和 Mullvad 默认已包含。
+https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/
+2. NoScript # Mullvad 默认已包含。
+这个扩展的默认行为是阻止所有不在白名单中的脚本。这可能使那些依赖于 JavaScript 的网页无法正常显示。需要在使用过程中慢慢调整它的设置。
+https://addons.mozilla.org/en-US/firefox/addon/noscript/
+3. Privacy Badger # https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17/
+4. HTTPS Everywhere # https://www.eff.org/https-everywhere
+5. Decentraleyes # https://addons.mozilla.org/en-US/firefox/addon/decentraleyes/
+6. Cookie Autodelete # https://addons.mozilla.org/en-US/firefox/addon/cookie-autodelete
+7. Disable WebRTC # https://addons.mozilla.org/en-US/firefox/addon/happy-bonobo-disable-webrtc/
+二、适用于 Brave 浏览器 # Brave 浏览器的扩展需要从 Chrome Web Store 下载。以上介绍的几种扩展都可以找到对应版本。
+1. uBlock Origin # https://chromewebstore.google.com/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="浏览器扩展" />
+<meta property="og:description" content="浏览器扩展 # 以上推荐的几个浏览器都支持安装扩展，加强浏览器某些方面的功能。
+扩展可以使浏览器变得更强大更好用，但扩展本身也是一种软件，它可能也存在漏洞和风险，而且安装太多扩展可能拖慢浏览器的启动和运行速度。
+因此建议只安装最必需的扩展，比如以下这些与安全隐私有关的：
+一、适用于 Firefox, LibreWolf 和 Mullvad 浏览器 # 1. uBlock Origin # LibreWolf 和 Mullvad 默认已包含。
+https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/
+2. NoScript # Mullvad 默认已包含。
+这个扩展的默认行为是阻止所有不在白名单中的脚本。这可能使那些依赖于 JavaScript 的网页无法正常显示。需要在使用过程中慢慢调整它的设置。
+https://addons.mozilla.org/en-US/firefox/addon/noscript/
+3. Privacy Badger # https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17/
+4. HTTPS Everywhere # https://www.eff.org/https-everywhere
+5. Decentraleyes # https://addons.mozilla.org/en-US/firefox/addon/decentraleyes/
+6. Cookie Autodelete # https://addons.mozilla.org/en-US/firefox/addon/cookie-autodelete
+7. Disable WebRTC # https://addons.mozilla.org/en-US/firefox/addon/happy-bonobo-disable-webrtc/
+二、适用于 Brave 浏览器 # Brave 浏览器的扩展需要从 Chrome Web Store 下载。以上介绍的几种扩展都可以找到对应版本。
+1. uBlock Origin # https://chromewebstore.google.com/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/docs/04-software/extension/" /><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2024-04-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-04-10T00:00:00+00:00" />
+<title>浏览器扩展 | 信息与网络安全手册</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="canonical" href="http://localhost:1313/docs/04-software/extension/">
+<link rel="stylesheet" href="/book.min.309b7ed028807cdb68d8d61e26d609f48369c098dbf5e4d8c0dcf4cdf49feafc.css" integrity="sha256-MJt&#43;0CiAfNto2NYeJtYJ9INpwJjb9eTYwNz0zfSf6vw=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/zh.search.min.06be65d352fea4a2dac450ade5e630cb82ea1c779f322485417b8dbdeabe1d43.js" integrity="sha256-Br5l01L&#43;pKLaxFCt5eYwy4LqHHefMiSFQXuNveq&#43;HUM=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>信息与网络安全手册</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="搜索" aria-label="搜索" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/" class="">写在前面</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/01-start/" class="">一、确认自己的身份和处境</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/" class="">二、电脑硬件及操作系统</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/windows/" class="">运行 Windows 系统的 PC 机</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/macos/" class="">运行 macOS 的苹果电脑</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/linux/" class="">运行 GNU/Linux 系统的 PC 机</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/liveos/" class="">使用 Live USB 系统</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/" class="">三、手机设备及操作系统</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/ios/" class="">iPhone 手机（附 iPad）</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/android/" class="">Android 手机（安卓手机）</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/tablet/" class="">平板电脑</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/security/" class="">智能手机安全设置</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/" class="">四、常用软件推荐</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/ime/" class="">中文输入法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/browser/" class="">网页浏览器</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/extension/" class="active">浏览器扩展</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/im/" class="">即时通讯软件</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/video/" class="">视频通话及会议</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/office/" class="">办公和线上协作</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/cloud-storage/" class="">云存储和文件分享</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/password/" class="">密码管理器</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/others/" class="">其它软件</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/signal/" class="">Signal 专门页面</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/" class="">五、上网安全</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/vpn/" class="">使用 VPN 的场景</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/tor/" class="">使用 Tor 浏览器保持匿名</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/links/" class="">当心包含恶意代码的链接</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/identities/" class="">使用不同的在线身份</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/2fa/" class="">为你的账号开启两步验证</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/" class="">六、通讯安全</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/im/" class="">即时通讯和视频通话</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/mail/" class="">电子邮件安全</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/mailvelope/" class="">借助 Mailvelope 使用 PGP 加密邮件</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/" class="">七、数据安全</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/level/" class="">给你的数据重要性分级</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/metadata/" class="">分享之前，删除元数据</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/veracrypt/" class="">使用 Veracrypt 加密文件和磁盘</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/backup/" class="">定期备份你的重要数据</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/destroy/" class="">使用 BleachBit 销毁文件</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/08-police/" class="">八、面对警察查手机</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/08-police/digital/" class="">数字安全层面</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/08-police/legal/" class="">法律层面</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/" class="">九、海外人士回国，遭遇电子产品检查或警察盘问</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/preparation/" class="">准备事项</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/before-teatime/" class="">喝茶之前</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/teatime/" class="">喝茶的时候</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>浏览器扩展</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#浏览器扩展">浏览器扩展</a>
+      <ul>
+        <li><a href="#一适用于-firefox-librewolf-和-mullvad-浏览器">一、适用于 Firefox, LibreWolf 和 Mullvad 浏览器</a>
+          <ul>
+            <li><a href="#1-ublock-origin">1. uBlock Origin</a></li>
+            <li><a href="#2-noscript">2. NoScript</a></li>
+            <li><a href="#3-privacy-badger">3. Privacy Badger</a></li>
+            <li><a href="#4-https-everywhere">4. HTTPS Everywhere</a></li>
+            <li><a href="#5-decentraleyes">5. Decentraleyes</a></li>
+            <li><a href="#6-cookie-autodelete">6. Cookie Autodelete</a></li>
+            <li><a href="#7-disable-webrtc">7. Disable WebRTC</a></li>
+          </ul>
+        </li>
+        <li><a href="#二适用于-brave-浏览器">二、适用于 Brave 浏览器</a>
+          <ul>
+            <li><a href="#1-ublock-origin-1">1. uBlock Origin</a></li>
+            <li><a href="#2-noscript-1">2. NoScript</a></li>
+            <li><a href="#3-privacy-badger-1">3. Privacy Badger</a></li>
+            <li><a href="#4-https-everywhere-1">4. HTTPS Everywhere</a></li>
+            <li><a href="#5-decentraleyes-1">5. Decentraleyes</a></li>
+            <li><a href="#6-cookie-autodelete-1">6. Cookie Autodelete</a></li>
+            <li><a href="#7-webrtc-control">7. WebRTC Control</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="浏览器扩展">
+  浏览器扩展
+  <a class="anchor" href="#%e6%b5%8f%e8%a7%88%e5%99%a8%e6%89%a9%e5%b1%95">#</a>
+</h1>
+<p>以上推荐的几个浏览器都支持安装扩展，加强浏览器某些方面的功能。</p>
+<p>扩展可以使浏览器变得更强大更好用，但扩展本身也是一种软件，它可能也存在漏洞和风险，而且安装太多扩展可能拖慢浏览器的启动和运行速度。</p>
+<p>因此建议只安装最必需的扩展，比如以下这些与安全隐私有关的：</p>
+<h2 id="一适用于-firefox-librewolf-和-mullvad-浏览器">
+  一、适用于 Firefox, LibreWolf 和 Mullvad 浏览器
+  <a class="anchor" href="#%e4%b8%80%e9%80%82%e7%94%a8%e4%ba%8e-firefox-librewolf-%e5%92%8c-mullvad-%e6%b5%8f%e8%a7%88%e5%99%a8">#</a>
+</h2>
+<h3 id="1-ublock-origin">
+  1. uBlock Origin
+  <a class="anchor" href="#1-ublock-origin">#</a>
+</h3>
+<p>LibreWolf 和 Mullvad 默认已包含。</p>
+<p><a href="https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/">https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/</a></p>
+<h3 id="2-noscript">
+  2. NoScript
+  <a class="anchor" href="#2-noscript">#</a>
+</h3>
+<p>Mullvad 默认已包含。</p>
+<p>这个扩展的默认行为是阻止所有不在白名单中的脚本。这可能使那些依赖于 JavaScript 的网页无法正常显示。需要在使用过程中慢慢调整它的设置。</p>
+<p><a href="https://addons.mozilla.org/en-US/firefox/addon/noscript/">https://addons.mozilla.org/en-US/firefox/addon/noscript/</a></p>
+<h3 id="3-privacy-badger">
+  3. Privacy Badger
+  <a class="anchor" href="#3-privacy-badger">#</a>
+</h3>
+<p><a href="https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17/">https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17/</a></p>
+<h3 id="4-https-everywhere">
+  4. HTTPS Everywhere
+  <a class="anchor" href="#4-https-everywhere">#</a>
+</h3>
+<p><a href="https://www.eff.org/https-everywhere">https://www.eff.org/https-everywhere</a></p>
+<h3 id="5-decentraleyes">
+  5. Decentraleyes
+  <a class="anchor" href="#5-decentraleyes">#</a>
+</h3>
+<p><a href="https://addons.mozilla.org/en-US/firefox/addon/decentraleyes/">https://addons.mozilla.org/en-US/firefox/addon/decentraleyes/</a></p>
+<h3 id="6-cookie-autodelete">
+  6. Cookie Autodelete
+  <a class="anchor" href="#6-cookie-autodelete">#</a>
+</h3>
+<p><a href="https://addons.mozilla.org/en-US/firefox/addon/cookie-autodelete">https://addons.mozilla.org/en-US/firefox/addon/cookie-autodelete</a></p>
+<h3 id="7-disable-webrtc">
+  7. Disable WebRTC
+  <a class="anchor" href="#7-disable-webrtc">#</a>
+</h3>
+<p><a href="https://addons.mozilla.org/en-US/firefox/addon/happy-bonobo-disable-webrtc/">https://addons.mozilla.org/en-US/firefox/addon/happy-bonobo-disable-webrtc/</a></p>
+<h2 id="二适用于-brave-浏览器">
+  二、适用于 Brave 浏览器
+  <a class="anchor" href="#%e4%ba%8c%e9%80%82%e7%94%a8%e4%ba%8e-brave-%e6%b5%8f%e8%a7%88%e5%99%a8">#</a>
+</h2>
+<p>Brave 浏览器的扩展需要从 Chrome Web Store 下载。以上介绍的几种扩展都可以找到对应版本。</p>
+<h3 id="1-ublock-origin-1">
+  1. uBlock Origin
+  <a class="anchor" href="#1-ublock-origin-1">#</a>
+</h3>
+<p><a href="https://chromewebstore.google.com/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm">https://chromewebstore.google.com/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm</a></p>
+<h3 id="2-noscript-1">
+  2. NoScript
+  <a class="anchor" href="#2-noscript-1">#</a>
+</h3>
+<p><a href="https://chromewebstore.google.com/detail/noscript/doojmbjmlfjjnbmnoijecmcbfeoakpjm">https://chromewebstore.google.com/detail/noscript/doojmbjmlfjjnbmnoijecmcbfeoakpjm</a></p>
+<h3 id="3-privacy-badger-1">
+  3. Privacy Badger
+  <a class="anchor" href="#3-privacy-badger-1">#</a>
+</h3>
+<p><a href="https://chromewebstore.google.com/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp">https://chromewebstore.google.com/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp</a></p>
+<h3 id="4-https-everywhere-1">
+  4. HTTPS Everywhere
+  <a class="anchor" href="#4-https-everywhere-1">#</a>
+</h3>
+<p><a href="https://chromewebstore.google.com/detail/https-everywhere/ikclbgejgcbdlhjmckecmdljlpbhmbmf">https://chromewebstore.google.com/detail/https-everywhere/ikclbgejgcbdlhjmckecmdljlpbhmbmf</a></p>
+<h3 id="5-decentraleyes-1">
+  5. Decentraleyes
+  <a class="anchor" href="#5-decentraleyes-1">#</a>
+</h3>
+<p><a href="https://chromewebstore.google.com/detail/decentraleyes/ldpochfccmkkmhdbclfhpagapcfdljkj">https://chromewebstore.google.com/detail/decentraleyes/ldpochfccmkkmhdbclfhpagapcfdljkj</a></p>
+<h3 id="6-cookie-autodelete-1">
+  6. Cookie Autodelete
+  <a class="anchor" href="#6-cookie-autodelete-1">#</a>
+</h3>
+<p><a href="https://chrome.google.com/webstore/detail/cookie-autodelete/fhcgjolkccmbidfldomjliifgaodjagh/">https://chrome.google.com/webstore/detail/cookie-autodelete/fhcgjolkccmbidfldomjliifgaodjagh/</a></p>
+<h3 id="7-webrtc-control">
+  7. WebRTC Control
+  <a class="anchor" href="#7-webrtc-control">#</a>
+</h3>
+<p><a href="https://chromewebstore.google.com/detail/webrtc-control/fjkmabmdepjfammlpliljpnbhleegehm">https://chromewebstore.google.com/detail/webrtc-control/fjkmabmdepjfammlpliljpnbhleegehm</a></p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#浏览器扩展">浏览器扩展</a>
+      <ul>
+        <li><a href="#一适用于-firefox-librewolf-和-mullvad-浏览器">一、适用于 Firefox, LibreWolf 和 Mullvad 浏览器</a>
+          <ul>
+            <li><a href="#1-ublock-origin">1. uBlock Origin</a></li>
+            <li><a href="#2-noscript">2. NoScript</a></li>
+            <li><a href="#3-privacy-badger">3. Privacy Badger</a></li>
+            <li><a href="#4-https-everywhere">4. HTTPS Everywhere</a></li>
+            <li><a href="#5-decentraleyes">5. Decentraleyes</a></li>
+            <li><a href="#6-cookie-autodelete">6. Cookie Autodelete</a></li>
+            <li><a href="#7-disable-webrtc">7. Disable WebRTC</a></li>
+          </ul>
+        </li>
+        <li><a href="#二适用于-brave-浏览器">二、适用于 Brave 浏览器</a>
+          <ul>
+            <li><a href="#1-ublock-origin-1">1. uBlock Origin</a></li>
+            <li><a href="#2-noscript-1">2. NoScript</a></li>
+            <li><a href="#3-privacy-badger-1">3. Privacy Badger</a></li>
+            <li><a href="#4-https-everywhere-1">4. HTTPS Everywhere</a></li>
+            <li><a href="#5-decentraleyes-1">5. Decentraleyes</a></li>
+            <li><a href="#6-cookie-autodelete-1">6. Cookie Autodelete</a></li>
+            <li><a href="#7-webrtc-control">7. WebRTC Control</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

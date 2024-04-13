@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="运行 Windows 系统的 PC 机 # 一、决定购买或使用之前 # 运行 Windows 系统的 PC 机是最常见的个人电脑。电脑硬件由不同的厂商生产，但操作系统大都是 Windows。
+如果你可以选择，建议你不要购买和使用中国公司生产的 PC 机，包括华为、小米、联想、神舟、荣耀、清华同方等等。相对而言，我们更推荐使用国外品牌，比如惠普、戴尔、三星、华硕等。但是如果你已经在使用中国公司生产的电脑，也不用过于担心，我们可以通过许多安全设置尽量避免一些问题。
+如果是从正规渠道购买的 PC 机，大多数电脑已经预装了操作系统，大部分情况下就是最新版的 Windows 系统，这是由电脑生产厂商定制的正版系统。
+如果你可以选择，建议购买内存（RAM）至少 16GB 的 PC 机，这样可以使电脑与软件运行更加顺畅。如果你现在使用的 PC 机内存不足 16GB, 可以咨询专业人士，确认是否能够增加内存。PC 机比苹果电脑方便的是，你可以更换配件来给电脑硬件升级，而不需要换掉整台机器。
+在 Windows 系统任务栏的搜索框中键入“信息”，点击选择“系统信息”，即可查看详细的硬件信息，包括 RAM 信息。
+二、盗版系统问题 # 许多中国用户使用盗版的 Windows 系统，这样做存在安全隐患。常见的盗版系统可分为两种：
+安装系统所用的文件来自微软官方，这种称作“原版系统”。系统本身没有问题，但在安装使用的时候，通过非正规渠道（比如从淘宝购买，或者使用破解软件）获得的激活码来取得正版授权。这种盗版虽然不道德，但是只有比较小的风险，风险来自破解软件可能携带恶意程序。
+安装系统所用的文件本身就有问题，常见的是一些电脑维修人员自己制作的 GHOST 文件，而不是来自微软官方的系统安装文件。这种 GHOST 文件可能是原版系统（参见上一条）的镜像，也可能是由维修人员加入其他软件和工具的修改版。事实上，对于不熟悉电脑的人来说，也很难弄清楚使用 GHOST 文件安装的系统里都会包含什么。通过这种方式安装的 Windows 系统，存在很大的安全风险。因此我们强烈建议大家不要用这种方式安装系统，也要拒绝别人使用这种方式给你安装系统。
+三、开启 Windows 系统自动更新 # 请按照这里的指南，开启 Windows 系统的自动更新：
+https://support.microsoft.com/zh-cn/windows/%E5%90%AF%E7%94%A8%E8%87%AA%E5%8A%A8%E5%BA%94%E7%94%A8%E6%9B%B4%E6%96%B0-70634d32-4657-dc76-632b-66048978e51b
+四、给 Windows 系统安装杀毒软件 # 针对 Windows 系统的杀毒软件，推荐使用以下几种：
+Windows 系统自带的 Microsoft Defender https://learn.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="运行 Windows 系统的 PC 机" />
+<meta property="og:description" content="运行 Windows 系统的 PC 机 # 一、决定购买或使用之前 # 运行 Windows 系统的 PC 机是最常见的个人电脑。电脑硬件由不同的厂商生产，但操作系统大都是 Windows。
+如果你可以选择，建议你不要购买和使用中国公司生产的 PC 机，包括华为、小米、联想、神舟、荣耀、清华同方等等。相对而言，我们更推荐使用国外品牌，比如惠普、戴尔、三星、华硕等。但是如果你已经在使用中国公司生产的电脑，也不用过于担心，我们可以通过许多安全设置尽量避免一些问题。
+如果是从正规渠道购买的 PC 机，大多数电脑已经预装了操作系统，大部分情况下就是最新版的 Windows 系统，这是由电脑生产厂商定制的正版系统。
+如果你可以选择，建议购买内存（RAM）至少 16GB 的 PC 机，这样可以使电脑与软件运行更加顺畅。如果你现在使用的 PC 机内存不足 16GB, 可以咨询专业人士，确认是否能够增加内存。PC 机比苹果电脑方便的是，你可以更换配件来给电脑硬件升级，而不需要换掉整台机器。
+在 Windows 系统任务栏的搜索框中键入“信息”，点击选择“系统信息”，即可查看详细的硬件信息，包括 RAM 信息。
+二、盗版系统问题 # 许多中国用户使用盗版的 Windows 系统，这样做存在安全隐患。常见的盗版系统可分为两种：
+安装系统所用的文件来自微软官方，这种称作“原版系统”。系统本身没有问题，但在安装使用的时候，通过非正规渠道（比如从淘宝购买，或者使用破解软件）获得的激活码来取得正版授权。这种盗版虽然不道德，但是只有比较小的风险，风险来自破解软件可能携带恶意程序。
+安装系统所用的文件本身就有问题，常见的是一些电脑维修人员自己制作的 GHOST 文件，而不是来自微软官方的系统安装文件。这种 GHOST 文件可能是原版系统（参见上一条）的镜像，也可能是由维修人员加入其他软件和工具的修改版。事实上，对于不熟悉电脑的人来说，也很难弄清楚使用 GHOST 文件安装的系统里都会包含什么。通过这种方式安装的 Windows 系统，存在很大的安全风险。因此我们强烈建议大家不要用这种方式安装系统，也要拒绝别人使用这种方式给你安装系统。
+三、开启 Windows 系统自动更新 # 请按照这里的指南，开启 Windows 系统的自动更新：
+https://support.microsoft.com/zh-cn/windows/%E5%90%AF%E7%94%A8%E8%87%AA%E5%8A%A8%E5%BA%94%E7%94%A8%E6%9B%B4%E6%96%B0-70634d32-4657-dc76-632b-66048978e51b
+四、给 Windows 系统安装杀毒软件 # 针对 Windows 系统的杀毒软件，推荐使用以下几种：
+Windows 系统自带的 Microsoft Defender https://learn." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/docs/02-computer/windows/" /><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2024-04-05T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-04-05T00:00:00+00:00" />
+<title>运行 Windows 系统的 PC 机 | 信息与网络安全手册</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="canonical" href="http://localhost:1313/docs/02-computer/windows/">
+<link rel="stylesheet" href="/book.min.309b7ed028807cdb68d8d61e26d609f48369c098dbf5e4d8c0dcf4cdf49feafc.css" integrity="sha256-MJt&#43;0CiAfNto2NYeJtYJ9INpwJjb9eTYwNz0zfSf6vw=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/zh.search.min.06be65d352fea4a2dac450ade5e630cb82ea1c779f322485417b8dbdeabe1d43.js" integrity="sha256-Br5l01L&#43;pKLaxFCt5eYwy4LqHHefMiSFQXuNveq&#43;HUM=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>信息与网络安全手册</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="搜索" aria-label="搜索" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/" class="">写在前面</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/01-start/" class="">一、确认自己的身份和处境</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/" class="">二、电脑硬件及操作系统</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/windows/" class="active">运行 Windows 系统的 PC 机</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/macos/" class="">运行 macOS 的苹果电脑</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/linux/" class="">运行 GNU/Linux 系统的 PC 机</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/liveos/" class="">使用 Live USB 系统</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/" class="">三、手机设备及操作系统</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/ios/" class="">iPhone 手机（附 iPad）</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/android/" class="">Android 手机（安卓手机）</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/tablet/" class="">平板电脑</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/security/" class="">智能手机安全设置</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/" class="">四、常用软件推荐</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/ime/" class="">中文输入法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/browser/" class="">网页浏览器</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/extension/" class="">浏览器扩展</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/im/" class="">即时通讯软件</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/video/" class="">视频通话及会议</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/office/" class="">办公和线上协作</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/cloud-storage/" class="">云存储和文件分享</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/password/" class="">密码管理器</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/others/" class="">其它软件</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/signal/" class="">Signal 专门页面</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/" class="">五、上网安全</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/vpn/" class="">使用 VPN 的场景</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/tor/" class="">使用 Tor 浏览器保持匿名</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/links/" class="">当心包含恶意代码的链接</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/identities/" class="">使用不同的在线身份</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/2fa/" class="">为你的账号开启两步验证</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/" class="">六、通讯安全</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/im/" class="">即时通讯和视频通话</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/mail/" class="">电子邮件安全</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/mailvelope/" class="">借助 Mailvelope 使用 PGP 加密邮件</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/" class="">七、数据安全</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/level/" class="">给你的数据重要性分级</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/metadata/" class="">分享之前，删除元数据</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/veracrypt/" class="">使用 Veracrypt 加密文件和磁盘</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/backup/" class="">定期备份你的重要数据</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/destroy/" class="">使用 BleachBit 销毁文件</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/08-police/" class="">八、面对警察查手机</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/08-police/digital/" class="">数字安全层面</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/08-police/legal/" class="">法律层面</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/" class="">九、海外人士回国，遭遇电子产品检查或警察盘问</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/preparation/" class="">准备事项</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/before-teatime/" class="">喝茶之前</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/teatime/" class="">喝茶的时候</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>运行 Windows 系统的 PC 机</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#运行-windows-系统的-pc-机">运行 Windows 系统的 PC 机</a>
+      <ul>
+        <li><a href="#一决定购买或使用之前">一、决定购买或使用之前</a></li>
+        <li><a href="#二盗版系统问题">二、盗版系统问题</a></li>
+        <li><a href="#三开启-windows-系统自动更新">三、开启 Windows 系统自动更新</a></li>
+        <li><a href="#四给-windows-系统安装杀毒软件">四、给 Windows 系统安装杀毒软件</a></li>
+        <li><a href="#五更多设置">五、更多设置</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="运行-windows-系统的-pc-机">
+  运行 Windows 系统的 PC 机
+  <a class="anchor" href="#%e8%bf%90%e8%a1%8c-windows-%e7%b3%bb%e7%bb%9f%e7%9a%84-pc-%e6%9c%ba">#</a>
+</h1>
+<h2 id="一决定购买或使用之前">
+  一、决定购买或使用之前
+  <a class="anchor" href="#%e4%b8%80%e5%86%b3%e5%ae%9a%e8%b4%ad%e4%b9%b0%e6%88%96%e4%bd%bf%e7%94%a8%e4%b9%8b%e5%89%8d">#</a>
+</h2>
+<p>运行 Windows 系统的 PC 机是最常见的个人电脑。电脑硬件由不同的厂商生产，但操作系统大都是 Windows。</p>
+<p>如果你可以选择，建议你不要购买和使用中国公司生产的 PC 机，包括华为、小米、联想、神舟、荣耀、清华同方等等。相对而言，我们更推荐使用国外品牌，比如惠普、戴尔、三星、华硕等。但是如果你已经在使用中国公司生产的电脑，也不用过于担心，我们可以通过许多安全设置尽量避免一些问题。</p>
+<p>如果是从正规渠道购买的 PC 机，大多数电脑已经预装了操作系统，大部分情况下就是最新版的 Windows 系统，这是由电脑生产厂商定制的正版系统。</p>
+<p>如果你可以选择，建议购买内存（RAM）至少 16GB 的 PC 机，这样可以使电脑与软件运行更加顺畅。如果你现在使用的 PC 机内存不足 16GB, 可以咨询专业人士，确认是否能够增加内存。PC 机比苹果电脑方便的是，你可以更换配件来给电脑硬件升级，而不需要换掉整台机器。</p>
+<p>在 Windows 系统任务栏的搜索框中键入“信息”，点击选择“系统信息”，即可查看详细的硬件信息，包括 RAM 信息。</p>
+<h2 id="二盗版系统问题">
+  二、盗版系统问题
+  <a class="anchor" href="#%e4%ba%8c%e7%9b%97%e7%89%88%e7%b3%bb%e7%bb%9f%e9%97%ae%e9%a2%98">#</a>
+</h2>
+<p>许多中国用户使用盗版的 Windows 系统，这样做存在安全隐患。常见的盗版系统可分为两种：</p>
+<ol>
+<li>
+<p>安装系统所用的文件来自微软官方，这种称作“<strong>原版系统</strong>”。系统本身没有问题，但在安装使用的时候，通过非正规渠道（比如从淘宝购买，或者使用破解软件）获得的激活码来取得正版授权。这种盗版虽然不道德，但是只有比较小的风险，风险来自破解软件可能携带恶意程序。</p>
+</li>
+<li>
+<p>安装系统所用的文件本身就有问题，常见的是一些电脑维修人员自己制作的 <strong>GHOST 文件</strong>，而不是来自微软官方的系统安装文件。这种 GHOST 文件可能是原版系统（参见上一条）的镜像，也可能是由维修人员加入其他软件和工具的修改版。事实上，对于不熟悉电脑的人来说，也很难弄清楚使用 GHOST 文件安装的系统里都会包含什么。通过这种方式安装的 Windows 系统，存在很大的安全风险。因此我们<strong>强烈建议大家不要</strong>用这种方式安装系统，也要拒绝别人使用这种方式给你安装系统。</p>
+</li>
+</ol>
+<h2 id="三开启-windows-系统自动更新">
+  三、开启 Windows 系统自动更新
+  <a class="anchor" href="#%e4%b8%89%e5%bc%80%e5%90%af-windows-%e7%b3%bb%e7%bb%9f%e8%87%aa%e5%8a%a8%e6%9b%b4%e6%96%b0">#</a>
+</h2>
+<p>请按照这里的指南，开启 Windows 系统的自动更新：</p>
+<p><a href="https://support.microsoft.com/zh-cn/windows/%E5%90%AF%E7%94%A8%E8%87%AA%E5%8A%A8%E5%BA%94%E7%94%A8%E6%9B%B4%E6%96%B0-70634d32-4657-dc76-632b-66048978e51b">https://support.microsoft.com/zh-cn/windows/%E5%90%AF%E7%94%A8%E8%87%AA%E5%8A%A8%E5%BA%94%E7%94%A8%E6%9B%B4%E6%96%B0-70634d32-4657-dc76-632b-66048978e51b</a></p>
+<h2 id="四给-windows-系统安装杀毒软件">
+  四、给 Windows 系统安装杀毒软件
+  <a class="anchor" href="#%e5%9b%9b%e7%bb%99-windows-%e7%b3%bb%e7%bb%9f%e5%ae%89%e8%a3%85%e6%9d%80%e6%af%92%e8%bd%af%e4%bb%b6">#</a>
+</h2>
+<p>针对 Windows 系统的杀毒软件，推荐使用以下几种：</p>
+<ol>
+<li>Windows 系统自带的 Microsoft Defender</li>
+</ol>
+<p><a href="https://learn.microsoft.com/zh-cn/mem/intune/user-help/turn-on-defender-windows">https://learn.microsoft.com/zh-cn/mem/intune/user-help/turn-on-defender-windows</a></p>
+<ol start="2">
+<li>AVG AntiVirus Free</li>
+</ol>
+<p><a href="https://www.avg.com/zh-tw/free-antivirus-download#pc">https://www.avg.com/zh-tw/free-antivirus-download#pc</a></p>
+<ol start="3">
+<li>Avira Free Antivirus</li>
+</ol>
+<p><a href="https://www.avira.com/zh-cn/free-antivirus">https://www.avira.com/zh-cn/free-antivirus</a></p>
+<h2 id="五更多设置">
+  五、更多设置
+  <a class="anchor" href="#%e4%ba%94%e6%9b%b4%e5%a4%9a%e8%ae%be%e7%bd%ae">#</a>
+</h2>
+<p>以下这个网页包含非常详细的 Windows 系统安全设置，请仔细阅读并按照其中指示操作。</p>
+<p><a href="https://securityinabox.org/zh/phones-and-computers/windows/">https://securityinabox.org/zh/phones-and-computers/windows/</a></p>
+<p>其中有些链接指向微软公司（Windows 系统的开发者）官方网站，默认显示英文内容。点击打开这些链接之后，你可以将网页拉到最底部，在网页底部的左下角，可以看到语言切换按钮（如下图红色方框处），点击这个按钮，然后选择“中文（中国）”，即可阅读中文版的指南。</p>
+<p><img src="/docs/images/windows-microsoft.png" alt="windows microsoft website" /></p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#运行-windows-系统的-pc-机">运行 Windows 系统的 PC 机</a>
+      <ul>
+        <li><a href="#一决定购买或使用之前">一、决定购买或使用之前</a></li>
+        <li><a href="#二盗版系统问题">二、盗版系统问题</a></li>
+        <li><a href="#三开启-windows-系统自动更新">三、开启 Windows 系统自动更新</a></li>
+        <li><a href="#四给-windows-系统安装杀毒软件">四、给 Windows 系统安装杀毒软件</a></li>
+        <li><a href="#五更多设置">五、更多设置</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

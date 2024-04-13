@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="使用不同的在线身份 # 在前面的章节里谈到电子设备的时候，我们建议大家至少拥有两台智能手机，也就是用于安装国产软件的普通手机，和用于安装安全通讯软件的安全手机。但这样做还不够。
+对于从事敏感活动的行动者来说，拥有多个手机设备的同时，还要拥有多个虚拟的在线身份。
+开设和管理多个虚拟在线身份是件很不容易的事，并非因为它需要很多技术工具的辅助，而是因为它需要你很小心而且很有耐心。一个小小的疏忽可能就会暴露你的真实身份，给你带来风险。
+既然是虚拟身份，就不要与你的真实身份有任何关联。不能关联身份证、银行卡，也不能关联手机号码，甚至也不能关联与你的真实身份绑定的邮箱。因此，请尽量选择那些不需要手机号码的网络服务。
+假设你要为虚拟在线身份 A 创建一系列账号，大致是这样一个操作思路：
+在一个单独的电脑操作系统里进行以下操作，不与你个人常用的系统关联。比如我们前文提到的 Live USB 系统。
+如果确实不会在单独的系统里面操作，那至少要在同一台电脑上面创建另一个不同的用户，而不与自己日常使用的用户关联。
+进入系统之后，立即打开 VPN，并全程开启 VPN, 以便隐藏真实 IP 地址。
+使用安全的浏览器，比如 LibreWolf，以便 VPN 真正发生作用。有些浏览器（比如 Chrome）默认打开 WebRTC 功能，即使打开 VPN，也可能会泄漏真实 IP 地址。
+注册一个安全的电子邮箱，比如 Tuta 或者 Proton mail。许多在线服务都需要用邮箱注册。
+用这个安全的电子邮箱去注册其它网络服务，比如 Twitter / Mastodon 等。
+无论注册电子邮箱还是其它网络服务，请一定使用密码管理器为它们各自创建独一无二的密码。千万不要在多个网站上面使用同一个密码。
+以后每次登录这个邮箱以及与它相关的网络账号，都要全程开启 VPN, 而不要用你的真实 IP 地址登录。
+谨慎操作之一：在你使用 VPN 登录虚拟在线身份 A 的时候，千万不要同时去登录其它账号（包括关联你的真实身份的账号，以及另外的虚拟在线身份 B 和 C），以免虚拟在线身份 A 与其他账号之间产生关联。
+谨慎操作之二：不要在任何地方提及你的虚拟在线身份。不要对现实生活中的同事、朋友提起，更不要在你用真实身份注册的社交媒体上提起。甚至如果你想做得更严格一些，还应该尽量将真实身份的网络形象与虚拟身份的网络形象隔离，包括行文风格、语言习惯、活跃时间等等都要有所差异。">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="使用不同的在线身份" />
+<meta property="og:description" content="使用不同的在线身份 # 在前面的章节里谈到电子设备的时候，我们建议大家至少拥有两台智能手机，也就是用于安装国产软件的普通手机，和用于安装安全通讯软件的安全手机。但这样做还不够。
+对于从事敏感活动的行动者来说，拥有多个手机设备的同时，还要拥有多个虚拟的在线身份。
+开设和管理多个虚拟在线身份是件很不容易的事，并非因为它需要很多技术工具的辅助，而是因为它需要你很小心而且很有耐心。一个小小的疏忽可能就会暴露你的真实身份，给你带来风险。
+既然是虚拟身份，就不要与你的真实身份有任何关联。不能关联身份证、银行卡，也不能关联手机号码，甚至也不能关联与你的真实身份绑定的邮箱。因此，请尽量选择那些不需要手机号码的网络服务。
+假设你要为虚拟在线身份 A 创建一系列账号，大致是这样一个操作思路：
+在一个单独的电脑操作系统里进行以下操作，不与你个人常用的系统关联。比如我们前文提到的 Live USB 系统。
+如果确实不会在单独的系统里面操作，那至少要在同一台电脑上面创建另一个不同的用户，而不与自己日常使用的用户关联。
+进入系统之后，立即打开 VPN，并全程开启 VPN, 以便隐藏真实 IP 地址。
+使用安全的浏览器，比如 LibreWolf，以便 VPN 真正发生作用。有些浏览器（比如 Chrome）默认打开 WebRTC 功能，即使打开 VPN，也可能会泄漏真实 IP 地址。
+注册一个安全的电子邮箱，比如 Tuta 或者 Proton mail。许多在线服务都需要用邮箱注册。
+用这个安全的电子邮箱去注册其它网络服务，比如 Twitter / Mastodon 等。
+无论注册电子邮箱还是其它网络服务，请一定使用密码管理器为它们各自创建独一无二的密码。千万不要在多个网站上面使用同一个密码。
+以后每次登录这个邮箱以及与它相关的网络账号，都要全程开启 VPN, 而不要用你的真实 IP 地址登录。
+谨慎操作之一：在你使用 VPN 登录虚拟在线身份 A 的时候，千万不要同时去登录其它账号（包括关联你的真实身份的账号，以及另外的虚拟在线身份 B 和 C），以免虚拟在线身份 A 与其他账号之间产生关联。
+谨慎操作之二：不要在任何地方提及你的虚拟在线身份。不要对现实生活中的同事、朋友提起，更不要在你用真实身份注册的社交媒体上提起。甚至如果你想做得更严格一些，还应该尽量将真实身份的网络形象与虚拟身份的网络形象隔离，包括行文风格、语言习惯、活跃时间等等都要有所差异。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/docs/05-internet/identities/" /><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2024-04-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-04-10T00:00:00+00:00" />
+<title>使用不同的在线身份 | 信息与网络安全手册</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="canonical" href="http://localhost:1313/docs/05-internet/identities/">
+<link rel="stylesheet" href="/book.min.309b7ed028807cdb68d8d61e26d609f48369c098dbf5e4d8c0dcf4cdf49feafc.css" integrity="sha256-MJt&#43;0CiAfNto2NYeJtYJ9INpwJjb9eTYwNz0zfSf6vw=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/zh.search.min.06be65d352fea4a2dac450ade5e630cb82ea1c779f322485417b8dbdeabe1d43.js" integrity="sha256-Br5l01L&#43;pKLaxFCt5eYwy4LqHHefMiSFQXuNveq&#43;HUM=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>信息与网络安全手册</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="搜索" aria-label="搜索" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/" class="">写在前面</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/01-start/" class="">一、确认自己的身份和处境</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/" class="">二、电脑硬件及操作系统</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/windows/" class="">运行 Windows 系统的 PC 机</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/macos/" class="">运行 macOS 的苹果电脑</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/linux/" class="">运行 GNU/Linux 系统的 PC 机</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/liveos/" class="">使用 Live USB 系统</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/" class="">三、手机设备及操作系统</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/ios/" class="">iPhone 手机（附 iPad）</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/android/" class="">Android 手机（安卓手机）</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/tablet/" class="">平板电脑</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/security/" class="">智能手机安全设置</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/" class="">四、常用软件推荐</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/ime/" class="">中文输入法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/browser/" class="">网页浏览器</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/extension/" class="">浏览器扩展</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/im/" class="">即时通讯软件</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/video/" class="">视频通话及会议</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/office/" class="">办公和线上协作</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/cloud-storage/" class="">云存储和文件分享</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/password/" class="">密码管理器</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/others/" class="">其它软件</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/signal/" class="">Signal 专门页面</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/" class="">五、上网安全</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/vpn/" class="">使用 VPN 的场景</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/tor/" class="">使用 Tor 浏览器保持匿名</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/links/" class="">当心包含恶意代码的链接</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/identities/" class="active">使用不同的在线身份</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/2fa/" class="">为你的账号开启两步验证</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/" class="">六、通讯安全</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/im/" class="">即时通讯和视频通话</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/mail/" class="">电子邮件安全</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/mailvelope/" class="">借助 Mailvelope 使用 PGP 加密邮件</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/" class="">七、数据安全</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/level/" class="">给你的数据重要性分级</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/metadata/" class="">分享之前，删除元数据</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/veracrypt/" class="">使用 Veracrypt 加密文件和磁盘</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/backup/" class="">定期备份你的重要数据</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/destroy/" class="">使用 BleachBit 销毁文件</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/08-police/" class="">八、面对警察查手机</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/08-police/digital/" class="">数字安全层面</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/08-police/legal/" class="">法律层面</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/" class="">九、海外人士回国，遭遇电子产品检查或警察盘问</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/preparation/" class="">准备事项</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/before-teatime/" class="">喝茶之前</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/teatime/" class="">喝茶的时候</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>使用不同的在线身份</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#使用不同的在线身份">使用不同的在线身份</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="使用不同的在线身份">
+  使用不同的在线身份
+  <a class="anchor" href="#%e4%bd%bf%e7%94%a8%e4%b8%8d%e5%90%8c%e7%9a%84%e5%9c%a8%e7%ba%bf%e8%ba%ab%e4%bb%bd">#</a>
+</h1>
+<p>在前面的章节里谈到电子设备的时候，我们建议大家至少拥有两台智能手机，也就是用于安装国产软件的普通手机，和用于安装安全通讯软件的安全手机。但这样做还不够。</p>
+<p>对于从事敏感活动的行动者来说，拥有多个手机设备的同时，还要拥有多个虚拟的在线身份。</p>
+<p>开设和管理多个虚拟在线身份是件很不容易的事，并非因为它需要很多技术工具的辅助，而是因为它需要你很小心而且很有耐心。一个小小的疏忽可能就会暴露你的真实身份，给你带来风险。</p>
+<p>既然是虚拟身份，就不要与你的真实身份有任何关联。不能关联身份证、银行卡，也不能关联手机号码，甚至也不能关联与你的真实身份绑定的邮箱。因此，请尽量选择那些不需要手机号码的网络服务。</p>
+<p>假设你要为虚拟在线身份 A 创建一系列账号，大致是这样一个操作思路：</p>
+<ol>
+<li>
+<p>在一个单独的电脑操作系统里进行以下操作，不与你个人常用的系统关联。比如我们前文提到的 <a href="../../02-computer/liveos/">Live USB 系统</a>。</p>
+</li>
+<li>
+<p>如果确实不会在单独的系统里面操作，那至少要在同一台电脑上面创建另一个不同的用户，而不与自己日常使用的用户关联。</p>
+</li>
+<li>
+<p>进入系统之后，立即打开 VPN，并全程开启 VPN, 以便隐藏真实 IP 地址。</p>
+</li>
+<li>
+<p>使用<a href="../../04-software/browser/">安全的浏览器</a>，比如 LibreWolf，以便 VPN 真正发生作用。有些浏览器（比如 Chrome）默认打开 WebRTC 功能，即使打开 VPN，也可能会泄漏真实 IP 地址。</p>
+</li>
+<li>
+<p>注册一个安全的电子邮箱，比如 <a href="https://tuta.com/">Tuta</a> 或者 <a href="https://proton.me/mail">Proton mail</a>。许多在线服务都需要用邮箱注册。</p>
+</li>
+<li>
+<p>用这个安全的电子邮箱去注册其它网络服务，比如 Twitter / Mastodon 等。</p>
+</li>
+<li>
+<p>无论注册电子邮箱还是其它网络服务，请一定<a href="../../04-software/password/">使用密码管理器</a>为它们各自创建独一无二的密码。千万不要在多个网站上面使用同一个密码。</p>
+</li>
+<li>
+<p>以后每次登录这个邮箱以及与它相关的网络账号，都要全程开启 VPN, 而不要用你的真实 IP 地址登录。</p>
+</li>
+<li>
+<p>谨慎操作之一：在你使用 VPN 登录虚拟在线身份 A 的时候，千万不要同时去登录其它账号（包括关联你的真实身份的账号，以及另外的虚拟在线身份 B 和 C），以免虚拟在线身份 A 与其他账号之间产生关联。</p>
+</li>
+<li>
+<p>谨慎操作之二：不要在任何地方提及你的虚拟在线身份。不要对现实生活中的同事、朋友提起，更不要在你用真实身份注册的社交媒体上提起。甚至如果你想做得更严格一些，还应该尽量将真实身份的网络形象与虚拟身份的网络形象隔离，包括行文风格、语言习惯、活跃时间等等都要有所差异。</p>
+</li>
+</ol>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#使用不同的在线身份">使用不同的在线身份</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>七、数据安全 on 信息与网络安全手册</title>
+    <link>http://localhost:1313/docs/07-data/</link>
+    <description>Recent content in 七、数据安全 on 信息与网络安全手册</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Wed, 10 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/docs/07-data/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>给你的数据重要性分级</title>
+      <link>http://localhost:1313/docs/07-data/level/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/07-data/level/</guid>
+      <description>给你的数据重要性分级 # 尽管我们的电脑、手机和硬盘里存储着大量数据，但我们只要稍微思考一下就会发现，这些数据的重要性并不一样。&#xA;有些可能是网络上随便都能下载到有图片、视频，而且内容也并不敏感；有些可能是重要的个人资料，比如身份证、护照、毕业证、保险合同等资料；有些可能是你的公开身份所做工作的资料；还有些可能是你的匿名身份正在参与的一些敏感的事情……&#xA;总之，稍微想几秒钟，你就会发现，这些信息的重要性和危险性都不一样。身份证照片如果被黑客偷走，确实会带来很大麻烦。但匿名参与敏感事件的信息如果被警察掌握，可能不只是麻烦而是风险。&#xA;因此，在我们正式进入数据安全的相关软件工具之前，请先根据自己的实际情况，认真严肃地给你手上的数据做一次重要性和危险性的分级。&#xA;这里我们只谈那些最有可能给你带来危险的数据，也就是你所从事的敏感活动相关的数据，它们可能包括：&#xA;与你的在线虚拟身份有关的所有文件；&#xA;你所从事的公民行动的所有文件；&#xA;你的浏览器使用记录和缓存；&#xA;各类聊天软件的本地记录和缓存等。&#xA;敏感和重要的文件，最好不要保存在电脑硬盘上面，而是改用非常小的 U 盘保存，而且要将整个 U 盘完全加密。关于加密，详见后文关于 Veracrypt 的内容。</description>
+    </item>
+    <item>
+      <title>分享之前，删除元数据</title>
+      <link>http://localhost:1313/docs/07-data/metadata/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/07-data/metadata/</guid>
+      <description>分享之前，删除元数据 # 一、什么是“元数据”泄漏 # “元数据”英文叫 metadata，意思是关于数据的数据。不同文件类型包含的元数据量不同，一张照片可能包括上百项元数据，比如这些：&#xA;拍摄设备型号 拍摄时间（会带有时区信息） 作者姓名/缩写 公司/组织名称 最后修改时间 最后修改设备型号 最后修改软件 拍摄位置 当你把图片、照片和文档发给别人的时候，或者分享到社交媒体的时候，如果没有清除这些元数据，它们就很有可能会泄漏你的很多个人信息。无论你在网上是公开活动还是匿名活动，都应该养成好的习惯，把图片和文档的元数据清除之后再分享出去。&#xA;二、怎样防止“元数据”泄漏 # 有一些软件可以帮你清理元数据，不同操作系统里的软件不一样，但操作都比较简单。&#xA;1. Windows 系统 # ExifCleaner https://exifcleaner.com/&#xA;ExifTool https://exiftool.org/&#xA;2. macOS 系统 # ExifCleaner https://exifcleaner.com/&#xA;ExifTool https://exiftool.org/&#xA;3. GNU/Linux 系统 # ExifCleaner https://exifcleaner.com/&#xA;Metadata Cleaner https://metadatacleaner.romainvigier.fr/&#xA;Exiftool（命令行工具） https://exiftool.org/install.html&#xA;4. iOS 系统 # Exif Metadata https://apps.apple.com/us/app/exif-metadata/id1455197364&#xA;5. Android 系统 # Scrambled Exif https://play.google.com/store/apps/details?id=com.jarsilio.android.scrambledeggsif&#xA;https://f-droid.org/packages/com.jarsilio.android.scrambledeggsif/</description>
+    </item>
+    <item>
+      <title>使用 Veracrypt 加密文件和磁盘</title>
+      <link>http://localhost:1313/docs/07-data/veracrypt/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/07-data/veracrypt/</guid>
+      <description>使用 Veracrypt 加密文件和磁盘 # Veracrypt 是一款开源的加密软件，支持 Windows, macOS 和 Linux 等操作系统。&#xA;使用 Veracrypt, 能够将单个文件、文件夹加密，还可以将整个系统乃至整个移动存储设备加密。&#xA;这是目前最为广泛使用的一款文件和磁盘加密软件，网站只有英文内容，安装之后可以设置为中文界面。&#xA;https://www.veracrypt.fr/en/Downloads.html&#xA;这里有一份详细的使用指南（繁体中文）&#xA;http://wiki.kmu.edu.tw/index.php/%E7%A1%AC%E7%A2%9F%E9%9A%A8%E8%BA%AB%E7%A2%9F%E5%8A%A0%E5%AF%86-VeraCrypt%E8%BB%9F%E9%AB%94%E6%95%99%E5%AD%B8&#xA;【特别提醒】在正式开始操作之前，请一定认真阅读使用指南，并将你的所有重要数据备份。</description>
+    </item>
+    <item>
+      <title>定期备份你的重要数据</title>
+      <link>http://localhost:1313/docs/07-data/backup/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/07-data/backup/</guid>
+      <description>定期备份你的重要数据 # 你应该养成良好的数据备份习惯，尤其是将那些重要的文件定期备份，以免电脑、手机丢失和损坏之后导致重要数据丢失。&#xA;备份的一个原则是，不要让这个文件只有一份，而应该同时在多个（至少两个）设备上面保存，以免其中之一遗失或损坏之后永远失去这些文件。&#xA;前面已经推荐介绍强大的文件和系统加密软件 Veracrypt。 你要备份重要数据的时候，也应该使用 Veracrypt 加密所有的文件。可以按照类型，分成若干个不同的加密文件。比如重要的个人证件合同是一类，生成一个加密文件；个人私密照片是一类，生成另一个加密文件；敏感的线上活动是一类，单独生成一个加密文件……诸如此类。&#xA;Veracrypt 的加密文件可以复制、移动。也就是说，在电脑硬盘上面加密的文件，可以复制到移动硬盘保存。以后需要使用的时候，也可以使用 Veracrypt 从移动硬盘打开。</description>
+    </item>
+    <item>
+      <title>使用 BleachBit 销毁文件</title>
+      <link>http://localhost:1313/docs/07-data/destroy/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/07-data/destroy/</guid>
+      <description>使用 BleachBit 销毁文件 # 有些时候，数据安全还包括销毁文件。一些文件如果落入黑客或者警方手中，可能会给你和你的伙伴带来极大风险。因此，只有加密保存还不够。这时你需要将那些敏感的、但却不再需要的资料彻底销毁。&#xA;一般人的做法是在电脑上面点击“删除”，并清空回收桶（无论使用哪种操作系统，都有这样的功能）。&#xA;但是，仅仅这样做完全不够！警方手中的机器可以在很短时间之内恢复这些数据。你需要更专业更强大的工具来帮你彻底清理和销毁文件。&#xA;在这里我们推荐 BleachBit, 这也是电子前沿基金会（EFF）推荐的软件。&#xA;最详细的指南，还是应该看 BleachBit 的官方文档。 https://docs.bleachbit.org/&#xA;虽然它是全英文的，但有丰富的配图和视频演示。</description>
+    </item>
+  </channel>
+</rss>

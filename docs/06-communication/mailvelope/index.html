@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="借助 Mailvelope 使用 PGP 加密邮件 # 传统上，使用 PGP 加密、解密邮件是件技术活，很多新手不知应该如何操作。Mailvelope 的出现总算让问题变得简单多了！
+Mailvelope 是一个浏览器扩展，可以安装在 Firefox（包括 LibreWolf）浏览器上。安装成功之后，如下设置和使用。
+1. 第一步：为你的邮箱生成密钥 # 点击顶部菜单的 Key management, 会出现如下界面。
+依次填入：你的名字（你想以什么名字来使用这个邮箱，由你决定）、电子邮箱，最后为你的秘钥设置密码，密码需要输入两次。然后点击右下角的 Generate 完成。
+2. 第二步：查看你的密钥 # 完成第一步之后，Mailvelope 就会为你的邮箱生成一对密钥：私钥和公钥。
+这时，你会在 Key management 列表当中看到你的邮箱和刚刚生成的秘钥。点击你的邮箱地址，就会看到密钥的详情，如下图。
+3. 第三步：导出你的公钥 # 在第二步的界面中，点击右上角的 Export, 就可以导出自己的公钥（Public）和私钥（Private）。公钥要公开分享给全世界（至少要分享给你的通信对象），而私钥却要自己保管好，绝对绝对不能把私钥告诉任何人。
+选择公钥（Public），你会看见一长串的随机字符，如下图。点击右下角的 Save, 就可以将公钥保存成一个 .asc 文件，将它保存在电脑里。
+4. 第四步、将你的公钥分享给别人 # 公钥的作用是：当 A 想要给你发送加密邮箱时，A 要知道与你的邮箱对应的公钥。所以，你应该将公钥分享给别人。一般有这样几种做法：
+将导出的公钥 asc 文件作为邮件附件，直接发送给通信对象。 将公钥的 fingerprint 信息放在邮件的签名里。请回到第二个步骤的图中，找到图中右下角的 fingerprint, 复制它后面那一串包含大写字母和阿拉伯数字的字符。将这一串字符完整地放在邮件签名里。别人通过这一串 fingerprint 就能找到你的 PGP 公钥。 将公钥的 .asc 文件或者 fingerprint 放在你的个人网站、社交媒体的介绍里，同时不要忘了附上邮箱地址，不然别人不知道要写信给谁。 将你的公钥 .">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="借助 Mailvelope 使用 PGP 加密邮件" />
+<meta property="og:description" content="借助 Mailvelope 使用 PGP 加密邮件 # 传统上，使用 PGP 加密、解密邮件是件技术活，很多新手不知应该如何操作。Mailvelope 的出现总算让问题变得简单多了！
+Mailvelope 是一个浏览器扩展，可以安装在 Firefox（包括 LibreWolf）浏览器上。安装成功之后，如下设置和使用。
+1. 第一步：为你的邮箱生成密钥 # 点击顶部菜单的 Key management, 会出现如下界面。
+依次填入：你的名字（你想以什么名字来使用这个邮箱，由你决定）、电子邮箱，最后为你的秘钥设置密码，密码需要输入两次。然后点击右下角的 Generate 完成。
+2. 第二步：查看你的密钥 # 完成第一步之后，Mailvelope 就会为你的邮箱生成一对密钥：私钥和公钥。
+这时，你会在 Key management 列表当中看到你的邮箱和刚刚生成的秘钥。点击你的邮箱地址，就会看到密钥的详情，如下图。
+3. 第三步：导出你的公钥 # 在第二步的界面中，点击右上角的 Export, 就可以导出自己的公钥（Public）和私钥（Private）。公钥要公开分享给全世界（至少要分享给你的通信对象），而私钥却要自己保管好，绝对绝对不能把私钥告诉任何人。
+选择公钥（Public），你会看见一长串的随机字符，如下图。点击右下角的 Save, 就可以将公钥保存成一个 .asc 文件，将它保存在电脑里。
+4. 第四步、将你的公钥分享给别人 # 公钥的作用是：当 A 想要给你发送加密邮箱时，A 要知道与你的邮箱对应的公钥。所以，你应该将公钥分享给别人。一般有这样几种做法：
+将导出的公钥 asc 文件作为邮件附件，直接发送给通信对象。 将公钥的 fingerprint 信息放在邮件的签名里。请回到第二个步骤的图中，找到图中右下角的 fingerprint, 复制它后面那一串包含大写字母和阿拉伯数字的字符。将这一串字符完整地放在邮件签名里。别人通过这一串 fingerprint 就能找到你的 PGP 公钥。 将公钥的 .asc 文件或者 fingerprint 放在你的个人网站、社交媒体的介绍里，同时不要忘了附上邮箱地址，不然别人不知道要写信给谁。 将你的公钥 ." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/docs/06-communication/mailvelope/" /><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2024-04-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-04-10T00:00:00+00:00" />
+<title>借助 Mailvelope 使用 PGP 加密邮件 | 信息与网络安全手册</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="canonical" href="http://localhost:1313/docs/06-communication/mailvelope/">
+<link rel="stylesheet" href="/book.min.309b7ed028807cdb68d8d61e26d609f48369c098dbf5e4d8c0dcf4cdf49feafc.css" integrity="sha256-MJt&#43;0CiAfNto2NYeJtYJ9INpwJjb9eTYwNz0zfSf6vw=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/zh.search.min.06be65d352fea4a2dac450ade5e630cb82ea1c779f322485417b8dbdeabe1d43.js" integrity="sha256-Br5l01L&#43;pKLaxFCt5eYwy4LqHHefMiSFQXuNveq&#43;HUM=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>信息与网络安全手册</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="搜索" aria-label="搜索" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/" class="">写在前面</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/01-start/" class="">一、确认自己的身份和处境</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/" class="">二、电脑硬件及操作系统</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/windows/" class="">运行 Windows 系统的 PC 机</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/macos/" class="">运行 macOS 的苹果电脑</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/linux/" class="">运行 GNU/Linux 系统的 PC 机</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/liveos/" class="">使用 Live USB 系统</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/" class="">三、手机设备及操作系统</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/ios/" class="">iPhone 手机（附 iPad）</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/android/" class="">Android 手机（安卓手机）</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/tablet/" class="">平板电脑</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/security/" class="">智能手机安全设置</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/" class="">四、常用软件推荐</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/ime/" class="">中文输入法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/browser/" class="">网页浏览器</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/extension/" class="">浏览器扩展</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/im/" class="">即时通讯软件</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/video/" class="">视频通话及会议</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/office/" class="">办公和线上协作</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/cloud-storage/" class="">云存储和文件分享</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/password/" class="">密码管理器</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/others/" class="">其它软件</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/signal/" class="">Signal 专门页面</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/" class="">五、上网安全</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/vpn/" class="">使用 VPN 的场景</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/tor/" class="">使用 Tor 浏览器保持匿名</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/links/" class="">当心包含恶意代码的链接</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/identities/" class="">使用不同的在线身份</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/2fa/" class="">为你的账号开启两步验证</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/" class="">六、通讯安全</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/im/" class="">即时通讯和视频通话</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/mail/" class="">电子邮件安全</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/mailvelope/" class="active">借助 Mailvelope 使用 PGP 加密邮件</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/" class="">七、数据安全</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/level/" class="">给你的数据重要性分级</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/metadata/" class="">分享之前，删除元数据</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/veracrypt/" class="">使用 Veracrypt 加密文件和磁盘</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/backup/" class="">定期备份你的重要数据</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/destroy/" class="">使用 BleachBit 销毁文件</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/08-police/" class="">八、面对警察查手机</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/08-police/digital/" class="">数字安全层面</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/08-police/legal/" class="">法律层面</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/" class="">九、海外人士回国，遭遇电子产品检查或警察盘问</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/preparation/" class="">准备事项</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/before-teatime/" class="">喝茶之前</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/teatime/" class="">喝茶的时候</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>借助 Mailvelope 使用 PGP 加密邮件</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#借助-mailvelope-使用-pgp-加密邮件">借助 Mailvelope 使用 PGP 加密邮件</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#1-第一步为你的邮箱生成密钥">1. 第一步：为你的邮箱生成密钥</a></li>
+            <li><a href="#2-第二步查看你的密钥">2. 第二步：查看你的密钥</a></li>
+            <li><a href="#3-第三步导出你的公钥">3. 第三步：导出你的公钥</a></li>
+            <li><a href="#4-第四步将你的公钥分享给别人">4. 第四步、将你的公钥分享给别人</a></li>
+            <li><a href="#5-第五步导入通信对象的公钥">5. 第五步、导入通信对象的公钥</a></li>
+            <li><a href="#6-第六步写一封加密邮件">6. 第六步、写一封加密邮件</a></li>
+            <li><a href="#7-第七步解密一封加密邮件">7. 第七步、解密一封加密邮件</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="借助-mailvelope-使用-pgp-加密邮件">
+  借助 Mailvelope 使用 PGP 加密邮件
+  <a class="anchor" href="#%e5%80%9f%e5%8a%a9-mailvelope-%e4%bd%bf%e7%94%a8-pgp-%e5%8a%a0%e5%af%86%e9%82%ae%e4%bb%b6">#</a>
+</h1>
+<p>传统上，使用 PGP 加密、解密邮件是件技术活，很多新手不知应该如何操作。Mailvelope 的出现总算让问题变得简单多了！</p>
+<p><a href="https://mailvelope.com/en/">Mailvelope</a> 是一个浏览器扩展，可以安装在 Firefox（包括 LibreWolf）浏览器上。安装成功之后，如下设置和使用。</p>
+<h3 id="1-第一步为你的邮箱生成密钥">
+  1. 第一步：为你的邮箱生成密钥
+  <a class="anchor" href="#1-%e7%ac%ac%e4%b8%80%e6%ad%a5%e4%b8%ba%e4%bd%a0%e7%9a%84%e9%82%ae%e7%ae%b1%e7%94%9f%e6%88%90%e5%af%86%e9%92%a5">#</a>
+</h3>
+<p>点击顶部菜单的 Key management, 会出现如下界面。</p>
+<p>依次填入：你的名字（你想以什么名字来使用这个邮箱，由你决定）、电子邮箱，最后为你的秘钥设置密码，密码需要输入两次。然后点击右下角的 Generate 完成。</p>
+<p><img src="/docs/images/mailvelope01.png" alt="Mailvelope" /></p>
+<h3 id="2-第二步查看你的密钥">
+  2. 第二步：查看你的密钥
+  <a class="anchor" href="#2-%e7%ac%ac%e4%ba%8c%e6%ad%a5%e6%9f%a5%e7%9c%8b%e4%bd%a0%e7%9a%84%e5%af%86%e9%92%a5">#</a>
+</h3>
+<p>完成第一步之后，Mailvelope 就会为你的邮箱生成一对密钥：私钥和公钥。</p>
+<p>这时，你会在 Key management 列表当中看到你的邮箱和刚刚生成的秘钥。点击你的邮箱地址，就会看到密钥的详情，如下图。</p>
+<p><img src="/docs/images/mailvelope02.png" alt="Mailvelope" /></p>
+<h3 id="3-第三步导出你的公钥">
+  3. 第三步：导出你的公钥
+  <a class="anchor" href="#3-%e7%ac%ac%e4%b8%89%e6%ad%a5%e5%af%bc%e5%87%ba%e4%bd%a0%e7%9a%84%e5%85%ac%e9%92%a5">#</a>
+</h3>
+<p>在第二步的界面中，点击右上角的 Export, 就可以导出自己的公钥（Public）和私钥（Private）。公钥要公开分享给全世界（至少要分享给你的通信对象），而私钥却要自己保管好，绝对绝对不能把私钥告诉任何人。</p>
+<p>选择公钥（Public），你会看见一长串的随机字符，如下图。点击右下角的 Save, 就可以将公钥保存成一个 .asc 文件，将它保存在电脑里。</p>
+<p><img src="/docs/images/mailvelope03.png" alt="Mailvelope" /></p>
+<h3 id="4-第四步将你的公钥分享给别人">
+  4. 第四步、将你的公钥分享给别人
+  <a class="anchor" href="#4-%e7%ac%ac%e5%9b%9b%e6%ad%a5%e5%b0%86%e4%bd%a0%e7%9a%84%e5%85%ac%e9%92%a5%e5%88%86%e4%ba%ab%e7%bb%99%e5%88%ab%e4%ba%ba">#</a>
+</h3>
+<p>公钥的作用是：当 A 想要给你发送加密邮箱时，A 要知道与你的邮箱对应的公钥。所以，你应该将公钥分享给别人。一般有这样几种做法：</p>
+<ul>
+<li>将导出的公钥 asc 文件作为邮件附件，直接发送给通信对象。</li>
+<li>将公钥的 fingerprint 信息放在邮件的签名里。请回到第二个步骤的图中，找到图中右下角的 fingerprint, 复制它后面那一串包含大写字母和阿拉伯数字的字符。将这一串字符完整地放在邮件签名里。别人通过这一串 fingerprint 就能找到你的 PGP 公钥。</li>
+<li>将公钥的 .asc 文件或者 fingerprint 放在你的个人网站、社交媒体的介绍里，同时不要忘了附上邮箱地址，不然别人不知道要写信给谁。</li>
+<li>将你的公钥 .asc 文件上传到专门的公钥服务器分享，别人在这些服务器上搜索你的邮箱地址，就能找到你的公钥。常见公钥服务器比如 <a href="https://keys.mailvelope.com/">Mailvelope key server</a>, <a href="http://pgp.mit.edu/">MIT PGP Key Server</a>, <a href="https://keys.openpgp.org/">OpenPGP key server</a>.</li>
+</ul>
+<h3 id="5-第五步导入通信对象的公钥">
+  5. 第五步、导入通信对象的公钥
+  <a class="anchor" href="#5-%e7%ac%ac%e4%ba%94%e6%ad%a5%e5%af%bc%e5%85%a5%e9%80%9a%e4%bf%a1%e5%af%b9%e8%b1%a1%e7%9a%84%e5%85%ac%e9%92%a5">#</a>
+</h3>
+<p>要给别人写一封 PGP 加密邮件，你需要知道对方的邮箱地址和 PGP 公钥。如果你还不知道，请直接找对方询问。如果对方没有 PGP 公钥，你可以按照以上方法帮其设置。</p>
+<p>假设你已经知道 A  的邮箱和 PGP 公钥，它可能是一个 .asc 文件，也可能是非常长的一串随机字符。</p>
+<p>在 Mailvelope 的 Key management 界面，点击 Import, 来到如下界面：</p>
+<p><img src="/docs/images/mailvelope04.png" alt="Mailvelope" /></p>
+<p>如果 A 的 PGP 公钥是一个 .asc 文件，就点击上图中的 Add file, 选择 .asc 文件，然后点击右下角的 Import keys.</p>
+<p>如果 A 的 PGP 公钥是一串随机字符，就全选、复制这串字符，然后在 Import 界面里点击 Import key from clipboard, 最后点击右下角的 Import keys.</p>
+<p>以上两种方式的作用一样，取决于你拿到的公钥文件是什么样的。</p>
+<h3 id="6-第六步写一封加密邮件">
+  6. 第六步、写一封加密邮件
+  <a class="anchor" href="#6-%e7%ac%ac%e5%85%ad%e6%ad%a5%e5%86%99%e4%b8%80%e5%b0%81%e5%8a%a0%e5%af%86%e9%82%ae%e4%bb%b6">#</a>
+</h3>
+<p>要给别人发送 PGP 加密邮件之前，一定要将其公钥导入 Mailvelope. 我们在上一步已经完成导入。</p>
+<p>点击 Mailvelope 顶端菜单里的 Encrypt. 会看到如下界面：</p>
+<p><img src="/docs/images/mailvelope05.png" alt="Mailvelope" /></p>
+<p>假设你要给 <a href="mailto:tigger@pooh.com">tigger@pooh.com</a> 发送加密邮件，在 Recipient 的位置输入 <a href="mailto:tigger@pooh.com">tigger@pooh.com</a> 的邮箱。由于你已经导入 Tigger 的公钥，所以 Mailvelope 会识别到 Tigger 的公钥。点击确认收件人。</p>
+<p>然后在 Message 栏目输入你想要发送的邮件内容，你可以写很长很长的内容。最后点击这个界面左上角的 Encrypt 按钮，即可完成信息加密。如下图所示：</p>
+<p><img src="/docs/images/mailvelope06.png" alt="Mailvelope" /></p>
+<p>你可以点击下载 .asc 文件，也可以全选、复制密文全文。注意，密文全文包括开头的 <strong>&mdash;&ndash;BEGIN PGP MESSAGE&mdash;&ndash;</strong> 和结尾的 <strong>&mdash;&ndash;END PGP MESSAGE&mdash;&ndash;</strong></p>
+<p>然后将 .asc 文件（它的内容即是密文全文）作为邮件附件发送到 Tigger 的邮箱，或者复制密文全文，将其粘贴在邮件正文里发送给 Tigger。 这段密文使用 Tigger 的公钥加密，因此只有 Tigger 的私钥才能将其解密。其他人没有 Tigger 的私钥，即使能够截取这段密文，也无法将其解密还原成为人类可以读懂的文字。</p>
+<p>那么，Tigger 收到密文之后要如何解密呢？请看下一步。</p>
+<h3 id="7-第七步解密一封加密邮件">
+  7. 第七步、解密一封加密邮件
+  <a class="anchor" href="#7-%e7%ac%ac%e4%b8%83%e6%ad%a5%e8%a7%a3%e5%af%86%e4%b8%80%e5%b0%81%e5%8a%a0%e5%af%86%e9%82%ae%e4%bb%b6">#</a>
+</h3>
+<p>假设收到密文的 Tigger 也使用 Mailvelope.</p>
+<p>Tigger 将密文全文（记得包括开头和结尾）复制，然后打开 Mailvelope 顶端的 Decrypt 菜单，就会来到如下界面。将密文全文粘贴在 Text to decrypt 栏，然后点击右上角的 Decrypt 按钮。</p>
+<p><img src="/docs/images/mailvelope07.png" alt="Mailvelope" /></p>
+<p>由于这段密文使用 <a href="mailto:tigger@pooh.com">tigger@pooh.com</a> 的公钥加密，因此当点击右上角的 Decrypt 按钮之后，Mailvelope 会要求输入 <a href="mailto:tigger@pooh.com">tigger@pooh.com</a> 的密钥管理密码。还记得我们在第一步设置的密码吗？</p>
+<p>如果密码正确，就有权使用 <a href="mailto:tigger@pooh.com">tigger@pooh.com</a> 的私钥来解密这段密文。解密成功，Mailvelope 会生成一个可供下载的 txt 文档。</p>
+<p>下载这个 txt 文档，将其保存在电脑里。使用记事本软件将它打开，即可看到解密之后的内容，也就是 Winnie 写的那句邮件内容“新年快乐！”。</p>
+<p>由于这是加密邮件，建议你阅读之后马上将其删除，而不要永久保存。</p>
+<p>以上就是使用 Mailvelope 加密和解密的全过程。</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#借助-mailvelope-使用-pgp-加密邮件">借助 Mailvelope 使用 PGP 加密邮件</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#1-第一步为你的邮箱生成密钥">1. 第一步：为你的邮箱生成密钥</a></li>
+            <li><a href="#2-第二步查看你的密钥">2. 第二步：查看你的密钥</a></li>
+            <li><a href="#3-第三步导出你的公钥">3. 第三步：导出你的公钥</a></li>
+            <li><a href="#4-第四步将你的公钥分享给别人">4. 第四步、将你的公钥分享给别人</a></li>
+            <li><a href="#5-第五步导入通信对象的公钥">5. 第五步、导入通信对象的公钥</a></li>
+            <li><a href="#6-第六步写一封加密邮件">6. 第六步、写一封加密邮件</a></li>
+            <li><a href="#7-第七步解密一封加密邮件">7. 第七步、解密一封加密邮件</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="运行 macOS 的苹果电脑 # 一、决定购买和使用之前 # 苹果电脑由美国 Apple 公司生产，它的电脑硬件与操作系统之间有着强绑定关系。也就是说，当你购买苹果电脑的时候，意味着你选择使用 macOS 系统；当你想要使用 macOS 系统的时候，你就会购买苹果电脑。
+这种强绑定关系的好处是，硬件与系统之间极其优良的配合，因为它的系统就是为它的硬件准备的。有些人会在苹果电脑上面安装 Windows 系统，或者在 PC 机上面安装 macOS 系统，虽然这样也能运行，但肯定无法像苹果电脑搭载 macOS 系统那样舒服和流畅。
+但是这种强绑定关系同时也带来一些问题，这是你在决定购买和使用苹果电脑之前要知道的。你有可能会遭遇这种情况：
+电脑硬件完好无损，无论是电池还是硬盘都能正常工作。但是，由于苹果公司不断发布新的 macOS 系统，而新版系统对于电脑硬件配置要求较高，使得你的电脑无法升级到最新版本的系统，或者即使能够升级，也不能流畅地使用。你无法仅仅通过升级主板、内存或者显卡使其满足最新版 macOS 系统的要求。很多人在这个时候会被迫买一台新的电脑，也就是硬件配置更高、操作系统更新的苹果电脑。
+点击以下链接，检查你的苹果电脑硬件能够支持的最新版本系统是多少。
+MacBook Air https://en.wikipedia.org/wiki/MacBook_Air#macOS
+MacBook Pro https://en.wikipedia.org/wiki/MacBook_Pro#macOS
+iMac https://en.wikipedia.org/wiki/IMac#Supported_Apple_operating_system_releases
+根据上面的链接内容所示：
+如果你使用 MacBook Air 电脑，想要升级到最新的 macOS 14 版本系统，那么你的 MacBook Air 机器至少需要是 2018 年版本。早于 2018 年的机器已经无法升级到 macOS 14 版本的系统。
+如果你使用 MacBook Pro 电脑，想要升级到最新的 macOS 14 版本系统，那么你的 MacBook Pro 机器至少需要是 2018 年版本，早于 2018 年的机器已经无法升级到 macOS 14 版本的系统。">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="运行 macOS 的苹果电脑" />
+<meta property="og:description" content="运行 macOS 的苹果电脑 # 一、决定购买和使用之前 # 苹果电脑由美国 Apple 公司生产，它的电脑硬件与操作系统之间有着强绑定关系。也就是说，当你购买苹果电脑的时候，意味着你选择使用 macOS 系统；当你想要使用 macOS 系统的时候，你就会购买苹果电脑。
+这种强绑定关系的好处是，硬件与系统之间极其优良的配合，因为它的系统就是为它的硬件准备的。有些人会在苹果电脑上面安装 Windows 系统，或者在 PC 机上面安装 macOS 系统，虽然这样也能运行，但肯定无法像苹果电脑搭载 macOS 系统那样舒服和流畅。
+但是这种强绑定关系同时也带来一些问题，这是你在决定购买和使用苹果电脑之前要知道的。你有可能会遭遇这种情况：
+电脑硬件完好无损，无论是电池还是硬盘都能正常工作。但是，由于苹果公司不断发布新的 macOS 系统，而新版系统对于电脑硬件配置要求较高，使得你的电脑无法升级到最新版本的系统，或者即使能够升级，也不能流畅地使用。你无法仅仅通过升级主板、内存或者显卡使其满足最新版 macOS 系统的要求。很多人在这个时候会被迫买一台新的电脑，也就是硬件配置更高、操作系统更新的苹果电脑。
+点击以下链接，检查你的苹果电脑硬件能够支持的最新版本系统是多少。
+MacBook Air https://en.wikipedia.org/wiki/MacBook_Air#macOS
+MacBook Pro https://en.wikipedia.org/wiki/MacBook_Pro#macOS
+iMac https://en.wikipedia.org/wiki/IMac#Supported_Apple_operating_system_releases
+根据上面的链接内容所示：
+如果你使用 MacBook Air 电脑，想要升级到最新的 macOS 14 版本系统，那么你的 MacBook Air 机器至少需要是 2018 年版本。早于 2018 年的机器已经无法升级到 macOS 14 版本的系统。
+如果你使用 MacBook Pro 电脑，想要升级到最新的 macOS 14 版本系统，那么你的 MacBook Pro 机器至少需要是 2018 年版本，早于 2018 年的机器已经无法升级到 macOS 14 版本的系统。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/docs/02-computer/macos/" /><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2024-04-05T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-04-05T00:00:00+00:00" />
+<title>运行 macOS 的苹果电脑 | 信息与网络安全手册</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="canonical" href="http://localhost:1313/docs/02-computer/macos/">
+<link rel="stylesheet" href="/book.min.309b7ed028807cdb68d8d61e26d609f48369c098dbf5e4d8c0dcf4cdf49feafc.css" integrity="sha256-MJt&#43;0CiAfNto2NYeJtYJ9INpwJjb9eTYwNz0zfSf6vw=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/zh.search.min.06be65d352fea4a2dac450ade5e630cb82ea1c779f322485417b8dbdeabe1d43.js" integrity="sha256-Br5l01L&#43;pKLaxFCt5eYwy4LqHHefMiSFQXuNveq&#43;HUM=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>信息与网络安全手册</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="搜索" aria-label="搜索" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/" class="">写在前面</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/01-start/" class="">一、确认自己的身份和处境</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/" class="">二、电脑硬件及操作系统</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/windows/" class="">运行 Windows 系统的 PC 机</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/macos/" class="active">运行 macOS 的苹果电脑</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/linux/" class="">运行 GNU/Linux 系统的 PC 机</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/liveos/" class="">使用 Live USB 系统</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/" class="">三、手机设备及操作系统</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/ios/" class="">iPhone 手机（附 iPad）</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/android/" class="">Android 手机（安卓手机）</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/tablet/" class="">平板电脑</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/security/" class="">智能手机安全设置</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/" class="">四、常用软件推荐</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/ime/" class="">中文输入法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/browser/" class="">网页浏览器</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/extension/" class="">浏览器扩展</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/im/" class="">即时通讯软件</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/video/" class="">视频通话及会议</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/office/" class="">办公和线上协作</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/cloud-storage/" class="">云存储和文件分享</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/password/" class="">密码管理器</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/others/" class="">其它软件</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/signal/" class="">Signal 专门页面</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/" class="">五、上网安全</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/vpn/" class="">使用 VPN 的场景</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/tor/" class="">使用 Tor 浏览器保持匿名</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/links/" class="">当心包含恶意代码的链接</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/identities/" class="">使用不同的在线身份</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/2fa/" class="">为你的账号开启两步验证</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/" class="">六、通讯安全</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/im/" class="">即时通讯和视频通话</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/mail/" class="">电子邮件安全</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/mailvelope/" class="">借助 Mailvelope 使用 PGP 加密邮件</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/" class="">七、数据安全</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/level/" class="">给你的数据重要性分级</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/metadata/" class="">分享之前，删除元数据</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/veracrypt/" class="">使用 Veracrypt 加密文件和磁盘</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/backup/" class="">定期备份你的重要数据</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/destroy/" class="">使用 BleachBit 销毁文件</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/08-police/" class="">八、面对警察查手机</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/08-police/digital/" class="">数字安全层面</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/08-police/legal/" class="">法律层面</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/" class="">九、海外人士回国，遭遇电子产品检查或警察盘问</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/preparation/" class="">准备事项</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/before-teatime/" class="">喝茶之前</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/teatime/" class="">喝茶的时候</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>运行 macOS 的苹果电脑</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#运行-macos-的苹果电脑">运行 macOS 的苹果电脑</a>
+      <ul>
+        <li><a href="#一决定购买和使用之前">一、决定购买和使用之前</a></li>
+        <li><a href="#二确保系统定期更新">二、确保系统定期更新</a></li>
+        <li><a href="#三开启防火墙并安装杀毒软件">三、开启防火墙并安装杀毒软件</a></li>
+        <li><a href="#四更多安全设置">四、更多安全设置</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="运行-macos-的苹果电脑">
+  运行 macOS 的苹果电脑
+  <a class="anchor" href="#%e8%bf%90%e8%a1%8c-macos-%e7%9a%84%e8%8b%b9%e6%9e%9c%e7%94%b5%e8%84%91">#</a>
+</h1>
+<h2 id="一决定购买和使用之前">
+  一、决定购买和使用之前
+  <a class="anchor" href="#%e4%b8%80%e5%86%b3%e5%ae%9a%e8%b4%ad%e4%b9%b0%e5%92%8c%e4%bd%bf%e7%94%a8%e4%b9%8b%e5%89%8d">#</a>
+</h2>
+<p>苹果电脑由美国 Apple 公司生产，它的电脑硬件与操作系统之间有着强绑定关系。也就是说，当你购买苹果电脑的时候，意味着你选择使用 macOS 系统；当你想要使用 macOS 系统的时候，你就会购买苹果电脑。</p>
+<p>这种强绑定关系的好处是，硬件与系统之间极其优良的配合，因为它的系统就是为它的硬件准备的。有些人会在苹果电脑上面安装 Windows 系统，或者在 PC 机上面安装 macOS 系统，虽然这样也能运行，但肯定无法像苹果电脑搭载 macOS 系统那样舒服和流畅。</p>
+<p>但是这种强绑定关系同时也带来一些问题，这是你在决定购买和使用苹果电脑之前要知道的。你有可能会遭遇这种情况：</p>
+<p>电脑硬件完好无损，无论是电池还是硬盘都能正常工作。但是，由于苹果公司不断发布新的 macOS 系统，而新版系统对于电脑硬件配置要求较高，使得你的电脑无法升级到最新版本的系统，或者即使能够升级，也不能流畅地使用。你无法仅仅通过升级主板、内存或者显卡使其满足最新版 macOS 系统的要求。很多人在这个时候会被迫买一台新的电脑，也就是硬件配置更高、操作系统更新的苹果电脑。</p>
+<p>点击以下链接，检查你的苹果电脑硬件能够支持的最新版本系统是多少。</p>
+<ul>
+<li>
+<p>MacBook Air <a href="https://en.wikipedia.org/wiki/MacBook_Air#macOS">https://en.wikipedia.org/wiki/MacBook_Air#macOS</a></p>
+</li>
+<li>
+<p>MacBook Pro <a href="https://en.wikipedia.org/wiki/MacBook_Pro#macOS">https://en.wikipedia.org/wiki/MacBook_Pro#macOS</a></p>
+</li>
+<li>
+<p>iMac <a href="https://en.wikipedia.org/wiki/IMac#Supported_Apple_operating_system_releases">https://en.wikipedia.org/wiki/IMac#Supported_Apple_operating_system_releases</a></p>
+</li>
+</ul>
+<p>根据上面的链接内容所示：</p>
+<ul>
+<li>
+<p>如果你使用 MacBook Air 电脑，想要升级到最新的 macOS 14 版本系统，那么你的 MacBook Air 机器至少需要是 2018 年版本。早于 2018 年的机器已经无法升级到 macOS 14 版本的系统。</p>
+</li>
+<li>
+<p>如果你使用 MacBook Pro 电脑，想要升级到最新的 macOS 14 版本系统，那么你的 MacBook Pro 机器至少需要是 2018 年版本，早于 2018 年的机器已经无法升级到 macOS 14 版本的系统。</p>
+</li>
+<li>
+<p>如果你使用 iMac 台式电脑，想要升级到最新的 macOS 14版本系统，那么你的 iMac 机器至少需要是 2019 年版本，早于 2019 年的机器已经无法升级到 macOS 14 版本的系统。</p>
+</li>
+</ul>
+<p><em>提示：上述状况的解决办法之一是这样，如果你熟悉 GNU/Linux 操作系统，当你的苹果电脑无法再升级到最新版本 macOS 的时候，你可以将 macOS 从电脑中完全清除，为它安装某种占用硬件资源较少的 GNU/Linux 发行版。</em></p>
+<p>如果你可以选择，建议购买内存（RAM）至少 16GB 的苹果电脑，这样可以使电脑与软件运行更加顺畅。</p>
+<h2 id="二确保系统定期更新">
+  二、确保系统定期更新
+  <a class="anchor" href="#%e4%ba%8c%e7%a1%ae%e4%bf%9d%e7%b3%bb%e7%bb%9f%e5%ae%9a%e6%9c%9f%e6%9b%b4%e6%96%b0">#</a>
+</h2>
+<p>每个版本的 macOS 系统都有一定的“寿命”，即支援期限，一般小于四年。</p>
+<p>比如 2019 年发布的 macOS 10.15 版本已于 2022 年 11 月停止安全更新；2020 年发布的 macOS 11 版本已于 2023 年 9 月停止安全更新。</p>
+<p>如果苹果公司不再针对你所使用的系统提供安全更新，那么你的系统就比较容易受到攻击和入侵。这时应该尽快给系统升级，将它升级到能够接收官方安全更新的版本（不一定是最新版本的系统，但需要保证它是一个能够接收安全更新的系统）。</p>
+<p>首先要确定自己正在使用哪个版本的 macOS. 进一步确认苹果公司是否仍然对这个版本的系统提供安全更新。搜索系统名称和版本号（比如搜索 macOS 12），即可在苹果公司官方网站或者维基百科页面看到这个版本系统的详情，查看其中的 &ldquo;support status&rdquo;（支持状态），确认是否仍然可以接收官方安全更新。</p>
+<p>比如下图，来自英文维基百科 macOS 页面的 Timeline of releases 表格( <a href="https://en.wikipedia.org/wiki/MacOS#Timeline_of_releases">https://en.wikipedia.org/wiki/MacOS#Timeline_of_releases</a> )，用三种不同颜色标出不同版本的系统。绿色背景（macOS 14）是最新版系统；黄色背景（macOS 12 和 13）是较旧的版本，但苹果公司仍然提供安全更新；浅红色背景（macOS 11）是较旧的版本，而且苹果公司已经不再提供安全更新。</p>
+<p><img src="/docs/images/macos-version.png" alt="macOS version" /></p>
+<p>截止2024年4月，请你确保自己使用的 macOS 系统最低版本是 macOS 12, 它还能够接收官方安全更新。如果小于这个版本，请尽快给系统升级。</p>
+<p>虽然保持电脑系统更新不能百分之百保证系统安全，但如果没有保持系统更新，肯定会面临更大风险。</p>
+<h2 id="三开启防火墙并安装杀毒软件">
+  三、开启防火墙并安装杀毒软件
+  <a class="anchor" href="#%e4%b8%89%e5%bc%80%e5%90%af%e9%98%b2%e7%81%ab%e5%a2%99%e5%b9%b6%e5%ae%89%e8%a3%85%e6%9d%80%e6%af%92%e8%bd%af%e4%bb%b6">#</a>
+</h2>
+<p>针对 macOS 系统的防火墙软件，推荐以下几种：</p>
+<ul>
+<li>Radio Silence</li>
+</ul>
+<p><a href="https://radiosilenceapp.com/">https://radiosilenceapp.com/</a></p>
+<ul>
+<li>Security Growler</li>
+</ul>
+<p><a href="https://pirate.github.io/security-growler/">https://pirate.github.io/security-growler/</a></p>
+<p>针对 macOS 系统的杀毒软件，推荐使用以下几种：</p>
+<ul>
+<li>AVG</li>
+</ul>
+<p><a href="https://www.avg.com/zh-tw/avg-antivirus-for-mac#pc">https://www.avg.com/zh-tw/avg-antivirus-for-mac#pc</a></p>
+<ul>
+<li>Avira</li>
+</ul>
+<p><a href="https://www.avira.com/zh-cn/free-antivirus-mac">https://www.avira.com/zh-cn/free-antivirus-mac</a></p>
+<h2 id="四更多安全设置">
+  四、更多安全设置
+  <a class="anchor" href="#%e5%9b%9b%e6%9b%b4%e5%a4%9a%e5%ae%89%e5%85%a8%e8%ae%be%e7%bd%ae">#</a>
+</h2>
+<p>以下这个网页包含详细的 macOS 系统安全设置，请仔细阅读并按照其中指示操作。</p>
+<p><a href="https://securityinabox.org/zh/phones-and-computers/mac/">https://securityinabox.org/zh/phones-and-computers/mac/</a></p>
+<p>其中有些链接指向苹果公司（macOS 系统的开发者）官方网站，默认显示英文内容。点击打开这些链接之后，你可以将网页拉到最底部，在网页底部的右下角，可以看到语言切换按钮（如下图红色方框处），点击这个按钮，然后选择“中国大陆”，即可阅读中文版的指南。</p>
+<p><img src="/docs/images/macos-apple.png" alt="macOS Apple website" /></p>
+<p>这里还有一份详细完整的 macOS 安全指南，如果你想让自己的苹果电脑更加安全，推荐仔细阅读。</p>
+<p><a href="https://github.com/drduh/macOS-Security-and-Privacy-Guide/blob/master/README-cn.md">https://github.com/drduh/macOS-Security-and-Privacy-Guide/blob/master/README-cn.md</a></p>
+<p>对于不太熟悉计算机的普通用户而言，这份指南过于复杂。但请你至少设置完成其中一些比较基础的部分。</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#运行-macos-的苹果电脑">运行 macOS 的苹果电脑</a>
+      <ul>
+        <li><a href="#一决定购买和使用之前">一、决定购买和使用之前</a></li>
+        <li><a href="#二确保系统定期更新">二、确保系统定期更新</a></li>
+        <li><a href="#三开启防火墙并安装杀毒软件">三、开启防火墙并安装杀毒软件</a></li>
+        <li><a href="#四更多安全设置">四、更多安全设置</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

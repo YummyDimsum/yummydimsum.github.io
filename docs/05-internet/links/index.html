@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="当心包含恶意代码的链接 # 一、恶意链接攻击方式及防护 # 如果你是比较知名的活动人士（无论实名还是匿名），就有可能遭遇政府黑客的定点攻击。
+比较常见的一种网络定点攻击方式是钓鱼链接。简单说就是，攻击者发来一个模仿知名网站的链接，骗你点击。点击之后，这个链接就会悄悄执行攻击者早已设置好的恶意代码，获取你的真实 IP 地址等信息。
+目前没有什么技术工具可以百分之百防止这种攻击，只能请你自己养成良好的上网习惯：
+不要点击可疑的链接，这需要你平时就留意网站域名。在移动互联网时代，越来越多的人不看域名和链接，就容易被这种方式攻击。
+如果发现可疑链接，可以使用 Tor 浏览器打开，查看其中内容。Tor 浏览器默认的一些安全设置，以及它特有的信息转发方式，可以隐藏你的浏览器指纹也真实 IP 地址。详见 Tor 浏览器相关小节的内容。
+二、恶意链接攻击案例 # 2024年4月，Twitter 知名博主“李老师不是你老师”收到一个关注者发来的信息，其中包含三个钓鱼链接。
+一个钓鱼链接的域名是 biiliblii.com（不要点击），仿冒中国流行的视频网站 bilibili.com，请仔细看看它们的区别。
+另一个钓鱼链接的域名是 telegra.best，仿冒匿名文章分享平台 telegra.ph 的域名。
+有人写了一篇长文，详细分析和解释这次钓鱼事件，点击以下链接查看：
+https://medium.com/@programalsothink/%E9%92%88%E5%AF%B9%E6%9D%8E%E8%80%81%E5%B8%88%E7%9A%84%E9%92%93%E9%B1%BC%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E7%9A%84-%E6%B7%B1%E5%BA%A6%E6%8A%80%E6%9C%AF%E5%88%86%E6%9E%90-2f663b428f5e">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="当心包含恶意代码的链接" />
+<meta property="og:description" content="当心包含恶意代码的链接 # 一、恶意链接攻击方式及防护 # 如果你是比较知名的活动人士（无论实名还是匿名），就有可能遭遇政府黑客的定点攻击。
+比较常见的一种网络定点攻击方式是钓鱼链接。简单说就是，攻击者发来一个模仿知名网站的链接，骗你点击。点击之后，这个链接就会悄悄执行攻击者早已设置好的恶意代码，获取你的真实 IP 地址等信息。
+目前没有什么技术工具可以百分之百防止这种攻击，只能请你自己养成良好的上网习惯：
+不要点击可疑的链接，这需要你平时就留意网站域名。在移动互联网时代，越来越多的人不看域名和链接，就容易被这种方式攻击。
+如果发现可疑链接，可以使用 Tor 浏览器打开，查看其中内容。Tor 浏览器默认的一些安全设置，以及它特有的信息转发方式，可以隐藏你的浏览器指纹也真实 IP 地址。详见 Tor 浏览器相关小节的内容。
+二、恶意链接攻击案例 # 2024年4月，Twitter 知名博主“李老师不是你老师”收到一个关注者发来的信息，其中包含三个钓鱼链接。
+一个钓鱼链接的域名是 biiliblii.com（不要点击），仿冒中国流行的视频网站 bilibili.com，请仔细看看它们的区别。
+另一个钓鱼链接的域名是 telegra.best，仿冒匿名文章分享平台 telegra.ph 的域名。
+有人写了一篇长文，详细分析和解释这次钓鱼事件，点击以下链接查看：
+https://medium.com/@programalsothink/%E9%92%88%E5%AF%B9%E6%9D%8E%E8%80%81%E5%B8%88%E7%9A%84%E9%92%93%E9%B1%BC%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E7%9A%84-%E6%B7%B1%E5%BA%A6%E6%8A%80%E6%9C%AF%E5%88%86%E6%9E%90-2f663b428f5e" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/docs/05-internet/links/" /><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2024-04-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-04-10T00:00:00+00:00" />
+<title>当心包含恶意代码的链接 | 信息与网络安全手册</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="canonical" href="http://localhost:1313/docs/05-internet/links/">
+<link rel="stylesheet" href="/book.min.309b7ed028807cdb68d8d61e26d609f48369c098dbf5e4d8c0dcf4cdf49feafc.css" integrity="sha256-MJt&#43;0CiAfNto2NYeJtYJ9INpwJjb9eTYwNz0zfSf6vw=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/zh.search.min.06be65d352fea4a2dac450ade5e630cb82ea1c779f322485417b8dbdeabe1d43.js" integrity="sha256-Br5l01L&#43;pKLaxFCt5eYwy4LqHHefMiSFQXuNveq&#43;HUM=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>信息与网络安全手册</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="搜索" aria-label="搜索" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/" class="">写在前面</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/01-start/" class="">一、确认自己的身份和处境</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/" class="">二、电脑硬件及操作系统</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/windows/" class="">运行 Windows 系统的 PC 机</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/macos/" class="">运行 macOS 的苹果电脑</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/linux/" class="">运行 GNU/Linux 系统的 PC 机</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/liveos/" class="">使用 Live USB 系统</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/" class="">三、手机设备及操作系统</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/ios/" class="">iPhone 手机（附 iPad）</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/android/" class="">Android 手机（安卓手机）</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/tablet/" class="">平板电脑</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/security/" class="">智能手机安全设置</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/" class="">四、常用软件推荐</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/ime/" class="">中文输入法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/browser/" class="">网页浏览器</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/extension/" class="">浏览器扩展</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/im/" class="">即时通讯软件</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/video/" class="">视频通话及会议</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/office/" class="">办公和线上协作</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/cloud-storage/" class="">云存储和文件分享</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/password/" class="">密码管理器</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/others/" class="">其它软件</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/signal/" class="">Signal 专门页面</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/" class="">五、上网安全</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/vpn/" class="">使用 VPN 的场景</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/tor/" class="">使用 Tor 浏览器保持匿名</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/links/" class="active">当心包含恶意代码的链接</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/identities/" class="">使用不同的在线身份</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/2fa/" class="">为你的账号开启两步验证</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/" class="">六、通讯安全</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/im/" class="">即时通讯和视频通话</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/mail/" class="">电子邮件安全</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/mailvelope/" class="">借助 Mailvelope 使用 PGP 加密邮件</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/" class="">七、数据安全</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/level/" class="">给你的数据重要性分级</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/metadata/" class="">分享之前，删除元数据</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/veracrypt/" class="">使用 Veracrypt 加密文件和磁盘</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/backup/" class="">定期备份你的重要数据</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/destroy/" class="">使用 BleachBit 销毁文件</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/08-police/" class="">八、面对警察查手机</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/08-police/digital/" class="">数字安全层面</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/08-police/legal/" class="">法律层面</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/" class="">九、海外人士回国，遭遇电子产品检查或警察盘问</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/preparation/" class="">准备事项</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/before-teatime/" class="">喝茶之前</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/teatime/" class="">喝茶的时候</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>当心包含恶意代码的链接</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#当心包含恶意代码的链接">当心包含恶意代码的链接</a>
+      <ul>
+        <li><a href="#一恶意链接攻击方式及防护">一、恶意链接攻击方式及防护</a></li>
+        <li><a href="#二恶意链接攻击案例">二、恶意链接攻击案例</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="当心包含恶意代码的链接">
+  当心包含恶意代码的链接
+  <a class="anchor" href="#%e5%bd%93%e5%bf%83%e5%8c%85%e5%90%ab%e6%81%b6%e6%84%8f%e4%bb%a3%e7%a0%81%e7%9a%84%e9%93%be%e6%8e%a5">#</a>
+</h1>
+<h2 id="一恶意链接攻击方式及防护">
+  一、恶意链接攻击方式及防护
+  <a class="anchor" href="#%e4%b8%80%e6%81%b6%e6%84%8f%e9%93%be%e6%8e%a5%e6%94%bb%e5%87%bb%e6%96%b9%e5%bc%8f%e5%8f%8a%e9%98%b2%e6%8a%a4">#</a>
+</h2>
+<p>如果你是比较知名的活动人士（无论实名还是匿名），就有可能遭遇政府黑客的定点攻击。</p>
+<p>比较常见的一种网络定点攻击方式是钓鱼链接。简单说就是，攻击者发来一个模仿知名网站的链接，骗你点击。点击之后，这个链接就会悄悄执行攻击者早已设置好的恶意代码，获取你的真实 IP 地址等信息。</p>
+<p>目前没有什么技术工具可以百分之百防止这种攻击，只能请你自己养成良好的上网习惯：</p>
+<ul>
+<li>
+<p>不要点击可疑的链接，这需要你平时就留意网站域名。在移动互联网时代，越来越多的人不看域名和链接，就容易被这种方式攻击。</p>
+</li>
+<li>
+<p>如果发现可疑链接，可以使用 <a href="../tor/">Tor 浏览器</a>打开，查看其中内容。Tor 浏览器默认的一些安全设置，以及它特有的信息转发方式，可以隐藏你的浏览器指纹也真实 IP 地址。详见 Tor 浏览器相关小节的内容。</p>
+</li>
+</ul>
+<h2 id="二恶意链接攻击案例">
+  二、恶意链接攻击案例
+  <a class="anchor" href="#%e4%ba%8c%e6%81%b6%e6%84%8f%e9%93%be%e6%8e%a5%e6%94%bb%e5%87%bb%e6%a1%88%e4%be%8b">#</a>
+</h2>
+<p>2024年4月，Twitter 知名博主“李老师不是你老师”收到一个关注者发来的信息，其中包含三个钓鱼链接。</p>
+<p>一个钓鱼链接的域名是 biiliblii.com（<strong>不要点击</strong>），仿冒中国流行的视频网站 bilibili.com，请仔细看看它们的区别。</p>
+<p>另一个钓鱼链接的域名是 telegra.best，仿冒匿名文章分享平台 telegra.ph 的域名。</p>
+<p>有人写了一篇长文，详细分析和解释这次钓鱼事件，点击以下链接查看：</p>
+<p><a href="https://medium.com/@programalsothink/%E9%92%88%E5%AF%B9%E6%9D%8E%E8%80%81%E5%B8%88%E7%9A%84%E9%92%93%E9%B1%BC%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E7%9A%84-%E6%B7%B1%E5%BA%A6%E6%8A%80%E6%9C%AF%E5%88%86%E6%9E%90-2f663b428f5e">https://medium.com/@programalsothink/%E9%92%88%E5%AF%B9%E6%9D%8E%E8%80%81%E5%B8%88%E7%9A%84%E9%92%93%E9%B1%BC%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E7%9A%84-%E6%B7%B1%E5%BA%A6%E6%8A%80%E6%9C%AF%E5%88%86%E6%9E%90-2f663b428f5e</a></p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#当心包含恶意代码的链接">当心包含恶意代码的链接</a>
+      <ul>
+        <li><a href="#一恶意链接攻击方式及防护">一、恶意链接攻击方式及防护</a></li>
+        <li><a href="#二恶意链接攻击案例">二、恶意链接攻击案例</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
