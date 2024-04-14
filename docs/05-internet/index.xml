@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>五、上网安全 on 信息与网络安全手册</title>
-    <link>http://localhost:1313/docs/05-internet/</link>
+    <link>https://yummydimsum.github.io/docs/05-internet/</link>
     <description>Recent content in 五、上网安全 on 信息与网络安全手册</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <lastBuildDate>Wed, 10 Apr 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/docs/05-internet/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yummydimsum.github.io/docs/05-internet/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用 VPN 的场景</title>
-      <link>http://localhost:1313/docs/05-internet/vpn/</link>
+      <link>https://yummydimsum.github.io/docs/05-internet/vpn/</link>
       <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/05-internet/vpn/</guid>
+      <guid>https://yummydimsum.github.io/docs/05-internet/vpn/</guid>
       <description>使用 VPN 的场景 # 一、为什么使用 VPN # 对于许多中国用户来说，提起使用 VPN, 首先想到的就是“翻墙”。&#xA;的确，VPN 可以帮忙翻墙，但这并不是它唯一的用途，我们在其它很多场景之下都需要使用 VPN.&#xA;1. 在公共的网络环境里 # 比如外出住酒店时，使用酒店的 WiFi， 这时就应该全程开着 VPN, 让自己的网络流量加密传输，以免被同一个局域网里的人（也就是其他连接到酒店 WiFi 的人）窥探。在咖啡馆、机场等处，也是同样的道理。&#xA;2. 隐藏真实的 IP 地址 # 比如你常住在美国，从事一些线上匿名活动，有一些匿名的网络账号，你不希望服务商（比如 Gmail）知道你在美国。这时你就可以选择美国以外的 VPN, 比如欧洲或者东南亚，假装自己来自这些地方。&#xA;3. 帮助你突破网络封锁 # 这也就是所谓的翻墙。这一点大家都已经很熟悉，这里就不过多展开。&#xA;由此可见，无论你是否生活在中国境内，都建议你使用 VPN 上网，它能更好地保护你的安全与隐私。&#xA;下面先一些集成式的 VPN 软件和服务（也就是下载、安装之后能够直接用的），再介绍怎样自己搭建 VPN 服务。&#xA;二、在中国使用 VPN # 由于中国严酷的网络封锁，选择合适的 VPN 变得异常困难。很难说有哪一种 VPN 在中国能够长期稳定且快速地使用。在中国使用 VPN 需要技术，更需要耐心。&#xA;迷雾通 Geph # https://geph.io/zhs&#xA;开放源代码，公司注册在爱沙尼亚，属于欧盟公司。欧盟有全世界最严格的数据隐私保护法。&#xA;迷雾通支持所有操作系统，除了 iOS. 免费版的速度相对较慢，收费版每月 5 欧元，它有一种特殊的机制，保证用户付款过程中不会泄漏真实身份。&#xA;蓝灯 Lantern # https://lantern.io/zh-Hans&#xA;支持所有操作系统。尽管在中国一些地区连接困难，但在有些地区仍然可以使用。</description>
     </item>
     <item>
       <title>使用 Tor 浏览器保持匿名</title>
-      <link>http://localhost:1313/docs/05-internet/tor/</link>
+      <link>https://yummydimsum.github.io/docs/05-internet/tor/</link>
       <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/05-internet/tor/</guid>
+      <guid>https://yummydimsum.github.io/docs/05-internet/tor/</guid>
       <description>使用 Tor 浏览器保持匿名 # 当我们说“使用 Tor 浏览器保持在线匿名”的时候，先要区分清楚，你什么时候想保持匿名，什么时候想保证数据加密，这两者不一样。&#xA;当你想在网络上匿名的时候，主要是不想让别人（无论是警察还是网站的管理员）知道是你在使用某个网站或服务。匿名上网时，除了不能透露任何真实的个人信息，最好也不要透露你的电子设备（包括操作系统、浏览器版本、网络连接状态等）信息。&#xA;Tor 浏览器是基于 Firefox 浏览器而开发的、专门保护用户匿名的浏览器。&#xA;一、工作原理 # Tor 网络在全世界范围内有成千上万的节点，用于转发用户的网络请求和流量。当用户使用 Tor 浏览器上网的时候，它会自动为用户选择三个服务器转发流量。&#xA;比如，当你访问 Facebook 的时候，Tor 浏览器可能会帮你连接到加拿大→德国→美国的节点，最终，Facebook 看到的是一位来自美国的用户正在访问。&#xA;当你在同一个浏览器里访问另一个网站的时候（比如 Google），Tor 浏览器又会为这个目标网站选择新的三个转发节点，可能会是加拿大→卢森堡→荷兰，于是 Google 看到的是一位来自荷兰的用户正在访问。&#xA;通过这样的随机分配和流量中转，保证目标网站难以追踪用户的真实来源。比如下面两张图片所示：&#xA;二、注意事项 # 使用 Tor 浏览器要特别留意的是，任何涉及个人真实身份信息和隐私信息的内容，不要直接通过 Tor 浏览器转发，比如不要使用它登录 Amazon 购物，更不要在使用 Tor 浏览器的时候输入信用卡信息，因为这些都会关联到你的真实身份。&#xA;三、中文指南 # 由于 Tor 浏览器的官方网站在中国被封锁，它的所有公开节点（relay）也在中国被封锁，中国用户想要使用 Tor 浏览器和 Tor 网络就比较困难。&#xA;Tor 官方提供一份针对中国用户的指南，可以帮助你下载安装 Tor 浏览器，并且成功连接到 Tor 网络。 https://github.com/torproject/tor4zh&#xA;还有一个中文的长毛象账号，会经常发布 Tor 浏览器的使用方法。 https://mastodon.social/@tor4zh</description>
     </item>
     <item>
       <title>当心包含恶意代码的链接</title>
-      <link>http://localhost:1313/docs/05-internet/links/</link>
+      <link>https://yummydimsum.github.io/docs/05-internet/links/</link>
       <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/05-internet/links/</guid>
+      <guid>https://yummydimsum.github.io/docs/05-internet/links/</guid>
       <description>当心包含恶意代码的链接 # 一、恶意链接攻击方式及防护 # 如果你是比较知名的活动人士（无论实名还是匿名），就有可能遭遇政府黑客的定点攻击。&#xA;比较常见的一种网络定点攻击方式是钓鱼链接。简单说就是，攻击者发来一个模仿知名网站的链接，骗你点击。点击之后，这个链接就会悄悄执行攻击者早已设置好的恶意代码，获取你的真实 IP 地址等信息。&#xA;目前没有什么技术工具可以百分之百防止这种攻击，只能请你自己养成良好的上网习惯：&#xA;不要点击可疑的链接，这需要你平时就留意网站域名。在移动互联网时代，越来越多的人不看域名和链接，就容易被这种方式攻击。&#xA;如果发现可疑链接，可以使用 Tor 浏览器打开，查看其中内容。Tor 浏览器默认的一些安全设置，以及它特有的信息转发方式，可以隐藏你的浏览器指纹也真实 IP 地址。详见 Tor 浏览器相关小节的内容。&#xA;二、恶意链接攻击案例 # 2024年4月，Twitter 知名博主“李老师不是你老师”收到一个关注者发来的信息，其中包含三个钓鱼链接。&#xA;一个钓鱼链接的域名是 biiliblii.com（不要点击），仿冒中国流行的视频网站 bilibili.com，请仔细看看它们的区别。&#xA;另一个钓鱼链接的域名是 telegra.best，仿冒匿名文章分享平台 telegra.ph 的域名。&#xA;有人写了一篇长文，详细分析和解释这次钓鱼事件，点击以下链接查看：&#xA;https://medium.com/@programalsothink/%E9%92%88%E5%AF%B9%E6%9D%8E%E8%80%81%E5%B8%88%E7%9A%84%E9%92%93%E9%B1%BC%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E7%9A%84-%E6%B7%B1%E5%BA%A6%E6%8A%80%E6%9C%AF%E5%88%86%E6%9E%90-2f663b428f5e</description>
     </item>
     <item>
       <title>使用不同的在线身份</title>
-      <link>http://localhost:1313/docs/05-internet/identities/</link>
+      <link>https://yummydimsum.github.io/docs/05-internet/identities/</link>
       <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/05-internet/identities/</guid>
+      <guid>https://yummydimsum.github.io/docs/05-internet/identities/</guid>
       <description>使用不同的在线身份 # 在前面的章节里谈到电子设备的时候，我们建议大家至少拥有两台智能手机，也就是用于安装国产软件的普通手机，和用于安装安全通讯软件的安全手机。但这样做还不够。&#xA;对于从事敏感活动的行动者来说，拥有多个手机设备的同时，还要拥有多个虚拟的在线身份。&#xA;开设和管理多个虚拟在线身份是件很不容易的事，并非因为它需要很多技术工具的辅助，而是因为它需要你很小心而且很有耐心。一个小小的疏忽可能就会暴露你的真实身份，给你带来风险。&#xA;既然是虚拟身份，就不要与你的真实身份有任何关联。不能关联身份证、银行卡，也不能关联手机号码，甚至也不能关联与你的真实身份绑定的邮箱。因此，请尽量选择那些不需要手机号码的网络服务。&#xA;假设你要为虚拟在线身份 A 创建一系列账号，大致是这样一个操作思路：&#xA;在一个单独的电脑操作系统里进行以下操作，不与你个人常用的系统关联。比如我们前文提到的 Live USB 系统。&#xA;如果确实不会在单独的系统里面操作，那至少要在同一台电脑上面创建另一个不同的用户，而不与自己日常使用的用户关联。&#xA;进入系统之后，立即打开 VPN，并全程开启 VPN, 以便隐藏真实 IP 地址。&#xA;使用安全的浏览器，比如 LibreWolf，以便 VPN 真正发生作用。有些浏览器（比如 Chrome）默认打开 WebRTC 功能，即使打开 VPN，也可能会泄漏真实 IP 地址。&#xA;注册一个安全的电子邮箱，比如 Tuta 或者 Proton mail。许多在线服务都需要用邮箱注册。&#xA;用这个安全的电子邮箱去注册其它网络服务，比如 Twitter / Mastodon 等。&#xA;无论注册电子邮箱还是其它网络服务，请一定使用密码管理器为它们各自创建独一无二的密码。千万不要在多个网站上面使用同一个密码。&#xA;以后每次登录这个邮箱以及与它相关的网络账号，都要全程开启 VPN, 而不要用你的真实 IP 地址登录。&#xA;谨慎操作之一：在你使用 VPN 登录虚拟在线身份 A 的时候，千万不要同时去登录其它账号（包括关联你的真实身份的账号，以及另外的虚拟在线身份 B 和 C），以免虚拟在线身份 A 与其他账号之间产生关联。&#xA;谨慎操作之二：不要在任何地方提及你的虚拟在线身份。不要对现实生活中的同事、朋友提起，更不要在你用真实身份注册的社交媒体上提起。甚至如果你想做得更严格一些，还应该尽量将真实身份的网络形象与虚拟身份的网络形象隔离，包括行文风格、语言习惯、活跃时间等等都要有所差异。</description>
     </item>
     <item>
       <title>为你的账号开启两步验证</title>
-      <link>http://localhost:1313/docs/05-internet/2fa/</link>
+      <link>https://yummydimsum.github.io/docs/05-internet/2fa/</link>
       <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/05-internet/2fa/</guid>
+      <guid>https://yummydimsum.github.io/docs/05-internet/2fa/</guid>
       <description>为你的账号开启两步验证 # 一、什么是两步验证 # 中国的互联网服务普遍没有登录的两步验证（2FA, Two-Factor Authentication）功能，但主流的国际互联网服务都有这一选项。&#xA;所谓两步验证，就是在登录的时候，输入用户名和密码之后，还需要输入一串验证码。&#xA;两步验证分为几种方式：&#xA;二、使用手机号码接收验证码 # 这种方式并非最可靠的，但有些网站只提供这种验证方式。&#xA;这里再次提醒，因为你注册的是不同的在线虚拟身份，所以一定不要使用已经实名的中国手机号码。如果你使用国外的手机号码，使用手机号码接收验证码并无不妥。&#xA;三、使用专门的两步验证 App # 有些网站提供一种功能，允许你在手机上安装 App, 绑定这个网站，每次登录的时候，两步验证 App 上面会自动生成六位数字，有效期仅有一分钟。&#xA;Android 用户，推荐使用 Aegis Authenticator；&#xA;iOS 用户，推荐使用 Tofu.&#xA;如果你不介绍使用 Google 家的服务，那么在 Android 和 iOS 上面都有 Google Authentication 可用。&#xA;Android https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&#xA;iOS https://apps.apple.com/us/app/google-authenticator/id388497605</description>
     </item>
   </channel>

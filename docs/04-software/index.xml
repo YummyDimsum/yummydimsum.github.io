@@ -2,80 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>四、常用软件推荐 on 信息与网络安全手册</title>
-    <link>http://localhost:1313/docs/04-software/</link>
+    <link>https://yummydimsum.github.io/docs/04-software/</link>
     <description>Recent content in 四、常用软件推荐 on 信息与网络安全手册</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <lastBuildDate>Thu, 11 Apr 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/docs/04-software/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yummydimsum.github.io/docs/04-software/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>中文输入法</title>
-      <link>http://localhost:1313/docs/04-software/ime/</link>
+      <link>https://yummydimsum.github.io/docs/04-software/ime/</link>
       <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/04-software/ime/</guid>
+      <guid>https://yummydimsum.github.io/docs/04-software/ime/</guid>
       <description>中文输入法 # 许多人使用中国大公司开发的免费输入法，比如搜狗输入法、百度输入法、讯飞输入法等。&#xA;然而有研究表明，这些输入法普遍存在安全隐患，甚至可能主动收集用户的使用数据并偷偷上传到服务器。因此，强烈建议你不要使用来自中国大公司的输入法。&#xA;好消息是，除了这些大公司的输入法，我们还有选择。&#xA;RIME 输入法平台是开源应用，它的所有源代码公开，由一群志愿者维护，不属于任何大公司，不会收集和上传你的个人数据。它确实不如商业输入法一样“智能”，但是它更安全。&#xA;在不同的操作系统上，RIME 输入法有不同的名字。&#xA;一、Windows 系统 # Windows 系统自带的微软拼音可以使用，但如果想要换成更好用的，则推荐 RIME 输入法的 Windows 版本：小狼毫输入法。&#xA;https://rime.im/download/&#xA;二、macOS 系统 # macOS 自带的输入法可以使用，但并不好用，推荐使用 RIME 输入法的 macOS 版本：鼠须管输入法。&#xA;https://rime.im/download/&#xA;三、iOS 系统 # iOS 系统自带的中文输入法可以使用，同时推荐另外两种：Gboard 和基于 RIME 的“仓输入法”。&#xA;Gboard 是 Google 出品的多语言键盘，支持超过 150 种语言的输入。&#xA;四、Android 系统 # 不推荐使用 Android 系统自带的输入法，尤其不建议使用国产安卓手机的输入法。而是推荐另外两种：Gboard, 和基于 RIME 的“同文输入法”。&#xA;Gboard 需要从 Google Play Store 或者 APKPure 下载，同文输入法可以从 Google Play Store 或者 F-droid 下载。&#xA;需要注意的是，同文输入法没有九宫格键盘，在小屏幕手机上面使用可能不太方便。</description>
     </item>
     <item>
       <title>网页浏览器</title>
-      <link>http://localhost:1313/docs/04-software/browser/</link>
+      <link>https://yummydimsum.github.io/docs/04-software/browser/</link>
       <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/04-software/browser/</guid>
+      <guid>https://yummydimsum.github.io/docs/04-software/browser/</guid>
       <description>网页浏览器 # 首先，无论电脑还是手机，都不要使用中国公司的浏览器。&#xA;中国公司的浏览器种类繁多，无法在此一一列举，这里只能给出我们推荐使用的浏览器并解释原因。&#xA;一、Windows 系统和 macOS 系统 # 推荐使用 Firefox, LibreWolf, Brave, Mullvad 这几种浏览器。&#xA;1. Firefox 浏览器 # https://www.mozilla.org/en-US/firefox/all/#product-desktop-release&#xA;【请注意】一定不要使用中国版的 Firefox&#xA;怎样区分中国版和国际版？中国版的网站是 www.firefox.com.cn, 国际版的网站是 www.mozilla.org&#xA;在中国大陆地区直接访问 www.mozilla.org 有可能会被自动跳转到 www.firefox.com.cn , 所以你也可以直接点击这个链接，进入国际版 Firefox 的下载页面。 https://www.mozilla.org/zh-CN/firefox/new/&#xA;2. LibreWolf 浏览器 # https://librewolf.net/&#xA;LibreWolf 基于最新版 Firefox 浏览器改进而来，它在 Firefox 的基础上增加了一些安全设置，比如默认开启“增强跟踪保护”功能的“严格”模式，从而主动阻止网站上的跟踪器。不过这可能会导致个别网页无法正常打开，好在它大多数时候都能正常使用。&#xA;更多关于它的特性，可以查看这里： https://librewolf.net/docs/features/&#xA;3. Brave 浏览器 # https://brave.com/&#xA;Brave 浏览器默认有许多安全设置，比如拦截广告和追踪器，以及浏览器自带的一个 VPN 服务。浏览器本身免费，但 VPN 服务收费。&#xA;4. Mullvad 浏览器 # https://mullvad.net/en/browser&#xA;Mullvad 浏览器由 Mullvad VPN 团队和 Tor 浏览器团队（后面的章节就会提到这两种工具）合作开发。它默认就有许多安全设置，比如开启隐私浏览模式，安装两款最知名的安全防护扩展：uBlock Origin 和 NoScript，而且将浏览器时区设置成 UTC 时区，从而不暴露你的真实时区等等。</description>
     </item>
     <item>
       <title>浏览器扩展</title>
-      <link>http://localhost:1313/docs/04-software/extension/</link>
+      <link>https://yummydimsum.github.io/docs/04-software/extension/</link>
       <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/04-software/extension/</guid>
+      <guid>https://yummydimsum.github.io/docs/04-software/extension/</guid>
       <description>浏览器扩展 # 以上推荐的几个浏览器都支持安装扩展，加强浏览器某些方面的功能。&#xA;扩展可以使浏览器变得更强大更好用，但扩展本身也是一种软件，它可能也存在漏洞和风险，而且安装太多扩展可能拖慢浏览器的启动和运行速度。&#xA;因此建议只安装最必需的扩展，比如以下这些与安全隐私有关的：&#xA;一、适用于 Firefox, LibreWolf 和 Mullvad 浏览器 # 1. uBlock Origin # LibreWolf 和 Mullvad 默认已包含。&#xA;https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/&#xA;2. NoScript # Mullvad 默认已包含。&#xA;这个扩展的默认行为是阻止所有不在白名单中的脚本。这可能使那些依赖于 JavaScript 的网页无法正常显示。需要在使用过程中慢慢调整它的设置。&#xA;https://addons.mozilla.org/en-US/firefox/addon/noscript/&#xA;3. Privacy Badger # https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17/&#xA;4. HTTPS Everywhere # https://www.eff.org/https-everywhere&#xA;5. Decentraleyes # https://addons.mozilla.org/en-US/firefox/addon/decentraleyes/&#xA;6. Cookie Autodelete # https://addons.mozilla.org/en-US/firefox/addon/cookie-autodelete&#xA;7. Disable WebRTC # https://addons.mozilla.org/en-US/firefox/addon/happy-bonobo-disable-webrtc/&#xA;二、适用于 Brave 浏览器 # Brave 浏览器的扩展需要从 Chrome Web Store 下载。以上介绍的几种扩展都可以找到对应版本。&#xA;1. uBlock Origin # https://chromewebstore.google.com/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm</description>
     </item>
     <item>
       <title>即时通讯软件</title>
-      <link>http://localhost:1313/docs/04-software/im/</link>
+      <link>https://yummydimsum.github.io/docs/04-software/im/</link>
       <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/04-software/im/</guid>
+      <guid>https://yummydimsum.github.io/docs/04-software/im/</guid>
       <description>即时通讯软件 # 我们这里只推荐“端对端加密”的即时通讯软件。&#xA;所谓“端对端加密”的意思是，发送者发出的信息会被加密，直到接收者收到信息才会被解密。信息在传输过程中不会被第三方读取，因为第三方没有解密的“密钥”。&#xA;Signal # https://signal.org/&#xA;端对端加密聊天软件，支持所有操作系统，可以设置聊天记录自动删除时间。&#xA;需要使用手机号码注册，但在注册完成之后，可以设置隐藏手机号码，采用唯一的用户名作为身份标识。&#xA;这是目前使用人数较多的安全通讯软件之一，我们专门撰写了一个页面介绍怎样使用和设置它，点击这里阅读。&#xA;Matrix # https://matrix.org/&#xA;端对端、去中心化的匿名聊天软件，不需要手机号码就能注册。有网页版、电脑客户端和手机客户端。&#xA;如果对匿名要求比较高，建议只使用网页版，而且只在 Tor 浏览器里使用。网页版地址： https://app.element.io&#xA;详细使用方法，可以参考这个教程：&#xA;https://matters.town/@thistlf/90530-matrix-%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96-%E5%8C%BF%E5%90%8D-%E5%AE%89%E5%85%A8%E7%9A%84%E5%8D%B3%E6%97%B6%E9%80%9A%E4%BF%A1-bafyreifwvmwayjpdhmtenxilxnccmjsmkoq4lu7v7au37bob6i4oi7o6he&#xA;Element # 这是 Matrix 是一个具体实现。所以同样具备端对端、去中心化、匿名的特点。&#xA;不需要手机号码就能注册。有网页版、电脑客户端和手机客户端。&#xA;如果对匿名要求比较高，建议只使用网页版，而且只在 Tor 浏览器里使用。网页版地址： https://app.element.io&#xA;Matrix 与 Element 的角色分工大致是这样：&#xA;Matrix 提供并维护世界上最大的 Matrix 服务，也就是 matrix.org Element 提供世界上使用最为广泛的 matrix 客户端，也就是 element.io Session # https://getsession.org/&#xA;端对端加密聊天软件，支持所有操作系统。&#xA;基于 Signal 开发，并进一步加强安全与隐私。可以设置聊天记录自动删除时间。注册无需手机号码或邮箱。处于早期开发阶段。&#xA;Delta Chat # https://delta.chat/zh_CN/&#xA;端对端加密聊天，支持所有操作系统。&#xA;基于电子邮箱，可以直接从 Delta Chat 客户端发出信息，对方在自己的邮箱收到信息。&#xA;Briar # https://briarproject.org/&#xA;端到端加密聊天软件，仅支持 Android 系统。&#xA;它的特点是即使没有联网也能通过蓝牙与附近的人通信。&#xA;Gajim # https://gajim.</description>
     </item>
     <item>
       <title>视频通话及会议</title>
-      <link>http://localhost:1313/docs/04-software/video/</link>
+      <link>https://yummydimsum.github.io/docs/04-software/video/</link>
       <pubDate>Thu, 11 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/04-software/video/</guid>
+      <guid>https://yummydimsum.github.io/docs/04-software/video/</guid>
       <description>视频通话及会议 # Signal # https://signal.org/&#xA;它不仅是即时聊天软件，也可以作为音频通话、视频通话和视频会议软件，支持多人的小组视频会议。&#xA;关于 Signal 的详细介绍，请点击这里阅读。&#xA;Jitsi # https://jitsi.org/&#xA;开源的视频会议软件平台，可以自行搭建，也可以使用 Jitsi 提供的现有服务。 https://meet.jit.si/&#xA;无须单独安装软件，只需要在浏览器里输入会议链接即可加入。&#xA;ZOOM # https://zoom.us/&#xA;商业、非开源的视频会议软件，支持所有操作系统。&#xA;这可能是最流行的视频会议软件，但它曾经传出阻断中国异议人士讨论会的情况，建议谨慎选择。&#xA;ZOOM 免费版本仅限最多 40 分钟通话，且在中国使用很不稳定。&#xA;如果要使用 ZOOM，请从它的官方网站下载。国产安卓手机的应用商店搜索不到最新版本的 ZOOM。&#xA;Webex # https://www.webex.com/&#xA;商业、非开源的视频会议软件，支持所有操作系统，Cisco 公司旗下产品。&#xA;可以作为 ZOOM 的替代，但 Cisco 公司曾经被曝参与中国 GFW 建设，建议谨慎选择。&#xA;Webex 免费版本仅限最多 40 分钟通话，目前在中国使用暂且稳定。</description>
     </item>
     <item>
       <title>办公和线上协作</title>
-      <link>http://localhost:1313/docs/04-software/office/</link>
+      <link>https://yummydimsum.github.io/docs/04-software/office/</link>
       <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/04-software/office/</guid>
+      <guid>https://yummydimsum.github.io/docs/04-software/office/</guid>
       <description>办公和线上协作 # 一般情况下，在线的办公与协作平台已经可以满足需求。&#xA;Cryptpad # https://cryptpad.org/&#xA;开源、端对端加密的协同办公工具。提供文档、表格、幻灯片、Markdown 等多种格式支持。&#xA;可以不注册、不登录就使用。如果想要注册，不用提供邮箱或手机号码，只需填写用户名和密码即可。&#xA;【请注意】一旦忘记密码，就不能再登录。因为它无法帮你重置密码。&#xA;可以自己架设 Cryptpad 服务，也可以使用现有的服务，这些网站都基于 Cryptpad 搭建：&#xA;https://cryptpad.fr/ （近期有些不太稳定） https://cryptpad.malacher.fr/ https://cryptpad.disroot.org/ https://cryptpad.private.coffee/ https://pad.envs.net/ Riseup Pad # https://pad.riseup.net/&#xA;Riseup 旗下服务之一，可以匿名使用，还能为文档设置有效期：一天，三个月或者一年。&#xA;美中不足的是，它支持的富文本格式有限，只能进行简单的文档编辑。&#xA;Google docs（谷歌文档） # https://docs.google.com&#xA;Google 服务之一，需要有 Gmail 账号才能使用。这意味着，你需要使用手机号码来完成注册验证，这一步可能会暴露你的身份。请一定不要使用中国手机号码来注册。&#xA;如果你非常在意隐私和数据安全，那么请谨慎选择 Google 服务。&#xA;LibreOffice # https://www.libreoffice.org/&#xA;如果你一定要在电脑里安装办公软件，推荐使用开源的 LibreOffice.&#xA;微软 Office 套件 # 如果必须使用微软的办公套件，请将其作为最后选项。&#xA;Nextcloud # https://nextcloud.com/&#xA;可以自己搭建服务的开源软件，包含一系列办公套件。&#xA;不要使用 WPS 和其它国产软件 # 一定不要使用 WPS 之类的国产办公软件。&#xA;至于石墨文档、腾讯文档等国产在线办公平台，也不建议使用。原因不言自明：它们全都处于监控之下，你在上面创作的内容可能会给你带来风险，或者会被它们删除、屏蔽、禁止分享。</description>
     </item>
     <item>
       <title>云存储和文件分享</title>
-      <link>http://localhost:1313/docs/04-software/cloud-storage/</link>
+      <link>https://yummydimsum.github.io/docs/04-software/cloud-storage/</link>
       <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/04-software/cloud-storage/</guid>
-      <description>云存储和文件分享 # 很多人习惯使用微信分享文件，或者使用百度网盘分享文件。&#xA;但对于从事敏感活动的人士来说，你需要更安全的平台。这里推荐：&#xA;Proton Drive # https://drive.proton.me/&#xA;Proton 旗下服务，可以匿名注册，免费版有 2GB 空间。上传一次文件之后，可以升至 5GB 空间。若想获得更大空间，3.5 美元每月即可获得 200GB.&#xA;【请注意】虽然 Proton 接受比特币支付，但是线上支付仍然可能会泄露你的真实身份。&#xA;Riseup Share # https://share.riseup.net&#xA;可以匿名上传文件，最大单个文件不超过 50MB, 12 小时之后会自动删除。&#xA;OnionShare # Tor 项目的文件分享服务，支持所有操作系统平台。&#xA;分享文件之后，会生成一串 .onion 链接，对方使用 Tor 浏览器打开这个 .onion 链接，即可接收文件。&#xA;整个传输过程全部通过 Tor 网络，可以做到高度匿名。&#xA;操作方法可以看这个官方指南视频（中文字幕）&#xA;https://www.youtube.com/watch?v=R6O7tWqzEtY&#xA;File.io # https://www.file.io/&#xA;允许非注册用户上传并分享文件，免费版最大可分享 2GB 文件。文件下载一次之后会自动删除。&#xA;WeTransfer # https://wetransfer.com/&#xA;允许非注册用户上传并分享文件，免费版最大可分享 2GB 文件。一周之后自动删除文件。&#xA;Google Drive（谷歌云盘） # https://drive.google.com/&#xA;Google 服务之一，需要有 Gmail 账号才能使用。这意味着，你需要使用手机号码来完成注册验证，这一步可能会暴露你的身份。请一定不要使用中国手机号码来注册。&#xA;免费版本有 15GB 空间。但如果你非常在意隐私和数据安全，那么请谨慎选择 Google 服务。&#xA;Nextcloud # https://nextcloud.</description>
+      <guid>https://yummydimsum.github.io/docs/04-software/cloud-storage/</guid>
+      <description>云存储和文件分享 # 很多人习惯使用微信分享文件，或者使用百度网盘分享文件。&#xA;但对于从事敏感活动的人士来说，你需要更安全的平台。这里推荐：&#xA;Proton Drive # https://drive.proton.me/&#xA;Proton 旗下服务，可以匿名注册，免费版有 2GB 空间。上传一次文件之后，可以升至 5GB 空间。若想获得更大空间，3.5 美元每月即可获得 200GB.&#xA;【请注意】虽然 Proton 接受比特币支付，但是线上支付仍然可能会泄露你的真实身份。&#xA;Riseup Share # https://share.riseup.net&#xA;可以匿名上传文件，最大单个文件不超过 50MB, 12 小时之后会自动删除。&#xA;OnionShare # https://onionshare.org/&#xA;Tor 项目的文件分享服务，支持所有操作系统平台。&#xA;分享文件之后，会生成一串 .onion 链接，对方使用 Tor 浏览器打开这个 .onion 链接，即可接收文件。&#xA;整个传输过程全部通过 Tor 网络，可以做到高度匿名。&#xA;操作方法可以看这个官方指南视频（中文字幕）&#xA;https://www.youtube.com/watch?v=R6O7tWqzEtY&#xA;File.io # https://www.file.io/&#xA;允许非注册用户上传并分享文件，免费版最大可分享 2GB 文件。文件下载一次之后会自动删除。&#xA;WeTransfer # https://wetransfer.com/&#xA;允许非注册用户上传并分享文件，免费版最大可分享 2GB 文件。一周之后自动删除文件。&#xA;Google Drive（谷歌云盘） # https://drive.google.com/&#xA;Google 服务之一，需要有 Gmail 账号才能使用。这意味着，你需要使用手机号码来完成注册验证，这一步可能会暴露你的身份。请一定不要使用中国手机号码来注册。&#xA;免费版本有 15GB 空间。但如果你非常在意隐私和数据安全，那么请谨慎选择 Google 服务。</description>
     </item>
     <item>
       <title>密码管理器</title>
-      <link>http://localhost:1313/docs/04-software/password/</link>
+      <link>https://yummydimsum.github.io/docs/04-software/password/</link>
       <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/04-software/password/</guid>
+      <guid>https://yummydimsum.github.io/docs/04-software/password/</guid>
       <description>密码管理器 # 无论在哪个操作系统上面，都推荐使用 KeePass 及其衍生软件。&#xA;https://keepass.info/download.html&#xA;你可以在这里找到 KeePass 以及适用于每种操作系统的 KeePass 衍生版本。&#xA;这篇文章详细介绍 KeePass 的用法： https://sspai.com/post/44126&#xA;1. 什么是安全的密码？ # 一个安全强大的密码应该包括：至少16位字符，包含大小写字母、阿拉伯数字和特殊符号，而且不能使用常见单词、常见词组。&#xA;像这样的就不是一个好密码和强密码：&#xA;iloveyou123&#xA;像这样的才是好密码和强密码：&#xA;t~RWJiYk5}%Y^a44&#xA;2. 为什么要使用密码管理器？ # 不用密码管理器的人，会怎样管理密码呢？&#xA;大多数人会设置比较简单的密码，方便记忆。&#xA;还会在不同网站使用相同的密码，或者类似的密码。&#xA;还会把密码保存在浏览器里，方便下次直接登录。&#xA;还有些人会把密码用明文形式存储在电脑或者手机的记事本里，而且这个记事本也不加密。&#xA;如果你也这样操作，那可真的太危险啦！&#xA;密码管理器有两个作用：&#xA;生成唯一的、随机的、复杂的密码。唯一，意味着不同网站使用不同密码。即使 A 网站的密码库泄漏，黑客也无法得知你在 B 网站、C 网站的密码。随机和复杂，意味着它不是常见单词、常见数字，而是随机字符。像上面举例的那个 t~RWJiYk5}%Y^a44 就是唯一、随机的密码。&#xA;保存所有密码。既然你给每个网站生成唯一的、随机的、复杂的密码，那么你的脑袋肯定记不住它们，因此就需要密码管理器帮你保存这些密码。&#xA;这时，你唯一需要记住的，就是密码管理器本身的密码。密码管理器相当于一个“保险箱”，你只需要记住保险箱的密码，而不用去记里面几十、上百个随机密码。&#xA;【请注意】使用密码管理器的时候，一定一定要做到：保存好你的密码数据库文件，并且记住你的密码管理器密码。&#xA;3. 不建议的操作 # 不建议在手机上面使用密码管理器；&#xA;不建议使用在线密码管理器；&#xA;更不建议直接将密码保存在浏览器里。</description>
     </item>
     <item>
       <title>其它软件</title>
-      <link>http://localhost:1313/docs/04-software/others/</link>
+      <link>https://yummydimsum.github.io/docs/04-software/others/</link>
       <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/04-software/others/</guid>
-      <description>其它软件 # 一、音频及视频播放器 # 无论在哪个系统上面，都推荐使用 VLC player.&#xA;https://www.videolan.org/vlc/&#xA;在介绍隐私与安全的时候，冷不丁开始介绍多媒体播放器，是不是多此一举呢？并非如此。正如我们很多次说过的那样，安全与隐私与许多因素相关，其中非常重要的一点就是：不要使用国产软件。&#xA;我们设想，你可能也是个喜欢听音乐、看电影的人，总会用到多媒体播放器。既然要用，就用一个干净、安全的播放器吧，而不是随便下载一个国产软件。&#xA;二、还有很多 # 还有一些软件，我们将它放在下一部分《上网安全》的相关小节来介绍。&#xA;此外，不同人的使用情况差别很大，我们很难在此列举所有类型的软件，而只能罗列一些大家都需要的类型。&#xA;如果你在这里没有找到自己需要的软件，请按照本文开头的几个原则，自己搜索寻找。&#xA;比如，你想寻找开源的视频编辑软件，那就搜索“开源软件+视频编辑”，或者 &amp;ldquo;open source+video editor&amp;rdquo;，很容易就能找到一些软件。</description>
+      <guid>https://yummydimsum.github.io/docs/04-software/others/</guid>
+      <description>其它软件 # 一、音频及视频播放器 # 无论在哪个系统上面，都推荐使用 VLC player.&#xA;https://www.videolan.org/vlc/&#xA;在介绍隐私与安全的时候，冷不丁开始介绍多媒体播放器，是不是多此一举呢？并非如此。正如我们很多次说过的那样，安全与隐私与许多因素相关，其中非常重要的一点就是：不要使用国产软件。&#xA;我们设想，你可能也是个喜欢听音乐、看电影的人，总会用到多媒体播放器。既然要用，就用一个干净、安全的播放器吧，而不是随便下载一个国产软件。&#xA;二、还有很多 # 还有一些软件，我们将它放在下一部分《上网安全》《通讯安全》《数据安全》的相关小节来介绍。&#xA;此外，不同人的使用情况差别很大，我们很难在此列举所有类型的软件，而只能罗列一些大家都需要的类型。&#xA;如果你在这里没有找到自己需要的软件，请按照本文开头的几个原则，自己搜索寻找。&#xA;比如，你想寻找开源的视频编辑软件，那就搜索“开源软件+视频编辑”，或者 &amp;ldquo;open source+video editor&amp;rdquo;，很容易就能找到一些软件。</description>
     </item>
     <item>
       <title>Signal 专门页面</title>
-      <link>http://localhost:1313/docs/04-software/signal/</link>
+      <link>https://yummydimsum.github.io/docs/04-software/signal/</link>
       <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/04-software/signal/</guid>
+      <guid>https://yummydimsum.github.io/docs/04-software/signal/</guid>
       <description>Signal 专门页面 # 越来越多的人使用 Signal 作为主要的加密聊天软件，因此有必要专门为它写一篇文档。&#xA;一、介绍 # Signal 是一款开源的聊天软件，支持端到端加密。也就是说，虽然你的聊天记录会经过 Signal 服务器中转，但只有消息发送者和接收者才能解密和阅读内容，别人看不到消息内容，除非发送者或接收者的电脑、手机本身存在监控软件。&#xA;二、安装 # 出于安全考虑，建议优先选择 Signal 手机端，并且最好将它安装在一台单独的手机上（也就是我们之前说的“安全手机”），不要与其它中国国产软件安装在同一台机器上。&#xA;手机端安装 # iPhone 或 iPad，可以直接在 App Store 里搜索 Signal - Private Messenger。 https://apps.apple.com/us/app/signal-private-messenger/id874139669&#xA;Android 设备，可以在 Google Play Store 搜索 Signal - Private Messenger。 https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms&#xA;如果你的 Android 设备没有 Google Play Store，你也可以从 APKPure 搜索下载安装。 https://apkpure.com/signal-private-messenger/org.thoughtcrime.securesms&#xA;电脑端安装 # 访问 Signal 的官方网站： https://www.signal.org/download/&#xA;选择与你的电脑操作系统对应的版本。&#xA;三、注册账号 # Signal 默认使用手机号码注册。&#xA;前两年，中国的手机号码就已经收不到 Signal 的注册验证码。新注册用户需要使用其他国家的号码，或者网络虚拟号码。&#xA;如果你是以前使用中国手机号码注册的 Signal，强烈建议你删除账号，并使用其它不与真实身份关联的号码重新注册。关于删除账号的方法，请看本文第六部分。&#xA;四、设置用户名，隐藏手机号码 # 虽然 Signal 是一个安全的加密聊天软件，但在安装之后也需要一些简单设置，才能让它更加安全。</description>
     </item>
   </channel>
