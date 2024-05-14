@@ -15,8 +15,10 @@ Mailvelope 是一个浏览器扩展，可以安装在 Firefox（包括 LibreWolf
 将导出的公钥 asc 文件作为邮件附件，直接发送给通信对象。 将公钥的 fingerprint 信息放在邮件的签名里。请回到第二个步骤的图中，找到图中右下角的 fingerprint, 复制它后面那一串包含大写字母和阿拉伯数字的字符。将这一串字符完整地放在邮件签名里。别人通过这一串 fingerprint 就能找到你的 PGP 公钥。 将公钥的 .asc 文件或者 fingerprint 放在你的个人网站、社交媒体的介绍里，同时不要忘了附上邮箱地址，不然别人不知道要写信给谁。 将你的公钥 .">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="借助 Mailvelope 使用 PGP 加密邮件" />
-<meta property="og:description" content="借助 Mailvelope 使用 PGP 加密邮件 # 传统上，使用 PGP 加密、解密邮件是件技术活，很多新手不知应该如何操作。Mailvelope 的出现总算让问题变得简单多了！
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://yummydimsum.github.io/docs/06-communication/mailvelope/">
+  <meta property="og:site_name" content="信息与网络安全手册">
+  <meta property="og:title" content="借助 Mailvelope 使用 PGP 加密邮件">
+  <meta property="og:description" content="借助 Mailvelope 使用 PGP 加密邮件 # 传统上，使用 PGP 加密、解密邮件是件技术活，很多新手不知应该如何操作。Mailvelope 的出现总算让问题变得简单多了！
 Mailvelope 是一个浏览器扩展，可以安装在 Firefox（包括 LibreWolf）浏览器上。安装成功之后，如下设置和使用。
 1. 第一步：为你的邮箱生成密钥 # 点击顶部菜单的 Key management, 会出现如下界面。
 依次填入：你的名字（你想以什么名字来使用这个邮箱，由你决定）、电子邮箱，最后为你的秘钥设置密码，密码需要输入两次。然后点击右下角的 Generate 完成。
@@ -25,18 +27,22 @@ Mailvelope 是一个浏览器扩展，可以安装在 Firefox（包括 LibreWolf
 3. 第三步：导出你的公钥 # 在第二步的界面中，点击右上角的 Export, 就可以导出自己的公钥（Public）和私钥（Private）。公钥要公开分享给全世界（至少要分享给你的通信对象），而私钥却要自己保管好，绝对绝对不能把私钥告诉任何人。
 选择公钥（Public），你会看见一长串的随机字符，如下图。点击右下角的 Save, 就可以将公钥保存成一个 .asc 文件，将它保存在电脑里。
 4. 第四步、将你的公钥分享给别人 # 公钥的作用是：当 A 想要给你发送加密邮箱时，A 要知道与你的邮箱对应的公钥。所以，你应该将公钥分享给别人。一般有这样几种做法：
-将导出的公钥 asc 文件作为邮件附件，直接发送给通信对象。 将公钥的 fingerprint 信息放在邮件的签名里。请回到第二个步骤的图中，找到图中右下角的 fingerprint, 复制它后面那一串包含大写字母和阿拉伯数字的字符。将这一串字符完整地放在邮件签名里。别人通过这一串 fingerprint 就能找到你的 PGP 公钥。 将公钥的 .asc 文件或者 fingerprint 放在你的个人网站、社交媒体的介绍里，同时不要忘了附上邮箱地址，不然别人不知道要写信给谁。 将你的公钥 ." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://yummydimsum.github.io/docs/06-communication/mailvelope/" /><meta property="article:section" content="docs" />
-<meta property="article:published_time" content="2024-04-10T00:00:00+00:00" />
-<meta property="article:modified_time" content="2024-04-10T00:00:00+00:00" />
+将导出的公钥 asc 文件作为邮件附件，直接发送给通信对象。 将公钥的 fingerprint 信息放在邮件的签名里。请回到第二个步骤的图中，找到图中右下角的 fingerprint, 复制它后面那一串包含大写字母和阿拉伯数字的字符。将这一串字符完整地放在邮件签名里。别人通过这一串 fingerprint 就能找到你的 PGP 公钥。 将公钥的 .asc 文件或者 fingerprint 放在你的个人网站、社交媒体的介绍里，同时不要忘了附上邮箱地址，不然别人不知道要写信给谁。 将你的公钥 .">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+    <meta property="article:published_time" content="2024-04-10T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-04-10T00:00:00+00:00">
 <title>借助 Mailvelope 使用 PGP 加密邮件 | 信息与网络安全手册</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
 <link rel="canonical" href="https://yummydimsum.github.io/docs/06-communication/mailvelope/">
 <link rel="stylesheet" href="/book.min.309b7ed028807cdb68d8d61e26d609f48369c098dbf5e4d8c0dcf4cdf49feafc.css" integrity="sha256-MJt&#43;0CiAfNto2NYeJtYJ9INpwJjb9eTYwNz0zfSf6vw=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/zh.search.min.4d9ee5e78fe1f5ecf3c76d2ef8286976a88e75f29431e1ae2f5050ca24042a11.js" integrity="sha256-TZ7l54/h9ezzx20u&#43;ChpdqiOdfKUMeGuL1BQyiQEKhE=" crossorigin="anonymous"></script>
+  <script defer src="/zh.search.min.1b9323267fc8600a0827575ba505a58143245b54ee70429d4f015212c37b8033.js" integrity="sha256-G5MjJn/IYAoIJ1dbpQWlgUMkW1TucEKdTwFSEsN7gDM=" crossorigin="anonymous"></script>
+
+  
+
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book

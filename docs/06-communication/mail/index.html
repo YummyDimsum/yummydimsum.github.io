@@ -11,19 +11,19 @@ Proton Mail 和 Tuta Mail 都有“端对端加密”功能，邮件的内容只
 【请注意】端对端加密功能只限于同一家邮件服务商内部，也就是只有 Proton → Proton, 或者 Tuta → Tuta 的时候，才能够使用端对端加密。Proton 与其它邮箱之间的通讯并不会端对端加密，Tuta 与其它邮箱之间的通讯也不会端对端加密。
 不过，Proton Mail 内置一个很好用的 PGP 加密功能，便于 Proton Mail 和其它 Email 之间的加密能信。
 详细使用说明请看 Proton Mail 网站： https://proton.me/support/how-to-use-pgp
+但是，Tuta 邮箱不支持 PGP 加密功能，也不允许使用任何第三方的邮件客户端查收和管理邮件。这可能会造成一个问题：如果在 Tuta 邮箱里收到使用 PGP/MIME 方式加密的邮件，可能无法解密。
 二、谨慎下载和打开邮件附件 # 黑客经常向目标对象发送带有恶意附件的电子邮件，活跃的活动人士比普通人更有可能收到这种恶意附件。
 这些恶意附件乍看上去和普通的 Word、PowerPoint 、PDF、图片文件没有区别，但它可能包含恶意代码。只要在本地电脑点击打开，它就会执行恶意代码。结果就是，要么暴露匿名人士的地址和身份，要么导致电脑里的重要信息泄漏。
 这种攻击方式广泛存在，但许多人似乎并不知道、更不在意它。
 如果你经常使用邮件与人沟通，请你每次都记得要用 Dangerzone 打开你所下载的附件。Dangerzone 是一个简单的隔离程序，它帮你清理不信任的文档，过滤掉这些文件中可能携带的任何恶意脚本。
 https://dangerzone.rocks/
-是的，即使是你认识的、信任的人发送的邮件，你也要用 Dangerzone 检测附件。因为熟人、朋友的邮箱可能会被黑客攻陷，从而用来对你展开攻击。这种情况过去就曾发生过，未来也有可能发生。
-这里有一篇关于 Dangerzone 的文章（英文），推荐你阅读了解：
-https://www.wired.com/story/dangerzone-open-email-attachments-safely/
-三、使用 PGP 加密邮件 # PGP 全称 Pretty Good Privacy, 是一种古老且成熟的加密方式，它使用一种“非对称加密”的方式来加密和解密邮件。">
+是的，即使是你认识的、信任的人发送的邮件，你也要用 Dangerzone 检测附件。因为熟人、朋友的邮箱可能会被黑客攻陷，从而用来对你展开攻击。这种情况过去就曾发生过，未来也有可能发生。">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="电子邮件安全" />
-<meta property="og:description" content="电子邮件安全 # 一、注册匿名邮件服务 # 使用匿名方式注册国外的加密邮件服务，它们包括：
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://yummydimsum.github.io/docs/06-communication/mail/">
+  <meta property="og:site_name" content="信息与网络安全手册">
+  <meta property="og:title" content="电子邮件安全">
+  <meta property="og:description" content="电子邮件安全 # 一、注册匿名邮件服务 # 使用匿名方式注册国外的加密邮件服务，它们包括：
 Proton Mail https://proton.me
 Tuta Mail https://tuta.com/
 Riseup Mail（需要专门申请账号） https://riseup.net/
@@ -31,26 +31,28 @@ Proton Mail 和 Tuta Mail 都有“端对端加密”功能，邮件的内容只
 【请注意】端对端加密功能只限于同一家邮件服务商内部，也就是只有 Proton → Proton, 或者 Tuta → Tuta 的时候，才能够使用端对端加密。Proton 与其它邮箱之间的通讯并不会端对端加密，Tuta 与其它邮箱之间的通讯也不会端对端加密。
 不过，Proton Mail 内置一个很好用的 PGP 加密功能，便于 Proton Mail 和其它 Email 之间的加密能信。
 详细使用说明请看 Proton Mail 网站： https://proton.me/support/how-to-use-pgp
+但是，Tuta 邮箱不支持 PGP 加密功能，也不允许使用任何第三方的邮件客户端查收和管理邮件。这可能会造成一个问题：如果在 Tuta 邮箱里收到使用 PGP/MIME 方式加密的邮件，可能无法解密。
 二、谨慎下载和打开邮件附件 # 黑客经常向目标对象发送带有恶意附件的电子邮件，活跃的活动人士比普通人更有可能收到这种恶意附件。
 这些恶意附件乍看上去和普通的 Word、PowerPoint 、PDF、图片文件没有区别，但它可能包含恶意代码。只要在本地电脑点击打开，它就会执行恶意代码。结果就是，要么暴露匿名人士的地址和身份，要么导致电脑里的重要信息泄漏。
 这种攻击方式广泛存在，但许多人似乎并不知道、更不在意它。
 如果你经常使用邮件与人沟通，请你每次都记得要用 Dangerzone 打开你所下载的附件。Dangerzone 是一个简单的隔离程序，它帮你清理不信任的文档，过滤掉这些文件中可能携带的任何恶意脚本。
 https://dangerzone.rocks/
-是的，即使是你认识的、信任的人发送的邮件，你也要用 Dangerzone 检测附件。因为熟人、朋友的邮箱可能会被黑客攻陷，从而用来对你展开攻击。这种情况过去就曾发生过，未来也有可能发生。
-这里有一篇关于 Dangerzone 的文章（英文），推荐你阅读了解：
-https://www.wired.com/story/dangerzone-open-email-attachments-safely/
-三、使用 PGP 加密邮件 # PGP 全称 Pretty Good Privacy, 是一种古老且成熟的加密方式，它使用一种“非对称加密”的方式来加密和解密邮件。" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://yummydimsum.github.io/docs/06-communication/mail/" /><meta property="article:section" content="docs" />
-<meta property="article:published_time" content="2024-04-10T00:00:00+00:00" />
-<meta property="article:modified_time" content="2024-04-10T00:00:00+00:00" />
+是的，即使是你认识的、信任的人发送的邮件，你也要用 Dangerzone 检测附件。因为熟人、朋友的邮箱可能会被黑客攻陷，从而用来对你展开攻击。这种情况过去就曾发生过，未来也有可能发生。">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+    <meta property="article:published_time" content="2024-04-10T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-04-10T00:00:00+00:00">
 <title>电子邮件安全 | 信息与网络安全手册</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
 <link rel="canonical" href="https://yummydimsum.github.io/docs/06-communication/mail/">
 <link rel="stylesheet" href="/book.min.309b7ed028807cdb68d8d61e26d609f48369c098dbf5e4d8c0dcf4cdf49feafc.css" integrity="sha256-MJt&#43;0CiAfNto2NYeJtYJ9INpwJjb9eTYwNz0zfSf6vw=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/zh.search.min.4d9ee5e78fe1f5ecf3c76d2ef8286976a88e75f29431e1ae2f5050ca24042a11.js" integrity="sha256-TZ7l54/h9ezzx20u&#43;ChpdqiOdfKUMeGuL1BQyiQEKhE=" crossorigin="anonymous"></script>
+  <script defer src="/zh.search.min.1b9323267fc8600a0827575ba505a58143245b54ee70429d4f015212c37b8033.js" integrity="sha256-G5MjJn/IYAoIJ1dbpQWlgUMkW1TucEKdTwFSEsN7gDM=" crossorigin="anonymous"></script>
+
+  
+
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -838,6 +840,7 @@ https://github.com/alex-shpak/hugo-book
 <p>【请注意】端对端加密功能只限于同一家邮件服务商内部，也就是只有 Proton → Proton, 或者 Tuta → Tuta 的时候，才能够使用端对端加密。Proton 与其它邮箱之间的通讯并不会端对端加密，Tuta 与其它邮箱之间的通讯也不会端对端加密。</p>
 <p>不过，Proton Mail 内置一个很好用的 PGP 加密功能，便于 Proton Mail 和其它 Email 之间的加密能信。</p>
 <p>详细使用说明请看 Proton Mail 网站： <a href="https://proton.me/support/how-to-use-pgp">https://proton.me/support/how-to-use-pgp</a></p>
+<p>但是，Tuta 邮箱不支持 PGP 加密功能，也不允许使用任何第三方的邮件客户端查收和管理邮件。这可能会造成一个问题：如果在 Tuta 邮箱里收到使用 PGP/MIME 方式加密的邮件，可能无法解密。</p>
 <h2 id="二谨慎下载和打开邮件附件">
   二、谨慎下载和打开邮件附件
   <a class="anchor" href="#%e4%ba%8c%e8%b0%a8%e6%85%8e%e4%b8%8b%e8%bd%bd%e5%92%8c%e6%89%93%e5%bc%80%e9%82%ae%e4%bb%b6%e9%99%84%e4%bb%b6">#</a>
