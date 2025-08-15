@@ -1,0 +1,16 @@
+baseURL = 'https://yummydimsum.github.io/'
+languageCode = 'zh-cn'
+title = '信息与网络安全手册'
+theme = "hugo-book"
+
+# Book configuration
+disablePathToLower = true
+enableGitInfo = false
+
+[params]
+BookTheme = 'light'
+BookToC = true
+BookSection = 'docs'
+BookSearch = true
+BookComments = false
+
