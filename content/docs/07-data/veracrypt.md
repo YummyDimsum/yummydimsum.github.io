@@ -2,7 +2,7 @@
 title = '使用 Veracrypt 加密文件和磁盘'
 date = 2024-04-10
 draft = false
-weight = 37
+weight = 38
 +++
 # 使用 Veracrypt 加密文件和磁盘
 
