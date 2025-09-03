@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="
+  文件加密软件推荐和使用方法
+  #
+
+
+  为什么需要加密文件
+  #
+
+无论是自己保存重要文件，还是给别人传送、分享重要文件，最好都将文件加密，而不是直接存储和传输。
+直接存储和传输的风险显而易见，只要文件被别人拦截获取，其中的内容——无论是个人隐私还是商业机密——就会全部暴露。
+对于行动者来说，还要考虑到来自国家机器的威胁，
+
+  几种推荐的文件加密软件
+  #
+
+推荐三种文件加密软件：VeraCrypt，PicoCrypt，和 Cryptomator。
+
+  1. VeraCrypt
+  #
+
+VeraCrypt 的操作有些复杂，请看本站这个专门介绍 VeraCrypt 用法的页面。
+
+  2. PicoCrypt
+  #
+
+
+
+下载安装
+https://github.com/Picocrypt/Picocrypt/releases
+以上链接是唯一提供 PicoCrypt 软件的正规途径，请不要从其它任何地方下载 PicoCrypt。
+这是一款非常轻量的文件加密软件，界面非常简单，使用也很简单，但它的加密功能却一点都不弱。
+它支持 Windows, Linux 和 macOS 系统，还有命令行界面和一个简单的网页端（ https://picocrypt.github.io/ ），不过网页端的功能比较有限。
+开发者2025年8月初将项目页面归档，意味着不再开发和维护这个软件，但仍提供下载。这仍然是一款值得信任的加密软件。
+
+
+基本加密和解密操作
+PicoCrypt 只有下图这一个操作界面，所有操作都在这里完成。
+
+把你想要加密的文件或文件夹拖拽到 PicoCrypt 里，然后为给设置密码。可以自己输入密码，也可以用它自带的生成密码（Create）功能。
+
+生成密码的时候，可以自己设置密码强度：包含多少位字符、是否包含字母、是否包含数字等等。密码生成之后，会自动复制到剪切板，请一定妥善保存密码，否则就无法解密文件。
+如果只是简单的加密，设置完密码就可以了。然后点击最底部的“Encrypt”按钮，文件就会自动加密。加密之后的文件扩展名是 .pcv。
+
+解密的时候，把已经加密的 .pcv 文件拖拽到 PicoCrypt 里，输入密码，点击“Decrypt”按钮即可。（如果设置了 keyfile，还需要导入 keyfile。）
+注意，PicoCrypt 只能识别 .pcv 扩展名的文件并进行解密，其它扩展名的文件都会被视作需要加密的文件，而不是需要解密的文件。
+
+
+高级加密特性
+PicoCrypt 还有几个高级加密功能值得介绍：">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://yummydimsum.github.io/docs/07-data/file-encryption/">
+  <meta property="og:site_name" content="信息与网络安全手册">
+  <meta property="og:title" content="文件加密以及常见加密软件">
+  <meta property="og:description" content="文件加密软件推荐和使用方法 # 为什么需要加密文件 # 无论是自己保存重要文件，还是给别人传送、分享重要文件，最好都将文件加密，而不是直接存储和传输。
+直接存储和传输的风险显而易见，只要文件被别人拦截获取，其中的内容——无论是个人隐私还是商业机密——就会全部暴露。
+对于行动者来说，还要考虑到来自国家机器的威胁，
+几种推荐的文件加密软件 # 推荐三种文件加密软件：VeraCrypt，PicoCrypt，和 Cryptomator。
+1. VeraCrypt # VeraCrypt 的操作有些复杂，请看本站这个专门介绍 VeraCrypt 用法的页面。
+2. PicoCrypt # 下载安装
+https://github.com/Picocrypt/Picocrypt/releases
+以上链接是唯一提供 PicoCrypt 软件的正规途径，请不要从其它任何地方下载 PicoCrypt。
+这是一款非常轻量的文件加密软件，界面非常简单，使用也很简单，但它的加密功能却一点都不弱。
+它支持 Windows, Linux 和 macOS 系统，还有命令行界面和一个简单的网页端（ https://picocrypt.github.io/ ），不过网页端的功能比较有限。
+开发者2025年8月初将项目页面归档，意味着不再开发和维护这个软件，但仍提供下载。这仍然是一款值得信任的加密软件。
+基本加密和解密操作
+PicoCrypt 只有下图这一个操作界面，所有操作都在这里完成。
+把你想要加密的文件或文件夹拖拽到 PicoCrypt 里，然后为给设置密码。可以自己输入密码，也可以用它自带的生成密码（Create）功能。
+生成密码的时候，可以自己设置密码强度：包含多少位字符、是否包含字母、是否包含数字等等。密码生成之后，会自动复制到剪切板，请一定妥善保存密码，否则就无法解密文件。
+如果只是简单的加密，设置完密码就可以了。然后点击最底部的“Encrypt”按钮，文件就会自动加密。加密之后的文件扩展名是 .pcv。
+解密的时候，把已经加密的 .pcv 文件拖拽到 PicoCrypt 里，输入密码，点击“Decrypt”按钮即可。（如果设置了 keyfile，还需要导入 keyfile。）
+注意，PicoCrypt 只能识别 .pcv 扩展名的文件并进行解密，其它扩展名的文件都会被视作需要加密的文件，而不是需要解密的文件。
+高级加密特性
+PicoCrypt 还有几个高级加密功能值得介绍：">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+    <meta property="article:published_time" content="2024-04-10T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-04-10T00:00:00+00:00">
+<title>文件加密以及常见加密软件 | 信息与网络安全手册</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="https://yummydimsum.github.io/docs/07-data/file-encryption/">
+<link rel="stylesheet" href="/book.min.26ab4dc3f6076ceda2f9c263aa4029ae3341dbcce339f901aa432b11da6e5894.css" integrity="sha256-JqtNw/YHbO2i&#43;cJjqkAprjNB28zjOfkBqkMrEdpuWJQ=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.94b93e2e5afca0cc3d83eceac15fa2136213e48f6216a0b33c1cf8c9338ab976.js" integrity="sha256-lLk&#43;Llr8oMw9g&#43;zqwV&#43;iE2IT5I9iFqCzPBz4yTOKuXY=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>信息与网络安全手册</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/01-start/" class="">一、确认自己的身份和处境</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/" class="">二、电脑硬件及操作系统</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/windows/" class="">运行 Windows 系统的 PC 机</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/macos/" class="">运行 macOS 的苹果电脑</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/linux/" class="">运行 GNU/Linux 系统的 PC 机</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/liveos/" class="">使用 Live USB 系统</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/" class="">三、手机设备及操作系统</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/ios/" class="">iPhone 手机（附 iPad）</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/android/" class="">Android 手机（安卓手机）</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/tablet/" class="">平板电脑</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/security/" class="">智能手机安全设置</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/" class="">四、常用软件推荐</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/ime/" class="">中文输入法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/browser/" class="">网页浏览器</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/extension/" class="">浏览器扩展</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/im/" class="">即时通讯软件</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/video/" class="">视频通话及会议</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/office/" class="">办公和线上协作</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/cloud-storage/" class="">云存储和文件分享</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/password/" class="">安全的密码以及密码管理器</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/others/" class="">其它软件</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/signal/" class="">Signal 专门页面</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/" class="">五、上网安全</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/vpn/" class="">使用 VPN 的场景</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/tor/" class="">使用 Tor 浏览器保持匿名</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/links/" class="">当心包含恶意代码的链接</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/identities/" class="">使用不同的在线身份</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/2fa/" class="">为你的账号开启双因素验证</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/" class="">六、通讯安全</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/im/" class="">即时通讯和视频通话</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/mail/" class="">电子邮件安全</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/mailvelope/" class="">借助 Mailvelope 使用 PGP 加密邮件</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/" class="">七、数据安全</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/level/" class="">给你的数据重要性分级</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/metadata/" class="">分享之前，删除元数据</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/file-encryption/" class="active">文件加密以及常见加密软件</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/veracrypt/" class="">使用 Veracrypt 加密文件和磁盘</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/backup/" class="">定期备份你的重要数据</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/destroy/" class="">使用 BleachBit 销毁文件</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/08-police/" class="">八、面对警察查手机</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/08-police/digital/" class="">数字安全层面</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/08-police/legal/" class="">法律层面</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/" class="">九、海外人士回国，遭遇电子产品检查或警察盘问</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/preparation/" class="">准备事项</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/before-teatime/" class="">喝茶之前</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/teatime/" class="">喝茶的时候</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/posts/"  >
+        📝 指南相关文章
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>文件加密以及常见加密软件</h3>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#为什么需要加密文件">为什么需要加密文件</a></li>
+    <li><a href="#几种推荐的文件加密软件">几种推荐的文件加密软件</a>
+      <ul>
+        <li><a href="#1-veracrypt">1. VeraCrypt</a></li>
+        <li><a href="#2-picocrypt">2. PicoCrypt</a></li>
+        <li><a href="#3-cryptomator">3. Cryptomator</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="文件加密软件推荐和使用方法">
+  文件加密软件推荐和使用方法
+  <a class="anchor" href="#%e6%96%87%e4%bb%b6%e5%8a%a0%e5%af%86%e8%bd%af%e4%bb%b6%e6%8e%a8%e8%8d%90%e5%92%8c%e4%bd%bf%e7%94%a8%e6%96%b9%e6%b3%95">#</a>
+</h1>
+<h2 id="为什么需要加密文件">
+  为什么需要加密文件
+  <a class="anchor" href="#%e4%b8%ba%e4%bb%80%e4%b9%88%e9%9c%80%e8%a6%81%e5%8a%a0%e5%af%86%e6%96%87%e4%bb%b6">#</a>
+</h2>
+<p>无论是自己保存重要文件，还是给别人传送、分享重要文件，最好都将文件加密，而不是直接存储和传输。</p>
+<p>直接存储和传输的风险显而易见，只要文件被别人拦截获取，其中的内容——无论是个人隐私还是商业机密——就会全部暴露。</p>
+<p>对于行动者来说，还要考虑到来自国家机器的威胁，</p>
+<h2 id="几种推荐的文件加密软件">
+  几种推荐的文件加密软件
+  <a class="anchor" href="#%e5%87%a0%e7%a7%8d%e6%8e%a8%e8%8d%90%e7%9a%84%e6%96%87%e4%bb%b6%e5%8a%a0%e5%af%86%e8%bd%af%e4%bb%b6">#</a>
+</h2>
+<p>推荐三种文件加密软件：VeraCrypt，PicoCrypt，和 Cryptomator。</p>
+<h3 id="1-veracrypt">
+  1. VeraCrypt
+  <a class="anchor" href="#1-veracrypt">#</a>
+</h3>
+<p>VeraCrypt 的操作有些复杂，请看本站这个<a href="/docs/07-data/veracrypt/">专门介绍 VeraCrypt 用法的页面</a>。</p>
+<h3 id="2-picocrypt">
+  2. PicoCrypt
+  <a class="anchor" href="#2-picocrypt">#</a>
+</h3>
+<ol>
+<li>
+<p>下载安装</p>
+<p><a href="https://github.com/Picocrypt/Picocrypt/releases">https://github.com/Picocrypt/Picocrypt/releases</a></p>
+<p>以上链接是唯一提供 PicoCrypt 软件的正规途径，请不要从其它任何地方下载 PicoCrypt。</p>
+<p>这是一款非常轻量的文件加密软件，界面非常简单，使用也很简单，但它的加密功能却一点都不弱。</p>
+<p>它支持 Windows, Linux 和 macOS 系统，还有命令行界面和一个简单的网页端（ <a href="https://picocrypt.github.io/">https://picocrypt.github.io/</a> ），不过网页端的功能比较有限。</p>
+<p>开发者2025年8月初将项目页面归档，意味着不再开发和维护这个软件，但仍提供下载。这仍然是一款值得信任的加密软件。</p>
+</li>
+<li>
+<p>基本加密和解密操作</p>
+<p>PicoCrypt 只有下图这一个操作界面，所有操作都在这里完成。</p>
+<p><img src="/docs/images/picocrypt-1.png" alt="PicoCrypt" /></p>
+<p>把你想要加密的文件或文件夹拖拽到 PicoCrypt 里，然后为给设置密码。可以自己输入密码，也可以用它自带的生成密码（Create）功能。</p>
+<p><img src="/docs/images/picocrypt-2.png" alt="PicoCrypt" /></p>
+<p>生成密码的时候，可以自己设置密码强度：包含多少位字符、是否包含字母、是否包含数字等等。密码生成之后，会自动复制到剪切板，请一定妥善保存密码，否则就无法解密文件。</p>
+<p>如果只是简单的加密，设置完密码就可以了。然后点击最底部的“Encrypt”按钮，文件就会自动加密。加密之后的文件扩展名是 .pcv。</p>
+<p><img src="/docs/images/picocrypt-4.png" alt="PicoCrypt" /></p>
+<p>解密的时候，把已经加密的 .pcv 文件拖拽到 PicoCrypt 里，输入密码，点击“Decrypt”按钮即可。（如果设置了 keyfile，还需要导入 keyfile。）</p>
+<p>注意，PicoCrypt 只能识别 .pcv 扩展名的文件并进行解密，其它扩展名的文件都会被视作需要加密的文件，而不是需要解密的文件。</p>
+</li>
+<li>
+<p>高级加密特性</p>
+<p>PicoCrypt 还有几个高级加密功能值得介绍：</p>
+<ul>
+<li>
+<p>支持密钥文件。像许多加密软件一些，PicoCrypt 也支持密钥文件。你可以导入已有的密钥文件，也可以让 PicoCrypt 帮你生成一个密钥文件，甚至可以按顺序导入多个密钥文件。注意：如果导入多个密钥文件来加密，顺序非常重要，也就是说，解密文件的时候，要用同样的顺序导入这些密钥文件。</p>
+</li>
+<li>
+<p>Paranoid mode，偏执模式，可以理解为最高级别的安全保护。官方文档里说，如果你是手持绝密文件、面临威胁的举报人，最好就使用这个模式加密。用法也很简单，在 Paranoid mode 前面的方框里打勾 ✅️ 即可。</p>
+<p><strong>注意</strong>：不要与 Deniability 模式同时使用。</p>
+</li>
+<li>
+<p>Reed-Solomon，里德-所罗门模式。如果你想把文件加密之后长期存放在云端或者移动硬盘，推荐使用这种模式。在这种模式里，即使你的文件有一部分损坏（3%以内），PicoCrypt 仍然能够纠正错误并解密文件。</p>
+</li>
+<li>
+<p>Deniability，否认能力，简单说就是假装自己并没有给文件加密。设想一种场景，警察正在检查你的电脑，发现有几个疑似“已加密文件”的文件，可能会进一步怀疑你想隐藏什么东西，进而逼迫你交出解密的密码。如果想避免这种情况发生，就从源头上解决它，Deniability 既能帮你加密文件，又让已加密文件看上去像个普通文件，而不是那么明显的已加密文件。</p>
+<p><strong>注意</strong>：不要与 Paranoid mode 同时使用，因为 Deniability 会让 Paranoid mode 的额外安全措施失效。</p>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="3-cryptomator">
+  3. Cryptomator
+  <a class="anchor" href="#3-cryptomator">#</a>
+</h3>
+<ol>
+<li>
+<p>下载安装</p>
+<p><a href="https://cryptomator.org/">https://cryptomator.org/</a></p>
+<p>Cryptomator 支持 Windows, Linux 和 macOS，桌面版免费；也支持 Android 和 iOS，不过都要收费，Android 版 $16, iOS 版 $9.99（在不同国家的价格可能略有差异）。</p>
+</li>
+<li>
+<p>加密操作</p>
+<ul>
+<li><strong>添加保险库</strong>。打开已经安装好的 Cryptomator，点击左下角的 ➕ 图标，添加一个新的保险库。所谓<strong>保险库</strong>，就是一个由 Cryptomator 加密的文件夹。</li>
+</ul>
+<p><img src="/docs/images/cryptomator-1.png" alt="Cryptomator" /></p>
+<ul>
+<li><strong>给保险库命名</strong>。设置一个方便识别的名字，但最好不要透露加密文件的内容。比如 <code>summerTravel</code> 这个名字就比 <code>JulyProtest</code> 更好一些，因为前者看上去更普通，不容易引起注意。</li>
+</ul>
+<p><img src="/docs/images/cryptomator-2.png" alt="Cryptomator" /></p>
+<ul>
+<li><strong>选择保险库的存储位置</strong>。选择电脑系统的某个位置，或者移动硬盘的某个位置，用于存储加密保险库。</li>
+</ul>
+<p><img src="/docs/images/cryptomator-3.png" alt="Cryptomator" /></p>
+<ul>
+<li><strong>设置保险库的密码</strong>。请设置尽量长且复杂的安全密码。具体请参考点心指南<a href="/docs/04-software/password/">关于密码的页面</a>。</li>
+</ul>
+<p><img src="/docs/images/cryptomator-4.png" alt="Cryptomator" /></p>
+<ul>
+<li><strong>妥善保存恢复密钥</strong>。设置密码的时候，请同时创建恢复密钥。在同一个页面里，选择“好的，有备无患”。Cryptomator 就会生成由许多个英文单词组成的恢复密钥。请一定妥善保管恢复密钥，它是你唯一可以重置保险库密码的凭证。</li>
+</ul>
+<p><img src="/docs/images/cryptomator-5.png" alt="Cryptomator" /></p>
+</li>
+<li>
+<p>解密操作</p>
+<ul>
+<li><strong>输入密码，简单解密</strong>。只须打开 Cryptomator 软件，就能看到你创建的所有保险库，选择想要解密的保险库，输入对应的密码，就可以解密。解密之后，你就可以进入文件夹，查看或修改其中的文件。操作完成之后，关闭 Cryptomator 即可。</li>
+</ul>
+<p><img src="/docs/images/cryptomator-7.png" alt="Cryptomator" /></p>
+<p>只有通过 Cryptomator 打开保险库，才能看到其中真正存储的文件。（如下图）</p>
+<p><img src="/docs/images/cryptomator-8.png" alt="Cryptomator" /></p>
+<p>如果没有通过 Cryptomator 打开，而是直接从文件管理器打开保险库，看到的只是一堆经过加密的文件。（如下图）</p>
+<p><img src="/docs/images/cryptomator-9.png" alt="Cryptomator" /></p>
+</li>
+<li>
+<p>注意：Cryptomator 并不适用于所有人</p>
+<p>Cryptomator 虽然简单易用，但它并不一定适用于每一个人。尤其是那些身处危险环境的活动家，如果你可能会被警察盘查，或者被检查电子设备，那最好不要用 Cryptomator 来加密，因为它容易暴露你“正在加密文件”，这可能会让警察进一步怀疑你想隐藏什么。</p>
+<p>对于身处危险环境的活动家，我们建议你使用 VeraCrypt 或者 PicoCrypt，它们的“否认能力”（Deniability）功能，可以一定程度隐藏你“正在加密文件”这一事实，从而避免引起警察进一步的怀疑。</p>
+</li>
+</ol>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#为什么需要加密文件">为什么需要加密文件</a></li>
+    <li><a href="#几种推荐的文件加密软件">几种推荐的文件加密软件</a>
+      <ul>
+        <li><a href="#1-veracrypt">1. VeraCrypt</a></li>
+        <li><a href="#2-picocrypt">2. PicoCrypt</a></li>
+        <li><a href="#3-cryptomator">3. Cryptomator</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

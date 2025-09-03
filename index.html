@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+<head>
+	<meta name="generator" content="Hugo 0.148.1">
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="
+  欢迎来到信息与网络安全手册“点心指南” 😊
+  #
+
+
+  🔥 最新安全提醒
+  #
+
+
+
+2025年7月：中国警察新的移动取证工具Massistant
+
+
+防范钓鱼邮件、钓鱼链接，防止被盗号、被识别真实身份
+
+
+微软公司将于 2025 年 10 月  14 日停止对 Windows 10 的支持，请及时升级系统
+
+
+
+  🆕 最近更新内容
+  #
+
+
+
+在不同操作系统上安装 RIME 中州韵输入法引擎
+
+
+为什么要用密码管理器，我们推荐哪些密码管理器
+
+
+文件加密软件：PicoCrypt、Cryptomator
+
+
+
+  🥮 关于这个网站
+  #
+
+尽管已经有许多手册和指南帮助大家提升信息安全和网络安全，但这些指南大都用英文写成。中国的政治环境、言论环境和互联网现状不同于其他国家，即使将那些英文指南全部翻译成中文，可能也无法完全适合中国读者。因此我们决定撰写一个专门针对中国读者的安全手册。
+本手册的初衷是帮助中国的记者、律师、公民行动者和广义的人权捍卫者等“高危人群”，提升他们的信息安全和网络安全，因此我们重视“安全”和“隐私”多于“方便”和“简单”。但我们也知道，过于复杂的方案和工具会阻碍大家的使用热情，因此我们会努力平衡“安全”与“方便”两方面。
+撰写一份适合所有人的指南是不可能的，我们只能努力使其难易适中。如果读者认为哪些地方过于简略、不知如何操作，或者哪些地方难以理解，欢迎给我们多提意见。你可以在这些地方找到我们。
+
+GitHub https://github.com/YummyDimsum/yummydimsum.github.io
+Link tree https://linktr.ee/dimsumcook
+Twitter https://twitter.com/dimsumcook
+Mastodon https://mstdn.social/@dimsum
+Instagram https://www.instagram.com/yummydimsumcook/
+">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://yummydimsum.github.io/">
+  <meta property="og:site_name" content="信息与网络安全手册">
+  <meta property="og:title" content="首页">
+  <meta property="og:description" content="欢迎来到信息与网络安全手册“点心指南” 😊 # 🔥 最新安全提醒 # 2025年7月：中国警察新的移动取证工具Massistant
+防范钓鱼邮件、钓鱼链接，防止被盗号、被识别真实身份
+微软公司将于 2025 年 10 月 14 日停止对 Windows 10 的支持，请及时升级系统
+🆕 最近更新内容 # 在不同操作系统上安装 RIME 中州韵输入法引擎
+为什么要用密码管理器，我们推荐哪些密码管理器
+文件加密软件：PicoCrypt、Cryptomator
+🥮 关于这个网站 # 尽管已经有许多手册和指南帮助大家提升信息安全和网络安全，但这些指南大都用英文写成。中国的政治环境、言论环境和互联网现状不同于其他国家，即使将那些英文指南全部翻译成中文，可能也无法完全适合中国读者。因此我们决定撰写一个专门针对中国读者的安全手册。
+本手册的初衷是帮助中国的记者、律师、公民行动者和广义的人权捍卫者等“高危人群”，提升他们的信息安全和网络安全，因此我们重视“安全”和“隐私”多于“方便”和“简单”。但我们也知道，过于复杂的方案和工具会阻碍大家的使用热情，因此我们会努力平衡“安全”与“方便”两方面。
+撰写一份适合所有人的指南是不可能的，我们只能努力使其难易适中。如果读者认为哪些地方过于简略、不知如何操作，或者哪些地方难以理解，欢迎给我们多提意见。你可以在这些地方找到我们。
+GitHub https://github.com/YummyDimsum/yummydimsum.github.io Link tree https://linktr.ee/dimsumcook Twitter https://twitter.com/dimsumcook Mastodon https://mstdn.social/@dimsum Instagram https://www.instagram.com/yummydimsumcook/">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="website">
+<title>首页 | 信息与网络安全手册</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="https://yummydimsum.github.io/">
+<link rel="stylesheet" href="/book.min.26ab4dc3f6076ceda2f9c263aa4029ae3341dbcce339f901aa432b11da6e5894.css" integrity="sha256-JqtNw/YHbO2i&#43;cJjqkAprjNB28zjOfkBqkMrEdpuWJQ=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.94b93e2e5afca0cc3d83eceac15fa2136213e48f6216a0b33c1cf8c9338ab976.js" integrity="sha256-lLk&#43;Llr8oMw9g&#43;zqwV&#43;iE2IT5I9iFqCzPBz4yTOKuXY=" crossorigin="anonymous"></script>
+<link rel="alternate" type="application/rss+xml" href="https://yummydimsum.github.io/index.xml" title="信息与网络安全手册" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>信息与网络安全手册</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/01-start/" class="">一、确认自己的身份和处境</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/" class="">二、电脑硬件及操作系统</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/windows/" class="">运行 Windows 系统的 PC 机</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/macos/" class="">运行 macOS 的苹果电脑</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/linux/" class="">运行 GNU/Linux 系统的 PC 机</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/liveos/" class="">使用 Live USB 系统</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/" class="">三、手机设备及操作系统</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/ios/" class="">iPhone 手机（附 iPad）</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/android/" class="">Android 手机（安卓手机）</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/tablet/" class="">平板电脑</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/security/" class="">智能手机安全设置</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/" class="">四、常用软件推荐</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/ime/" class="">中文输入法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/browser/" class="">网页浏览器</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/extension/" class="">浏览器扩展</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/im/" class="">即时通讯软件</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/video/" class="">视频通话及会议</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/office/" class="">办公和线上协作</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/cloud-storage/" class="">云存储和文件分享</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/password/" class="">安全的密码以及密码管理器</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/others/" class="">其它软件</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/signal/" class="">Signal 专门页面</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/" class="">五、上网安全</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/vpn/" class="">使用 VPN 的场景</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/tor/" class="">使用 Tor 浏览器保持匿名</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/links/" class="">当心包含恶意代码的链接</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/identities/" class="">使用不同的在线身份</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/2fa/" class="">为你的账号开启双因素验证</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/" class="">六、通讯安全</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/im/" class="">即时通讯和视频通话</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/mail/" class="">电子邮件安全</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/mailvelope/" class="">借助 Mailvelope 使用 PGP 加密邮件</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/" class="">七、数据安全</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/level/" class="">给你的数据重要性分级</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/metadata/" class="">分享之前，删除元数据</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/file-encryption/" class="">文件加密以及常见加密软件</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/veracrypt/" class="">使用 Veracrypt 加密文件和磁盘</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/backup/" class="">定期备份你的重要数据</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/destroy/" class="">使用 BleachBit 销毁文件</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/08-police/" class="">八、面对警察查手机</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/08-police/digital/" class="">数字安全层面</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/08-police/legal/" class="">法律层面</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/" class="">九、海外人士回国，遭遇电子产品检查或警察盘问</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/preparation/" class="">准备事项</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/before-teatime/" class="">喝茶之前</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/teatime/" class="">喝茶的时候</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/posts/"  >
+        📝 指南相关文章
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>首页</h3>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#-最新安全提醒">🔥 最新安全提醒</a></li>
+    <li><a href="#-最近更新内容">🆕 最近更新内容</a></li>
+    <li><a href="#-关于这个网站">🥮 关于这个网站</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="欢迎来到信息与网络安全手册点心指南-">
+  欢迎来到信息与网络安全手册“点心指南” 😊
+  <a class="anchor" href="#%e6%ac%a2%e8%bf%8e%e6%9d%a5%e5%88%b0%e4%bf%a1%e6%81%af%e4%b8%8e%e7%bd%91%e7%bb%9c%e5%ae%89%e5%85%a8%e6%89%8b%e5%86%8c%e7%82%b9%e5%bf%83%e6%8c%87%e5%8d%97-">#</a>
+</h1>
+<h2 id="-最新安全提醒">
+  🔥 最新安全提醒
+  <a class="anchor" href="#-%e6%9c%80%e6%96%b0%e5%ae%89%e5%85%a8%e6%8f%90%e9%86%92">#</a>
+</h2>
+<ul>
+<li>
+<p>2025年7月：<a href="/posts/massistant-chinese-mobile-forensics/">中国警察新的移动取证工具Massistant</a></p>
+</li>
+<li>
+<p><a href="/docs/05-internet/links/">防范钓鱼邮件、钓鱼链接</a>，防止被盗号、被识别真实身份</p>
+</li>
+<li>
+<p>微软公司将于 2025 年 10 月  14 日停止对 Windows 10 的支持，<a href="/docs/02-computer/windows/#%E4%B8%89%E5%BC%80%E5%90%AF-windows-%E7%B3%BB%E7%BB%9F%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0">请及时升级系统</a></p>
+</li>
+</ul>
+<h2 id="-最近更新内容">
+  🆕 最近更新内容
+  <a class="anchor" href="#-%e6%9c%80%e8%bf%91%e6%9b%b4%e6%96%b0%e5%86%85%e5%ae%b9">#</a>
+</h2>
+<ul>
+<li>
+<p>在不同操作系统上安装 <a href="/docs/04-software/ime/">RIME 中州韵输入法引擎</a></p>
+</li>
+<li>
+<p><a href="/docs/04-software/password/">为什么要用密码管理器，我们推荐哪些密码管理器</a></p>
+</li>
+<li>
+<p><a href="/docs/07-data/file-encryption/">文件加密软件：PicoCrypt、Cryptomator</a></p>
+</li>
+</ul>
+<h2 id="-关于这个网站">
+  🥮 关于这个网站
+  <a class="anchor" href="#-%e5%85%b3%e4%ba%8e%e8%bf%99%e4%b8%aa%e7%bd%91%e7%ab%99">#</a>
+</h2>
+<p>尽管已经有许多手册和指南帮助大家提升信息安全和网络安全，但这些指南大都用英文写成。中国的政治环境、言论环境和互联网现状不同于其他国家，即使将那些英文指南全部翻译成中文，可能也无法完全适合中国读者。因此我们决定撰写一个专门针对中国读者的安全手册。</p>
+<p>本手册的初衷是帮助中国的记者、律师、公民行动者和广义的人权捍卫者等“高危人群”，提升他们的信息安全和网络安全，因此我们重视“安全”和“隐私”多于“方便”和“简单”。但我们也知道，过于复杂的方案和工具会阻碍大家的使用热情，因此我们会努力平衡“安全”与“方便”两方面。</p>
+<p>撰写一份适合所有人的指南是不可能的，我们只能努力使其难易适中。如果读者认为哪些地方过于简略、不知如何操作，或者哪些地方难以理解，欢迎给我们多提意见。你可以在这些地方找到我们。</p>
+<ul>
+<li>GitHub <a href="https://github.com/YummyDimsum/yummydimsum.github.io">https://github.com/YummyDimsum/yummydimsum.github.io</a></li>
+<li>Link tree <a href="https://linktr.ee/dimsumcook">https://linktr.ee/dimsumcook</a></li>
+<li>Twitter <a href="https://twitter.com/dimsumcook">https://twitter.com/dimsumcook</a></li>
+<li>Mastodon <a href="https://mstdn.social/@dimsum">https://mstdn.social/@dimsum</a></li>
+<li>Instagram <a href="https://www.instagram.com/yummydimsumcook/">https://www.instagram.com/yummydimsumcook/</a></li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#-最新安全提醒">🔥 最新安全提醒</a></li>
+    <li><a href="#-最近更新内容">🆕 最近更新内容</a></li>
+    <li><a href="#-关于这个网站">🥮 关于这个网站</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

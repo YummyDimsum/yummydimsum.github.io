@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="
+  为你的账号开启双因素验证
+  #
+
+
+  一、什么是双因素验证
+  #
+
+中国的互联网服务普遍没有登录的双因素验证（2FA, Two-Factor Authentication）功能，但主流的国际互联网服务都有这一选项。
+所谓双因素验证，就是在登录的时候，输入用户名和密码之后，还需要输入一串验证码。
+双因素验证分为几种方式：
+
+  二、使用手机号码接收验证码
+  #
+
+这种方式并非最可靠的，但有些网站只提供这种验证方式。
+这里再次提醒，因为你注册的是不同的在线虚拟身份，所以一定不要使用已经实名的中国手机号码。如果你使用国外的手机号码，使用手机号码接收验证码并无不妥。
+
+  三、使用专门的双因素验证 App
+  #
+
+有些网站提供一种功能，允许你在手机上安装 App, 绑定这个网站，每次登录的时候，双因素验证 App 上面会自动生成六位数字，有效期仅有一分钟。
+
+
+Android 用户，推荐使用 Aegis Authenticator；
+
+
+iOS 用户，推荐使用 Tofu.
+
+
+如果你不介意使用 Google 服务，那么在 Android 和 iOS 上面都有 Google Authentication 可用。
+
+
+Android https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2
+
+
+iOS https://apps.apple.com/us/app/google-authenticator/id388497605
+
+
+有些双因素验证 App 允许你设置锁定密码，避免你的验证码被别人轻易查看。
+
+  四、妥善保存备用码
+  #
+
+在启用双因素验证的时候，大多数网站都会建议你保存一组“备用码”。万一你安装双因素验证 App 的设备丢失或者无法使用，你可以借助这些备用码登录进你的账号。请一定要保存这些备用码，并将它们保存在非常安全的地方。不要把它们写在纸上、放在桌上，也不要直接把它们放进 txt 文档、存在电脑桌面。">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://yummydimsum.github.io/docs/05-internet/2fa/">
+  <meta property="og:site_name" content="信息与网络安全手册">
+  <meta property="og:title" content="为你的账号开启双因素验证">
+  <meta property="og:description" content="为你的账号开启双因素验证 # 一、什么是双因素验证 # 中国的互联网服务普遍没有登录的双因素验证（2FA, Two-Factor Authentication）功能，但主流的国际互联网服务都有这一选项。
+所谓双因素验证，就是在登录的时候，输入用户名和密码之后，还需要输入一串验证码。
+双因素验证分为几种方式：
+二、使用手机号码接收验证码 # 这种方式并非最可靠的，但有些网站只提供这种验证方式。
+这里再次提醒，因为你注册的是不同的在线虚拟身份，所以一定不要使用已经实名的中国手机号码。如果你使用国外的手机号码，使用手机号码接收验证码并无不妥。
+三、使用专门的双因素验证 App # 有些网站提供一种功能，允许你在手机上安装 App, 绑定这个网站，每次登录的时候，双因素验证 App 上面会自动生成六位数字，有效期仅有一分钟。
+Android 用户，推荐使用 Aegis Authenticator；
+iOS 用户，推荐使用 Tofu.
+如果你不介意使用 Google 服务，那么在 Android 和 iOS 上面都有 Google Authentication 可用。
+Android https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2
+iOS https://apps.apple.com/us/app/google-authenticator/id388497605
+有些双因素验证 App 允许你设置锁定密码，避免你的验证码被别人轻易查看。
+四、妥善保存备用码 # 在启用双因素验证的时候，大多数网站都会建议你保存一组“备用码”。万一你安装双因素验证 App 的设备丢失或者无法使用，你可以借助这些备用码登录进你的账号。请一定要保存这些备用码，并将它们保存在非常安全的地方。不要把它们写在纸上、放在桌上，也不要直接把它们放进 txt 文档、存在电脑桌面。">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+    <meta property="article:published_time" content="2024-04-10T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-04-10T00:00:00+00:00">
+<title>为你的账号开启双因素验证 | 信息与网络安全手册</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="https://yummydimsum.github.io/docs/05-internet/2fa/">
+<link rel="stylesheet" href="/book.min.26ab4dc3f6076ceda2f9c263aa4029ae3341dbcce339f901aa432b11da6e5894.css" integrity="sha256-JqtNw/YHbO2i&#43;cJjqkAprjNB28zjOfkBqkMrEdpuWJQ=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.94b93e2e5afca0cc3d83eceac15fa2136213e48f6216a0b33c1cf8c9338ab976.js" integrity="sha256-lLk&#43;Llr8oMw9g&#43;zqwV&#43;iE2IT5I9iFqCzPBz4yTOKuXY=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>信息与网络安全手册</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/01-start/" class="">一、确认自己的身份和处境</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/" class="">二、电脑硬件及操作系统</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/windows/" class="">运行 Windows 系统的 PC 机</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/macos/" class="">运行 macOS 的苹果电脑</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/linux/" class="">运行 GNU/Linux 系统的 PC 机</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/liveos/" class="">使用 Live USB 系统</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/" class="">三、手机设备及操作系统</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/ios/" class="">iPhone 手机（附 iPad）</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/android/" class="">Android 手机（安卓手机）</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/tablet/" class="">平板电脑</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/security/" class="">智能手机安全设置</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/" class="">四、常用软件推荐</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/ime/" class="">中文输入法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/browser/" class="">网页浏览器</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/extension/" class="">浏览器扩展</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/im/" class="">即时通讯软件</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/video/" class="">视频通话及会议</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/office/" class="">办公和线上协作</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/cloud-storage/" class="">云存储和文件分享</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/password/" class="">安全的密码以及密码管理器</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/others/" class="">其它软件</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/signal/" class="">Signal 专门页面</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/" class="">五、上网安全</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/vpn/" class="">使用 VPN 的场景</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/tor/" class="">使用 Tor 浏览器保持匿名</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/links/" class="">当心包含恶意代码的链接</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/identities/" class="">使用不同的在线身份</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/2fa/" class="active">为你的账号开启双因素验证</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/" class="">六、通讯安全</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/im/" class="">即时通讯和视频通话</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/mail/" class="">电子邮件安全</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/mailvelope/" class="">借助 Mailvelope 使用 PGP 加密邮件</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/" class="">七、数据安全</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/level/" class="">给你的数据重要性分级</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/metadata/" class="">分享之前，删除元数据</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/file-encryption/" class="">文件加密以及常见加密软件</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/veracrypt/" class="">使用 Veracrypt 加密文件和磁盘</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/backup/" class="">定期备份你的重要数据</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/destroy/" class="">使用 BleachBit 销毁文件</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/08-police/" class="">八、面对警察查手机</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/08-police/digital/" class="">数字安全层面</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/08-police/legal/" class="">法律层面</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/" class="">九、海外人士回国，遭遇电子产品检查或警察盘问</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/preparation/" class="">准备事项</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/before-teatime/" class="">喝茶之前</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/teatime/" class="">喝茶的时候</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/posts/"  >
+        📝 指南相关文章
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>为你的账号开启双因素验证</h3>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#一什么是双因素验证">一、什么是双因素验证</a></li>
+    <li><a href="#二使用手机号码接收验证码">二、使用手机号码接收验证码</a></li>
+    <li><a href="#三使用专门的双因素验证-app">三、使用专门的双因素验证 App</a></li>
+    <li><a href="#四妥善保存备用码">四、妥善保存备用码</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="为你的账号开启双因素验证">
+  为你的账号开启双因素验证
+  <a class="anchor" href="#%e4%b8%ba%e4%bd%a0%e7%9a%84%e8%b4%a6%e5%8f%b7%e5%bc%80%e5%90%af%e5%8f%8c%e5%9b%a0%e7%b4%a0%e9%aa%8c%e8%af%81">#</a>
+</h1>
+<h2 id="一什么是双因素验证">
+  一、什么是双因素验证
+  <a class="anchor" href="#%e4%b8%80%e4%bb%80%e4%b9%88%e6%98%af%e5%8f%8c%e5%9b%a0%e7%b4%a0%e9%aa%8c%e8%af%81">#</a>
+</h2>
+<p>中国的互联网服务普遍没有登录的双因素验证（2FA, Two-Factor Authentication）功能，但主流的国际互联网服务都有这一选项。</p>
+<p>所谓双因素验证，就是在登录的时候，输入用户名和密码之后，还需要输入一串验证码。</p>
+<p>双因素验证分为几种方式：</p>
+<h2 id="二使用手机号码接收验证码">
+  二、使用手机号码接收验证码
+  <a class="anchor" href="#%e4%ba%8c%e4%bd%bf%e7%94%a8%e6%89%8b%e6%9c%ba%e5%8f%b7%e7%a0%81%e6%8e%a5%e6%94%b6%e9%aa%8c%e8%af%81%e7%a0%81">#</a>
+</h2>
+<p>这种方式并非最可靠的，但有些网站只提供这种验证方式。</p>
+<p>这里再次提醒，因为你注册的是不同的在线虚拟身份，所以一定不要使用已经实名的中国手机号码。如果你使用国外的手机号码，使用手机号码接收验证码并无不妥。</p>
+<h2 id="三使用专门的双因素验证-app">
+  三、使用专门的双因素验证 App
+  <a class="anchor" href="#%e4%b8%89%e4%bd%bf%e7%94%a8%e4%b8%93%e9%97%a8%e7%9a%84%e5%8f%8c%e5%9b%a0%e7%b4%a0%e9%aa%8c%e8%af%81-app">#</a>
+</h2>
+<p>有些网站提供一种功能，允许你在手机上安装 App, 绑定这个网站，每次登录的时候，双因素验证 App 上面会自动生成六位数字，有效期仅有一分钟。</p>
+<ul>
+<li>
+<p>Android 用户，推荐使用 <a href="https://getaegis.app/">Aegis Authenticator</a>；</p>
+</li>
+<li>
+<p>iOS 用户，推荐使用 <a href="https://www.tofuauth.com/">Tofu</a>.</p>
+</li>
+</ul>
+<p>如果你不介意使用 Google 服务，那么在 Android 和 iOS 上面都有 Google Authentication 可用。</p>
+<ul>
+<li>
+<p>Android <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2">https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2</a></p>
+</li>
+<li>
+<p>iOS <a href="https://apps.apple.com/us/app/google-authenticator/id388497605">https://apps.apple.com/us/app/google-authenticator/id388497605</a></p>
+</li>
+</ul>
+<p>有些双因素验证 App 允许你设置锁定密码，避免你的验证码被别人轻易查看。</p>
+<h2 id="四妥善保存备用码">
+  四、妥善保存备用码
+  <a class="anchor" href="#%e5%9b%9b%e5%a6%a5%e5%96%84%e4%bf%9d%e5%ad%98%e5%a4%87%e7%94%a8%e7%a0%81">#</a>
+</h2>
+<p>在启用双因素验证的时候，大多数网站都会建议你保存一组“备用码”。万一你安装双因素验证 App 的设备丢失或者无法使用，你可以借助这些备用码登录进你的账号。请一定要保存这些备用码，并将它们保存在非常安全的地方。不要把它们写在纸上、放在桌上，也不要直接把它们放进 txt 文档、存在电脑桌面。</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#一什么是双因素验证">一、什么是双因素验证</a></li>
+    <li><a href="#二使用手机号码接收验证码">二、使用手机号码接收验证码</a></li>
+    <li><a href="#三使用专门的双因素验证-app">三、使用专门的双因素验证 App</a></li>
+    <li><a href="#四妥善保存备用码">四、妥善保存备用码</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

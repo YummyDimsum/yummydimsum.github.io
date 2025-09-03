@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="
+  安全的密码以及密码管理器
+  #
+
+
+  什么是安全的密码？
+  #
+
+一个安全强大的密码应该包括：至少25位字符，包含大小写字母、阿拉伯数字和特殊符号，而且不能使用常见单词、常见词组，也不要包含你的名字、生日信息，甚至连你喜欢的诗歌、音乐名字都不要有。
+像这样的就不是一个好密码和强密码：iloveyou123
+像这样的才是好密码和强密码：$!5:d(CTU#L.!m=x/hzH.L4ru
+点击查看《盒中安全手册》关于什么是安全密码的详细解释。
+
+  那些不用密码管理器的人
+  #
+
+不用密码管理器的人，会怎样创建和管理密码呢？
+
+
+大多数人会设置比较简单的密码，方便记忆。
+
+
+还会在不同网站使用相同的密码，或者相似的密码。
+
+
+还会把密码保存在浏览器里，方便下次直接登录。
+
+
+还有些人会把密码用明文形式存储在电脑或者手机的记事本里，而且这个记事本也不加密。
+
+
+如果你也这样操作，那可真的太危险啦！
+
+  密码管理器的两个主要作用
+  #
+
+
+生成唯一的、随机的、复杂的密码。
+
+唯一，意味着不同网站使用不同密码。即使 A 网站的密码库泄漏，黑客也无法得知你在 B 网站、C 网站的密码。随机和复杂，意味着它不是常见单词、常见数字，而是随机字符。像上面举例的那个 $!5:d(CTU#L.!m=x/hzH.L4ru 就是唯一、随机的密码。
+
+加密保存所有的密码。
+
+既然你给每个网站生成唯一的、随机的、复杂的密码，那么你的大脑肯定记不住它们，因此就需要密码管理器帮你保存这些密码。
+这时，你唯一需要记住的，就是密码管理器本身的密码。密码管理器相当于一个“保险箱”，你只需要记住保险箱的密码，而不用去记里面几十、上百个随机密码。
+注意：使用密码管理器的时候，一定要做到：保存好你的密码数据库文件，最好有至少两处备份，并且记住你的密码管理器主密码。
+
+  常见密码管理器推荐
+  #
+
+总体上，我们优先推荐比较流行的开源软件，而避免闭源软件；优先推荐没有云端存储、多设备同步的软件。但在有些情况下，云端存储也有它的好处，因此以下也会推荐具有云端存储、多设备同步功能的密码管理器。
+
+  一、KeePass 及其衍生软件
+  #
+
+
+
+下载
+https://keepass.info/download.html
+你可以在这里找到 KeePass 以及适用于每种操作系统的 KeePass 衍生版本。比如用于 macOS 的 MacPass，用于 Linux 的 KeePassXC。
+
+
+推荐理由
+我们优先推荐 KeePass 及其衍生软件，主要有两个原因：它们是开源软件，不会将密码数据库同步到云端。
+关于是否要将密码数据库同步到云端，一直存在争议。有些人认为同步功能很方便，有些人则努力避免将敏感信息（比如密码）同步到云端。大多数情况下，我们认同后者，不建议将密码数据库同步到云端。但在一些情况下，同步到安全的云端存储，或许也是个好主意。详见后文 Bitwarden 部分的说明。
+
+
+安全特性
+与其它常见的密码管理器不同的是，KeePass 的安全设置分为好几个层次：
+
+最简单的，是为密码文件设置一个“主密码”。只要正确输入主密码就能解锁密码数据库，看到所有密码。
+
+
+
+略微复杂一点的，也是更安全的，可以在“主密码”之外，再设置一个“密钥文件”。
+
+">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://yummydimsum.github.io/docs/04-software/password/">
+  <meta property="og:site_name" content="信息与网络安全手册">
+  <meta property="og:title" content="安全的密码以及密码管理器">
+  <meta property="og:description" content="安全的密码以及密码管理器 # 什么是安全的密码？ # 一个安全强大的密码应该包括：至少25位字符，包含大小写字母、阿拉伯数字和特殊符号，而且不能使用常见单词、常见词组，也不要包含你的名字、生日信息，甚至连你喜欢的诗歌、音乐名字都不要有。
+像这样的就不是一个好密码和强密码：iloveyou123
+像这样的才是好密码和强密码：$!5:d(CTU#L.!m=x/hzH.L4ru
+点击查看《盒中安全手册》关于什么是安全密码的详细解释。
+那些不用密码管理器的人 # 不用密码管理器的人，会怎样创建和管理密码呢？
+大多数人会设置比较简单的密码，方便记忆。
+还会在不同网站使用相同的密码，或者相似的密码。
+还会把密码保存在浏览器里，方便下次直接登录。
+还有些人会把密码用明文形式存储在电脑或者手机的记事本里，而且这个记事本也不加密。
+如果你也这样操作，那可真的太危险啦！
+密码管理器的两个主要作用 # 生成唯一的、随机的、复杂的密码。 唯一，意味着不同网站使用不同密码。即使 A 网站的密码库泄漏，黑客也无法得知你在 B 网站、C 网站的密码。随机和复杂，意味着它不是常见单词、常见数字，而是随机字符。像上面举例的那个 $!5:d(CTU#L.!m=x/hzH.L4ru 就是唯一、随机的密码。
+加密保存所有的密码。 既然你给每个网站生成唯一的、随机的、复杂的密码，那么你的大脑肯定记不住它们，因此就需要密码管理器帮你保存这些密码。
+这时，你唯一需要记住的，就是密码管理器本身的密码。密码管理器相当于一个“保险箱”，你只需要记住保险箱的密码，而不用去记里面几十、上百个随机密码。
+注意：使用密码管理器的时候，一定要做到：保存好你的密码数据库文件，最好有至少两处备份，并且记住你的密码管理器主密码。
+常见密码管理器推荐 # 总体上，我们优先推荐比较流行的开源软件，而避免闭源软件；优先推荐没有云端存储、多设备同步的软件。但在有些情况下，云端存储也有它的好处，因此以下也会推荐具有云端存储、多设备同步功能的密码管理器。
+一、KeePass 及其衍生软件 # 下载
+https://keepass.info/download.html
+你可以在这里找到 KeePass 以及适用于每种操作系统的 KeePass 衍生版本。比如用于 macOS 的 MacPass，用于 Linux 的 KeePassXC。
+推荐理由
+我们优先推荐 KeePass 及其衍生软件，主要有两个原因：它们是开源软件，不会将密码数据库同步到云端。
+关于是否要将密码数据库同步到云端，一直存在争议。有些人认为同步功能很方便，有些人则努力避免将敏感信息（比如密码）同步到云端。大多数情况下，我们认同后者，不建议将密码数据库同步到云端。但在一些情况下，同步到安全的云端存储，或许也是个好主意。详见后文 Bitwarden 部分的说明。
+安全特性
+与其它常见的密码管理器不同的是，KeePass 的安全设置分为好几个层次：
+最简单的，是为密码文件设置一个“主密码”。只要正确输入主密码就能解锁密码数据库，看到所有密码。 略微复杂一点的，也是更安全的，可以在“主密码”之外，再设置一个“密钥文件”。">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+    <meta property="article:published_time" content="2024-04-10T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-04-10T00:00:00+00:00">
+<title>安全的密码以及密码管理器 | 信息与网络安全手册</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="https://yummydimsum.github.io/docs/04-software/password/">
+<link rel="stylesheet" href="/book.min.26ab4dc3f6076ceda2f9c263aa4029ae3341dbcce339f901aa432b11da6e5894.css" integrity="sha256-JqtNw/YHbO2i&#43;cJjqkAprjNB28zjOfkBqkMrEdpuWJQ=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.94b93e2e5afca0cc3d83eceac15fa2136213e48f6216a0b33c1cf8c9338ab976.js" integrity="sha256-lLk&#43;Llr8oMw9g&#43;zqwV&#43;iE2IT5I9iFqCzPBz4yTOKuXY=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>信息与网络安全手册</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/01-start/" class="">一、确认自己的身份和处境</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/" class="">二、电脑硬件及操作系统</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/windows/" class="">运行 Windows 系统的 PC 机</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/macos/" class="">运行 macOS 的苹果电脑</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/linux/" class="">运行 GNU/Linux 系统的 PC 机</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/liveos/" class="">使用 Live USB 系统</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/" class="">三、手机设备及操作系统</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/ios/" class="">iPhone 手机（附 iPad）</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/android/" class="">Android 手机（安卓手机）</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/tablet/" class="">平板电脑</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/security/" class="">智能手机安全设置</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/" class="">四、常用软件推荐</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/ime/" class="">中文输入法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/browser/" class="">网页浏览器</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/extension/" class="">浏览器扩展</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/im/" class="">即时通讯软件</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/video/" class="">视频通话及会议</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/office/" class="">办公和线上协作</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/cloud-storage/" class="">云存储和文件分享</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/password/" class="active">安全的密码以及密码管理器</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/others/" class="">其它软件</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/signal/" class="">Signal 专门页面</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/" class="">五、上网安全</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/vpn/" class="">使用 VPN 的场景</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/tor/" class="">使用 Tor 浏览器保持匿名</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/links/" class="">当心包含恶意代码的链接</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/identities/" class="">使用不同的在线身份</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/2fa/" class="">为你的账号开启双因素验证</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/" class="">六、通讯安全</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/im/" class="">即时通讯和视频通话</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/mail/" class="">电子邮件安全</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/mailvelope/" class="">借助 Mailvelope 使用 PGP 加密邮件</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/" class="">七、数据安全</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/level/" class="">给你的数据重要性分级</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/metadata/" class="">分享之前，删除元数据</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/file-encryption/" class="">文件加密以及常见加密软件</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/veracrypt/" class="">使用 Veracrypt 加密文件和磁盘</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/backup/" class="">定期备份你的重要数据</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/destroy/" class="">使用 BleachBit 销毁文件</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/08-police/" class="">八、面对警察查手机</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/08-police/digital/" class="">数字安全层面</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/08-police/legal/" class="">法律层面</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/" class="">九、海外人士回国，遭遇电子产品检查或警察盘问</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/preparation/" class="">准备事项</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/before-teatime/" class="">喝茶之前</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/teatime/" class="">喝茶的时候</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/posts/"  >
+        📝 指南相关文章
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>安全的密码以及密码管理器</h3>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#什么是安全的密码">什么是安全的密码？</a></li>
+    <li><a href="#那些不用密码管理器的人">那些不用密码管理器的人</a></li>
+    <li><a href="#密码管理器的两个主要作用">密码管理器的两个主要作用</a></li>
+    <li><a href="#常见密码管理器推荐">常见密码管理器推荐</a>
+      <ul>
+        <li><a href="#一keepass-及其衍生软件">一、KeePass 及其衍生软件</a></li>
+        <li><a href="#二bitwarden">二、Bitwarden</a></li>
+        <li><a href="#三proton-pass">三、Proton Pass</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="安全的密码以及密码管理器">
+  安全的密码以及密码管理器
+  <a class="anchor" href="#%e5%ae%89%e5%85%a8%e7%9a%84%e5%af%86%e7%a0%81%e4%bb%a5%e5%8f%8a%e5%af%86%e7%a0%81%e7%ae%a1%e7%90%86%e5%99%a8">#</a>
+</h1>
+<h2 id="什么是安全的密码">
+  什么是安全的密码？
+  <a class="anchor" href="#%e4%bb%80%e4%b9%88%e6%98%af%e5%ae%89%e5%85%a8%e7%9a%84%e5%af%86%e7%a0%81">#</a>
+</h2>
+<p>一个安全强大的密码应该包括：至少25位字符，包含大小写字母、阿拉伯数字和特殊符号，而且不能使用常见单词、常见词组，也不要包含你的名字、生日信息，甚至连你喜欢的诗歌、音乐名字都不要有。</p>
+<p>像这样的就不是一个好密码和强密码：<code>iloveyou123</code></p>
+<p>像这样的才是好密码和强密码：<code>$!5:d(CTU#L.!m=x/hzH.L4ru</code></p>
+<p>点击查看《盒中安全手册》关于<a href="https://securityinabox.org/zh/passwords/passwords/">什么是安全密码</a>的详细解释。</p>
+<h2 id="那些不用密码管理器的人">
+  那些不用密码管理器的人
+  <a class="anchor" href="#%e9%82%a3%e4%ba%9b%e4%b8%8d%e7%94%a8%e5%af%86%e7%a0%81%e7%ae%a1%e7%90%86%e5%99%a8%e7%9a%84%e4%ba%ba">#</a>
+</h2>
+<p>不用密码管理器的人，会怎样创建和管理密码呢？</p>
+<ul>
+<li>
+<p>大多数人会设置比较简单的密码，方便记忆。</p>
+</li>
+<li>
+<p>还会在不同网站使用相同的密码，或者相似的密码。</p>
+</li>
+<li>
+<p>还会把密码保存在浏览器里，方便下次直接登录。</p>
+</li>
+<li>
+<p>还有些人会把密码用<strong>明文</strong>形式存储在电脑或者手机的记事本里，而且这个记事本也不加密。</p>
+</li>
+</ul>
+<p>如果你也这样操作，那可真的太危险啦！</p>
+<h2 id="密码管理器的两个主要作用">
+  密码管理器的两个主要作用
+  <a class="anchor" href="#%e5%af%86%e7%a0%81%e7%ae%a1%e7%90%86%e5%99%a8%e7%9a%84%e4%b8%a4%e4%b8%aa%e4%b8%bb%e8%a6%81%e4%bd%9c%e7%94%a8">#</a>
+</h2>
+<ul>
+<li>生成唯一的、随机的、复杂的密码。</li>
+</ul>
+<p>唯一，意味着不同网站使用不同密码。即使 A 网站的密码库泄漏，黑客也无法得知你在 B 网站、C 网站的密码。随机和复杂，意味着它不是常见单词、常见数字，而是随机字符。像上面举例的那个 <code>$!5:d(CTU#L.!m=x/hzH.L4ru</code> 就是唯一、随机的密码。</p>
+<ul>
+<li>加密保存所有的密码。</li>
+</ul>
+<p>既然你给每个网站生成唯一的、随机的、复杂的密码，那么你的大脑肯定记不住它们，因此就需要密码管理器帮你保存这些密码。</p>
+<p>这时，你唯一需要记住的，就是密码管理器本身的密码。密码管理器相当于一个“保险箱”，你只需要记住保险箱的密码，而不用去记里面几十、上百个随机密码。</p>
+<p><strong>注意</strong>：使用密码管理器的时候，一定要做到：保存好你的密码数据库文件，最好有至少两处备份，并且记住你的密码管理器主密码。</p>
+<h2 id="常见密码管理器推荐">
+  常见密码管理器推荐
+  <a class="anchor" href="#%e5%b8%b8%e8%a7%81%e5%af%86%e7%a0%81%e7%ae%a1%e7%90%86%e5%99%a8%e6%8e%a8%e8%8d%90">#</a>
+</h2>
+<p>总体上，我们优先推荐比较流行的开源软件，而避免闭源软件；优先推荐没有云端存储、多设备同步的软件。但在有些情况下，云端存储也有它的好处，因此以下也会推荐具有云端存储、多设备同步功能的密码管理器。</p>
+<h3 id="一keepass-及其衍生软件">
+  一、KeePass 及其衍生软件
+  <a class="anchor" href="#%e4%b8%80keepass-%e5%8f%8a%e5%85%b6%e8%a1%8d%e7%94%9f%e8%bd%af%e4%bb%b6">#</a>
+</h3>
+<ol>
+<li>
+<p>下载</p>
+<p><a href="https://keepass.info/download.html">https://keepass.info/download.html</a></p>
+<p>你可以在这里找到 KeePass 以及适用于每种操作系统的 KeePass 衍生版本。比如用于 macOS 的 <a href="https://macpassapp.org/">MacPass</a>，用于 Linux 的 <a href="https://keepassxc.org/">KeePassXC</a>。</p>
+</li>
+<li>
+<p>推荐理由</p>
+<p>我们优先推荐 KeePass 及其衍生软件，主要有两个原因：它们是开源软件，不会将密码数据库同步到云端。</p>
+<p>关于是否要将密码数据库同步到云端，一直存在争议。有些人认为同步功能很方便，有些人则努力避免将敏感信息（比如密码）同步到云端。大多数情况下，我们认同后者，不建议将密码数据库同步到云端。但在一些情况下，同步到安全的云端存储，或许也是个好主意。详见后文 Bitwarden 部分的说明。</p>
+</li>
+<li>
+<p>安全特性</p>
+<p>与其它常见的密码管理器不同的是，KeePass 的安全设置分为好几个层次：</p>
+<ul>
+<li>最简单的，是为密码文件设置一个“<strong>主密码</strong>”。只要正确输入主密码就能解锁密码数据库，看到所有密码。</li>
+</ul>
+<p><img src="/docs/images/keepass-1.png" alt="KeePass" /></p>
+<ul>
+<li>略微复杂一点的，也是更安全的，可以在“主密码”之外，再设置一个“<strong>密钥文件</strong>”。</li>
+</ul>
+<p><img src="/docs/images/keepass-3.png" alt="KeePass" /></p>
+<p>每次解锁密码数据库时，需要正确输入主密码，并且导入正确的密钥文件。这种方法的风险显而易见，它需要两个要素齐备才能解密。一旦你丢失两者之一，就再也无法解锁密码数据库，这里没有“忘记密码”或者“重置密码”功能。然而同时，在一些极端情况下，这种方法也有它的好处。密钥文件是一个大小不到 1KB 的文件，你可以在瞬间销毁它。如果遇到一些极端情况（比如警察破门而入），你可以马上销毁密钥文件，这样就再也没有人可以访问你的密码。</p>
+<ul>
+<li>支持<strong>硬件安全密钥</strong>，比如 Yubikey 和 Onlykey。</li>
+</ul>
+<p>KeePass 是非常流行的开源密码管理器，你如果想了解它的详细功能，很容易搜索到相关文章或视频。</p>
+<p>比如这篇文章详细介绍 KeePass 的用法： <a href="https://sspai.com/post/44126">https://sspai.com/post/44126</a></p>
+</li>
+</ol>
+<h3 id="二bitwarden">
+  二、Bitwarden
+  <a class="anchor" href="#%e4%ba%8cbitwarden">#</a>
+</h3>
+<ol>
+<li>
+<p>下载</p>
+<p><a href="https://bitwarden.com/">https://bitwarden.com/</a></p>
+<p>它支持几乎所有常见的电脑和手机操作系统，你可以在其网站找到对应的版本。它还提供针对九种浏览器的扩展插件。</p>
+</li>
+<li>
+<p>推荐理由</p>
+<p>Bitwarden 由美国公司 Bitwarden Inc. 开发和维护，部分开源，但并非完全开源。它是目前非常流行的密码管理器，网络安全社区的很多人都在使用和推荐它。支持多种不同的条目类型，支持云端存储、多设备同步、端对端加密。（详下）</p>
+</li>
+<li>
+<p>安全特性</p>
+<ul>
+<li>除了基本的密码生成、密码管理之外，Bitwarden 还提供多种条目类型（如下图），包括银行卡信息管理、多重身份管理（有些人可能需要在不同地方使用不同的身份，因此就涉及到身份管理）、SSH密码生成和管理等。至于要不要把银行卡信息同步到云端，请你自行决定。</li>
+</ul>
+<p><img src="/docs/images/bitwarden-1.png" alt="Bitwarden" /></p>
+<p><img src="/docs/images/bitwarden-2.png" alt="Bitwarden" /></p>
+<ul>
+<li><strong>云端存储和多设备同步</strong>。有些情况下，你可能希望既能在本地访问密码数据库，又能将它存储到云端。</li>
+</ul>
+<p>比如，如果警察搜查你的电脑，发现你的电脑里有 Bitwarden 客户端，就有可能要求你交出 Bitwarden 的主密码。而如果你在交出电脑之前，就从电脑里删除 Bitwarden 客户端，同时将密码数据库备份到云端，那么警察就不容易发现你在使用某种密码管理器。——这需要一系列配合的操作才能奏效。如果你只是删除 Bitwarden 客户端，却在电脑浏览器收藏夹里保留着它的网站链接，而且也没有从浏览器里删除访问它的记录，那警察还是会发现你在使用它。</p>
+<ul>
+<li>
+<p>支持<strong>多种二步验证功能</strong>，包括 Email 验证，验证器 APP 验证，硬件安全密钥验证等。</p>
+</li>
+<li>
+<p><strong>允许用户自行架设</strong> Bitwarden 服务。这里要提醒的是，自行架设该服务之前，请先评估你（或者团队）的技术安全能力。如果你们并不擅长管理自行架设的服务，那还是请乖乖使用 Bitwarden 已有的服务。</p>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="三proton-pass">
+  三、Proton Pass
+  <a class="anchor" href="#%e4%b8%89proton-pass">#</a>
+</h3>
+<ol>
+<li>
+<p>下载</p>
+<p><a href="https://proton.me/pass">https://proton.me/pass</a></p>
+<p>它支持几乎所有常见的电脑和手机操作系统，你可以在其网站找到对应的版本。它还提供针对五种浏览器的扩展插件。</p>
+</li>
+<li>
+<p>推荐理由</p>
+<p>Proton Pass 由瑞士公司 Proton AG. 开发和维护，是 Proton 邮箱的姐妹产品，需要使用 Proton 邮箱账号登录。它是开源软件，支持多种不同的条目类型，甚至可以自定义更多的条目类型，还支持云端存储、多设备同步、端对端加密。（详下）</p>
+</li>
+<li>
+<p>安全特性</p>
+<ul>
+<li>除了基本的密码生成、密码管理之外，Proton Pass 还提供多种条目类型（就像 Bitwarden 一样），包括管理信用卡、管理多重身份。</li>
+</ul>
+<p><img src="/docs/images/proton-pass-1.png" alt="Proton Pass" /></p>
+<ul>
+<li>直接在 Proton Pass 里面创建邮箱别名（email alias），也就是隐藏你的真实邮箱地址，使用一个临时的别名。这个功能是由 <a href="https://simplelogin.io/">Simple Login</a> 服务实现的，Proton 2022 年收购了这家公司。</li>
+</ul>
+<p><img src="/docs/images/proton-pass-2.png" alt="Proton Pass" /></p>
+<ul>
+<li>如果以上这些条目类型还不够用，Proton Pass 还允许你创建更多的条目类型，包括数据库、服务器、SSH密钥，甚至可以将驾照、护照信息也放进去。这些与个人真实身份相关的敏感信息是不是也要用 Proton Pass 存储，请你自己决定。</li>
+</ul>
+<p><img src="/docs/images/proton-pass-3.png" alt="Proton Pass" /></p>
+</li>
+</ol>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#什么是安全的密码">什么是安全的密码？</a></li>
+    <li><a href="#那些不用密码管理器的人">那些不用密码管理器的人</a></li>
+    <li><a href="#密码管理器的两个主要作用">密码管理器的两个主要作用</a></li>
+    <li><a href="#常见密码管理器推荐">常见密码管理器推荐</a>
+      <ul>
+        <li><a href="#一keepass-及其衍生软件">一、KeePass 及其衍生软件</a></li>
+        <li><a href="#二bitwarden">二、Bitwarden</a></li>
+        <li><a href="#三proton-pass">三、Proton Pass</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
