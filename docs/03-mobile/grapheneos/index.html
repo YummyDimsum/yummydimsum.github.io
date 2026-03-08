@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="
+  GrapheneOS（适用于 Pixel 手机）
+  #
+
+GrapheneOS 是一个注重隐私和安全的 Android 系统，可以替换 Pixel 手机上的原版系统。
+GrapheneOS 官方提供两种安装方式：基于电脑浏览器界面的安装，和使用命令行界面（CLI）的安装。
+以下是基于电脑浏览器界面的安装方法，适合零基础用户，一步一步跟着做，就能完成安装。
+
+  为什么推荐 GrapheneOS 系统
+  #
+
+直接介绍 GrapheneOS 的日常使用特性，这对于从事敏感活动的人来说尤其重要。
+
+
+沙盒化的 Google 服务：你可以正常使用一些依赖 Google 服务的应用，但 Google 对你手机的访问权限被限制在一个围栏里，无法像在普通 Android 上那样深度读取你的设备信息。
+
+
+网络访问权限开关：可以单独切断任意应用的联网能力。比如你只想用某个 App 的离线功能，或者不信任某个应用在后台偷偷上传数据，直接断网即可。原生 Android 没有这个选项。
+
+
+存储空间隔离：应用只能访问你主动分享给它的文件，看不到你整个相册或文件夹。防止应用在后台悄悄扫描你的私人内容。
+
+
+传感器权限统一管控：摄像头、麦克风、陀螺仪等传感器可以一键关闭。不用担心某个应用在你不知情时偷听或调用硬件。
+
+
+位置与 Wi-Fi 隐私保护：连接 Wi-Fi 时自动使用随机 MAC 地址，防止你被商场、咖啡馆等场所的 Wi-Fi 设备长期追踪定位。
+
+
+多用户隔离空间：可以在同一台手机上建立多个完全独立的用户环境，数据互不可见。适合工作与私人分离，或者需要一个干净空间运行特定应用。
+
+
+胁迫密码（Duress Password）：设置一个特殊的销毁密码。在被迫解锁手机的情况下输入这个密码，设备会立即清除全部数据。对于记者、活动人士或有隐私顾虑的普通用户都有实际意义。
+
+
+安全的默认浏览器（Vanadium）： 内置浏览器 Vanadium 是基于 Chromium 的强化版本，关闭了大量可能被利用的功能，并默认启用更严格的安全策略，同时不向 Google 发送使用数据。
+
+
+
+  安装前须知
+  #
+
+截止2026年3月，GrapheneOS 支持以下 Pixel 手机型号：
+Pixel 6、6 Pro、6a、7、7 Pro、7a、Pixel Fold、Pixel Tablet、8、8 Pro、8a、9、9 Pro、9 Pro XL、9 Pro Fold、9a、10、10 Pro、10 Pro XL、10 Pro Fold">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://yummydimsum.github.io/docs/03-mobile/grapheneos/">
+  <meta property="og:site_name" content="信息与网络安全手册">
+  <meta property="og:title" content="GrapheneOS 手机系统">
+  <meta property="og:description" content="GrapheneOS（适用于 Pixel 手机） # GrapheneOS 是一个注重隐私和安全的 Android 系统，可以替换 Pixel 手机上的原版系统。
+GrapheneOS 官方提供两种安装方式：基于电脑浏览器界面的安装，和使用命令行界面（CLI）的安装。
+以下是基于电脑浏览器界面的安装方法，适合零基础用户，一步一步跟着做，就能完成安装。
+为什么推荐 GrapheneOS 系统 # 直接介绍 GrapheneOS 的日常使用特性，这对于从事敏感活动的人来说尤其重要。
+沙盒化的 Google 服务：你可以正常使用一些依赖 Google 服务的应用，但 Google 对你手机的访问权限被限制在一个围栏里，无法像在普通 Android 上那样深度读取你的设备信息。
+网络访问权限开关：可以单独切断任意应用的联网能力。比如你只想用某个 App 的离线功能，或者不信任某个应用在后台偷偷上传数据，直接断网即可。原生 Android 没有这个选项。
+存储空间隔离：应用只能访问你主动分享给它的文件，看不到你整个相册或文件夹。防止应用在后台悄悄扫描你的私人内容。
+传感器权限统一管控：摄像头、麦克风、陀螺仪等传感器可以一键关闭。不用担心某个应用在你不知情时偷听或调用硬件。
+位置与 Wi-Fi 隐私保护：连接 Wi-Fi 时自动使用随机 MAC 地址，防止你被商场、咖啡馆等场所的 Wi-Fi 设备长期追踪定位。
+多用户隔离空间：可以在同一台手机上建立多个完全独立的用户环境，数据互不可见。适合工作与私人分离，或者需要一个干净空间运行特定应用。
+胁迫密码（Duress Password）：设置一个特殊的销毁密码。在被迫解锁手机的情况下输入这个密码，设备会立即清除全部数据。对于记者、活动人士或有隐私顾虑的普通用户都有实际意义。
+安全的默认浏览器（Vanadium）： 内置浏览器 Vanadium 是基于 Chromium 的强化版本，关闭了大量可能被利用的功能，并默认启用更严格的安全策略，同时不向 Google 发送使用数据。
+安装前须知 # 截止2026年3月，GrapheneOS 支持以下 Pixel 手机型号：
+Pixel 6、6 Pro、6a、7、7 Pro、7a、Pixel Fold、Pixel Tablet、8、8 Pro、8a、9、9 Pro、9 Pro XL、9 Pro Fold、9a、10、10 Pro、10 Pro XL、10 Pro Fold">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+    <meta property="article:published_time" content="2026-03-05T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-03-05T00:00:00+00:00">
+<title>GrapheneOS 手机系统 | 信息与网络安全手册</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="https://yummydimsum.github.io/docs/03-mobile/grapheneos/">
+<link rel="stylesheet" href="/book.min.26ab4dc3f6076ceda2f9c263aa4029ae3341dbcce339f901aa432b11da6e5894.css" integrity="sha256-JqtNw/YHbO2i&#43;cJjqkAprjNB28zjOfkBqkMrEdpuWJQ=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.de0ed2ac0b55466a05b08efd3a63430b16099417957d0e1de5962b138f4859c4.js" integrity="sha256-3g7SrAtVRmoFsI79OmNDCxYJlBeVfQ4d5ZYrE49IWcQ=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>信息与网络安全手册</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/01-start/" class="">一、确认自己的身份和处境</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/" class="">二、电脑硬件及操作系统</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/windows/" class="">运行 Windows 系统的 PC 机</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/macos/" class="">运行 macOS 的苹果电脑</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/linux/" class="">运行 GNU/Linux 系统的 PC 机</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/02-computer/liveos/" class="">使用 Live USB 系统</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/" class="">三、手机设备及操作系统</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/ios/" class="">iPhone 手机（附 iPad）</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/android/" class="">Android 手机（安卓手机）</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/grapheneos/" class="active">GrapheneOS 手机系统</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/tablet/" class="">平板电脑</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/03-mobile/security/" class="">智能手机安全设置</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/" class="">四、常用软件推荐</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/ime/" class="">中文输入法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/browser/" class="">网页浏览器</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/extension/" class="">浏览器扩展</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/im/" class="">即时通讯软件</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/video/" class="">视频通话及会议</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/office/" class="">办公和线上协作</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/cloud-storage/" class="">云存储和文件分享</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/password/" class="">安全的密码以及密码管理器</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/others/" class="">其它软件</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/04-software/signal/" class="">Signal 专门页面</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/" class="">五、上网安全</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/vpn/" class="">使用 VPN 的场景</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/tor/" class="">使用 Tor 浏览器保持匿名</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/links/" class="">当心包含恶意代码的链接</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/identities/" class="">使用不同的在线身份</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/05-internet/2fa/" class="">为你的账号开启双因素验证</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/" class="">六、通讯安全</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/im/" class="">即时通讯和视频通话</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/mail/" class="">电子邮件安全</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/06-communication/mailvelope/" class="">借助 Mailvelope 使用 PGP 加密邮件</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/" class="">七、数据安全</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/level/" class="">给你的数据重要性分级</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/metadata/" class="">分享之前，删除元数据</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/file-encryption/" class="">文件加密以及常见加密软件</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/veracrypt/" class="">使用 Veracrypt 加密文件和磁盘</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/backup/" class="">定期备份你的重要数据</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/07-data/destroy/" class="">使用 BleachBit 销毁文件</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/08-police/" class="">八、面对警察查手机</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/08-police/digital/" class="">数字安全层面</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/08-police/legal/" class="">法律层面</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/" class="">九、海外人士回国，遭遇电子产品检查或警察盘问</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/protest-safety/" class="">参加海外游行活动的安全注意</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/preparation/" class="">准备事项</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/before-teatime/" class="">喝茶之前</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/09-returnee/teatime/" class="">喝茶的时候</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/posts/"  >
+        📝 指南相关文章
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>GrapheneOS 手机系统</h3>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#为什么推荐-grapheneos-系统">为什么推荐 GrapheneOS 系统</a></li>
+    <li><a href="#安装前须知">安装前须知</a></li>
+    <li><a href="#第一步你需要准备的东西">第一步：你需要准备的东西</a>
+      <ul>
+        <li><a href="#硬件准备">硬件准备</a></li>
+        <li><a href="#电脑浏览器">电脑浏览器</a></li>
+        <li><a href="#不要使用以下浏览器">不要使用以下浏览器</a></li>
+      </ul>
+    </li>
+    <li><a href="#第二步在手机上开启oem-解锁">第二步：在手机上开启“OEM 解锁”</a>
+      <ul>
+        <li><a href="#pixel-6a-特别注意">Pixel 6a 特别注意</a></li>
+      </ul>
+    </li>
+    <li><a href="#第三步让手机进入-fastboot-模式">第三步：让手机进入 Fastboot 模式</a></li>
+    <li><a href="#第四步用数据线连接手机和电脑">第四步：用数据线连接手机和电脑</a>
+      <ul>
+        <li><a href="#windows-用户注意">Windows 用户注意</a></li>
+      </ul>
+    </li>
+    <li><a href="#第五步打开网页安装工具">第五步：打开网页安装工具</a></li>
+    <li><a href="#第六步解锁-bootloader">第六步：解锁 Bootloader</a></li>
+    <li><a href="#第七步下载-grapheneos-系统镜像">第七步：下载 GrapheneOS 系统镜像</a></li>
+    <li><a href="#第八步刷入系统">第八步：刷入系统</a></li>
+    <li><a href="#第九步锁定-bootloader">第九步：锁定 Bootloader</a></li>
+    <li><a href="#第十步启动-grapheneos">第十步：启动 GrapheneOS</a></li>
+    <li><a href="#安装完成后的设置">安装完成后的设置</a>
+      <ul>
+        <li><a href="#关闭-oem-解锁">关闭 OEM 解锁</a></li>
+        <li><a href="#验证安装是否成功">验证安装是否成功</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="grapheneos适用于-pixel-手机">
+  GrapheneOS（适用于 Pixel 手机）
+  <a class="anchor" href="#grapheneos%e9%80%82%e7%94%a8%e4%ba%8e-pixel-%e6%89%8b%e6%9c%ba">#</a>
+</h1>
+<p><strong><a href="https://grapheneos.org/">GrapheneOS</a></strong> 是一个注重隐私和安全的 Android 系统，可以替换 Pixel 手机上的原版系统。</p>
+<p>GrapheneOS 官方提供两种安装方式：基于电脑浏览器界面的安装，和使用命令行界面（CLI）的安装。</p>
+<p>以下是基于电脑浏览器界面的安装方法，适合零基础用户，一步一步跟着做，就能完成安装。</p>
+<h2 id="为什么推荐-grapheneos-系统">
+  为什么推荐 GrapheneOS 系统
+  <a class="anchor" href="#%e4%b8%ba%e4%bb%80%e4%b9%88%e6%8e%a8%e8%8d%90-grapheneos-%e7%b3%bb%e7%bb%9f">#</a>
+</h2>
+<p>直接介绍 GrapheneOS 的日常使用特性，这对于从事敏感活动的人来说尤其重要。</p>
+<ol>
+<li>
+<p><strong>沙盒化的 Google 服务</strong>：你可以正常使用一些依赖 Google 服务的应用，但 Google 对你手机的访问权限被限制在一个围栏里，无法像在普通 Android 上那样深度读取你的设备信息。</p>
+</li>
+<li>
+<p><strong>网络访问权限开关</strong>：可以单独切断任意应用的联网能力。比如你只想用某个 App 的离线功能，或者不信任某个应用在后台偷偷上传数据，直接断网即可。原生 Android 没有这个选项。</p>
+</li>
+<li>
+<p><strong>存储空间隔离</strong>：应用只能访问你主动分享给它的文件，看不到你整个相册或文件夹。防止应用在后台悄悄扫描你的私人内容。</p>
+</li>
+<li>
+<p><strong>传感器权限统一管控</strong>：摄像头、麦克风、陀螺仪等传感器可以一键关闭。不用担心某个应用在你不知情时偷听或调用硬件。</p>
+</li>
+<li>
+<p><strong>位置与 Wi-Fi 隐私保护</strong>：连接 Wi-Fi 时自动使用随机 MAC 地址，防止你被商场、咖啡馆等场所的 Wi-Fi 设备长期追踪定位。</p>
+</li>
+<li>
+<p><strong>多用户隔离空间</strong>：可以在同一台手机上建立多个完全独立的用户环境，数据互不可见。适合工作与私人分离，或者需要一个干净空间运行特定应用。</p>
+</li>
+<li>
+<p><strong>胁迫密码（Duress Password）</strong>：设置一个特殊的销毁密码。在被迫解锁手机的情况下输入这个密码，设备会立即清除全部数据。对于记者、活动人士或有隐私顾虑的普通用户都有实际意义。</p>
+</li>
+<li>
+<p><strong>安全的默认浏览器（Vanadium）</strong>： 内置浏览器 Vanadium 是基于 Chromium 的强化版本，关闭了大量可能被利用的功能，并默认启用更严格的安全策略，同时不向 Google 发送使用数据。</p>
+</li>
+</ol>
+<h2 id="安装前须知">
+  安装前须知
+  <a class="anchor" href="#%e5%ae%89%e8%a3%85%e5%89%8d%e9%a1%bb%e7%9f%a5">#</a>
+</h2>
+<p>截止2026年3月，GrapheneOS 支持以下 Pixel 手机型号：</p>
+<p>Pixel 6、6 Pro、6a、7、7 Pro、7a、Pixel Fold、Pixel Tablet、8、8 Pro、8a、9、9 Pro、9 Pro XL、9 Pro Fold、9a、10、10 Pro、10 Pro XL、10 Pro Fold</p>
+<p>详情请看 GrapheneOS 官方网站的支持设备列表： <a href="https://grapheneos.org/releases#devices">https://grapheneos.org/releases#devices</a></p>
+<p>安装过程会<strong>清除手机上所有数据</strong>，请务必提前备份数据。</p>
+<hr>
+<h2 id="第一步你需要准备的东西">
+  第一步：你需要准备的东西
+  <a class="anchor" href="#%e7%ac%ac%e4%b8%80%e6%ad%a5%e4%bd%a0%e9%9c%80%e8%a6%81%e5%87%86%e5%a4%87%e7%9a%84%e4%b8%9c%e8%a5%bf">#</a>
+</h2>
+<h3 id="硬件准备">
+  硬件准备
+  <a class="anchor" href="#%e7%a1%ac%e4%bb%b6%e5%87%86%e5%a4%87">#</a>
+</h3>
+<ul>
+<li><strong>一台电脑</strong>：Windows 10/11、Mac 或 Linux 均可，至少 2GB 内存 + 32GB 空余空间</li>
+<li><strong>一根 USB-C 数据线</strong>：优先使用手机盒子里附带的原装线，质量差的线是安装失败的最常见原因</li>
+<li><strong>一台受支持的 Pixel 手机</strong>：见以上列表，且<strong>不能是运营商锁定版本的合约机</strong></li>
+<li><strong>手机已更新到最新系统</strong>：安装前先把手机的 Android 系统升级到最新版本</li>
+</ul>
+<h3 id="电脑浏览器">
+  电脑浏览器
+  <a class="anchor" href="#%e7%94%b5%e8%84%91%e6%b5%8f%e8%a7%88%e5%99%a8">#</a>
+</h3>
+<ul>
+<li><strong>Chromium</strong></li>
+<li><strong>Google Chrome</strong></li>
+<li><strong>Microsoft Edge</strong></li>
+<li><strong>Brave</strong>（需要关闭 Brave Shields）</li>
+</ul>
+<h3 id="不要使用以下浏览器">
+  不要使用以下浏览器
+  <a class="anchor" href="#%e4%b8%8d%e8%a6%81%e4%bd%bf%e7%94%a8%e4%bb%a5%e4%b8%8b%e6%b5%8f%e8%a7%88%e5%99%a8">#</a>
+</h3>
+<ul>
+<li>不要使用 Firefox、Safari</li>
+<li>不能用无痕/隐私模式</li>
+<li>不能用虚拟机里的浏览器</li>
+</ul>
+<h2 id="第二步在手机上开启oem-解锁">
+  第二步：在手机上开启“OEM 解锁”
+  <a class="anchor" href="#%e7%ac%ac%e4%ba%8c%e6%ad%a5%e5%9c%a8%e6%89%8b%e6%9c%ba%e4%b8%8a%e5%bc%80%e5%90%afoem-%e8%a7%a3%e9%94%81">#</a>
+</h2>
+<p>这一步在你的手机上操作，不需要用电脑</p>
+<ol>
+<li>打开手机的 <strong>设置（Settings）</strong></li>
+<li>进入 <strong>关于手机（About phone）</strong></li>
+<li>找到 <strong>版本号（Build number）</strong>，<strong>连续点击 7 次</strong>，屏幕会提示“开发者模式已开启”</li>
+<li>返回到 <strong>设置 &gt; 系统（System）&gt; 开发者选项（Developer options）</strong></li>
+<li>找到 <strong>OEM 解锁（OEM unlocking）</strong>，打开这个开关</li>
+</ol>
+<blockquote>
+<p>开启 OEM 解锁时手机需要联网，系统会验证你的手机是否是运营商锁定机</p></blockquote>
+<h3 id="pixel-6a-特别注意">
+  Pixel 6a 特别注意
+  <a class="anchor" href="#pixel-6a-%e7%89%b9%e5%88%ab%e6%b3%a8%e6%84%8f">#</a>
+</h3>
+<p>如果你用的是 Pixel 6a，出厂版本无法开启 OEM 解锁。需要先通过系统更新升级到 2022 年 6 月或更新的版本，升级后还需要<strong>恢复出厂设置</strong>，才能正常开启 OEM 解锁。</p>
+<hr>
+<h2 id="第三步让手机进入-fastboot-模式">
+  第三步：让手机进入 Fastboot 模式
+  <a class="anchor" href="#%e7%ac%ac%e4%b8%89%e6%ad%a5%e8%ae%a9%e6%89%8b%e6%9c%ba%e8%bf%9b%e5%85%a5-fastboot-%e6%a8%a1%e5%bc%8f">#</a>
+</h2>
+<blockquote>
+<p>Fastboot 模式（也叫 Bootloader 界面）是安装时必须进入的特殊状态</p></blockquote>
+<p>方法：</p>
+<ol>
+<li>重启手机</li>
+<li>手机重启过程中，<strong>按住音量减（Volume Down）键不放</strong>，直到进入 Fastboot 模式</li>
+</ol>
+<p>或者：</p>
+<ol>
+<li>关机</li>
+<li>同时按住<strong>电源键 + 音量减键</strong>开机</li>
+</ol>
+<p>成功进入 Fastboot 模式的标志：</p>
+<p>屏幕上出现一个 <strong>红色感叹号三角形</strong> 和文字 <strong>Fastboot Mode</strong></p>
+<blockquote>
+<p>不要按电源键选择&quot;Start&quot;，手机必须停留在 Fastboot 模式，安装工具才能连接</p></blockquote>
+<hr>
+<h2 id="第四步用数据线连接手机和电脑">
+  第四步：用数据线连接手机和电脑
+  <a class="anchor" href="#%e7%ac%ac%e5%9b%9b%e6%ad%a5%e7%94%a8%e6%95%b0%e6%8d%ae%e7%ba%bf%e8%bf%9e%e6%8e%a5%e6%89%8b%e6%9c%ba%e5%92%8c%e7%94%b5%e8%84%91">#</a>
+</h2>
+<ul>
+<li>用 USB-C 数据线将手机连接到电脑</li>
+<li>直接将 USB 线插在电脑的 USB 接口</li>
+<li>不要用 USB 集线器（扩展坞），这是常见失败原因</li>
+</ul>
+<h3 id="windows-用户注意">
+  Windows 用户注意
+  <a class="anchor" href="#windows-%e7%94%a8%e6%88%b7%e6%b3%a8%e6%84%8f">#</a>
+</h3>
+<p>Windows 10/11 一般自动安装驱动。如果没有：</p>
+<ol>
+<li>打开 <strong>Windows 更新</strong></li>
+<li>点击 <strong>查看可选更新</strong></li>
+<li>安装名为 <strong>&ldquo;LeMobile Android Device&rdquo;</strong> 的驱动程序</li>
+</ol>
+<hr>
+<h2 id="第五步打开网页安装工具">
+  第五步：打开网页安装工具
+  <a class="anchor" href="#%e7%ac%ac%e4%ba%94%e6%ad%a5%e6%89%93%e5%bc%80%e7%bd%91%e9%a1%b5%e5%ae%89%e8%a3%85%e5%b7%a5%e5%85%b7">#</a>
+</h2>
+<ol>
+<li>在电脑上打开支持的浏览器（请看第一步里列出的浏览器清单）</li>
+<li>访问安装网页： <a href="https://grapheneos.org/install/web">https://grapheneos.org/install/web</a></li>
+<li>页面上会有一系列操作按钮（如下图），按顺序操作即可</li>
+</ol>
+<p><img src="/docs/images/grapheneos-button.png" alt="GrapheneOS安装网页按钮" /></p>
+<hr>
+<h2 id="第六步解锁-bootloader">
+  第六步：解锁 Bootloader
+  <a class="anchor" href="#%e7%ac%ac%e5%85%ad%e6%ad%a5%e8%a7%a3%e9%94%81-bootloader">#</a>
+</h2>
+<ol>
+<li>在安装网页上点击 <strong>Unlock bootloader</strong> 按钮，解锁引导程序</li>
+<li>浏览器会弹出一个 USB 设备连接请求，选择你的手机，点击<strong>连接</strong></li>
+<li>手机屏幕上会出现确认提示：
+<ul>
+<li>按<strong>音量键</strong>选择&quot;确认/Yes&quot;</li>
+<li>按<strong>电源键</strong>确认</li>
+</ul>
+</li>
+<li>⚠️ <strong>这一步会清除手机所有数据</strong></li>
+</ol>
+<hr>
+<h2 id="第七步下载-grapheneos-系统镜像">
+  第七步：下载 GrapheneOS 系统镜像
+  <a class="anchor" href="#%e7%ac%ac%e4%b8%83%e6%ad%a5%e4%b8%8b%e8%bd%bd-grapheneos-%e7%b3%bb%e7%bb%9f%e9%95%9c%e5%83%8f">#</a>
+</h2>
+<ol>
+<li>在安装网页上点击 <strong>Download release</strong>，下载系统镜像</li>
+<li>工具会自动识别你的手机型号并下载对应版本</li>
+<li>文件较大（约 1-2 GB），等待下载完成</li>
+</ol>
+<blockquote>
+<p>如果提示&quot;存储空间不足&quot;，请清理浏览器缓存或电脑磁盘空间</p></blockquote>
+<hr>
+<h2 id="第八步刷入系统">
+  第八步：刷入系统
+  <a class="anchor" href="#%e7%ac%ac%e5%85%ab%e6%ad%a5%e5%88%b7%e5%85%a5%e7%b3%bb%e7%bb%9f">#</a>
+</h2>
+<ol>
+<li>在安装网页上点击 <strong>Flash release</strong>，刷入系统</li>
+<li>安装工具会自动完成以下操作：
+<ul>
+<li>刷入固件</li>
+<li>自动重启进入 Bootloader</li>
+<li>刷入 GrapheneOS 系统</li>
+</ul>
+</li>
+<li><strong>整个过程不要碰手机</strong>，耐心等待完成（大约 5-15 分钟）</li>
+</ol>
+<blockquote>
+<p>如果页面提示需要重新连接设备，按提示操作即可</p></blockquote>
+<hr>
+<h2 id="第九步锁定-bootloader">
+  第九步：锁定 Bootloader
+  <a class="anchor" href="#%e7%ac%ac%e4%b9%9d%e6%ad%a5%e9%94%81%e5%ae%9a-bootloader">#</a>
+</h2>
+<blockquote>
+<p>这一步必须做，不做的话手机安全性会大打折扣</p></blockquote>
+<ol>
+<li>系统刷入完成后，在安装网页上点击 <strong>Lock bootloader</strong>，锁定引导程序</li>
+<li>手机屏幕上会出现确认提示：
+<ul>
+<li>按<strong>音量键</strong>选择&quot;确认/Yes&quot;</li>
+<li>按<strong>电源键</strong>确认</li>
+</ul>
+</li>
+<li>锁定会<strong>再次清除手机数据</strong>，这是正常的</li>
+</ol>
+<hr>
+<h2 id="第十步启动-grapheneos">
+  第十步：启动 GrapheneOS
+  <a class="anchor" href="#%e7%ac%ac%e5%8d%81%e6%ad%a5%e5%90%af%e5%8a%a8-grapheneos">#</a>
+</h2>
+<ol>
+<li>在 Bootloader 界面，看到 <strong>Start</strong> 选项</li>
+<li>按<strong>电源键</strong>启动</li>
+<li>第一次启动时间稍长（约 1-2 分钟），请耐心等待</li>
+</ol>
+<hr>
+<h2 id="安装完成后的设置">
+  安装完成后的设置
+  <a class="anchor" href="#%e5%ae%89%e8%a3%85%e5%ae%8c%e6%88%90%e5%90%8e%e7%9a%84%e8%ae%be%e7%bd%ae">#</a>
+</h2>
+<h3 id="关闭-oem-解锁">
+  关闭 OEM 解锁
+  <a class="anchor" href="#%e5%85%b3%e9%97%ad-oem-%e8%a7%a3%e9%94%81">#</a>
+</h3>
+<p>首次设置时，最后一个页面会有一个 <strong>OEM 解锁</strong> 的开关，默认是打开的。建议关闭它，以提高安全性。</p>
+<h3 id="验证安装是否成功">
+  验证安装是否成功
+  <a class="anchor" href="#%e9%aa%8c%e8%af%81%e5%ae%89%e8%a3%85%e6%98%af%e5%90%a6%e6%88%90%e5%8a%9f">#</a>
+</h3>
+<p>手机每次开机时，会短暂显示一个黄色警告屏幕，上面有一串哈希值，这是正常的，说明 GrapheneOS 的验证启动功能正常工作。</p>
+<p>你可以用下面的方法核对这串哈希值是否正确（以 Pixel 9 为例）：</p>
+<pre tabindex="0"><code>9e6a8f3e0d761a780179f93acd5721ba1ab7c8c537c7761073c0a754b0e932de
+</code></pre><p>各机型的哈希值可以在 <a href="https://grapheneos.org/install/web">https://grapheneos.org/install/web</a> 页面底部查到。</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#为什么推荐-grapheneos-系统">为什么推荐 GrapheneOS 系统</a></li>
+    <li><a href="#安装前须知">安装前须知</a></li>
+    <li><a href="#第一步你需要准备的东西">第一步：你需要准备的东西</a>
+      <ul>
+        <li><a href="#硬件准备">硬件准备</a></li>
+        <li><a href="#电脑浏览器">电脑浏览器</a></li>
+        <li><a href="#不要使用以下浏览器">不要使用以下浏览器</a></li>
+      </ul>
+    </li>
+    <li><a href="#第二步在手机上开启oem-解锁">第二步：在手机上开启“OEM 解锁”</a>
+      <ul>
+        <li><a href="#pixel-6a-特别注意">Pixel 6a 特别注意</a></li>
+      </ul>
+    </li>
+    <li><a href="#第三步让手机进入-fastboot-模式">第三步：让手机进入 Fastboot 模式</a></li>
+    <li><a href="#第四步用数据线连接手机和电脑">第四步：用数据线连接手机和电脑</a>
+      <ul>
+        <li><a href="#windows-用户注意">Windows 用户注意</a></li>
+      </ul>
+    </li>
+    <li><a href="#第五步打开网页安装工具">第五步：打开网页安装工具</a></li>
+    <li><a href="#第六步解锁-bootloader">第六步：解锁 Bootloader</a></li>
+    <li><a href="#第七步下载-grapheneos-系统镜像">第七步：下载 GrapheneOS 系统镜像</a></li>
+    <li><a href="#第八步刷入系统">第八步：刷入系统</a></li>
+    <li><a href="#第九步锁定-bootloader">第九步：锁定 Bootloader</a></li>
+    <li><a href="#第十步启动-grapheneos">第十步：启动 GrapheneOS</a></li>
+    <li><a href="#安装完成后的设置">安装完成后的设置</a>
+      <ul>
+        <li><a href="#关闭-oem-解锁">关闭 OEM 解锁</a></li>
+        <li><a href="#验证安装是否成功">验证安装是否成功</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
