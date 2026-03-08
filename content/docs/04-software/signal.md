@@ -54,19 +54,19 @@ Signal 在2024年3月推出新功能，允许设置用户名，并隐藏手机�
 第一步：在 Signal 的主界面，点击左上角你的个人头像，来到“**设置**”界面，如下图：
 
 
-![Signal 设置](/docs/images/signal01.jpeg)
+![Signal 设置](../../images/signal01.webp)
 
 
 第二步：点击上图中的红色区域，也就是你的头像和电话号码位置，来到“**个人资料**”界面，如下图：
 
 
-![Signal 个人资料](/docs/images/signal02.jpeg)
+![Signal 个人资料](../../images/signal02.webp)
 
 
 第三步：点击上图中的红色区域，也就是“**@ 用户名**”这个位置，进入设置用户名界面。如下图：
 
 
-![Signal 设置用户名](/docs/images/signal03.jpeg)
+![Signal 设置用户名](../../images/signal03.webp)
 
 
 第四步：在上图的红色区域填入你的用户名，后面的数字由 Signal 随机生成，点击保存即可。最终，你的唯一用户名会是像这样的格式：HenWong.67 
@@ -76,17 +76,17 @@ Signal 在2024年3月推出新功能，允许设置用户名，并隐藏手机�
 第五步：回到“**设置**”界面，点击其中的“**隐私**”，如下图：
 
 
-![Signal 隐私](/docs/images/signal04.jpeg)
+![Signal 隐私](../../images/signal04.webp)
 
 第六步：在“**隐私**”界面点击“**手机号码**”，如下图：
 
 
-![Signal 手机号码](/docs/images/signal05.jpeg)
+![Signal 手机号码](../../images/signal05.webp)
 
 第七步：在“**手机号码**”界面，将两个选项都设置为“**没有人**”。如下图：
 
 
-![Signal 隐藏手机号码](/docs/images/signal06.jpeg)
+![Signal 隐藏手机号码](../../images/signal06.webp)
 
 
 经过这样的设置，别人就看不到你使用 Signal 的手机号码，而只知道你的用户名。
@@ -95,7 +95,7 @@ Signal 在2024年3月推出新功能，允许设置用户名，并隐藏手机�
 
 第一步、返回“**个人资料**”界面，点击“**二维码或链接**”位置，如下图：
 
-![Signal 二维码和链接](/docs/images/signal07.jpeg)
+![Signal 二维码和链接](../../images/signal07.webp)
 
 第二步、然后就可以进入链接与二维码的界面，你可以直接从这里给别人分享你的联系信息。
 

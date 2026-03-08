@@ -11,15 +11,17 @@ type: docs
 
 - [防范钓鱼邮件、钓鱼链接](/docs/05-internet/links/)，防止被盗号、被识别真实身份
 
-- 微软公司将于 2025 年 10 月  14 日停止对 Windows 10 的支持，[请及时升级系统](/docs/02-computer/windows/#%E4%B8%89%E5%BC%80%E5%90%AF-windows-%E7%B3%BB%E7%BB%9F%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0)
+- 微软公司已于 2025 年 10 月  14 日停止对 Windows 10 的支持，[请及时升级系统](/docs/02-computer/windows/#%E4%B8%89%E5%BC%80%E5%90%AF-windows-%E7%B3%BB%E7%BB%9F%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0)
 
 ## 🆕 最近更新内容
+
+- 给 Pixel 手机刷入更安全的 [GrapheneOS 系统](/docs/03-mobile/grapheneos/)
+
+- [参加海外游行活动的安全注意](/docs/09-returnee/protest-safety/)
 
 - 在不同操作系统上安装 [RIME 中州韵输入法引擎](/docs/04-software/ime/)
 
 - [为什么要用密码管理器，我们推荐哪些密码管理器](/docs/04-software/password/)
-
-- [文件加密软件：PicoCrypt、Cryptomator](/docs/07-data/file-encryption/)
 
 ## 🥮 关于这个网站
 
