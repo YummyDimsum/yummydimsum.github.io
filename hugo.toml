@@ -1,5 +1,5 @@
 baseURL = 'https://dimsum.one/'
-languageCode = 'zh-cn'
+locale = 'zh-cn'
 title = '点心安全手册'
 theme = "hugo-book"
 
@@ -14,3 +14,5 @@ BookSection = 'docs'
 BookSearch = true
 BookComments = false
 
+[markup.goldmark.renderer]
+unsafe = true
