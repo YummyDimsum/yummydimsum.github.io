@@ -1,47 +1,167 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>三、手机设备及操作系统 on 信息与网络安全手册</title>
-    <link>https://yummydimsum.github.io/docs/03-mobile/</link>
-    <description>Recent content in 三、手机设备及操作系统 on 信息与网络安全手册</description>
-    <generator>Hugo</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Thu, 05 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://yummydimsum.github.io/docs/03-mobile/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>iPhone 手机（附 iPad）</title>
-      <link>https://yummydimsum.github.io/docs/03-mobile/ios/</link>
-      <pubDate>Fri, 05 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://yummydimsum.github.io/docs/03-mobile/ios/</guid>
-      <description>&lt;h1 id=&#34;iphone-手机&#34;&gt;&#xA;  iPhone 手机&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#iphone-%e6%89%8b%e6%9c%ba&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;与其他国家（比如美国）销售的 iPhone 相比，中国国行的 iPhone 手机有一些功能受限。这些限制，有些属于硬件层面，有些属于系统层面，有些属于内容层面。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;硬件层面：中国国行 iPhone 没有 eSIM 功能，也就是它只能使用实体 SIM 卡。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;系统层面：中国国行 iPhone 不能使用 FaceTime 音频通话而只能视频通话，没有 CallKit, Walkie-Talkie, 5G 毫米波、卫星紧急救援等功能，同时 Apple Pay 功能受限。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;内容层面：书籍、音乐、电影、应用程序等许多方面遭到审查，详见下文。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;作为普通用户，你很难自行解决硬件层面和系统层面的限制问题，但可以一定程度解决内容限制问题。&lt;/p&gt;&#xA;&lt;h2 id=&#34;一中国区-apple-id-的限制&#34;&gt;&#xA;  一、中国区 Apple ID 的限制&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e4%b8%80%e4%b8%ad%e5%9b%bd%e5%8c%ba-apple-id-%e7%9a%84%e9%99%90%e5%88%b6&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;iPhone 用户下载安装 App 的正规渠道（也是相对安全的渠道）就是苹果公司自家运营的 App Store。想要使用 App Store, 需要注册一个 Apple ID。事实上，不光是 App Store，iPhone 上面的许多 Apple 服务都需要 Apple ID 登录。&lt;/p&gt;&#xA;&lt;p&gt;如果你直接在中国境内注册 Apple ID（即没有使用任何其它辅助措施），那么你的 Apple ID 会被归类为“中国区 Apple ID”。中国区 ID 与其他 ID 有三大不同：&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;使用中国区 Apple ID 登录 App Store, 只能搜索到有限的应用。据&lt;a href=&#34;https://cn.nytimes.com/technology/20210518/apple-china-censorship-data/&#34;&gt;媒体报道&lt;/a&gt;，在中国区的 App Store，上万个应用遭到下架，包括外国新闻机构、翻墙、政治、宗教等，甚至包含教育、游戏类应用。使用中国区 Apple ID 在 App Store 搜索，找不到这些应用。从某种程度上说，这意味着你的 iPhone 手机无法连接到国际互联网。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Android 手机（安卓手机）</title>
-      <link>https://yummydimsum.github.io/docs/03-mobile/android/</link>
-      <pubDate>Fri, 05 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://yummydimsum.github.io/docs/03-mobile/android/</guid>
-      <description>&lt;h1 id=&#34;android-手机安卓手机&#34;&gt;&#xA;  Android 手机（安卓手机）&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#android-%e6%89%8b%e6%9c%ba%e5%ae%89%e5%8d%93%e6%89%8b%e6%9c%ba&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;另一种使用人数更多的智能手机是 Android 手机（中文又称“安卓手机”）。安卓手机由 Google 公司（安卓系统的母公司）授权、由其他许多不同厂商生产和销售，这些厂商包括大家耳熟能详的小米、三星、一加、OPPO 等。&lt;/p&gt;&#xA;&lt;h2 id=&#34;一国产安卓手机的问题与风险&#34;&gt;&#xA;  一、国产安卓手机的问题与风险&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e4%b8%80%e5%9b%bd%e4%ba%a7%e5%ae%89%e5%8d%93%e6%89%8b%e6%9c%ba%e7%9a%84%e9%97%ae%e9%a2%98%e4%b8%8e%e9%a3%8e%e9%99%a9&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;绝大多数国产安卓手机都没有 Google Play Store, 甚至没有 Google Account（谷歌账号）这个功能模块。这意味着，你无法通过 Google Play Store 下载和安装应用，而只能使用国产安卓手机自带的应用商店。因此你将很难下载国外互联网的应用, 尤其是无法下载那些能够帮你翻墙或加密通讯的应用。&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;解决方案是使用第三方的应用商店，比如 &lt;a href=&#34;https://apkpure.com/&#34;&gt;APKPure&lt;/a&gt;, &lt;a href=&#34;https://f-droid.org/&#34;&gt;F-droid&lt;/a&gt; 等。详见第四部分《&lt;a href=&#34;../../04-software/&#34;&gt;常用软件推荐&lt;/a&gt;》。&lt;/p&gt;&#xA;&lt;ol start=&#34;2&#34;&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;由于无法使用 Google Play Store, 中国的一些网站会直接提供 APK 安装文件，以便安卓手机用户安装应用。这些 APK 安装文件未经第三方安全审查，因此它们可能存在风险，可能会损害用户的手机。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;最严重的问题是，有些国产安卓手机被曝可能存在监控后门，或者接入了“国家反诈中心”软件。虽然目前还没有证据显示硬件层面存在问题，但已经有证据表明手机系统或预装软件存在问题，可能会监控和监听用户。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;由于以上几种限制与风险，在你有选择的情况下，绝对不要使用中国国产安卓手机。&lt;/p&gt;&#xA;&lt;h2 id=&#34;二安全与隐私设置&#34;&gt;&#xA;  二、安全与隐私设置&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e4%ba%8c%e5%ae%89%e5%85%a8%e4%b8%8e%e9%9a%90%e7%a7%81%e8%ae%be%e7%bd%ae&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;以下这个网页包含非常详细的 Android 手机安全设置，请仔细阅读并按照其中指示操作。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://securityinabox.org/zh/phones-and-computers/android/&#34;&gt;https://securityinabox.org/zh/phones-and-computers/android/&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>GrapheneOS 手机系统</title>
-      <link>https://yummydimsum.github.io/docs/03-mobile/grapheneos/</link>
-      <pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://yummydimsum.github.io/docs/03-mobile/grapheneos/</guid>
-      <description>&lt;h1 id=&#34;grapheneos适用于-pixel-手机&#34;&gt;&#xA;  GrapheneOS（适用于 Pixel 手机）&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#grapheneos%e9%80%82%e7%94%a8%e4%ba%8e-pixel-%e6%89%8b%e6%9c%ba&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://grapheneos.org/&#34;&gt;GrapheneOS&lt;/a&gt;&lt;/strong&gt; 是一个注重隐私和安全的 Android 系统，可以替换 Pixel 手机上的原版系统。&lt;/p&gt;&#xA;&lt;p&gt;GrapheneOS 官方提供两种安装方式：基于电脑浏览器界面的安装，和使用命令行界面（CLI）的安装。&lt;/p&gt;&#xA;&lt;p&gt;以下是基于电脑浏览器界面的安装方法，适合零基础用户，一步一步跟着做，就能完成安装。&lt;/p&gt;&#xA;&lt;h2 id=&#34;为什么推荐-grapheneos-系统&#34;&gt;&#xA;  为什么推荐 GrapheneOS 系统&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e4%b8%ba%e4%bb%80%e4%b9%88%e6%8e%a8%e8%8d%90-grapheneos-%e7%b3%bb%e7%bb%9f&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;直接介绍 GrapheneOS 的日常使用特性，这对于从事敏感活动的人来说尤其重要。&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;沙盒化的 Google 服务&lt;/strong&gt;：你可以正常使用一些依赖 Google 服务的应用，但 Google 对你手机的访问权限被限制在一个围栏里，无法像在普通 Android 上那样深度读取你的设备信息。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;网络访问权限开关&lt;/strong&gt;：可以单独切断任意应用的联网能力。比如你只想用某个 App 的离线功能，或者不信任某个应用在后台偷偷上传数据，直接断网即可。原生 Android 没有这个选项。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;存储空间隔离&lt;/strong&gt;：应用只能访问你主动分享给它的文件，看不到你整个相册或文件夹。防止应用在后台悄悄扫描你的私人内容。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;传感器权限统一管控&lt;/strong&gt;：摄像头、麦克风、陀螺仪等传感器可以一键关闭。不用担心某个应用在你不知情时偷听或调用硬件。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;位置与 Wi-Fi 隐私保护&lt;/strong&gt;：连接 Wi-Fi 时自动使用随机 MAC 地址，防止你被商场、咖啡馆等场所的 Wi-Fi 设备长期追踪定位。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;多用户隔离空间&lt;/strong&gt;：可以在同一台手机上建立多个完全独立的用户环境，数据互不可见。适合工作与私人分离，或者需要一个干净空间运行特定应用。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;胁迫密码（Duress Password）&lt;/strong&gt;：设置一个特殊的销毁密码。在被迫解锁手机的情况下输入这个密码，设备会立即清除全部数据。对于记者、活动人士或有隐私顾虑的普通用户都有实际意义。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;安全的默认浏览器（Vanadium）&lt;/strong&gt;： 内置浏览器 Vanadium 是基于 Chromium 的强化版本，关闭了大量可能被利用的功能，并默认启用更严格的安全策略，同时不向 Google 发送使用数据。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;安装前须知&#34;&gt;&#xA;  安装前须知&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e5%ae%89%e8%a3%85%e5%89%8d%e9%a1%bb%e7%9f%a5&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;截止2026年3月，GrapheneOS 支持以下 Pixel 手机型号：&lt;/p&gt;&#xA;&lt;p&gt;Pixel 6、6 Pro、6a、7、7 Pro、7a、Pixel Fold、Pixel Tablet、8、8 Pro、8a、9、9 Pro、9 Pro XL、9 Pro Fold、9a、10、10 Pro、10 Pro XL、10 Pro Fold&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>平板电脑</title>
-      <link>https://yummydimsum.github.io/docs/03-mobile/tablet/</link>
-      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://yummydimsum.github.io/docs/03-mobile/tablet/</guid>
-      <description>&lt;h1 id=&#34;平板电脑&#34;&gt;&#xA;  平板电脑&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e5%b9%b3%e6%9d%bf%e7%94%b5%e8%84%91&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;目前主流的平板电脑分为两大类：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;由苹果公司生产、运行 iPadOS 系统的 iPad;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;由其他许多公司生产、运行 Android 系统的各类平板。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;虽然我们叫它“平板电脑”，但它从各方面来看都更像是一台大屏幕的手机，而不像传统的电脑。&lt;/p&gt;&#xA;&lt;p&gt;因此，购买使用平板电脑的注意事项和购买使用智能手机的注意事项差不多。也就是：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;iPad 的优势与局限，请参考 iPhone 的优势与局限。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Android 平板的优势与局限，请参考 Android 手机的优势与局限。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>智能手机安全设置</title>
-      <link>https://yummydimsum.github.io/docs/03-mobile/security/</link>
-      <pubDate>Fri, 05 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://yummydimsum.github.io/docs/03-mobile/security/</guid>
-      <description>&lt;h1 id=&#34;智能手机安全设置&#34;&gt;&#xA;  智能手机安全设置&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e6%99%ba%e8%83%bd%e6%89%8b%e6%9c%ba%e5%ae%89%e5%85%a8%e8%ae%be%e7%bd%ae&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;一应该选择-iphone-还是-android&#34;&gt;&#xA;  一、应该选择 iPhone 还是 Android？&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e4%b8%80%e5%ba%94%e8%af%a5%e9%80%89%e6%8b%a9-iphone-%e8%bf%98%e6%98%af-android&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;决定购买和使用哪种手机，这由许多因素决定。我们这里只从“安全性”方面给出建议。&lt;/p&gt;&#xA;&lt;p&gt;iPhone 和 Android 到底谁更安全？这是一个很难准确回答的问题，因为它不光和设备、系统本身有关，也和你的使用环境、使用习惯有关。&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;如果你身在中国大陆，并且不太擅长技术，条件允许的话（主要是指预算充足），建议你选择 iPhone。 并且按照上文给出的建议，注册美国区 Apple ID, 并做好各项安全设置。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;如果你只能使用安卓手机，请你尽量避免使用中国公司生产的安卓手机，比如小米、华为、荣耀、VIVO、OPPO 等。选购外国公司生产的手机，比如三星。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;如果只能使用中国公司生产的安卓手机，请你咨询可以信任的专业人士，确认你的手机是否允许刷机，可以通过刷机彻底删除手机自带的系统和软件。这里推荐第三方开源的 Android 系统 LineageOS, 你可以在它的网站查看它支持哪些设备。  &lt;a href=&#34;https://wiki.lineageos.org/devices/&#34;&gt;https://wiki.lineageos.org/devices/&lt;/a&gt;  刷机需要一定的专业知识，如果你不具备这方面的知识技能，请不要随便动手，以免手机报废。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;如果你真的只能使用国产安卓手机，那至少做到将不同用途的手机物理隔离。详见下一小节。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;二至少拥有两台完全独立的手机&#34;&gt;&#xA;  二、至少拥有两台完全独立的手机&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e4%ba%8c%e8%87%b3%e5%b0%91%e6%8b%a5%e6%9c%89%e4%b8%a4%e5%8f%b0%e5%ae%8c%e5%85%a8%e7%8b%ac%e7%ab%8b%e7%9a%84%e6%89%8b%e6%9c%ba&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;相对而言，智能手机无法像电脑（无论 PC 还是苹果电脑）那样进行信息隔离，它实际上只能运行一个系统。因此，为了信息安全与隐私，强烈建议你至少使用两台手机。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;一台称作“&lt;strong&gt;普通手机&lt;/strong&gt;”，只用来安装和运行中国的应用, 比如微信、支付宝、淘宝等。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;另一台称作“&lt;strong&gt;安全手机&lt;/strong&gt;”或“&lt;strong&gt;干净手机&lt;/strong&gt;”，只用来安装和运行涉及敏感信息的应用, 比如翻墙软件、加密聊天软件。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;这两台手机彼此之间应该严格隔离。不要互相使用 SIM 卡，绝对不要在安全手机上面安装任何中国国产软件，甚至不要让两台手机之间互相通信。&lt;/p&gt;&#xA;&lt;p&gt;而且，你应该选择相对安全的那个手机作为安全手机。比如 iPhone 比国产安卓手机更安全，非国产安卓手机也比国产安卓手机更安全。能够刷机的国产安卓手机比不能刷机的更安全。&lt;/p&gt;&#xA;&lt;h2 id=&#34;三android-手机的应用权限控制和隔离&#34;&gt;&#xA;  三、Android 手机的应用权限控制和隔离&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e4%b8%89android-%e6%89%8b%e6%9c%ba%e7%9a%84%e5%ba%94%e7%94%a8%e6%9d%83%e9%99%90%e6%8e%a7%e5%88%b6%e5%92%8c%e9%9a%94%e7%a6%bb&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;如果你只能使用 Android 手机，而且只有一台手机，请安装 Exodus, Insular, Shelter 这几个应用来控制其它应用的操作权限或将其隔离。&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;使用手机浏览器打开 F-droid 的网站， &lt;a href=&#34;https://f-droid.org&#34;&gt;https://f-droid.org&lt;/a&gt; 点击 Download, 下载并安装 F-droid 的客户端。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;在 F-droid 的客户端里，搜索并下载、安装 Exodus, Insular, Shelter 这几个应用。&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>三、手机设备及操作系统 on 点心安全手册</title><link>https://dimsum.one/docs/03-mobile/</link><description>Recent content in 三、手机设备及操作系统 on 点心安全手册</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Thu, 05 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://dimsum.one/docs/03-mobile/index.xml" rel="self" type="application/rss+xml"/><item><title>iPhone 手机（附 iPad）</title><link>https://dimsum.one/docs/03-mobile/ios/</link><pubDate>Fri, 05 Apr 2024 00:00:00 +0000</pubDate><guid>https://dimsum.one/docs/03-mobile/ios/</guid><description>&lt;h1 id="iphone-手机">
+ iPhone 手机
+ &lt;a class="anchor" href="#iphone-%e6%89%8b%e6%9c%ba">#&lt;/a>
+&lt;/h1>
+&lt;p>与其他国家（比如美国）销售的 iPhone 相比，中国国行的 iPhone 手机有一些功能受限。这些限制，有些属于硬件层面，有些属于系统层面，有些属于内容层面。&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>硬件层面：中国国行 iPhone 没有 eSIM 功能，也就是它只能使用实体 SIM 卡。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>系统层面：中国国行 iPhone 不能使用 FaceTime 音频通话而只能视频通话，没有 CallKit, Walkie-Talkie, 5G 毫米波、卫星紧急救援等功能，同时 Apple Pay 功能受限。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>内容层面：书籍、音乐、电影、应用程序等许多方面遭到审查，详见下文。&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>作为普通用户，你很难自行解决硬件层面和系统层面的限制问题，但可以一定程度解决内容限制问题。&lt;/p>
+&lt;h2 id="一中国区-apple-id-的限制">
+ 一、中国区 Apple ID 的限制
+ &lt;a class="anchor" href="#%e4%b8%80%e4%b8%ad%e5%9b%bd%e5%8c%ba-apple-id-%e7%9a%84%e9%99%90%e5%88%b6">#&lt;/a>
+&lt;/h2>
+&lt;p>iPhone 用户下载安装 App 的正规渠道（也是相对安全的渠道）就是苹果公司自家运营的 App Store。想要使用 App Store, 需要注册一个 Apple ID。事实上，不光是 App Store，iPhone 上面的许多 Apple 服务都需要 Apple ID 登录。&lt;/p>
+&lt;p>如果你直接在中国境内注册 Apple ID（即没有使用任何其它辅助措施），那么你的 Apple ID 会被归类为“中国区 Apple ID”。中国区 ID 与其他 ID 有三大不同：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>使用中国区 Apple ID 登录 App Store, 只能搜索到有限的应用。据&lt;a href="https://cn.nytimes.com/technology/20210518/apple-china-censorship-data/">媒体报道&lt;/a>，在中国区的 App Store，上万个应用遭到下架，包括外国新闻机构、翻墙、政治、宗教等，甚至包含教育、游戏类应用。使用中国区 Apple ID 在 App Store 搜索，找不到这些应用。从某种程度上说，这意味着你的 iPhone 手机无法连接到国际互联网。&lt;/p></description></item><item><title>Android 手机（安卓手机）</title><link>https://dimsum.one/docs/03-mobile/android/</link><pubDate>Fri, 05 Apr 2024 00:00:00 +0000</pubDate><guid>https://dimsum.one/docs/03-mobile/android/</guid><description>&lt;h1 id="android-手机安卓手机">
+ Android 手机（安卓手机）
+ &lt;a class="anchor" href="#android-%e6%89%8b%e6%9c%ba%e5%ae%89%e5%8d%93%e6%89%8b%e6%9c%ba">#&lt;/a>
+&lt;/h1>
+&lt;p>另一种使用人数更多的智能手机是 Android 手机（中文又称“安卓手机”）。安卓手机由 Google 公司（安卓系统的母公司）授权、由其他许多不同厂商生产和销售，这些厂商包括大家耳熟能详的小米、三星、一加、OPPO 等。&lt;/p>
+&lt;h2 id="一国产安卓手机的问题与风险">
+ 一、国产安卓手机的问题与风险
+ &lt;a class="anchor" href="#%e4%b8%80%e5%9b%bd%e4%ba%a7%e5%ae%89%e5%8d%93%e6%89%8b%e6%9c%ba%e7%9a%84%e9%97%ae%e9%a2%98%e4%b8%8e%e9%a3%8e%e9%99%a9">#&lt;/a>
+&lt;/h2>
+&lt;ol>
+&lt;li>绝大多数国产安卓手机都没有 Google Play Store, 甚至没有 Google Account（谷歌账号）这个功能模块。这意味着，你无法通过 Google Play Store 下载和安装应用，而只能使用国产安卓手机自带的应用商店。因此你将很难下载国外互联网的应用, 尤其是无法下载那些能够帮你翻墙或加密通讯的应用。&lt;/li>
+&lt;/ol>
+&lt;p>解决方案是使用第三方的应用商店，比如 &lt;a href="https://apkpure.com/">APKPure&lt;/a>, &lt;a href="https://f-droid.org/">F-droid&lt;/a> 等。详见第四部分《&lt;a href="../../04-software/">常用软件推荐&lt;/a>》。&lt;/p>
+&lt;ol start="2">
+&lt;li>
+&lt;p>由于无法使用 Google Play Store, 中国的一些网站会直接提供 APK 安装文件，以便安卓手机用户安装应用。这些 APK 安装文件未经第三方安全审查，因此它们可能存在风险，可能会损害用户的手机。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>最严重的问题是，有些国产安卓手机被曝可能存在监控后门，或者接入了“国家反诈中心”软件。虽然目前还没有证据显示硬件层面存在问题，但已经有证据表明手机系统或预装软件存在问题，可能会监控和监听用户。&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>由于以上几种限制与风险，在你有选择的情况下，绝对不要使用中国国产安卓手机。&lt;/p>
+&lt;h2 id="二安全与隐私设置">
+ 二、安全与隐私设置
+ &lt;a class="anchor" href="#%e4%ba%8c%e5%ae%89%e5%85%a8%e4%b8%8e%e9%9a%90%e7%a7%81%e8%ae%be%e7%bd%ae">#&lt;/a>
+&lt;/h2>
+&lt;p>以下这个网页包含非常详细的 Android 手机安全设置，请仔细阅读并按照其中指示操作。&lt;/p>
+&lt;p>&lt;a href="https://securityinabox.org/zh/phones-and-computers/android/">https://securityinabox.org/zh/phones-and-computers/android/&lt;/a>&lt;/p></description></item><item><title>GrapheneOS 手机系统</title><link>https://dimsum.one/docs/03-mobile/grapheneos/</link><pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate><guid>https://dimsum.one/docs/03-mobile/grapheneos/</guid><description>&lt;h1 id="grapheneos适用于-pixel-手机">
+ GrapheneOS（适用于 Pixel 手机）
+ &lt;a class="anchor" href="#grapheneos%e9%80%82%e7%94%a8%e4%ba%8e-pixel-%e6%89%8b%e6%9c%ba">#&lt;/a>
+&lt;/h1>
+&lt;p>&lt;strong>&lt;a href="https://grapheneos.org/">GrapheneOS&lt;/a>&lt;/strong> 是一个注重隐私和安全的 Android 系统，可以替换 Pixel 手机上的原版系统。&lt;/p>
+&lt;p>GrapheneOS 官方提供两种安装方式：基于电脑浏览器界面的安装，和使用命令行界面（CLI）的安装。&lt;/p>
+&lt;p>以下是基于电脑浏览器界面的安装方法，适合零基础用户，一步一步跟着做，就能完成安装。&lt;/p>
+&lt;h2 id="为什么推荐-grapheneos-系统">
+ 为什么推荐 GrapheneOS 系统
+ &lt;a class="anchor" href="#%e4%b8%ba%e4%bb%80%e4%b9%88%e6%8e%a8%e8%8d%90-grapheneos-%e7%b3%bb%e7%bb%9f">#&lt;/a>
+&lt;/h2>
+&lt;p>直接介绍 GrapheneOS 的日常使用特性，这对于从事敏感活动的人来说尤其重要。&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>沙盒化的 Google 服务&lt;/strong>：你可以正常使用一些依赖 Google 服务的应用，但 Google 对你手机的访问权限被限制在一个围栏里，无法像在普通 Android 上那样深度读取你的设备信息。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>网络访问权限开关&lt;/strong>：可以单独切断任意应用的联网能力。比如你只想用某个 App 的离线功能，或者不信任某个应用在后台偷偷上传数据，直接断网即可。原生 Android 没有这个选项。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>存储空间隔离&lt;/strong>：应用只能访问你主动分享给它的文件，看不到你整个相册或文件夹。防止应用在后台悄悄扫描你的私人内容。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>传感器权限统一管控&lt;/strong>：摄像头、麦克风、陀螺仪等传感器可以一键关闭。不用担心某个应用在你不知情时偷听或调用硬件。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>位置与 Wi-Fi 隐私保护&lt;/strong>：连接 Wi-Fi 时自动使用随机 MAC 地址，防止你被商场、咖啡馆等场所的 Wi-Fi 设备长期追踪定位。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>多用户隔离空间&lt;/strong>：可以在同一台手机上建立多个完全独立的用户环境，数据互不可见。适合工作与私人分离，或者需要一个干净空间运行特定应用。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>胁迫密码（Duress Password）&lt;/strong>：设置一个特殊的销毁密码。在被迫解锁手机的情况下输入这个密码，设备会立即清除全部数据。对于记者、活动人士或有隐私顾虑的普通用户都有实际意义。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>安全的默认浏览器（Vanadium）&lt;/strong>： 内置浏览器 Vanadium 是基于 Chromium 的强化版本，关闭了大量可能被利用的功能，并默认启用更严格的安全策略，同时不向 Google 发送使用数据。&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="安装前须知">
+ 安装前须知
+ &lt;a class="anchor" href="#%e5%ae%89%e8%a3%85%e5%89%8d%e9%a1%bb%e7%9f%a5">#&lt;/a>
+&lt;/h2>
+&lt;p>截止2026年3月，GrapheneOS 支持以下 Pixel 手机型号：&lt;/p>
+&lt;p>Pixel 6、6 Pro、6a、7、7 Pro、7a、Pixel Fold、Pixel Tablet、8、8 Pro、8a、9、9 Pro、9 Pro XL、9 Pro Fold、9a、10、10 Pro、10 Pro XL、10 Pro Fold&lt;/p></description></item><item><title>平板电脑</title><link>https://dimsum.one/docs/03-mobile/tablet/</link><pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate><guid>https://dimsum.one/docs/03-mobile/tablet/</guid><description>&lt;h1 id="平板电脑">
+ 平板电脑
+ &lt;a class="anchor" href="#%e5%b9%b3%e6%9d%bf%e7%94%b5%e8%84%91">#&lt;/a>
+&lt;/h1>
+&lt;p>目前主流的平板电脑分为两大类：&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>由苹果公司生产、运行 iPadOS 系统的 iPad;&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>由其他许多公司生产、运行 Android 系统的各类平板。&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>虽然我们叫它“平板电脑”，但它从各方面来看都更像是一台大屏幕的手机，而不像传统的电脑。&lt;/p>
+&lt;p>因此，购买使用平板电脑的注意事项和购买使用智能手机的注意事项差不多。也就是：&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>iPad 的优势与局限，请参考 iPhone 的优势与局限。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Android 平板的优势与局限，请参考 Android 手机的优势与局限。&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>智能手机安全设置</title><link>https://dimsum.one/docs/03-mobile/security/</link><pubDate>Fri, 05 Apr 2024 00:00:00 +0000</pubDate><guid>https://dimsum.one/docs/03-mobile/security/</guid><description>&lt;h1 id="智能手机安全设置">
+ 智能手机安全设置
+ &lt;a class="anchor" href="#%e6%99%ba%e8%83%bd%e6%89%8b%e6%9c%ba%e5%ae%89%e5%85%a8%e8%ae%be%e7%bd%ae">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="一应该选择-iphone-还是-android">
+ 一、应该选择 iPhone 还是 Android？
+ &lt;a class="anchor" href="#%e4%b8%80%e5%ba%94%e8%af%a5%e9%80%89%e6%8b%a9-iphone-%e8%bf%98%e6%98%af-android">#&lt;/a>
+&lt;/h2>
+&lt;p>决定购买和使用哪种手机，这由许多因素决定。我们这里只从“安全性”方面给出建议。&lt;/p>
+&lt;p>iPhone 和 Android 到底谁更安全？这是一个很难准确回答的问题，因为它不光和设备、系统本身有关，也和你的使用环境、使用习惯有关。&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>如果你身在中国大陆，并且不太擅长技术，条件允许的话（主要是指预算充足），建议你选择 iPhone。 并且按照上文给出的建议，注册美国区 Apple ID, 并做好各项安全设置。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>如果你只能使用安卓手机，请你尽量避免使用中国公司生产的安卓手机，比如小米、华为、荣耀、VIVO、OPPO 等。选购外国公司生产的手机，比如三星。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>如果只能使用中国公司生产的安卓手机，请你咨询可以信任的专业人士，确认你的手机是否允许刷机，可以通过刷机彻底删除手机自带的系统和软件。这里推荐第三方开源的 Android 系统 LineageOS, 你可以在它的网站查看它支持哪些设备。 &lt;a href="https://wiki.lineageos.org/devices/">https://wiki.lineageos.org/devices/&lt;/a> 刷机需要一定的专业知识，如果你不具备这方面的知识技能，请不要随便动手，以免手机报废。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>如果你真的只能使用国产安卓手机，那至少做到将不同用途的手机物理隔离。详见下一小节。&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="二至少拥有两台完全独立的手机">
+ 二、至少拥有两台完全独立的手机
+ &lt;a class="anchor" href="#%e4%ba%8c%e8%87%b3%e5%b0%91%e6%8b%a5%e6%9c%89%e4%b8%a4%e5%8f%b0%e5%ae%8c%e5%85%a8%e7%8b%ac%e7%ab%8b%e7%9a%84%e6%89%8b%e6%9c%ba">#&lt;/a>
+&lt;/h2>
+&lt;p>相对而言，智能手机无法像电脑（无论 PC 还是苹果电脑）那样进行信息隔离，它实际上只能运行一个系统。因此，为了信息安全与隐私，强烈建议你至少使用两台手机。&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>一台称作“&lt;strong>普通手机&lt;/strong>”，只用来安装和运行中国的应用, 比如微信、支付宝、淘宝等。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>另一台称作“&lt;strong>安全手机&lt;/strong>”或“&lt;strong>干净手机&lt;/strong>”，只用来安装和运行涉及敏感信息的应用, 比如翻墙软件、加密聊天软件。&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>这两台手机彼此之间应该严格隔离。不要互相使用 SIM 卡，绝对不要在安全手机上面安装任何中国国产软件，甚至不要让两台手机之间互相通信。&lt;/p>
+&lt;p>而且，你应该选择相对安全的那个手机作为安全手机。比如 iPhone 比国产安卓手机更安全，非国产安卓手机也比国产安卓手机更安全。能够刷机的国产安卓手机比不能刷机的更安全。&lt;/p>
+&lt;h2 id="三android-手机的应用权限控制和隔离">
+ 三、Android 手机的应用权限控制和隔离
+ &lt;a class="anchor" href="#%e4%b8%89android-%e6%89%8b%e6%9c%ba%e7%9a%84%e5%ba%94%e7%94%a8%e6%9d%83%e9%99%90%e6%8e%a7%e5%88%b6%e5%92%8c%e9%9a%94%e7%a6%bb">#&lt;/a>
+&lt;/h2>
+&lt;p>如果你只能使用 Android 手机，而且只有一台手机，请安装 Exodus, Insular, Shelter 这几个应用来控制其它应用的操作权限或将其隔离。&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>使用手机浏览器打开 F-droid 的网站， &lt;a href="https://f-droid.org">https://f-droid.org&lt;/a> 点击 Download, 下载并安装 F-droid 的客户端。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>在 F-droid 的客户端里，搜索并下载、安装 Exodus, Insular, Shelter 这几个应用。&lt;/p></description></item></channel></rss>

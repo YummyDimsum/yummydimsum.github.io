@@ -1,40 +1,107 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>二、电脑硬件及操作系统 on 信息与网络安全手册</title>
-    <link>https://yummydimsum.github.io/docs/02-computer/</link>
-    <description>Recent content in 二、电脑硬件及操作系统 on 信息与网络安全手册</description>
-    <generator>Hugo</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Sat, 04 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://yummydimsum.github.io/docs/02-computer/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>运行 Windows 系统的 PC 机</title>
-      <link>https://yummydimsum.github.io/docs/02-computer/windows/</link>
-      <pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://yummydimsum.github.io/docs/02-computer/windows/</guid>
-      <description>&lt;h1 id=&#34;运行-windows-系统的-pc-机&#34;&gt;&#xA;  运行 Windows 系统的 PC 机&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e8%bf%90%e8%a1%8c-windows-%e7%b3%bb%e7%bb%9f%e7%9a%84-pc-%e6%9c%ba&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;在开始之前买电脑前你需要知道的事&#34;&gt;&#xA;  在开始之前：买电脑前你需要知道的事&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e5%9c%a8%e5%bc%80%e5%a7%8b%e4%b9%8b%e5%89%8d%e4%b9%b0%e7%94%b5%e8%84%91%e5%89%8d%e4%bd%a0%e9%9c%80%e8%a6%81%e7%9f%a5%e9%81%93%e7%9a%84%e4%ba%8b&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;本页面的内容针对 Windows 系统用户。如果你使用的是 macOS 或预装 Linux 的设备，这一条不适用于你，但本页面其他章节的部分建议仍然值得参考。&lt;/p&gt;&#xA;&lt;h3 id=&#34;在中国境内销售的-windows-pc存在额外风险&#34;&gt;&#xA;  在中国境内销售的 Windows PC，存在额外风险&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e5%9c%a8%e4%b8%ad%e5%9b%bd%e5%a2%83%e5%86%85%e9%94%80%e5%94%ae%e7%9a%84-windows-pc%e5%ad%98%e5%9c%a8%e9%a2%9d%e5%a4%96%e9%a3%8e%e9%99%a9&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;在中国境内销售的 Windows PC（包括联想、戴尔、惠普等品牌的中国版本），常常预装了中国厂商的管理软件，例如某某电脑管家。这类软件拥有极高的系统权限，且会与中国境内的服务器保持通信。&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;如果你有条件选择，优先考虑在中国境外购买电脑&lt;/strong&gt;，例如在香港、台湾或其他地区购买后带入。相对可信的选择包括：在非中国市场销售的 ThinkPad、华硕（台湾品牌）、戴尔、惠普的非中国版本。&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;如果你已经在用中国境内购买的电脑，或者只能在中国购买，这很正常——以下是你需要知道的风险，以及你可以做的处理。&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;风险一：预装软件&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;中国品牌电脑（以及部分国际品牌的中国版本）通常预装了厂商自己的管理软件。这类软件：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;拥有极高的系统权限，可以访问你电脑上的几乎所有内容&lt;/li&gt;&#xA;&lt;li&gt;会定期与厂商服务器通信，发送设备信息&lt;/li&gt;&#xA;&lt;li&gt;即使你卸载了，有时仍会留下残余组件&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;你可以做的事&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;打开 &lt;code&gt;【设置】→【应用】→【已安装的应用】&lt;/code&gt;，找到所有你不认识或不需要的厂商软件，逐一卸载。若不确定，请咨询专业人士。&lt;/li&gt;&#xA;&lt;li&gt;重点检查并卸载：联想电脑管家、华为电脑管家、小米电脑管家、360安全卫士、腾讯电脑管家——这类软件&lt;strong&gt;不应该保留&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;卸载后，用 &lt;a href=&#34;https://learn.microsoft.com/zh-cn/sysinternals/downloads/autoruns&#34;&gt;Autoruns&lt;/a&gt;（微软官方工具）检查是否还有残余程序在后台自动启动&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;风险二：系统本身可能已被修改&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;部分在中国销售的电脑出厂时安装的并非完整的官方 Windows，而是经过修改的版本。这类系统可能无法正常接收安全更新，或者已经被植入了你看不见的组件。&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;你可以做的事：&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;检查你的 Windows 是否是正版：打开 &lt;code&gt;【设置】→【系统】→【激活】&lt;/code&gt;，查看激活状态&lt;/li&gt;&#xA;&lt;li&gt;如果显示&amp;quot;未激活&amp;quot;或激活方式可疑，&lt;strong&gt;最彻底的解决方法是重装系统&lt;/strong&gt;（见下方《如何重装正版 Windows 系统》）&lt;/li&gt;&#xA;&lt;li&gt;即使显示已激活，如果你对系统来源有疑虑，重装仍然是最可靠的选择&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;风险三：硬件层面的风险&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;极少数情况下，设备在出厂或流通环节中可能被植入硬件级的监控组件。这类攻击成本高、针对性强，通常只针对特定的目标。&lt;/p&gt;&#xA;&lt;p&gt;如果你认为自己属于被重点关注的对象，&lt;strong&gt;最好更换一台在可信渠道购买的设备，这比任何软件层面的修复都可靠。&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;关于电脑品牌你需要知道&#34;&gt;&#xA;  关于电脑品牌：你需要知道&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e5%85%b3%e4%ba%8e%e7%94%b5%e8%84%91%e5%93%81%e7%89%8c%e4%bd%a0%e9%9c%80%e8%a6%81%e7%9f%a5%e9%81%93&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;联想&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;联想是总部位于中国的跨国公司。&lt;strong&gt;在中国境内购买的联想电脑（包括 Thinkpad）&lt;/strong&gt;，尤其是面向政府或企业市场的版本，存在预装管理软件的风险，建议谨慎使用。如果你在中国境外购买联想电脑（例如在台湾、香港、欧美市场购买的消费者版本），风险相对较低，但仍建议按照本页面的建议检查并清理预装软件。&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;华为&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;华为设备在多个国家已被列为安全风险。对于活动人士和记者，&lt;strong&gt;不建议使用任何华为电脑或平板&lt;/strong&gt;，无论是在中国境内还是境外使用。如果你目前正在使用华为电脑，建议将更换设备列入你的计划，并在此期间格外注意本页面其他章节的建议。&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;操作系统从源头开始&#34;&gt;&#xA;  操作系统：从源头开始&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e6%93%8d%e4%bd%9c%e7%b3%bb%e7%bb%9f%e4%bb%8e%e6%ba%90%e5%a4%b4%e5%bc%80%e5%a7%8b&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;不要使用盗版或ghost系统&#34;&gt;&#xA;  不要使用盗版或&amp;quot;GHOST&amp;quot;系统&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e4%b8%8d%e8%a6%81%e4%bd%bf%e7%94%a8%e7%9b%97%e7%89%88%e6%88%96ghost%e7%b3%bb%e7%bb%9f&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;在中国，有大量电脑预装了非官方的 Windows 系统，俗称&amp;quot;GHOST 系统&amp;quot;或&amp;quot;精简版 Windows&amp;quot;。这类系统通常：&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>运行 macOS 的苹果电脑</title>
-      <link>https://yummydimsum.github.io/docs/02-computer/macos/</link>
-      <pubDate>Fri, 05 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://yummydimsum.github.io/docs/02-computer/macos/</guid>
-      <description>&lt;h1 id=&#34;运行-macos-的苹果电脑&#34;&gt;&#xA;  运行 macOS 的苹果电脑&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e8%bf%90%e8%a1%8c-macos-%e7%9a%84%e8%8b%b9%e6%9e%9c%e7%94%b5%e8%84%91&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;一决定购买和使用之前&#34;&gt;&#xA;  一、决定购买和使用之前&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e4%b8%80%e5%86%b3%e5%ae%9a%e8%b4%ad%e4%b9%b0%e5%92%8c%e4%bd%bf%e7%94%a8%e4%b9%8b%e5%89%8d&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;苹果电脑由美国 Apple 公司生产，它的电脑硬件与操作系统之间有着强绑定关系。也就是说，当你购买苹果电脑的时候，意味着你选择使用 macOS 系统；当你想要使用 macOS 系统的时候，你就会购买苹果电脑。&lt;/p&gt;&#xA;&lt;p&gt;这种强绑定关系的好处是，硬件与系统之间极其优良的配合，因为它的系统就是为它的硬件准备的。有些人会在苹果电脑上面安装 Windows 系统，或者在 PC 机上面安装 macOS 系统，虽然这样也能运行，但肯定无法像苹果电脑搭载 macOS 系统那样舒服和流畅。&lt;/p&gt;&#xA;&lt;p&gt;但是这种强绑定关系同时也带来一些问题，这是你在决定购买和使用苹果电脑之前要知道的。你有可能会遭遇这种情况：&lt;/p&gt;&#xA;&lt;p&gt;电脑硬件完好无损，无论是电池还是硬盘都能正常工作。但是，由于苹果公司不断发布新的 macOS 系统，而新版系统对于电脑硬件配置要求较高，使得你的电脑无法升级到最新版本的系统，或者即使能够升级，也不能流畅地使用。你无法仅仅通过升级主板、内存或者显卡使其满足最新版 macOS 系统的要求。很多人在这个时候会被迫买一台新的电脑，也就是硬件配置更高、操作系统更新的苹果电脑。&lt;/p&gt;&#xA;&lt;p&gt;点击以下链接，检查你的苹果电脑硬件能够支持的最新版本系统是多少。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;MacBook Air &lt;a href=&#34;https://en.wikipedia.org/wiki/MacBook_Air#macOS&#34;&gt;https://en.wikipedia.org/wiki/MacBook_Air#macOS&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;MacBook Pro &lt;a href=&#34;https://en.wikipedia.org/wiki/MacBook_Pro#macOS&#34;&gt;https://en.wikipedia.org/wiki/MacBook_Pro#macOS&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;iMac &lt;a href=&#34;https://en.wikipedia.org/wiki/IMac#Supported_Apple_operating_system_releases&#34;&gt;https://en.wikipedia.org/wiki/IMac#Supported_Apple_operating_system_releases&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;根据上面的链接内容所示：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;如果你使用 MacBook Air 电脑，想要升级到最新的 macOS 14 版本系统，那么你的 MacBook Air 机器至少需要是 2018 年版本。早于 2018 年的机器已经无法升级到 macOS 14 版本的系统。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;如果你使用 MacBook Pro 电脑，想要升级到最新的 macOS 14 版本系统，那么你的 MacBook Pro 机器至少需要是 2018 年版本，早于 2018 年的机器已经无法升级到 macOS 14 版本的系统。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>运行 GNU/Linux 系统的 PC 机</title>
-      <link>https://yummydimsum.github.io/docs/02-computer/linux/</link>
-      <pubDate>Fri, 05 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://yummydimsum.github.io/docs/02-computer/linux/</guid>
-      <description>&lt;h1 id=&#34;运行-gnulinux-系统的-pc-机&#34;&gt;&#xA;  运行 GNU/Linux 系统的 PC 机&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e8%bf%90%e8%a1%8c-gnulinux-%e7%b3%bb%e7%bb%9f%e7%9a%84-pc-%e6%9c%ba&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Linux 平台的病毒、木马数量远远少于 Windows, 但这绝不意味着 Linux 系统百分之百安全，因此你也要为 Linux 系统做好相应的安全防护。&lt;/p&gt;&#xA;&lt;p&gt;这个世界上存在几百种不同的 GNU/Linux 发行版，我们很难列出每一种的安全设置方案。但是，无论哪种都有一些基础的、通用的注意事项。请参考这个说明：&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://securityinabox.org/zh/phones-and-computers/linux/&#34;&gt;https://securityinabox.org/zh/phones-and-computers/linux/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;此外，建议仔细阅读所用 Linux 发行版的官方文档、官方 Wiki, 那里一般会有针对特定发行版的详细说明。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>使用 Live USB 系统</title>
-      <link>https://yummydimsum.github.io/docs/02-computer/liveos/</link>
-      <pubDate>Fri, 05 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://yummydimsum.github.io/docs/02-computer/liveos/</guid>
-      <description>&lt;h1 id=&#34;使用-live-usb-系统&#34;&gt;&#xA;  使用 Live USB 系统&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e4%bd%bf%e7%94%a8-live-usb-%e7%b3%bb%e7%bb%9f&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;从事敏感和危险工作的行动者一般分为两类，一种公开身份活动，一种完全匿名活动。前者并不需要隐藏真实身份，但可能希望保护信息、数据与通信安全，也就是有“加密”的需求。后者则不光要保护信息、数据与通信安全，还要保持匿名，不被别人识破身份，也就是同时需要“匿名”且“加密”。&lt;/p&gt;&#xA;&lt;p&gt;这两类人的需求并不完全相同，但在很多场景之下需要类似的工具。&lt;/p&gt;&#xA;&lt;p&gt;我们推荐从事敏感和危险工作的行动者学习制作和使用 Live USB 系统，也就是将操作系统（无论 Windows 还是 Linux）安装在一个小小的 U 盘上面，每次使用的时候，将 U 盘插在电脑上，选择从 U 盘启动并运行系统。使用结束之后，关闭系统和电脑，收起 U 盘。&lt;/p&gt;&#xA;&lt;p&gt;这样做的好处是，你在公开使用的电脑和系统当中不会留下任何“敏感信息”和“敏感活动”，而且 Live USB 系统在关机之后可以清除所有使用记录，只留下一个干净的系统。这使得监控甚至抓捕你的人无法得到任何敏感信息和数据。&lt;/p&gt;&#xA;&lt;p&gt;这些操作系统都可以安装在 USB 当中：&lt;a href=&#34;https://www.ubackup.com/articles/windows-10-live-usb.html&#34;&gt;Windows 10&lt;/a&gt;, &lt;a href=&#34;https://ubuntu.com/tutorials/create-a-usb-stick-on-windows?ref=robododd.com#1-overview&#34;&gt;Ubuntu Linux&lt;/a&gt;, &lt;a href=&#34;https://tails.net/index.en.html&#34;&gt;Tails Linux&lt;/a&gt;,  &lt;a href=&#34;https://www.whonix.org/wiki/USB_Installation&#34;&gt;Whonix&lt;/a&gt;, &lt;a href=&#34;https://github.com/mdrights/liveslak&#34;&gt;antiS&lt;/a&gt;。&lt;/p&gt;&#xA;&lt;p&gt;它们大都是 GNU/Linux 系统，各有特色，适合不同需求的人，比如 Tails 和 Whonix 系统默认将所有网络请求和流量通过 Tor 网络转发，保证用户完全匿名。Windows 则适合大多数不熟悉 Linux 的用户。&lt;/p&gt;&#xA;&lt;p&gt;可以用 &lt;a href=&#34;https://rufus.ie/en/&#34;&gt;Rufus&lt;/a&gt; 或 &lt;a href=&#34;https://unetbootin.github.io/&#34;&gt;UNetbootin&lt;/a&gt; 来制作 Live USB。详细方法请见各自的官方网站。&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>二、电脑硬件及操作系统 on 点心安全手册</title><link>https://dimsum.one/docs/02-computer/</link><description>Recent content in 二、电脑硬件及操作系统 on 点心安全手册</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sat, 04 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://dimsum.one/docs/02-computer/index.xml" rel="self" type="application/rss+xml"/><item><title>运行 Windows 系统的 PC 机</title><link>https://dimsum.one/docs/02-computer/windows/</link><pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate><guid>https://dimsum.one/docs/02-computer/windows/</guid><description>&lt;h1 id="运行-windows-系统的-pc-机">
+ 运行 Windows 系统的 PC 机
+ &lt;a class="anchor" href="#%e8%bf%90%e8%a1%8c-windows-%e7%b3%bb%e7%bb%9f%e7%9a%84-pc-%e6%9c%ba">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="在开始之前买电脑前你需要知道的事">
+ 在开始之前：买电脑前你需要知道的事
+ &lt;a class="anchor" href="#%e5%9c%a8%e5%bc%80%e5%a7%8b%e4%b9%8b%e5%89%8d%e4%b9%b0%e7%94%b5%e8%84%91%e5%89%8d%e4%bd%a0%e9%9c%80%e8%a6%81%e7%9f%a5%e9%81%93%e7%9a%84%e4%ba%8b">#&lt;/a>
+&lt;/h2>
+&lt;p>本页面的内容针对 Windows 系统用户。如果你使用的是 macOS 或预装 Linux 的设备，这一条不适用于你，但本页面其他章节的部分建议仍然值得参考。&lt;/p>
+&lt;h3 id="在中国境内销售的-windows-pc存在额外风险">
+ 在中国境内销售的 Windows PC，存在额外风险
+ &lt;a class="anchor" href="#%e5%9c%a8%e4%b8%ad%e5%9b%bd%e5%a2%83%e5%86%85%e9%94%80%e5%94%ae%e7%9a%84-windows-pc%e5%ad%98%e5%9c%a8%e9%a2%9d%e5%a4%96%e9%a3%8e%e9%99%a9">#&lt;/a>
+&lt;/h3>
+&lt;p>在中国境内销售的 Windows PC（包括联想、戴尔、惠普等品牌的中国版本），常常预装了中国厂商的管理软件，例如某某电脑管家。这类软件拥有极高的系统权限，且会与中国境内的服务器保持通信。&lt;/p>
+&lt;p>&lt;strong>如果你有条件选择，优先考虑在中国境外购买电脑&lt;/strong>，例如在香港、台湾或其他地区购买后带入。相对可信的选择包括：在非中国市场销售的 ThinkPad、华硕（台湾品牌）、戴尔、惠普的非中国版本。&lt;/p>
+&lt;hr>
+&lt;p>&lt;strong>如果你已经在用中国境内购买的电脑，或者只能在中国购买，这很正常——以下是你需要知道的风险，以及你可以做的处理。&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>风险一：预装软件&lt;/strong>&lt;/p>
+&lt;p>中国品牌电脑（以及部分国际品牌的中国版本）通常预装了厂商自己的管理软件。这类软件：&lt;/p>
+&lt;ul>
+&lt;li>拥有极高的系统权限，可以访问你电脑上的几乎所有内容&lt;/li>
+&lt;li>会定期与厂商服务器通信，发送设备信息&lt;/li>
+&lt;li>即使你卸载了，有时仍会留下残余组件&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>你可以做的事&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>打开 &lt;code>【设置】→【应用】→【已安装的应用】&lt;/code>，找到所有你不认识或不需要的厂商软件，逐一卸载。若不确定，请咨询专业人士。&lt;/li>
+&lt;li>重点检查并卸载：联想电脑管家、华为电脑管家、小米电脑管家、360安全卫士、腾讯电脑管家——这类软件&lt;strong>不应该保留&lt;/strong>&lt;/li>
+&lt;li>卸载后，用 &lt;a href="https://learn.microsoft.com/zh-cn/sysinternals/downloads/autoruns">Autoruns&lt;/a>（微软官方工具）检查是否还有残余程序在后台自动启动&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>风险二：系统本身可能已被修改&lt;/strong>&lt;/p>
+&lt;p>部分在中国销售的电脑出厂时安装的并非完整的官方 Windows，而是经过修改的版本。这类系统可能无法正常接收安全更新，或者已经被植入了你看不见的组件。&lt;/p>
+&lt;p>&lt;strong>你可以做的事：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>检查你的 Windows 是否是正版：打开 &lt;code>【设置】→【系统】→【激活】&lt;/code>，查看激活状态&lt;/li>
+&lt;li>如果显示&amp;quot;未激活&amp;quot;或激活方式可疑，&lt;strong>最彻底的解决方法是重装系统&lt;/strong>（见下方《如何重装正版 Windows 系统》）&lt;/li>
+&lt;li>即使显示已激活，如果你对系统来源有疑虑，重装仍然是最可靠的选择&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>风险三：硬件层面的风险&lt;/strong>&lt;/p>
+&lt;p>极少数情况下，设备在出厂或流通环节中可能被植入硬件级的监控组件。这类攻击成本高、针对性强，通常只针对特定的目标。&lt;/p>
+&lt;p>如果你认为自己属于被重点关注的对象，&lt;strong>最好更换一台在可信渠道购买的设备，这比任何软件层面的修复都可靠。&lt;/strong>&lt;/p>
+&lt;hr>
+&lt;h3 id="关于电脑品牌你需要知道">
+ 关于电脑品牌：你需要知道
+ &lt;a class="anchor" href="#%e5%85%b3%e4%ba%8e%e7%94%b5%e8%84%91%e5%93%81%e7%89%8c%e4%bd%a0%e9%9c%80%e8%a6%81%e7%9f%a5%e9%81%93">#&lt;/a>
+&lt;/h3>
+&lt;p>&lt;strong>联想&lt;/strong>&lt;/p>
+&lt;p>联想是总部位于中国的跨国公司。&lt;strong>在中国境内购买的联想电脑（包括 Thinkpad）&lt;/strong>，尤其是面向政府或企业市场的版本，存在预装管理软件的风险，建议谨慎使用。如果你在中国境外购买联想电脑（例如在台湾、香港、欧美市场购买的消费者版本），风险相对较低，但仍建议按照本页面的建议检查并清理预装软件。&lt;/p>
+&lt;p>&lt;strong>华为&lt;/strong>&lt;/p>
+&lt;p>华为设备在多个国家已被列为安全风险。对于活动人士和记者，&lt;strong>不建议使用任何华为电脑或平板&lt;/strong>，无论是在中国境内还是境外使用。如果你目前正在使用华为电脑，建议将更换设备列入你的计划，并在此期间格外注意本页面其他章节的建议。&lt;/p>
+&lt;hr>
+&lt;h2 id="操作系统从源头开始">
+ 操作系统：从源头开始
+ &lt;a class="anchor" href="#%e6%93%8d%e4%bd%9c%e7%b3%bb%e7%bb%9f%e4%bb%8e%e6%ba%90%e5%a4%b4%e5%bc%80%e5%a7%8b">#&lt;/a>
+&lt;/h2>
+&lt;h3 id="不要使用盗版或ghost系统">
+ 不要使用盗版或&amp;quot;GHOST&amp;quot;系统
+ &lt;a class="anchor" href="#%e4%b8%8d%e8%a6%81%e4%bd%bf%e7%94%a8%e7%9b%97%e7%89%88%e6%88%96ghost%e7%b3%bb%e7%bb%9f">#&lt;/a>
+&lt;/h3>
+&lt;p>在中国，有大量电脑预装了非官方的 Windows 系统，俗称&amp;quot;GHOST 系统&amp;quot;或&amp;quot;精简版 Windows&amp;quot;。这类系统通常：&lt;/p></description></item><item><title>运行 macOS 的苹果电脑</title><link>https://dimsum.one/docs/02-computer/macos/</link><pubDate>Fri, 05 Apr 2024 00:00:00 +0000</pubDate><guid>https://dimsum.one/docs/02-computer/macos/</guid><description>&lt;h1 id="运行-macos-的苹果电脑">
+ 运行 macOS 的苹果电脑
+ &lt;a class="anchor" href="#%e8%bf%90%e8%a1%8c-macos-%e7%9a%84%e8%8b%b9%e6%9e%9c%e7%94%b5%e8%84%91">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="一决定购买和使用之前">
+ 一、决定购买和使用之前
+ &lt;a class="anchor" href="#%e4%b8%80%e5%86%b3%e5%ae%9a%e8%b4%ad%e4%b9%b0%e5%92%8c%e4%bd%bf%e7%94%a8%e4%b9%8b%e5%89%8d">#&lt;/a>
+&lt;/h2>
+&lt;p>苹果电脑由美国 Apple 公司生产，它的电脑硬件与操作系统之间有着强绑定关系。也就是说，当你购买苹果电脑的时候，意味着你选择使用 macOS 系统；当你想要使用 macOS 系统的时候，你就会购买苹果电脑。&lt;/p>
+&lt;p>这种强绑定关系的好处是，硬件与系统之间极其优良的配合，因为它的系统就是为它的硬件准备的。有些人会在苹果电脑上面安装 Windows 系统，或者在 PC 机上面安装 macOS 系统，虽然这样也能运行，但肯定无法像苹果电脑搭载 macOS 系统那样舒服和流畅。&lt;/p>
+&lt;p>但是这种强绑定关系同时也带来一些问题，这是你在决定购买和使用苹果电脑之前要知道的。你有可能会遭遇这种情况：&lt;/p>
+&lt;p>电脑硬件完好无损，无论是电池还是硬盘都能正常工作。但是，由于苹果公司不断发布新的 macOS 系统，而新版系统对于电脑硬件配置要求较高，使得你的电脑无法升级到最新版本的系统，或者即使能够升级，也不能流畅地使用。你无法仅仅通过升级主板、内存或者显卡使其满足最新版 macOS 系统的要求。很多人在这个时候会被迫买一台新的电脑，也就是硬件配置更高、操作系统更新的苹果电脑。&lt;/p>
+&lt;p>点击以下链接，检查你的苹果电脑硬件能够支持的最新版本系统是多少。&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>MacBook Air &lt;a href="https://en.wikipedia.org/wiki/MacBook_Air#macOS">https://en.wikipedia.org/wiki/MacBook_Air#macOS&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>MacBook Pro &lt;a href="https://en.wikipedia.org/wiki/MacBook_Pro#macOS">https://en.wikipedia.org/wiki/MacBook_Pro#macOS&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>iMac &lt;a href="https://en.wikipedia.org/wiki/IMac#Supported_Apple_operating_system_releases">https://en.wikipedia.org/wiki/IMac#Supported_Apple_operating_system_releases&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>根据上面的链接内容所示：&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>如果你使用 MacBook Air 电脑，想要升级到最新的 macOS 14 版本系统，那么你的 MacBook Air 机器至少需要是 2018 年版本。早于 2018 年的机器已经无法升级到 macOS 14 版本的系统。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>如果你使用 MacBook Pro 电脑，想要升级到最新的 macOS 14 版本系统，那么你的 MacBook Pro 机器至少需要是 2018 年版本，早于 2018 年的机器已经无法升级到 macOS 14 版本的系统。&lt;/p></description></item><item><title>运行 GNU/Linux 系统的 PC 机</title><link>https://dimsum.one/docs/02-computer/linux/</link><pubDate>Fri, 05 Apr 2024 00:00:00 +0000</pubDate><guid>https://dimsum.one/docs/02-computer/linux/</guid><description>&lt;h1 id="运行-gnulinux-系统的-pc-机">
+ 运行 GNU/Linux 系统的 PC 机
+ &lt;a class="anchor" href="#%e8%bf%90%e8%a1%8c-gnulinux-%e7%b3%bb%e7%bb%9f%e7%9a%84-pc-%e6%9c%ba">#&lt;/a>
+&lt;/h1>
+&lt;p>Linux 平台的病毒、木马数量远远少于 Windows, 但这绝不意味着 Linux 系统百分之百安全，因此你也要为 Linux 系统做好相应的安全防护。&lt;/p>
+&lt;p>这个世界上存在几百种不同的 GNU/Linux 发行版，我们很难列出每一种的安全设置方案。但是，无论哪种都有一些基础的、通用的注意事项。请参考这个说明：&lt;/p>
+&lt;p>&lt;a href="https://securityinabox.org/zh/phones-and-computers/linux/">https://securityinabox.org/zh/phones-and-computers/linux/&lt;/a>&lt;/p>
+&lt;p>此外，建议仔细阅读所用 Linux 发行版的官方文档、官方 Wiki, 那里一般会有针对特定发行版的详细说明。&lt;/p></description></item><item><title>使用 Live USB 系统</title><link>https://dimsum.one/docs/02-computer/liveos/</link><pubDate>Fri, 05 Apr 2024 00:00:00 +0000</pubDate><guid>https://dimsum.one/docs/02-computer/liveos/</guid><description>&lt;h1 id="使用-live-usb-系统">
+ 使用 Live USB 系统
+ &lt;a class="anchor" href="#%e4%bd%bf%e7%94%a8-live-usb-%e7%b3%bb%e7%bb%9f">#&lt;/a>
+&lt;/h1>
+&lt;p>从事敏感和危险工作的行动者一般分为两类，一种公开身份活动，一种完全匿名活动。前者并不需要隐藏真实身份，但可能希望保护信息、数据与通信安全，也就是有“加密”的需求。后者则不光要保护信息、数据与通信安全，还要保持匿名，不被别人识破身份，也就是同时需要“匿名”且“加密”。&lt;/p>
+&lt;p>这两类人的需求并不完全相同，但在很多场景之下需要类似的工具。&lt;/p>
+&lt;p>我们推荐从事敏感和危险工作的行动者学习制作和使用 Live USB 系统，也就是将操作系统（无论 Windows 还是 Linux）安装在一个小小的 U 盘上面，每次使用的时候，将 U 盘插在电脑上，选择从 U 盘启动并运行系统。使用结束之后，关闭系统和电脑，收起 U 盘。&lt;/p>
+&lt;p>这样做的好处是，你在公开使用的电脑和系统当中不会留下任何“敏感信息”和“敏感活动”，而且 Live USB 系统在关机之后可以清除所有使用记录，只留下一个干净的系统。这使得监控甚至抓捕你的人无法得到任何敏感信息和数据。&lt;/p>
+&lt;p>这些操作系统都可以安装在 USB 当中：&lt;a href="https://www.ubackup.com/articles/windows-10-live-usb.html">Windows 10&lt;/a>, &lt;a href="https://ubuntu.com/tutorials/create-a-usb-stick-on-windows?ref=robododd.com#1-overview">Ubuntu Linux&lt;/a>, &lt;a href="https://tails.net/index.en.html">Tails Linux&lt;/a>, &lt;a href="https://www.whonix.org/wiki/USB_Installation">Whonix&lt;/a>, &lt;a href="https://github.com/mdrights/liveslak">antiS&lt;/a>。&lt;/p>
+&lt;p>它们大都是 GNU/Linux 系统，各有特色，适合不同需求的人，比如 Tails 和 Whonix 系统默认将所有网络请求和流量通过 Tor 网络转发，保证用户完全匿名。Windows 则适合大多数不熟悉 Linux 的用户。&lt;/p>
+&lt;p>可以用 &lt;a href="https://rufus.ie/en/">Rufus&lt;/a> 或 &lt;a href="https://unetbootin.github.io/">UNetbootin&lt;/a> 来制作 Live USB。详细方法请见各自的官方网站。&lt;/p></description></item></channel></rss>

@@ -1,11 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Categories on 信息与网络安全手册</title>
-    <link>https://yummydimsum.github.io/categories/</link>
-    <description>Recent content in Categories on 信息与网络安全手册</description>
-    <generator>Hugo</generator>
-    <language>zh-cn</language>
-    <atom:link href="https://yummydimsum.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Categories on 点心安全手册</title><link>https://dimsum.one/categories/</link><description>Recent content in Categories on 点心安全手册</description><generator>Hugo</generator><language>zh-cn</language><atom:link href="https://dimsum.one/categories/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
