@@ -7,13 +7,17 @@ type: docs
 
 ## 🔥 最新安全提醒
 
+- [Anthropic 报告揭示中国利用 AI 助手进行跨境镇压，以及我们的防范建议](/posts/anthropic-report-china-surveillance-transnational-repression-202609/)
+
 - 2025年7月：[中国警察新的移动取证工具Massistant](/posts/massistant-chinese-mobile-forensics/)
 
 - [防范钓鱼邮件、钓鱼链接](/docs/05-internet/links/)，防止被盗号、被识别真实身份
 
-- 微软公司已于 2025 年 10 月  14 日停止对 Windows 10 的支持，[请及时升级系统](/docs/02-computer/windows/#%E4%B8%89%E5%BC%80%E5%90%AF-windows-%E7%B3%BB%E7%BB%9F%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0)
+- 微软公司已于 2025 年 10 月  14 日停止对 Windows 10 的支持，[请及时升级系统](/docs/02-computer/windows/#使用-windows-10-还是-windows-11)
 
 ## 🆕 最近更新内容
+
+- [Anthropic 报告揭示中国利用 AI 助手进行跨境镇压，以及我们的防范建议](/posts/anthropic-report-china-surveillance-transnational-repression-202609/)
 
 - 给 Pixel 手机刷入更安全的 [GrapheneOS 系统](/docs/03-mobile/grapheneos/)
 
