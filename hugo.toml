@@ -1,6 +1,6 @@
-baseURL = 'https://yummydimsum.github.io/'
+baseURL = 'https://dimsum.one/'
 languageCode = 'zh-cn'
-title = '信息与网络安全手册'
+title = '点心安全手册'
 theme = "hugo-book"
 
 # Book configuration
